@@ -1,0 +1,3821 @@
+{
+  "date": "2026-10-27T18:34:42.336Z",
+  "scope": "Public frontend source and resources only; no historical candidate manifest overwritten.",
+  "files": [
+    {
+      "path": "frontend/admin/actividad-plataforma.html",
+      "bytes": 5206,
+      "sha256": "899c01f5a75d8bb06c9cd318a7f0b0a7238b6cf82412f1b40a0d0bf8e172c768"
+    },
+    {
+      "path": "frontend/admin/actividad-tecnica.html",
+      "bytes": 4619,
+      "sha256": "595e5b73c9ab4ee3030d3fc92a7e7e375b05989dd350591c951cbeaaca6c8375"
+    },
+    {
+      "path": "frontend/admin/almacenamiento-local.html",
+      "bytes": 2338,
+      "sha256": "dd0c2593009cce8a3fec40e641976dfe24e860a79a1e857a99f006ba67168559"
+    },
+    {
+      "path": "frontend/admin/asignaciones-docentes.html",
+      "bytes": 1828,
+      "sha256": "c69dee90c714db7bc6aa2cbc75ef722621bca04472e8bfb9392d0f947dcd2d97"
+    },
+    {
+      "path": "frontend/admin/aula-detalle.html",
+      "bytes": 1814,
+      "sha256": "fcd223f104e8949663714bfcc7bcc1d1741baa467efb61d3c4f8ed7908dc6915"
+    },
+    {
+      "path": "frontend/admin/aulas.html",
+      "bytes": 1781,
+      "sha256": "3557c7d50c61c343d9a54bdf0e8bf6133c8ee47bbddab9fac32e7197de05d953"
+    },
+    {
+      "path": "frontend/admin/ayuda.html",
+      "bytes": 279,
+      "sha256": "8f10f9dd647a3e0542a28a0ae5f4d813ea5165e9fc56e94e4f4248f092706879"
+    },
+    {
+      "path": "frontend/admin/calidad-datos.html",
+      "bytes": 4638,
+      "sha256": "73f33234c084d39bd789c91265c778f48b819ed7a67d4e6d6a579ab597861231"
+    },
+    {
+      "path": "frontend/admin/configuracion-academica.html",
+      "bytes": 305,
+      "sha256": "d7ae1b6020341da3e9f1c12780a7f410d022308e25490b2191f565d32120c6b6"
+    },
+    {
+      "path": "frontend/admin/configuracion.html",
+      "bytes": 297,
+      "sha256": "7211208e1862fadc1f1d955613745325519001477c65775c7430cd3e2cf40eaa"
+    },
+    {
+      "path": "frontend/admin/contenidos.html",
+      "bytes": 5079,
+      "sha256": "c04e39e06e5527d8e912c2ee88c12a82b957bd10ea21393c9ae9a8624a8b35b7"
+    },
+    {
+      "path": "frontend/admin/detalle-contenido.html",
+      "bytes": 3478,
+      "sha256": "a3bb12542c44c6ed2eefd0ea029da8a4f46ea3973e977e84330bcb45a5b1272f"
+    },
+    {
+      "path": "frontend/admin/detalle-estudiante.html",
+      "bytes": 1639,
+      "sha256": "8363dda5a7aebce13fe10a05ae9a1cf48f8342e4bf8dee07f37127eafa0e001f"
+    },
+    {
+      "path": "frontend/admin/detalle-monitor.html",
+      "bytes": 1599,
+      "sha256": "8b51d80cd5af1770e681611892e46f75e0a8b62b5a8cdc58e9a6648257c9dc59"
+    },
+    {
+      "path": "frontend/admin/detalle-usuario.html",
+      "bytes": 1592,
+      "sha256": "e36d46a900d50a66c2cdc380435fbde76b8eada161cb63d88c4f8259a4e2c3ac"
+    },
+    {
+      "path": "frontend/admin/diagnostico-pwa.html",
+      "bytes": 2289,
+      "sha256": "b9d15d775d940bc33dc2018c1bde0dc817ef40e021c858934200bd3033a214f8"
+    },
+    {
+      "path": "frontend/admin/diagnostico.html",
+      "bytes": 2359,
+      "sha256": "8467c9f6c55423d2508c947ddb36b300f2190894ad1a9b45e90d99b359605438"
+    },
+    {
+      "path": "frontend/admin/editar-asignacion.html",
+      "bytes": 1884,
+      "sha256": "6f2068d011366088e1f5fd72430ecc102beb45b45708e216cc03746bd3728862"
+    },
+    {
+      "path": "frontend/admin/editar-aula.html",
+      "bytes": 1812,
+      "sha256": "2bf9ea601069e7859bf39f8578d2fdb27421ee7c359f75db45758703d9793e6d"
+    },
+    {
+      "path": "frontend/admin/editar-matricula.html",
+      "bytes": 1844,
+      "sha256": "54113502ff4784a1387257e3b9d4deb8e65da290cba1dc3526e7f7e1134cff7f"
+    },
+    {
+      "path": "frontend/admin/editar-perfil.html",
+      "bytes": 288,
+      "sha256": "a62168cf549c21aa0f3f4dd31100cf012ac4a6a445a4c5fc3fa0a7b54acdc975"
+    },
+    {
+      "path": "frontend/admin/editar-usuario.html",
+      "bytes": 1614,
+      "sha256": "604a2b3e1d362ebb0acc65e285d0d4c3c2006dcceedfa78c9c420a609b584bdc"
+    },
+    {
+      "path": "frontend/admin/estadisticas-institucionales.html",
+      "bytes": 5164,
+      "sha256": "19b1b5bc88bf38a6a3349e55e20668c10576cb43e692820a1dcdf754fbce9574"
+    },
+    {
+      "path": "frontend/admin/estado-servicios.html",
+      "bytes": 2067,
+      "sha256": "1835100dbb9091d16833b05d1ca57b847821cebfb0dc04fa4ed4dca935074fe8"
+    },
+    {
+      "path": "frontend/admin/estudiantes.html",
+      "bytes": 1606,
+      "sha256": "d338207713db601028447d1b81418acb08629ca4eff350fbaa02458cfdfd839b"
+    },
+    {
+      "path": "frontend/admin/grados-secciones.html",
+      "bytes": 1812,
+      "sha256": "7d94a4968aed142f2d0cc365c29854faa41dc9dcf0595b5860f922b2e6478a84"
+    },
+    {
+      "path": "frontend/admin/historial-reportes.html",
+      "bytes": 4774,
+      "sha256": "208ffe8bb6d440ce6fa4ad94b960259dbf11155e448df9c1c2912d9583157f66"
+    },
+    {
+      "path": "frontend/admin/historial-revisiones.html",
+      "bytes": 3657,
+      "sha256": "14ed4fe0b95d02790a048342f1a9d1ef26e3f6af9be2f20ee4361dae7083160d"
+    },
+    {
+      "path": "frontend/admin/incidencias-tecnicas.html",
+      "bytes": 4332,
+      "sha256": "b2e29dcca5f2802c534bcb6fd57b643ce4d07cedc52bfab7cd506c1328f2dd9d"
+    },
+    {
+      "path": "frontend/admin/index.html",
+      "bytes": 1857,
+      "sha256": "3151f4f6b93b7dd9b42fd85563a96a0b3ef5dc325cd11df457dfaafde82f58d4"
+    },
+    {
+      "path": "frontend/admin/institucion.html",
+      "bytes": 293,
+      "sha256": "a965c3d24753781264adaf94a71b92ed229f2e4471fb37cd57f6926b459496c3"
+    },
+    {
+      "path": "frontend/admin/matriculas.html",
+      "bytes": 1775,
+      "sha256": "9ee93b31efc1f1742e6c38914f2ac5d1db83836561f8b9cf325f99f2e87f8a5d"
+    },
+    {
+      "path": "frontend/admin/monitores.html",
+      "bytes": 1626,
+      "sha256": "4d8de54eac00a3557159e270a160b0514ffca71d289822442ab9f2b2ddb5ca28"
+    },
+    {
+      "path": "frontend/admin/movimientos-academicos.html",
+      "bytes": 1833,
+      "sha256": "7d1bf5050993a157936a9b17acce8391fdc2a70bba2992009fcffe15222b8b22"
+    },
+    {
+      "path": "frontend/admin/paquetes-offline.html",
+      "bytes": 2945,
+      "sha256": "4b1bb7c5c06fc880254ab238c61a556d047ef44649bacceb31262ddaf78a180e"
+    },
+    {
+      "path": "frontend/admin/parametros-plataforma.html",
+      "bytes": 289,
+      "sha256": "f7836a50fb003c8b7eceff8f59a6c0c72b5fe21ecc8c0172bed71d05c1007f2d"
+    },
+    {
+      "path": "frontend/admin/perfil.html",
+      "bytes": 281,
+      "sha256": "13317fb086f86c764ad1a442457dfe3fc19a618993bac3d23a13327629199520"
+    },
+    {
+      "path": "frontend/admin/periodos-academicos.html",
+      "bytes": 1818,
+      "sha256": "b3bb99bb3839eaa442714dc6c1ba944916fb9e664f1ea87a183078f927cb0453"
+    },
+    {
+      "path": "frontend/admin/preferencias-notificaciones.html",
+      "bytes": 297,
+      "sha256": "fb6282cea7cdb64d562cc11bf19a009d3870ffca1ceabb2f0f7b15ee31852186"
+    },
+    {
+      "path": "frontend/admin/preferencias.html",
+      "bytes": 293,
+      "sha256": "f8ef13d83457ef7f3886e58c22d4ea33c3dae70cf6a1bd9741125f5e3e5a1379"
+    },
+    {
+      "path": "frontend/admin/preparacion-publicacion.html",
+      "bytes": 3759,
+      "sha256": "f00c8b50493617c5ceff44e86ee3e16667e08f51188fc1b793801117cec45da2"
+    },
+    {
+      "path": "frontend/admin/privacidad.html",
+      "bytes": 289,
+      "sha256": "c938c494bfa4a23103e91c489e0e64cbb415fa3d0ae16852dff17f89faf882b0"
+    },
+    {
+      "path": "frontend/admin/recursos-institucionales.html",
+      "bytes": 4194,
+      "sha256": "f11f47a29a37ed92cd15fb0b67ab3bc04ca162a06ee4d32c8470214f561302c7"
+    },
+    {
+      "path": "frontend/admin/reporte-aula.html",
+      "bytes": 4796,
+      "sha256": "d3a9c96e3bb91511932cc43484eb41ad77371b5b03d1ba30d605a1ffd8974fdc"
+    },
+    {
+      "path": "frontend/admin/reporte-curso.html",
+      "bytes": 4709,
+      "sha256": "f84f0fee8ee85ee49494c924d5f8b689a553bc76fa8367ee00e0f3203cf89041"
+    },
+    {
+      "path": "frontend/admin/reporte-grado.html",
+      "bytes": 4724,
+      "sha256": "967968ad0d2b005169f83164f4e18ef79dd5e4462f60c9b0235c80470af48ef7"
+    },
+    {
+      "path": "frontend/admin/reporte-institucional.html",
+      "bytes": 5213,
+      "sha256": "5e40630f83984a24ecdd51ce24a0f867191fdd31150551c391409734f975ce6d"
+    },
+    {
+      "path": "frontend/admin/reportes.html",
+      "bytes": 4957,
+      "sha256": "06e869c995cb73be2b30e4f5b9957f7852b7020e2c04a56b2a47c4ca302e2fc9"
+    },
+    {
+      "path": "frontend/admin/revisar-contenido.html",
+      "bytes": 4365,
+      "sha256": "51c670c2f5a704c6523d08c5d172e1033f7edea4e4de572415e043569fd18b67"
+    },
+    {
+      "path": "frontend/admin/revision-configuracion.html",
+      "bytes": 307,
+      "sha256": "32ddc69f58aabfc8c0325c06bc287e03e9bed048fbddee589113202d1b63c5ef"
+    },
+    {
+      "path": "frontend/admin/revision-contenidos.html",
+      "bytes": 5179,
+      "sha256": "aa494dde8d72eb539edf983747e485a16f049e1dcaaddcb086e8099098d51dae"
+    },
+    {
+      "path": "frontend/admin/roles-permisos.html",
+      "bytes": 1589,
+      "sha256": "37aca3ff5e06a2604c8f3f939cb060b8b492cc88c6aac2418af8375d0173b256"
+    },
+    {
+      "path": "frontend/admin/seguimiento-academico.html",
+      "bytes": 4808,
+      "sha256": "a4554f9b0e37280be05e6e547e4a8ec8b01b2edff5b9ae5f5b0384836fc54fca"
+    },
+    {
+      "path": "frontend/admin/seguridad.html",
+      "bytes": 287,
+      "sha256": "5e8c427233a78ca439542d69eb489bf43651c9ef83ecc7e3d6f22c86b09df783"
+    },
+    {
+      "path": "frontend/admin/solicitudes-usuarios.html",
+      "bytes": 1628,
+      "sha256": "74e3238efdbbd2124166289df490441afd420afd9ef38b2f04322fe4a992f7d7"
+    },
+    {
+      "path": "frontend/admin/sync-operaciones.html",
+      "bytes": 4009,
+      "sha256": "88baf4a001bd43a8ed6c8f8480ca6a79ea65bb45092607c22b3871ae930c1d23"
+    },
+    {
+      "path": "frontend/admin/sync-paquetes.html",
+      "bytes": 2998,
+      "sha256": "a1eb93a3ba22fcca5c555e538e5c88b3937a413e2b564df7114017989593efd9"
+    },
+    {
+      "path": "frontend/admin/sync.html",
+      "bytes": 2812,
+      "sha256": "a23308c611e5e3581a4c8e57a4e030382772fb3179f6bec3fc1d5db10c0dc4eb"
+    },
+    {
+      "path": "frontend/admin/usuarios.html",
+      "bytes": 1678,
+      "sha256": "eec9e001eaf0ae84ab32c5204499a892b7e58e29e0c2106af32c817904518710"
+    },
+    {
+      "path": "frontend/admin/validacion-contenidos.html",
+      "bytes": 3308,
+      "sha256": "d96f023063c6e8af0b87db5aac3a7736031e3105a6df8d75224fd05612ed3282"
+    },
+    {
+      "path": "frontend/admin/versiones-contenido.html",
+      "bytes": 2909,
+      "sha256": "3c7bfce6db93d8e0c484ebb89fb25e6205dc5112339522a931342e5ca8eca066"
+    },
+    {
+      "path": "frontend/agenda.html",
+      "bytes": 1359,
+      "sha256": "4a0a373f9f08fb7f63f058bd8567b874173de5953b02c096d93cc115a5b38f4c"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/english-g4-u1-l1.wav",
+      "bytes": 622218,
+      "sha256": "7d736bc4b876618780885d2be169edab53a0ce667fd3c2a5ecb2d6366eccd1b6"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/english-g4-u1-l2.wav",
+      "bytes": 624124,
+      "sha256": "0ee04f9752bf126df4944c8f8f4afe97d6381cf156e738ec744509ad4606c2c1"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/english-g4-u1-l3.wav",
+      "bytes": 526462,
+      "sha256": "b592b67a401a31cf18724ed4f6f78fd07c3f27e77402e0d97e5fa25e89ff7cf1"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/english-g4-u1-l4.wav",
+      "bytes": 519702,
+      "sha256": "ce10853040659993699dce686a033f41514f704bf5600570c6d50fe02d71cd70"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/english-g5-u1-l1.wav",
+      "bytes": 558870,
+      "sha256": "4967b1dc5df808dfeb3dd00b0f6ef96dc7a6c404277ce961677ba4518c5819be"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/english-g5-u1-l2.wav",
+      "bytes": 592860,
+      "sha256": "ddc1fe3bcd02ac6a10e1fe02f233b7b2ce80a0316520b45a7a4534c9917c023c"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/english-g5-u1-l3.wav",
+      "bytes": 502670,
+      "sha256": "9112cf7177e90cea956e931fa46ed2b25dd47edd6a0a7fe5426ca11cae1cd693"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/english-g5-u1-l4.wav",
+      "bytes": 551630,
+      "sha256": "9fe43761a2ea665da9b4882231be377bedbabaf595bd79cbbaab1aea69eeef93"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/english-g6-u1-l1.wav",
+      "bytes": 604978,
+      "sha256": "641bf560f8541d365d610ce71839864910004198cfdf4ebb76e95a8e5a8ff90c"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/english-g6-u1-l2.wav",
+      "bytes": 477774,
+      "sha256": "a9c65f9101c005b3f2586b4d7fc7946ce2aa172bf172bfdb49319c3ae1ece730"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/english-g6-u1-l3.wav",
+      "bytes": 577472,
+      "sha256": "1279b93a584c3e186b8b62acd0bd38e6cbe4c1df0b6b77f903a0a6a5c5737536"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/english-g6-u1-l4.wav",
+      "bytes": 616780,
+      "sha256": "7bc8d6bc57246645d5bc792d2ebb9b69e2e5eb51b5c02021e09551b0f6ef64e6"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/math-g4-u1-l1.wav",
+      "bytes": 756876,
+      "sha256": "aed32bb4781bbeb5cf76831775155695997e8f64ccc2e7cbe61314c5a39459b2"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/math-g4-u1-l2.wav",
+      "bytes": 671196,
+      "sha256": "58d759bec5d814ad3108160d57737b8d5b7fe480d089af0bd94480e172e7ebd3"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/math-g4-u1-l3.wav",
+      "bytes": 707116,
+      "sha256": "4711664fe8121a71f02c6261774137d9013c7d6c0d215d6cd89d3741982f7599"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/math-g4-u1-l4.wav",
+      "bytes": 705468,
+      "sha256": "49b24cb3e1411f19328fa2744de9ddbdddfd653047c98b32640805179286cf48"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/math-g5-u1-l1.wav",
+      "bytes": 678224,
+      "sha256": "03982783e11a984a169bf8e8c9613b88c657f3e7dbc2e70f6110088285f75916"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/math-g5-u1-l2.wav",
+      "bytes": 710966,
+      "sha256": "c83a238ce5575c6780c20ed896e97cb1c354f723a0fb5310212f1296aff058fe"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/math-g5-u1-l3.wav",
+      "bytes": 666338,
+      "sha256": "ef34d1a7af35b1711c8d92e8c1930d691255cb71b109187bff3a45d6767d6a85"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/math-g5-u1-l4.wav",
+      "bytes": 591206,
+      "sha256": "571675e1fca30aedbce3b67499567b57f51c173f96a28944965015760ac381be"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/math-g6-u1-l1.wav",
+      "bytes": 712392,
+      "sha256": "68dc06484c07648a5ce9639979c3448bb3c9491b50d9a1bedd4c1903cfe1506e"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/math-g6-u1-l2.wav",
+      "bytes": 778314,
+      "sha256": "2b510dbf5977ae147e222b2edcf2299a4e6e39acd22e5aee2b041f6dbf079ca7"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/math-g6-u1-l3.wav",
+      "bytes": 652052,
+      "sha256": "810a6b9932862f646a6d8d2ec67ed913681b27872765c98f9844d39fe4cfe0f1"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/math-g6-u1-l4.wav",
+      "bytes": 715632,
+      "sha256": "6aa9135874134528d5d1d37a9c2e8121dbc45471f918df2b4e2a2f1e62201aba"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/reading-g4-u1-l1.wav",
+      "bytes": 709172,
+      "sha256": "2d616d7f57a41623d14f685b97c8c80dbaa88dea21318742ad62594ca267f0ae"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/reading-g4-u1-l2.wav",
+      "bytes": 717732,
+      "sha256": "8c43f0955a11d495e54566a6adc12542ecc46eee3de0dc26c4d313104dc53aba"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/reading-g4-u1-l3.wav",
+      "bytes": 639166,
+      "sha256": "2236496fe4be39c9a04f7b1f71029977c9b062309ed691500a5bc54240e3b2ab"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/reading-g4-u1-l4.wav",
+      "bytes": 582210,
+      "sha256": "eaf6d973b5e141c19619068a3940b3c9774d52bb999fab6b69d891c7a0a83439"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/reading-g5-u1-l1.wav",
+      "bytes": 607276,
+      "sha256": "82a9542844cf6174aee1be0e478917826bf08cfb7f99adf3a786a4c104e58997"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/reading-g5-u1-l2.wav",
+      "bytes": 646018,
+      "sha256": "38b8b8b09e86cdb6e9ee44035ab33f436a8efb443f397558e7d8bdb032c0c8db"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/reading-g5-u1-l3.wav",
+      "bytes": 621946,
+      "sha256": "5ba9fa13014aebe557cb25d63c35ff2256e19e603ae13225c3ab4718e39ad5db"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/reading-g5-u1-l4.wav",
+      "bytes": 687482,
+      "sha256": "45d4adc0c34d703b7cb0d8916b8566a765442ee7cec035dcc6b3eae5ff8bb822"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/reading-g6-u1-l1.wav",
+      "bytes": 747410,
+      "sha256": "b81dd33283d0ade3630cc405c781fdd34e1c7955819cd9f8221a985bdec76288"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/reading-g6-u1-l2.wav",
+      "bytes": 652870,
+      "sha256": "ae00ba245d0c79d6b5707dc8dc063082bc447e776ab66e7462eb52d85a402a84"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/reading-g6-u1-l3.wav",
+      "bytes": 643376,
+      "sha256": "37c0e10e02814f6ec490fc26fce802f5af586348ab63303194c69ec06e4a722a"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/reading-g6-u1-l4.wav",
+      "bytes": 634142,
+      "sha256": "0eba082a045043c2959cadb8a84ada8a110b485a49b6311e626f3a48fc4049f6"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/science-g4-u1-l1.wav",
+      "bytes": 712368,
+      "sha256": "b0d2c1d38dc695ef898804d9980431135ffa0f1ec0af1075dc7eb52902da3161"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/science-g4-u1-l2.wav",
+      "bytes": 686680,
+      "sha256": "08fafb044432c9d7acfd8da139fe390b3db30bce74238e03b44715ec9859d95f"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/science-g4-u1-l3.wav",
+      "bytes": 593694,
+      "sha256": "dcf2ba03459ef61746583fcdc1dd86a52c646f25e2a7ecfe033dee3bd693fc7e"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/science-g4-u1-l4.wav",
+      "bytes": 644996,
+      "sha256": "abf9a1250a588281df09baa43e7599888632c218e4ce23ec06f1488a4aba0f74"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/science-g5-u1-l1.wav",
+      "bytes": 572124,
+      "sha256": "69f46116823c6a2b348412241ffdd9ace004754814410acd7254e5184eb358ed"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/science-g5-u1-l2.wav",
+      "bytes": 554642,
+      "sha256": "77a78459b4658b328750d185a82108797f359ed970ac898127b6fbf690bb3275"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/science-g5-u1-l3.wav",
+      "bytes": 709104,
+      "sha256": "2eb4c67c2d7ec906f0626d53a3055d81df2eb9ed413c1f6c5200897936050e3f"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/science-g5-u1-l4.wav",
+      "bytes": 629138,
+      "sha256": "b96933b4a9732bf00ba9221aee7d9a4463602f689130e7fa809b3a2ccec2dd29"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/science-g6-u1-l1.wav",
+      "bytes": 657798,
+      "sha256": "f593634e0cbe6c7cf5ce25428768e770dec80083fcb3d656c0b6a6e1936e19bd"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/science-g6-u1-l2.wav",
+      "bytes": 592952,
+      "sha256": "046b8eda4c9fbdf87d107e7d5da491e1617527c18302e2f9dc975020f6b657a4"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/science-g6-u1-l3.wav",
+      "bytes": 583132,
+      "sha256": "df77717b02bd76a8e2519c2507ca3ab7aa80a33940eb39f616c73e698831eef8"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/science-g6-u1-l4.wav",
+      "bytes": 578476,
+      "sha256": "542b2a6e62c2958f44f00ca2c0f12c9db8e167c285152329c978dfefc749fb5a"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/social-g4-u1-l1.wav",
+      "bytes": 635224,
+      "sha256": "ccc199890194f3533036200dd16af499861b431855d0bb319381f6bed7efe956"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/social-g4-u1-l2.wav",
+      "bytes": 616670,
+      "sha256": "a4cbe54fb9a56828557649125f570d230ee0368a55f71382dc24e7e4f5243e1c"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/social-g4-u1-l3.wav",
+      "bytes": 566430,
+      "sha256": "6d902610cbb4a07a358fddd4565d7dbaba869557897aa35692a73181074277dd"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/social-g4-u1-l4.wav",
+      "bytes": 555980,
+      "sha256": "bbf40e7598e32cce4d2976d1a4206e228d671dbbf5ae9a5e37636128fd383ee1"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/social-g5-u1-l1.wav",
+      "bytes": 597078,
+      "sha256": "455adab26e100ea58c8313763878ebca119791e7908ece0d78ba18f87db3324c"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/social-g5-u1-l2.wav",
+      "bytes": 580028,
+      "sha256": "175cf2efc8b6e88d241c26f12d1ea1b4fe138900a446d0b8dcae1ee39cb3955c"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/social-g5-u1-l3.wav",
+      "bytes": 606414,
+      "sha256": "a1040724eb2e46f0c25d233e57eda18deb864c8f2da47641aecb068bf3b05b19"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/social-g5-u1-l4.wav",
+      "bytes": 668118,
+      "sha256": "9eb89d3ae65da07e2d33683788c4819783d051adeb87a855b9ea3f512c6b59a6"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/social-g6-u1-l1.wav",
+      "bytes": 686512,
+      "sha256": "1a1cea290eb31595e9456e8a51b1479f4217b9e1db3fb8095e228dbdd61013b5"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/social-g6-u1-l2.wav",
+      "bytes": 603150,
+      "sha256": "3d95f667cda4648e264d39548fb755fd6aa975d3d79f6fba282c20dca42bcbf0"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/social-g6-u1-l3.wav",
+      "bytes": 653346,
+      "sha256": "afe82714c68036499234e886597287708975adf177935e47dec3f12df23b1596"
+    },
+    {
+      "path": "frontend/assets/audio/lessons/social-g6-u1-l4.wav",
+      "bytes": 599862,
+      "sha256": "340ee0455bac19b376232a1cdb3b97364b99573a7d9d71620c909273619c36a6"
+    },
+    {
+      "path": "frontend/assets/images/branding/mark.svg",
+      "bytes": 303,
+      "sha256": "a2ba36c8948ed3c4ba2b34c58aa4c25c6c56d26c8cab197065a5390d5be848e4"
+    },
+    {
+      "path": "frontend/assets/images/branding/open-book.svg",
+      "bytes": 1928,
+      "sha256": "58002685b99d876b4d5edadc39757dfdf385a996250e4caf6aa4d1c09beb974d"
+    },
+    {
+      "path": "frontend/calendario.html",
+      "bytes": 1359,
+      "sha256": "78c04b0df190c5db9ddad8810c06e1972befd0a7a6e31adef9a3965e07a95e7c"
+    },
+    {
+      "path": "frontend/css/admin/academic-movements.css",
+      "bytes": 913,
+      "sha256": "0832bd7428d86b7a8034a20de5ab4f7da6a8aa4f5cda34286bc8a5302f785cc2"
+    },
+    {
+      "path": "frontend/css/admin/academic-periods.css",
+      "bytes": 1080,
+      "sha256": "2f5a8c3bcf01250bf1bfb975d1b702b133840b5cfa57d6a6a0b9687de13b8851"
+    },
+    {
+      "path": "frontend/css/admin/admin-settings.css",
+      "bytes": 1405,
+      "sha256": "be662c4172c3a1859abc038764db49fa482c2b71debb46c1e5cbc2d88c8322b2"
+    },
+    {
+      "path": "frontend/css/admin/assignment-editor.css",
+      "bytes": 960,
+      "sha256": "6a75a54610f248351657e41422ffcdc58a905184ad09319745512d47930b43e5"
+    },
+    {
+      "path": "frontend/css/admin/audit31.css",
+      "bytes": 1812,
+      "sha256": "2dbd255474314921736672ed294067d3160a377e6dff94b407e9402f9186718c"
+    },
+    {
+      "path": "frontend/css/admin/classroom-detail.css",
+      "bytes": 470,
+      "sha256": "790577968d6d72fd108d504c89e38a26ec760314edbe170b1ccd09a0db4e8fe2"
+    },
+    {
+      "path": "frontend/css/admin/classroom-editor.css",
+      "bytes": 935,
+      "sha256": "2ce75f883ccc92a8a3a441dbf58854ca8457cc4773cc65f298fa24e8dc741860"
+    },
+    {
+      "path": "frontend/css/admin/classrooms.css",
+      "bytes": 586,
+      "sha256": "09d6d4e2d337898c30595f0322fa84a7129b782255089611307c25db5adb7990"
+    },
+    {
+      "path": "frontend/css/admin/content-admin-responsive.css",
+      "bytes": 2092,
+      "sha256": "c3343629da431d5787e16344fe497cdafb0ddd7fe29f8488ad5eb07590d7af4e"
+    },
+    {
+      "path": "frontend/css/admin/content-detail.css",
+      "bytes": 829,
+      "sha256": "040431eb5c5a317a6cad795537aa7bce53e9b2a79cf5e6324995ec5946154d86"
+    },
+    {
+      "path": "frontend/css/admin/content-review.css",
+      "bytes": 122,
+      "sha256": "177fda6d2eefe1bcf34067cf52a699fa33f2eb448be73610e612745f26c55253"
+    },
+    {
+      "path": "frontend/css/admin/content-validation.css",
+      "bytes": 818,
+      "sha256": "d25e9402c08466675e4761b2025db1f146ba937d4d892d6c4df87a7dfa1f4bf5"
+    },
+    {
+      "path": "frontend/css/admin/content-versions.css",
+      "bytes": 999,
+      "sha256": "33ff6505d75bf325504ec3287f6ccd9cfe43e2528a3190351a3bbb6b010d0dca"
+    },
+    {
+      "path": "frontend/css/admin/contents.css",
+      "bytes": 12335,
+      "sha256": "eecce04dbd3392f2714d396d42f53f28e5775d5903a88fb000819165e536444d"
+    },
+    {
+      "path": "frontend/css/admin/dashboard.css",
+      "bytes": 7366,
+      "sha256": "ee4ac14d424a99a637df5ce3a2cdfe095455d5fb6acbd3c4f6ac54d974f2fd9a"
+    },
+    {
+      "path": "frontend/css/admin/enrollment-editor.css",
+      "bytes": 951,
+      "sha256": "0a99e1022f080aa572179870beb0066fefa02aa87662f7a800ec5ff8d62bf7a2"
+    },
+    {
+      "path": "frontend/css/admin/enrollments.css",
+      "bytes": 449,
+      "sha256": "d9f0315146bdbec338206e9a4a8e9fa7ea3353be4ee59ef966cd43eb9f2563e7"
+    },
+    {
+      "path": "frontend/css/admin/grades-sections.css",
+      "bytes": 1017,
+      "sha256": "b5b9ef726661eb7e6f5903ad151a773910e3cfc4b65df354afcb865e67f7230e"
+    },
+    {
+      "path": "frontend/css/admin/institutional-resources.css",
+      "bytes": 599,
+      "sha256": "8baff2c74c42182883c523d3f93a7069ef50ce5df3faf7d1cc1d0919e965479d"
+    },
+    {
+      "path": "frontend/css/admin/layout.css",
+      "bytes": 2304,
+      "sha256": "86ff31fccb776915438846dc31fa00e2935d16dea2485794928b973a1e2ed75a"
+    },
+    {
+      "path": "frontend/css/admin/local-storage.css",
+      "bytes": 49,
+      "sha256": "b65e389a655052f9be4d98ca7711279464c9c4f986ab86f94c653035bf122820"
+    },
+    {
+      "path": "frontend/css/admin/offline-packages.css",
+      "bytes": 673,
+      "sha256": "233ffaf701cea66501f914ba654ff190f55964b58b68e3f7bd05737d8a868626"
+    },
+    {
+      "path": "frontend/css/admin/organization-responsive.css",
+      "bytes": 2243,
+      "sha256": "887690c8ae56e3d441fa33013694b2d686826680e394f9b86037fdd67cefe706"
+    },
+    {
+      "path": "frontend/css/admin/publication-preparation.css",
+      "bytes": 716,
+      "sha256": "f285254d2a4cd78b286c1f89242b0bdfb83707c4793026fca8e67b3deb745bfb"
+    },
+    {
+      "path": "frontend/css/admin/pwa-diagnostics.css",
+      "bytes": 51,
+      "sha256": "9ec815b9cc76d6906c522e2b33dabe67bd8d4ebda6d5c9e4044132829a6ec0b8"
+    },
+    {
+      "path": "frontend/css/admin/reports-print.css",
+      "bytes": 397,
+      "sha256": "c6bbd3ff3e9d30182b3cf01ecb675931cba353e8be7cb40646f69b4e48172340"
+    },
+    {
+      "path": "frontend/css/admin/reports-responsive.css",
+      "bytes": 2303,
+      "sha256": "6c04061dadc9e9960c5beea7e2ebb47484fbf5f1b2733ddc24bc69ba44e59cea"
+    },
+    {
+      "path": "frontend/css/admin/reports.css",
+      "bytes": 11433,
+      "sha256": "03bbca0e9f811ada8303be6487cdde222d88fba265ae72b129a8b1168d120b1c"
+    },
+    {
+      "path": "frontend/css/admin/review-editor.css",
+      "bytes": 1314,
+      "sha256": "217e3ef1e0e1855dfdb031a60a6a309101d0259eb7e948401252141cf4d72693"
+    },
+    {
+      "path": "frontend/css/admin/review-history.css",
+      "bytes": 94,
+      "sha256": "0907ab749c779650d8834c7d18d08b11102694e5ff8c5bfa8bce39a3e366094b"
+    },
+    {
+      "path": "frontend/css/admin/services-status.css",
+      "bytes": 51,
+      "sha256": "7b18598edcb55b5ce11d13bf0d74991b8c217c8721b140d3337a2a4328e89b27"
+    },
+    {
+      "path": "frontend/css/admin/sync-operations.css",
+      "bytes": 460,
+      "sha256": "c375c4ec07f9e6acb0055aaa123fd551a7b181a556fe9d9cac70d57c3120685d"
+    },
+    {
+      "path": "frontend/css/admin/sync-packages.css",
+      "bytes": 49,
+      "sha256": "78ac22f6175a05ec6601bc672e5db2225cf5fda7b2fad1e97c7ea902b54a8ed5"
+    },
+    {
+      "path": "frontend/css/admin/sync.css",
+      "bytes": 36401,
+      "sha256": "573d2e720e055c1db66b9be8eee1172f3bd2c95257bc71a5c9171849b4122b12"
+    },
+    {
+      "path": "frontend/css/admin/system-control-responsive.css",
+      "bytes": 61,
+      "sha256": "09220fc3522c4aa26b627bae108f8174c2b04591730dd6002883793953dec038"
+    },
+    {
+      "path": "frontend/css/admin/teacher-assignments.css",
+      "bytes": 410,
+      "sha256": "f8cb2ab5eec19a473429dfa175218db7dd7503bad51b90e71c82998742a834e1"
+    },
+    {
+      "path": "frontend/css/admin/technical-activity.css",
+      "bytes": 54,
+      "sha256": "4b8d331b0cc957b4aa35cf7077910824fb8a3bcc24cbebd94548985aebad7211"
+    },
+    {
+      "path": "frontend/css/admin/technical-diagnostics.css",
+      "bytes": 57,
+      "sha256": "67005f2e605879292f91c54d342f912333161b92bc6ba7e6e2e25be9e5c92c79"
+    },
+    {
+      "path": "frontend/css/admin/technical-incidents.css",
+      "bytes": 55,
+      "sha256": "388ff0ed009e04a630e3d3232750e3aaace6c82e0ca95bc8fe3269a0d4232b08"
+    },
+    {
+      "path": "frontend/css/admin/users.css",
+      "bytes": 4790,
+      "sha256": "e45b67f97538183d3d47bd565ccc1e068fd2776985d5981e74cada3c0891832d"
+    },
+    {
+      "path": "frontend/css/app-shell.css",
+      "bytes": 2330,
+      "sha256": "398998d777b174fdc23784046cfa1cbe47286032924594c582c7c55935c49dad"
+    },
+    {
+      "path": "frontend/css/auth-layout.css",
+      "bytes": 3758,
+      "sha256": "38240c530a8ac591195e2124dd100319c76c32f40880c4304ca7dd746c4ed214"
+    },
+    {
+      "path": "frontend/css/base.css",
+      "bytes": 1168,
+      "sha256": "aa13b4afc7f8ef10de09029a12c73e793496c2f6d99d5bf032853da1ef9a0027"
+    },
+    {
+      "path": "frontend/css/components.css",
+      "bytes": 5343,
+      "sha256": "44a7744a16aa2f8f30867e92da199c2b1d11cca337dfbd7364f8477b780e7e4c"
+    },
+    {
+      "path": "frontend/css/experience.css",
+      "bytes": 13562,
+      "sha256": "3a319127a64b28221772b0098a4b78ee57a0ecee2c2bedaf75cdfbf38b6b5b8a"
+    },
+    {
+      "path": "frontend/css/monitor.css",
+      "bytes": 13626,
+      "sha256": "3ff48211b3676ddbfc7e02aba25cbad93b264abe04844f40fa03ed3e48982ac8"
+    },
+    {
+      "path": "frontend/css/monitor/account-shared.css",
+      "bytes": 6317,
+      "sha256": "8911cfac3e7ab1b4fb99c3b95bcdb500a9f18402b9f570d8c10a633d4abbf63d"
+    },
+    {
+      "path": "frontend/css/monitor/account.css",
+      "bytes": 4485,
+      "sha256": "5e8a46bf20465be29ae3ce3402b5ad1e3ec2b6f2ebf9e94ba4de5e132f8d69aa"
+    },
+    {
+      "path": "frontend/css/monitor/content-studio.css",
+      "bytes": 6939,
+      "sha256": "6b7861f75dab5c1400be7b2409efdde08293ed242ae95e49ea4c7748e67b3ff6"
+    },
+    {
+      "path": "frontend/css/monitor/dashboard-layout.css",
+      "bytes": 4122,
+      "sha256": "5c73514b5da23b8829435d589051e68a2a4bae7d5da5f26ec063c79a1610978c"
+    },
+    {
+      "path": "frontend/css/monitor/dashboard.css",
+      "bytes": 72,
+      "sha256": "bd8239ad98b324d1e4e8c1dc1aadc640adfe6b13f02529efe31e8550bc8eb41a"
+    },
+    {
+      "path": "frontend/css/monitor/evaluations.css",
+      "bytes": 3545,
+      "sha256": "507d033601ecc13dde0b2945a2b50660ab69d5da7c556de3c141400c0c4f01ac"
+    },
+    {
+      "path": "frontend/css/monitor/grades.css",
+      "bytes": 3218,
+      "sha256": "a992cba81f82dcbd4a4e80a1d5ff3d7dec4a6442d7e133e7c74c8709d52e5775"
+    },
+    {
+      "path": "frontend/css/monitor/management.css",
+      "bytes": 2021,
+      "sha256": "2a4fb4bacd1702aceb9680e2fdb1e99400e58a772a38a9787453c059fb087d05"
+    },
+    {
+      "path": "frontend/css/monitor/navigation.css",
+      "bytes": 1922,
+      "sha256": "e483d7ed94e468a0169667e362a3552eda5125772c00d61eaa9c0e84fa0fe7e2"
+    },
+    {
+      "path": "frontend/css/monitor/reports-print.css",
+      "bytes": 2194,
+      "sha256": "7ac719871aab3914fc14ed9a62024dd5a6eae5d6061d8f2e01e1e805ab590a96"
+    },
+    {
+      "path": "frontend/css/monitor/tasks.css",
+      "bytes": 2330,
+      "sha256": "689bb94adedbe3c19b68cda54afd29fe9ceb0e2250dff460d1cd1eb6768b61bc"
+    },
+    {
+      "path": "frontend/css/pages/forgot-password.css",
+      "bytes": 126,
+      "sha256": "631e961f141ef40a732d9487fba6c1100b0b46b7401c968ea8fe305fc9ba0c63"
+    },
+    {
+      "path": "frontend/css/pages/login.css",
+      "bytes": 62,
+      "sha256": "59aefe167f7582d7a5bf1dd939b4bd95be410ef5f1f309bf32b3bdab3d43c034"
+    },
+    {
+      "path": "frontend/css/pages/register.css",
+      "bytes": 402,
+      "sha256": "2d7226c1d423957ad10454a5b302fca4d491cdf785d69b162f6580350e914a92"
+    },
+    {
+      "path": "frontend/css/pages/reset-password.css",
+      "bytes": 130,
+      "sha256": "547aa5981d0d36530c20974f3af6eca339db0affae6d9c7ed3a14ef382ca7dc6"
+    },
+    {
+      "path": "frontend/css/pages/role-selection.css",
+      "bytes": 4919,
+      "sha256": "8d04c1f13df3761778d35151ce3ca8a7005d0b407d0ce729465a9d44791f5ea0"
+    },
+    {
+      "path": "frontend/css/pages/unauthorized.css",
+      "bytes": 901,
+      "sha256": "48335403f13bc92e464340e1799b4277398a4ea51d4ceb8a831a2ff45127d594"
+    },
+    {
+      "path": "frontend/css/student/agenda.css",
+      "bytes": 2555,
+      "sha256": "e55743f36436215b7d205a6cf3c4c3d6d638a33cb35b74d3a19a48dca8372a29"
+    },
+    {
+      "path": "frontend/css/student/common.css",
+      "bytes": 209,
+      "sha256": "1e63ab237453dd063283d09f7586d24f8be966d91039c895030b86ea23185170"
+    },
+    {
+      "path": "frontend/css/student/course-detail.css",
+      "bytes": 3816,
+      "sha256": "fd9561c93e6fe9e16515f282ee08330521f12c45a4fdcc8e25a6525dfc10c31c"
+    },
+    {
+      "path": "frontend/css/student/courses.css",
+      "bytes": 5674,
+      "sha256": "6c47cf53ca1c73ae5ccbbef13e9cb9560d6bab68966c6ac134edef61f997ce72"
+    },
+    {
+      "path": "frontend/css/student/dashboard.css",
+      "bytes": 26605,
+      "sha256": "693c3f29e49504748b6035952af2e6e13c501ef2e3b8779be5b9614ac6710222"
+    },
+    {
+      "path": "frontend/css/student/downloads.css",
+      "bytes": 1060,
+      "sha256": "8e7da31be70dc1ff036ddd6f9d3a2b3a20b5d9c48ec47bd668534f12c79c3535"
+    },
+    {
+      "path": "frontend/css/student/evaluations.css",
+      "bytes": 4415,
+      "sha256": "87649e08700a576636b4bb56aeea912ff0d6a6eb99cf593f394dbccd26b9fe9a"
+    },
+    {
+      "path": "frontend/css/student/exercise.css",
+      "bytes": 4753,
+      "sha256": "7447be2067903b19f587e1a8b90019435ea7755d6814bc3ac1564ec392c56c8b"
+    },
+    {
+      "path": "frontend/css/student/game-player.css",
+      "bytes": 1529,
+      "sha256": "bc33c1154a1c737370f23f6f4b68a46db7ac44aeb91af1b161d047f331864e7d"
+    },
+    {
+      "path": "frontend/css/student/games.css",
+      "bytes": 266,
+      "sha256": "d8e2cf4f3cedb6773ba33b15bed48283c18a123fa2e9727cfd805449e017d443"
+    },
+    {
+      "path": "frontend/css/student/lessons.css",
+      "bytes": 7387,
+      "sha256": "c2222e64fdf2e634bca41a3cbab2739173a67e3d6ce542ba6f6802f2d11b4cc8"
+    },
+    {
+      "path": "frontend/css/student/practice-results.css",
+      "bytes": 2169,
+      "sha256": "461468bbc784b78d58c9069e3edac1b2d57486f1d5c7642fc997f0752c2f2294"
+    },
+    {
+      "path": "frontend/css/student/practice.css",
+      "bytes": 3402,
+      "sha256": "033b4da3483ffda28feb03e00b3e2ad15603f082265b43aec74231792d7e6ce1"
+    },
+    {
+      "path": "frontend/css/student/profile.css",
+      "bytes": 2329,
+      "sha256": "389fab59b73a327196fcad754f5dbded75d62d8cdb86503c6258c29755914ace"
+    },
+    {
+      "path": "frontend/css/student/progress.css",
+      "bytes": 2995,
+      "sha256": "5bfb8d423ec045f15b1869eb387c2e04bac94b96e270fa360647bf877ac91d2f"
+    },
+    {
+      "path": "frontend/css/student/pronunciation.css",
+      "bytes": 5683,
+      "sha256": "b14b6669de07a8d97be69fea2a574a40878e41138f95453fdaafbee15b7d0045"
+    },
+    {
+      "path": "frontend/css/student/translator.css",
+      "bytes": 8095,
+      "sha256": "1d1ca1b068d3f43282107b15e740c11e826047624b2a9e2957876cd15fb036a6"
+    },
+    {
+      "path": "frontend/css/student/tutor-chat.css",
+      "bytes": 6521,
+      "sha256": "996c6caa1ca3b13acb7ee114239b0477b495c55cb1a217aef7f81dd5c9a17c24"
+    },
+    {
+      "path": "frontend/css/student/tutor-responsive.css",
+      "bytes": 3519,
+      "sha256": "3a2d83bb5ebd8b2a81fb8b833e3d3782d75982bba666729058f40415548f76ff"
+    },
+    {
+      "path": "frontend/css/student/tutor.css",
+      "bytes": 5030,
+      "sha256": "0cfef0e33c12dac45e7da4276a6f73c70df749a39904b5cf5f26946fe2bcc842"
+    },
+    {
+      "path": "frontend/css/student/units.css",
+      "bytes": 1600,
+      "sha256": "f6c2562d8b11f7e0ddb7a444615e52415b3d0551cc66614ef3045679d498b811"
+    },
+    {
+      "path": "frontend/css/student/vocabulary-review.css",
+      "bytes": 4103,
+      "sha256": "bcdd3c892fdf5bd82ba07ac458955e4809dbd7797da1a9c8b325b100e3604776"
+    },
+    {
+      "path": "frontend/css/student/vocabulary.css",
+      "bytes": 3824,
+      "sha256": "375f58a4644b190ab23ba54564a38bead0baf4255054611912bdda89f383e0ff"
+    },
+    {
+      "path": "frontend/css/student/word-detail.css",
+      "bytes": 2611,
+      "sha256": "29f05e33107cb33d5f16e16b53865f82c2e8e45d9e76b77ad612e807e7b47519"
+    },
+    {
+      "path": "frontend/css/variables.css",
+      "bytes": 1146,
+      "sha256": "3fd2027c9a2245e6f98e9e97ad436f83a157c8bd0a5247df1aac86995dc2fb65"
+    },
+    {
+      "path": "frontend/editar-recordatorio.html",
+      "bytes": 1352,
+      "sha256": "2d38745e951b590a71a88f9c6c6f619c9b508feecb526782c63921430fb032a7"
+    },
+    {
+      "path": "frontend/forgot-password.html",
+      "bytes": 3513,
+      "sha256": "511bf5bbde86408cd4eda1d30485db2f45c65280f2f445f266a318fdceed91e3"
+    },
+    {
+      "path": "frontend/js/admin/academic-monitoring.js",
+      "bytes": 2091,
+      "sha256": "d1790879985464a02e7ec6bc9340e06e643a12bb479c7dca36b69b12c5b1a479"
+    },
+    {
+      "path": "frontend/js/admin/academic-movements.js",
+      "bytes": 7333,
+      "sha256": "1e7e892cd1e2595752cecc969022b8fa70a78b805bd6bee48ad5359dac2fca15"
+    },
+    {
+      "path": "frontend/js/admin/academic-periods.js",
+      "bytes": 6071,
+      "sha256": "c82979704309c811a39c66b8823db128bf6d2a8f95644e3d9480202e132369ba"
+    },
+    {
+      "path": "frontend/js/admin/actividad-tecnica.js",
+      "bytes": 2137,
+      "sha256": "ba598bc3e7d1224b55f1297ce0b1a8a6a5d3aff7bf826707090f5d6dfebdabc0"
+    },
+    {
+      "path": "frontend/js/admin/admin-settings.js",
+      "bytes": 17106,
+      "sha256": "1c80a8fc354dee7aa983aa748ec7e969338fa2e9b01726fecc4eeb9dea0a99b1"
+    },
+    {
+      "path": "frontend/js/admin/admin-shell.js",
+      "bytes": 7637,
+      "sha256": "5f0f6d23f8bce7e4c889f258a9b202022043aa082ca17461aaba755294d140cf"
+    },
+    {
+      "path": "frontend/js/admin/assignment-editor.js",
+      "bytes": 5622,
+      "sha256": "423d6603330ef82cf24722ea4a00dc87389bdcf8f6957dc98bfb75d49e2e715e"
+    },
+    {
+      "path": "frontend/js/admin/classroom-detail.js",
+      "bytes": 4469,
+      "sha256": "47824f49a84a54d8a687d85ec75582db135a04374f15697c5ee90a788a0e28fc"
+    },
+    {
+      "path": "frontend/js/admin/classroom-editor.js",
+      "bytes": 4827,
+      "sha256": "79fe0b87572438eae8f407fb6ba34685266bac8171f605a810e842ab221fcd93"
+    },
+    {
+      "path": "frontend/js/admin/classroom-report.js",
+      "bytes": 2216,
+      "sha256": "ac304b99cef1a849e5fd85d82242fe35011573e0d3fbdc8a468894b57570e12f"
+    },
+    {
+      "path": "frontend/js/admin/classrooms.js",
+      "bytes": 6472,
+      "sha256": "d886712d89845ff595c73e8b465e126d9d97ca6b76a9e919395343efd1420e06"
+    },
+    {
+      "path": "frontend/js/admin/content-detail.js",
+      "bytes": 3913,
+      "sha256": "bd2298e4ec83bb50f5f999f29dd00d46cb03cd35152037c1fbd0f760280e00bd"
+    },
+    {
+      "path": "frontend/js/admin/content-review.js",
+      "bytes": 3102,
+      "sha256": "0f1cd7fba6a97a02d5eeefa0b03b63626288ad0a3887544902e59e4d8c3f747e"
+    },
+    {
+      "path": "frontend/js/admin/content-validation.js",
+      "bytes": 2397,
+      "sha256": "620f0557fc72b4083bb1a81b4199c1fa8cd14f183f5db94d76b0888a75de16dc"
+    },
+    {
+      "path": "frontend/js/admin/content-versions.js",
+      "bytes": 1916,
+      "sha256": "25756cc729bb4ef8f0c37db2839626d12997b13ef4d4032b81f76d2965cf9325"
+    },
+    {
+      "path": "frontend/js/admin/contents.js",
+      "bytes": 2597,
+      "sha256": "d336762b9696bfa44fccff0560a05bef7c72e1eea122ded6c4523ab5fde26027"
+    },
+    {
+      "path": "frontend/js/admin/course-report.js",
+      "bytes": 2082,
+      "sha256": "46d0f0acb7718a71fd0c33d710b396d2bee10170665cdd3f53ac4126aaf62c25"
+    },
+    {
+      "path": "frontend/js/admin/dashboard.js",
+      "bytes": 21214,
+      "sha256": "e9faa4d106d82af547770f8b5595807ff4acd1d7a6e6d2846fd9673bbd56a9de"
+    },
+    {
+      "path": "frontend/js/admin/data-quality.js",
+      "bytes": 1976,
+      "sha256": "42c73fc1b0bd56f1b6536e47d587d5b3c3002a07ed13c533ff9a1f2c79a92f43"
+    },
+    {
+      "path": "frontend/js/admin/diagnostico.js",
+      "bytes": 3688,
+      "sha256": "594f5485089aa95a42e88ed1f830fb3bae6224f18bb908bd566e0a171068aad2"
+    },
+    {
+      "path": "frontend/js/admin/enrollment-editor.js",
+      "bytes": 6517,
+      "sha256": "03423e6793e7761814f2735da27db3fcd255b4b538fe8834db0389337d4e8d34"
+    },
+    {
+      "path": "frontend/js/admin/enrollments.js",
+      "bytes": 18304,
+      "sha256": "22f25e1dd0f2c88e58d9f2c49f756b3cd5ccb2ccf41c557fc6f574ebf0baf3ef"
+    },
+    {
+      "path": "frontend/js/admin/grade-report.js",
+      "bytes": 2052,
+      "sha256": "6ed79fcb213dcd656b57604cda28f4f16adab3d1aef4cd82bc61da58a3808cd8"
+    },
+    {
+      "path": "frontend/js/admin/grades-sections.js",
+      "bytes": 6253,
+      "sha256": "3c68a551321d59a59cb806ccfb19df9928de49674470c0e6e77240437165a74b"
+    },
+    {
+      "path": "frontend/js/admin/incidencias-tecnicas.js",
+      "bytes": 3008,
+      "sha256": "b9716e2334e73db81a581796751f35ab8cdc8568650a90a883e06740fe0df1c5"
+    },
+    {
+      "path": "frontend/js/admin/institutional-report.js",
+      "bytes": 2096,
+      "sha256": "7df2f0229e304065762dcb1d537343853c958b4a132de11fff09d1d4a332a5af"
+    },
+    {
+      "path": "frontend/js/admin/institutional-resources.js",
+      "bytes": 2659,
+      "sha256": "ff319377c90fcaf965f6d7f79c16f7a33eacc285f6671d27abe6adabe6640914"
+    },
+    {
+      "path": "frontend/js/admin/institutional-statistics.js",
+      "bytes": 2794,
+      "sha256": "c8743e1437faccec43743875c92456ade2879cb4435aa41634bf325ba520e891"
+    },
+    {
+      "path": "frontend/js/admin/local-storage.js",
+      "bytes": 1330,
+      "sha256": "7bafdfc89bdbad4a506677337caf00679ec5265ade8c20b87cc1121aedd810c3"
+    },
+    {
+      "path": "frontend/js/admin/offline-packages.js",
+      "bytes": 2790,
+      "sha256": "f5701e931415541930b237fa48b4637b4908236d5253f99042e11e52cfdfb256"
+    },
+    {
+      "path": "frontend/js/admin/organization-kernel.js",
+      "bytes": 3138,
+      "sha256": "3be8120203f734f36e4f388e614a43c002791e52d738d2215e9ec7af32630069"
+    },
+    {
+      "path": "frontend/js/admin/platform-activity.js",
+      "bytes": 1967,
+      "sha256": "3a48393875aa2a067cbf01df04809e28d62c4b9475ea2064c7ceee249342e930"
+    },
+    {
+      "path": "frontend/js/admin/publication-preparation.js",
+      "bytes": 3825,
+      "sha256": "25732ef0e95b4a523167e268ab24753d4b15e1563bbb5433ca903ead1b32adf6"
+    },
+    {
+      "path": "frontend/js/admin/pwa-diagnostics.js",
+      "bytes": 2273,
+      "sha256": "4f35a516fd057aefef6659c0558ce9a008cac37597c802696211c8ad1c29b863"
+    },
+    {
+      "path": "frontend/js/admin/reports-history.js",
+      "bytes": 1878,
+      "sha256": "8f2d0136d7de2bbe2e434449acebfb151880f36237be1697f4aedc7c11a8a53a"
+    },
+    {
+      "path": "frontend/js/admin/reports.js",
+      "bytes": 2981,
+      "sha256": "5a7566693f41ef72bb461fec5e987866bcfdacb0ab4ba95c05a7c1f4fbf28fb7"
+    },
+    {
+      "path": "frontend/js/admin/review-editor.js",
+      "bytes": 5180,
+      "sha256": "de433732273e79236216da728f140c8ef2009a6a6fc8c001c9e2287afeca35d8"
+    },
+    {
+      "path": "frontend/js/admin/review-history.js",
+      "bytes": 2355,
+      "sha256": "7acef39a465409716a52418bf6a366a0d2c15d38f17f54b590acb96e0cbba381"
+    },
+    {
+      "path": "frontend/js/admin/services-status.js",
+      "bytes": 2876,
+      "sha256": "8c1e076e5d734a9eefcf78a4feffa789c789258e2fb37aa07569dd5c81bcc35c"
+    },
+    {
+      "path": "frontend/js/admin/sync-operaciones.js",
+      "bytes": 2024,
+      "sha256": "9d47a0069b971edcbeaff378df6d770fb272fdc421c5e30e8db51070667b6a87"
+    },
+    {
+      "path": "frontend/js/admin/sync-paquetes.js",
+      "bytes": 3811,
+      "sha256": "e11d4baf20ede41dae3a32c6260d27925e6a6b8e20c9dd211695b83f27743b9f"
+    },
+    {
+      "path": "frontend/js/admin/sync.js",
+      "bytes": 866,
+      "sha256": "d585642b2c5cc405266a4dd7202d37f8babfd9498971ae7ec514916ee51d4730"
+    },
+    {
+      "path": "frontend/js/admin/teacher-assignments.js",
+      "bytes": 5709,
+      "sha256": "120576c5cfd711c181cee9ffe18c91d1394b7c20a954edbf0d7848a20712a390"
+    },
+    {
+      "path": "frontend/js/admin/user-editor.js",
+      "bytes": 6989,
+      "sha256": "6144407db247776ae2806b55afea17295e95f7326381cad8555860dbf7cded67"
+    },
+    {
+      "path": "frontend/js/admin/user-proposals.js",
+      "bytes": 7859,
+      "sha256": "b3b464724823fe54b8ac92d8dac6ae52bac635ced34cff4c4befb067ba6aa79a"
+    },
+    {
+      "path": "frontend/js/admin/users-workspace.js",
+      "bytes": 20669,
+      "sha256": "86d30e70d0784d230be88c5564c90eead0ef803e8d2cf9ddc6b92070252d8ee1"
+    },
+    {
+      "path": "frontend/js/components/achievement-card.js",
+      "bytes": 581,
+      "sha256": "7550df66f97b8eb9dbb1841940aed6db48474784c373bd6f5428b4e99a824349"
+    },
+    {
+      "path": "frontend/js/components/achievement-modal.js",
+      "bytes": 533,
+      "sha256": "d9f418d1786d98dedebe990e962f5e71488608f05d2a7d29044f448fa17e8213"
+    },
+    {
+      "path": "frontend/js/components/activity-illustration.js",
+      "bytes": 3403,
+      "sha256": "c2a3a23eb8b575c923bc124fef72f9812d819a70687947a889d0a92a26740428"
+    },
+    {
+      "path": "frontend/js/components/admin-academic-movement.js",
+      "bytes": 2336,
+      "sha256": "d265d4581d2be82aa05e03430d52c282b0f152cb3fa3fd7be67a7134e2d7983d"
+    },
+    {
+      "path": "frontend/js/components/admin-classroom-card.js",
+      "bytes": 3518,
+      "sha256": "2902fdcc0a8920c5d6eeda2369efaf6be6f181dcacc161dae257327f91db0c76"
+    },
+    {
+      "path": "frontend/js/components/admin-dashboard-ui.js",
+      "bytes": 5516,
+      "sha256": "5bb26c5abe1091c91dd0a53694ea45ba0bea573785824b4e225490fcdef9e8f8"
+    },
+    {
+      "path": "frontend/js/components/admin-data-quality.js",
+      "bytes": 1978,
+      "sha256": "9e4f1292d46a77515b427433824031f1adc69bb62da99d9e3815a6b2b9696efc"
+    },
+    {
+      "path": "frontend/js/components/admin-diagnostic-result.js",
+      "bytes": 2801,
+      "sha256": "6b857ab7ec61d494da4b9c9bc72f0e33d4a588e90d78b42f6b1347e00a3366e2"
+    },
+    {
+      "path": "frontend/js/components/admin-enrollment-table.js",
+      "bytes": 3159,
+      "sha256": "3b74b68e4407775ef315c1943e3e4edd9657afd2b5bfe98c74ea37a81287e128"
+    },
+    {
+      "path": "frontend/js/components/admin-grade-card.js",
+      "bytes": 2680,
+      "sha256": "6c687eb8d88bf0a119d14dcbc1bd4a3daa9a2edd4addbe0748a8e44d89b76e67"
+    },
+    {
+      "path": "frontend/js/components/admin-institutional-summary.js",
+      "bytes": 3850,
+      "sha256": "6c21e98a3f3f82138df44849a52dbba9acda5cd6b835ea8393767416189ea3b0"
+    },
+    {
+      "path": "frontend/js/components/admin-offline-package.js",
+      "bytes": 7105,
+      "sha256": "7e1ba2ab8980a4e8d9581e0ff4cc3cef4d57ab357ff705bd0b1c265f695f9ac0"
+    },
+    {
+      "path": "frontend/js/components/admin-period-card.js",
+      "bytes": 2640,
+      "sha256": "c984f5783055512e4059494dc0a41104ef303410f1ee2f724a101684060bf770"
+    },
+    {
+      "path": "frontend/js/components/admin-pwa-status.js",
+      "bytes": 5157,
+      "sha256": "835705d5d7c88b83c002d1941f51017ef08289ddb888d32df68033b4434ed302"
+    },
+    {
+      "path": "frontend/js/components/admin-relationship-validation.js",
+      "bytes": 2826,
+      "sha256": "15e1dc97c9bee028079afb9a5ccb9719c19cb5409cc7e90f55120315240d5c80"
+    },
+    {
+      "path": "frontend/js/components/admin-report-card.js",
+      "bytes": 3117,
+      "sha256": "9c2721fc8fc94b5031a56aed0457819bf3235450e4849a3ee1a7f7c3b582e952"
+    },
+    {
+      "path": "frontend/js/components/admin-report-export.js",
+      "bytes": 2090,
+      "sha256": "76336f1530a71e8f75fb4ea3ffc9d24f87235010eaabe38ddea332a5300b34bb"
+    },
+    {
+      "path": "frontend/js/components/admin-report-filters.js",
+      "bytes": 6184,
+      "sha256": "c05a4fbd52c84b8a4fcf4ea7ff61adf8ff05b48e67178918cc8fd1344c148648"
+    },
+    {
+      "path": "frontend/js/components/admin-report-history-card.js",
+      "bytes": 1590,
+      "sha256": "ec9e4f8406ec03c75b2333a88387afd353597adaf3b5183668f8c4c5ce9879a7"
+    },
+    {
+      "path": "frontend/js/components/admin-report-preview.js",
+      "bytes": 3052,
+      "sha256": "83e64b5feafe4c1957f561874278629f3bb408b23405d311a6f2df6bc1cd103e"
+    },
+    {
+      "path": "frontend/js/components/admin-service-status.js",
+      "bytes": 2211,
+      "sha256": "e3cdc7aa38769bb0c432a9e62b9c27404b94c40b5b422c7706c1174de2546a78"
+    },
+    {
+      "path": "frontend/js/components/admin-statistics-chart.js",
+      "bytes": 4330,
+      "sha256": "150cf48f94529b63d72d5675b0c32ed5bd771ffc815fb284b6f9d0e144d50fe0"
+    },
+    {
+      "path": "frontend/js/components/admin-storage-summary.js",
+      "bytes": 2771,
+      "sha256": "4878f5752273729bd8dc87f63552803880d37c76005894552e6d633a5e3ea82e"
+    },
+    {
+      "path": "frontend/js/components/admin-sync-operation.js",
+      "bytes": 5294,
+      "sha256": "3332dd7fcf1b05f1f58375393748660d31692debf09264fd5c9af4e9767c609a"
+    },
+    {
+      "path": "frontend/js/components/admin-sync-summary.js",
+      "bytes": 881,
+      "sha256": "84fd2a403e00f3eb56eb077d9825bc226187deee41610be7931dfc21b1da20f9"
+    },
+    {
+      "path": "frontend/js/components/admin-teacher-assignment.js",
+      "bytes": 2876,
+      "sha256": "15fc461fa7d5554fdf7117f662098e06aacda6ff2be0ae7c809931170f5b4aac"
+    },
+    {
+      "path": "frontend/js/components/admin-technical-activity.js",
+      "bytes": 5848,
+      "sha256": "23c5eb9712a0ebe78ee04316f9c61f457072bc17108452d8b994fa587efeb1fc"
+    },
+    {
+      "path": "frontend/js/components/admin-technical-incident.js",
+      "bytes": 6953,
+      "sha256": "78df914bedc750210e4882c4e49bd165e8c301d3644bd6a1cb5d9222ba64e646"
+    },
+    {
+      "path": "frontend/js/components/admin-technical-report.js",
+      "bytes": 2330,
+      "sha256": "79c59269076ad8ba645a46d3395e8bbfb43bc37a88c7e02b8c61233f4cd5fdfd"
+    },
+    {
+      "path": "frontend/js/components/admin-user-ui.js",
+      "bytes": 5220,
+      "sha256": "ce4b6fdf186d569c58261a064dbe0c73c1dad3a7202ac4635b019276df81de23"
+    },
+    {
+      "path": "frontend/js/components/ai-configuration-panel.js",
+      "bytes": 3637,
+      "sha256": "8e0ca24fffca615d94766eb76f6cb57213957604f0b84379fca7bea81f18366e"
+    },
+    {
+      "path": "frontend/js/components/answer-feedback.js",
+      "bytes": 332,
+      "sha256": "50cf622fe1f12cf4062823f29bc0a78a8131157941a19dfa784f76b2cce4bcb5"
+    },
+    {
+      "path": "frontend/js/components/audio-controls.js",
+      "bytes": 1726,
+      "sha256": "99ffd26aa48e063d5d65b5c9f767afc5479a054c7311e01238af532f14bf4615"
+    },
+    {
+      "path": "frontend/js/components/audio-player.js",
+      "bytes": 1560,
+      "sha256": "1f945d6e62cc22fcb77a8a95d39189143445e7c58000b81dd6862c4ee3d95e7f"
+    },
+    {
+      "path": "frontend/js/components/avatar-selector.js",
+      "bytes": 1560,
+      "sha256": "29c1e15453ba92fb3ae69c67fe8eb9ace26edc9c36a9e69dce36f5e89139b352"
+    },
+    {
+      "path": "frontend/js/components/calendar-month.js",
+      "bytes": 2585,
+      "sha256": "54a3e4ad0236adda7d455e12b73f8158cab3db595c395e6a913b7f20356d1f71"
+    },
+    {
+      "path": "frontend/js/components/course-card.js",
+      "bytes": 2001,
+      "sha256": "2bcdf89b31ba05b61fc345a1971994c9292b4cd77665375d8c3e78e349c10f62"
+    },
+    {
+      "path": "frontend/js/components/course-progress-card.js",
+      "bytes": 593,
+      "sha256": "0d906d5b7609618bf5b4928a74ba494e5597624c929a1216fa6470368a4f6556"
+    },
+    {
+      "path": "frontend/js/components/evaluation-card.js",
+      "bytes": 1446,
+      "sha256": "d840442f8e0f41915a13ef7d0591ddf08bf285c2646a1d18fab7900b5b34bf85"
+    },
+    {
+      "path": "frontend/js/components/evaluation-confirmation.js",
+      "bytes": 805,
+      "sha256": "6afc0288a9d5e5ae165472702b6351f85d44b37fdb03ec17956cfa013f299dc2"
+    },
+    {
+      "path": "frontend/js/components/evaluation-instructions.js",
+      "bytes": 431,
+      "sha256": "afa06e607ef59839a0c0aa2f275c648c4b49d68c11c88b9281e0afced5d9ade4"
+    },
+    {
+      "path": "frontend/js/components/evaluation-timer.js",
+      "bytes": 491,
+      "sha256": "bbbd66a73620e36ee7da629e15fa521020f8760255514f50aeb99c62afc36861"
+    },
+    {
+      "path": "frontend/js/components/flashcard.js",
+      "bytes": 1662,
+      "sha256": "d99da77fb420d43f012be09e63fe454da686e52fb21760d2797043447eb30309"
+    },
+    {
+      "path": "frontend/js/components/icons.js",
+      "bytes": 3702,
+      "sha256": "560315af7fc203abd356b76988a8987e2efea6ec1662fc26f710d66dc67358aa"
+    },
+    {
+      "path": "frontend/js/components/insights-api-view.js",
+      "bytes": 7287,
+      "sha256": "6bd2119b83aea6b6d1405f3d12ca61217e346a04e339f59fb6662c39cd230f7a"
+    },
+    {
+      "path": "frontend/js/components/language-selector.js",
+      "bytes": 1007,
+      "sha256": "fece4d21d89e900fc0ad2c4230ff3d0b11448979a269bdd6c4d258a1d04bc480"
+    },
+    {
+      "path": "frontend/js/components/learning-recommendation.js",
+      "bytes": 396,
+      "sha256": "6ec45541a5ae68dca3051712a72c3306cd2b6c8ec9ee280a0d234cfd3dcaf3f5"
+    },
+    {
+      "path": "frontend/js/components/learning-tabs.js",
+      "bytes": 1289,
+      "sha256": "1a58ddf4460280e40cfb5c657d81d6f0b71b15ab15d08991ff56aad1f360108f"
+    },
+    {
+      "path": "frontend/js/components/learning-visual.js",
+      "bytes": 1705,
+      "sha256": "a5e61c07f41f1c056776d75a8dcc8696c4abc2b235db9f99eca44b058805d204"
+    },
+    {
+      "path": "frontend/js/components/lesson-content.js",
+      "bytes": 3981,
+      "sha256": "a3430ff1e15d87603b140706023897de4226245fd379a5088c09d093d0c28f36"
+    },
+    {
+      "path": "frontend/js/components/lesson-navigation.js",
+      "bytes": 1670,
+      "sha256": "02bad59748a599adcc2058494e38fa540b8b0b223d9a09d97252270ecced8d2b"
+    },
+    {
+      "path": "frontend/js/components/microphone-control.js",
+      "bytes": 697,
+      "sha256": "b6a9c437387e8b06cf4c6289d906c1704245ae7d45ea64790f06f3f56c50e363"
+    },
+    {
+      "path": "frontend/js/components/mission-card.js",
+      "bytes": 523,
+      "sha256": "098099293c490b4dfde7f2bc3a2bf9f97dcf57580e00c6cf5c899c8b85aa7075"
+    },
+    {
+      "path": "frontend/js/components/monitor-academic-ui.js",
+      "bytes": 5960,
+      "sha256": "2c24b51bf886f088f326443370b9537b2526700342fe85f2fbd408ecfbec11d6"
+    },
+    {
+      "path": "frontend/js/components/monitor-account-navigation.js",
+      "bytes": 1241,
+      "sha256": "a2531130db128bc20537fd13947e011f03780c4ee4b36728ca74df32db1306cb"
+    },
+    {
+      "path": "frontend/js/components/monitor-calendar-ui.js",
+      "bytes": 3000,
+      "sha256": "9a7293647659c6ddc7e2f76d712faa7ffa0784b9838a2aaa3b78d18dd7d88758"
+    },
+    {
+      "path": "frontend/js/components/monitor-content-ui.js",
+      "bytes": 2764,
+      "sha256": "21e031ee4537e07ac390c0c7d01215691346623453f37254c6c2e301538b8e7c"
+    },
+    {
+      "path": "frontend/js/components/monitor-dashboard-cards.js",
+      "bytes": 672,
+      "sha256": "ceb7e78d5a7c4925b338be201e5a6cabd533ace0d975fade867ab3be7132931a"
+    },
+    {
+      "path": "frontend/js/components/monitor-evaluation-ui.js",
+      "bytes": 2742,
+      "sha256": "feae26e5e90d5f92faec443802b17ed6212fb76d79edd0674dc90c8610a63249"
+    },
+    {
+      "path": "frontend/js/components/monitor-lesson-block-editor.js",
+      "bytes": 2343,
+      "sha256": "298eadc5d96ba7c0ec9278c328ee43f5cac1c056dd11c34f669e4f126aad1d1b"
+    },
+    {
+      "path": "frontend/js/components/monitor-resource-selector.js",
+      "bytes": 3778,
+      "sha256": "c572d32ef5090e8ae8da7bed82758d1c2a5d6a1e3e06484ffa800a1cc115b60a"
+    },
+    {
+      "path": "frontend/js/components/monitor-student-table.js",
+      "bytes": 1841,
+      "sha256": "206489ef9e08bdffc0cafaef6a2e3007ac20e8b4ca52d3bc4de3f83e871f67a9"
+    },
+    {
+      "path": "frontend/js/components/monitor-support-ui.js",
+      "bytes": 2047,
+      "sha256": "5c02a185e0444d6934620fac669065ca2a33c39dd70b93796cf476ebaa87d97c"
+    },
+    {
+      "path": "frontend/js/components/notification-panel.js",
+      "bytes": 4492,
+      "sha256": "19168b50e77d7bb6cbd6ced9b9924631e76a930f66618277f0cd5490708be17d"
+    },
+    {
+      "path": "frontend/js/components/practice-card.js",
+      "bytes": 1421,
+      "sha256": "01d132e46d3a83c2ad99926cbb85e706b3b0a8a34cfde4a28991e4fddcad0b32"
+    },
+    {
+      "path": "frontend/js/components/practice-progress.js",
+      "bytes": 387,
+      "sha256": "19c081f219a2e6d503a29f4bf169131f9c18bc2669a5267fba61493ed16f2370"
+    },
+    {
+      "path": "frontend/js/components/practice-steps.js",
+      "bytes": 471,
+      "sha256": "c8e59403773c8d843e49f56053f4903c417b9679b3dd04311fa008d9b0179d44"
+    },
+    {
+      "path": "frontend/js/components/profile-header.js",
+      "bytes": 571,
+      "sha256": "a680892b2c608aec4c2175b9af0896127f339f5b1fada2594a56c28cae785255"
+    },
+    {
+      "path": "frontend/js/components/progress-card.js",
+      "bytes": 1320,
+      "sha256": "3dfd9e6eecf0a957e26b1782e06d766b9af70e80620150ba889f6fa290ea66b8"
+    },
+    {
+      "path": "frontend/js/components/progress-summary.js",
+      "bytes": 362,
+      "sha256": "0ffbde408c2aab5ce1c0de9352c601500d9cab6df0521949532aec6fb0806cec"
+    },
+    {
+      "path": "frontend/js/components/pronunciation-card.js",
+      "bytes": 881,
+      "sha256": "0f2fb659838e86d220ae91c89eae2469e6c3c484b1e9def7cfd78a6fd8ae15ab"
+    },
+    {
+      "path": "frontend/js/components/pronunciation-feedback.js",
+      "bytes": 447,
+      "sha256": "d9981e9a999d73200f1b2d91da36e24b2036bd079d28eed283b9db94bdd8a34d"
+    },
+    {
+      "path": "frontend/js/components/question-navigator.js",
+      "bytes": 1164,
+      "sha256": "fb140146d39ebef86a63bc8bdcd5529fca1243e16293f5694cd05382397c64d2"
+    },
+    {
+      "path": "frontend/js/components/question-renderer.js",
+      "bytes": 4587,
+      "sha256": "d670ec29c9269a5d34437ad9351e2dc63e263e7eff0d713c19898dbf4fe3acbb"
+    },
+    {
+      "path": "frontend/js/components/reports-api-view.js",
+      "bytes": 10197,
+      "sha256": "a28bbb135de68c669b8d6c62d115fe5b4d5a0bd020ec240f8b232388f22db312"
+    },
+    {
+      "path": "frontend/js/components/result-summary.js",
+      "bytes": 2926,
+      "sha256": "4e46175ff2cc7a2ddeb9c0e1f39a8f8262c3deddc96fcbd7796277e27a91f2a2"
+    },
+    {
+      "path": "frontend/js/components/sidebar.js",
+      "bytes": 4136,
+      "sha256": "2e9abd8b4e222808f087f4b5e92b123f0c88379f1bb31aa62053b874e5e2c50b"
+    },
+    {
+      "path": "frontend/js/components/student-guide.js",
+      "bytes": 1905,
+      "sha256": "95bca217453bf044079ab9273566126e4bc2c7195ffd74b14f74e858a1606aba"
+    },
+    {
+      "path": "frontend/js/components/student-ui.js",
+      "bytes": 563,
+      "sha256": "467ed53fea11e17ecf2ba6d0f2501922a177eb723b543abbca25d6c397c87dd6"
+    },
+    {
+      "path": "frontend/js/components/topbar.js",
+      "bytes": 5479,
+      "sha256": "381123e4c7e8808a4bdb36d4e2ebdd26a219ad4e3c22d7ab054b9f16c6ac035f"
+    },
+    {
+      "path": "frontend/js/components/translation-panel.js",
+      "bytes": 2818,
+      "sha256": "1e7490f3c938d41f794fdef7cd86802e2a35a4a75b1a0c94a6ee245cd179cd22"
+    },
+    {
+      "path": "frontend/js/components/translation-result.js",
+      "bytes": 2967,
+      "sha256": "82bdfc03163e9198973592078194a7f30a90c1db453f8c3f52cff64db3c2a71f"
+    },
+    {
+      "path": "frontend/js/components/tutor-context.js",
+      "bytes": 1050,
+      "sha256": "8f7b5c7a262652351bb7cb68c383f62db33929639ec54ac533f540a1f262e40c"
+    },
+    {
+      "path": "frontend/js/components/tutor-conversations.js",
+      "bytes": 631,
+      "sha256": "25b3afafb4262b2ddcbbf354f93ad4f5b6164a19ee9b10307df952a2cbefbff0"
+    },
+    {
+      "path": "frontend/js/components/tutor-input.js",
+      "bytes": 1897,
+      "sha256": "ab82da750fff66adaf202856cdd72a5a6acae2754ec89ccb28678ab72be571bd"
+    },
+    {
+      "path": "frontend/js/components/tutor-learning-actions.js",
+      "bytes": 1114,
+      "sha256": "a57faa88412128a3034e50583ed21b26c0f8b320309adee77f87a2ba14167766"
+    },
+    {
+      "path": "frontend/js/components/tutor-message.js",
+      "bytes": 1640,
+      "sha256": "13e140cd3a1ecebab2ba92b7106d4fa3c5301b680850b248fedd771f331f7576"
+    },
+    {
+      "path": "frontend/js/components/tutor-suggestions.js",
+      "bytes": 1003,
+      "sha256": "b15be7f2884c4d53f039c7b031f1dd996f5703deff8dd5dc6157c71454b58891"
+    },
+    {
+      "path": "frontend/js/components/unit-card.js",
+      "bytes": 1259,
+      "sha256": "56255a8743eea36e552fde7156ef7485a9856da4bf47c6e18b2ecc9f883bf61a"
+    },
+    {
+      "path": "frontend/js/components/vocabulary-card.js",
+      "bytes": 1873,
+      "sha256": "36da540bb1091e9e6f9ae31510c89569bd2a94026a7c1ea6f245601c084da3a3"
+    },
+    {
+      "path": "frontend/js/components/voice-visualizer.js",
+      "bytes": 168,
+      "sha256": "2ac0a01a0a9934b1664563c62bf0c8a86a8b0588cd5ca8b2e140fb989cff4ee0"
+    },
+    {
+      "path": "frontend/js/core/auth-form.js",
+      "bytes": 4809,
+      "sha256": "934fc0d7e5261354b7a1ae94dc57ee9dc6ba4bc2495cec61c369bf7c38a1f80e"
+    },
+    {
+      "path": "frontend/js/core/config.js",
+      "bytes": 1066,
+      "sha256": "f925c6c5d3e0b097b274eefcf2873f8f2eaa063281368fd311788fedc43daefb"
+    },
+    {
+      "path": "frontend/js/core/navigation.js",
+      "bytes": 1696,
+      "sha256": "d5922f1335bbd7065a6f70910dec878e47421f2bfce6378a7fb59269b4f86650"
+    },
+    {
+      "path": "frontend/js/core/roles.js",
+      "bytes": 775,
+      "sha256": "8fdbe0f8297b4d39195510946e794171108956a28b45f0546a1b9378e3208b10"
+    },
+    {
+      "path": "frontend/js/core/work-guard.js",
+      "bytes": 1283,
+      "sha256": "9fe19340427888cb077657ad96c57ea1b9ca3e66aae9700aed140b6b0bcf6243"
+    },
+    {
+      "path": "frontend/js/data/achievements-demo.data.js",
+      "bytes": 1242,
+      "sha256": "fa7959a23f3b51c7cb09ff319aa16a7b154c7964bb3b5090cc93c5bcd304c372"
+    },
+    {
+      "path": "frontend/js/data/admin-academic-periods-demo.data.js",
+      "bytes": 1239,
+      "sha256": "17dcb578a4f05fc1a399ba781422087097164481d397ff0ed2bdbeb77c45a9a3"
+    },
+    {
+      "path": "frontend/js/data/admin-academic-rules.data.js",
+      "bytes": 2017,
+      "sha256": "568cb6ed7409fc8537340a5deec5f71d5f101bb18ed8d5834dea9756f7af98e0"
+    },
+    {
+      "path": "frontend/js/data/admin-content-review-demo.data.js",
+      "bytes": 1139,
+      "sha256": "94cbd0b45465e7db6dc9dcb675dc50c6543993d2170167dfc5eafa9a4c482ad0"
+    },
+    {
+      "path": "frontend/js/data/admin-content-rules.data.js",
+      "bytes": 1056,
+      "sha256": "3d012aa7b42e9438f45352c7b161348989c98105c1ab56e0e467f9e668e7e248"
+    },
+    {
+      "path": "frontend/js/data/admin-dashboard-config.data.js",
+      "bytes": 2262,
+      "sha256": "294c7e9a56c9ab65361039bca7c5f626ab24f81406770256333d56f06ed6ae99"
+    },
+    {
+      "path": "frontend/js/data/admin-demo.data.js",
+      "bytes": 748,
+      "sha256": "78f36bf1d55a7f70c94a3ceaa37bbee7c74bf8953cac475a59121fae5c05d407"
+    },
+    {
+      "path": "frontend/js/data/admin-diagnostic-rules.data.js",
+      "bytes": 4585,
+      "sha256": "21d633cd44558a2e16793621c7a37f13032a3beacd3a13dedcff101696fd5d18"
+    },
+    {
+      "path": "frontend/js/data/admin-organization-demo.data.js",
+      "bytes": 2542,
+      "sha256": "4ed5e2f3c4c1ded1fd2a73076c15e073050fac85c09593a2daf4cbfdd6f92d39"
+    },
+    {
+      "path": "frontend/js/data/admin-permissions.data.js",
+      "bytes": 3084,
+      "sha256": "fad907391c5117f63a418eeb0fa8b8e7693035124f2a25380d347a2264a24c27"
+    },
+    {
+      "path": "frontend/js/data/admin-publication-requirements.data.js",
+      "bytes": 386,
+      "sha256": "9d26a8177c9ea6c15079ec0a034d593ce4a49d4e6da9d1534770f2ff1d5d69ce"
+    },
+    {
+      "path": "frontend/js/data/admin-report-config-demo.data.js",
+      "bytes": 2403,
+      "sha256": "2b4c262715dd9a34e441095d88eb45cc2c5c5f65f7c4eb90b9b2bf399b71453a"
+    },
+    {
+      "path": "frontend/js/data/admin-report-types.data.js",
+      "bytes": 6117,
+      "sha256": "57fb43b69c01f34c8583f78752c9b2972f4a9927ec430b19957d2e6401340fb6"
+    },
+    {
+      "path": "frontend/js/data/admin-report-validation-rules.data.js",
+      "bytes": 3896,
+      "sha256": "788c934d0a5605a206694750a506ac2c3238bb7c929e106bc3c513c128b71b93"
+    },
+    {
+      "path": "frontend/js/data/admin-service-definitions.data.js",
+      "bytes": 7286,
+      "sha256": "861eb0879d6e05fca82254b34ac32a0e5aec2daf628d5b525ca54bed6f0c7273"
+    },
+    {
+      "path": "frontend/js/data/admin-system-status-descriptions.data.js",
+      "bytes": 3765,
+      "sha256": "dafe46702eb56adf6e73277ac61daaeac620b82b9c96463e58836fec982c2d99"
+    },
+    {
+      "path": "frontend/js/data/agenda-demo.data.js",
+      "bytes": 1744,
+      "sha256": "e9bebb487e5e55c32465313c47ded8571397436149c4fa2f0454a6136894f498"
+    },
+    {
+      "path": "frontend/js/data/avatars.data.js",
+      "bytes": 769,
+      "sha256": "5cdae93f0fb491d12ac37cf9a968eb6849f0290a7a227a4b1359e36e988a8103"
+    },
+    {
+      "path": "frontend/js/data/courses-demo.data.js",
+      "bytes": 1260,
+      "sha256": "b6e905820de644e21965b51fa1fb87951085f9bf324dac18108e19ab95c35a6e"
+    },
+    {
+      "path": "frontend/js/data/dictionary-demo.data.js",
+      "bytes": 9492,
+      "sha256": "6657bf2e158592739acd33a9ef118b9f5908c6dbbe3c6104bc4abd337dc2cb48"
+    },
+    {
+      "path": "frontend/js/data/evaluation-questions-demo.data.js",
+      "bytes": 9214,
+      "sha256": "2217d52e200a86670afd60f9793a8d768bc330e179dbd60aada51aaae6a452a2"
+    },
+    {
+      "path": "frontend/js/data/evaluations-demo.data.js",
+      "bytes": 3363,
+      "sha256": "ddc7a27bf3dbc3d7a9da24530a8f8c3b9d65f9ed718dfa1b58cdd6f2d8b0102a"
+    },
+    {
+      "path": "frontend/js/data/games-demo.data.js",
+      "bytes": 2535,
+      "sha256": "e7c4b8922fc3305c2cf63f9aee3aab93005ea190a8a8b7246375e258e9d0c739"
+    },
+    {
+      "path": "frontend/js/data/languages.data.js",
+      "bytes": 2526,
+      "sha256": "22920c923838984592280e85d3db7a48400c65fa79fe991cf3522f927bee9def"
+    },
+    {
+      "path": "frontend/js/data/lesson-block-types.data.js",
+      "bytes": 2339,
+      "sha256": "2a3525d6ccb0710c1582c6483fb9d297c9739015159c1b568d5a4bdb8e27b436"
+    },
+    {
+      "path": "frontend/js/data/lessons-demo.data.js",
+      "bytes": 26488,
+      "sha256": "4752698c52ac510421db0d1074ee0046f2156b971e4fae15246325f59bf60769"
+    },
+    {
+      "path": "frontend/js/data/missions-demo.data.js",
+      "bytes": 1465,
+      "sha256": "48a878fe8c0d1123213ef4e3f0b18bfe61f80732767115b6beff1a5f5a57df37"
+    },
+    {
+      "path": "frontend/js/data/monitor-academic-periods.data.js",
+      "bytes": 1428,
+      "sha256": "b1c3946dad1d822c37e3c77efd6f88cb64c2e322ccb5c3f56bce38a1ce4f7bf3"
+    },
+    {
+      "path": "frontend/js/data/monitor-demo.data.js",
+      "bytes": 2153,
+      "sha256": "fa5208f9e7eb3883840c18c32cbc0c9bc53f825074c4c9020e7cc6800cc68220"
+    },
+    {
+      "path": "frontend/js/data/monitor-evaluations-demo.data.js",
+      "bytes": 2515,
+      "sha256": "249429ebe08558943526b21abeb9f6b0ad210500cf687589ff217aa79688b282"
+    },
+    {
+      "path": "frontend/js/data/monitor-help.data.js",
+      "bytes": 4161,
+      "sha256": "206db985589f3c9a9a837b47392ac5229cc430a396d57ab3e52b1f44f6b3a2dc"
+    },
+    {
+      "path": "frontend/js/data/monitor-support-demo.data.js",
+      "bytes": 2923,
+      "sha256": "10a1fa693a2156c4acb8a5bd665ab7b87aaa599aba78de6ed4758274ea43735a"
+    },
+    {
+      "path": "frontend/js/data/offline-packages.data.js",
+      "bytes": 685,
+      "sha256": "22197c41680479f95253097a62237fb4419fce518f1df722f64ed1600c5e56da"
+    },
+    {
+      "path": "frontend/js/data/practices-demo.data.js",
+      "bytes": 10194,
+      "sha256": "20d520ee353cebcdf1d9420b9ba39b3990e9c3850548ecd3eaf6b01813e959e3"
+    },
+    {
+      "path": "frontend/js/data/preferences-defaults.data.js",
+      "bytes": 602,
+      "sha256": "b576ffa98590b1562829b3693de48083d88c8f31e0668c13c9ce80a0752117e2"
+    },
+    {
+      "path": "frontend/js/data/profile-demo.data.js",
+      "bytes": 736,
+      "sha256": "9e9bc55e3ed5142be8fed181367904d4e37bcec492016a1834774f604045e6db"
+    },
+    {
+      "path": "frontend/js/data/progress-demo.data.js",
+      "bytes": 958,
+      "sha256": "bb84267a77d8a6ca951df62dd1b142faf66b3ca20411dc1c0eccf26e7737cb97"
+    },
+    {
+      "path": "frontend/js/data/pronunciation-demo.data.js",
+      "bytes": 5648,
+      "sha256": "59def09d567cb95d1fd50c98387a0fc4b6f2168bb3481a5d0cf84153072fd078"
+    },
+    {
+      "path": "frontend/js/data/reminders-demo.data.js",
+      "bytes": 427,
+      "sha256": "1e1d982a361b32fc314fe589ebe4ce63ea8bb528d2b44e550457816ce027d026"
+    },
+    {
+      "path": "frontend/js/data/student-demo.data.js",
+      "bytes": 5334,
+      "sha256": "0ce0f7b3bd63ac2143566541bc20db570c42eac1c80b94654c8767a9b11ba2c5"
+    },
+    {
+      "path": "frontend/js/data/tutor-demo.data.js",
+      "bytes": 1636,
+      "sha256": "c09155b392b58321eda2a5c72db2409710165e2e31a4f0408d0f44e08884bc8d"
+    },
+    {
+      "path": "frontend/js/data/units-demo.data.js",
+      "bytes": 593,
+      "sha256": "f7587ff5cc9aff85a8d9efd6ac824671e6af31749e3c5846c629a94bb2899b48"
+    },
+    {
+      "path": "frontend/js/data/vocabulary-demo.data.js",
+      "bytes": 525,
+      "sha256": "8671ca907b67918e727a28bfd265107dee4ce7e9b93ac8b29bcad29571bd4420"
+    },
+    {
+      "path": "frontend/js/games/matching-game.js",
+      "bytes": 305,
+      "sha256": "d409f73b570a8259ce6136a041ad51764b9763f3929bb684635bc8873cbb8a5f"
+    },
+    {
+      "path": "frontend/js/games/memory-game.js",
+      "bytes": 5254,
+      "sha256": "5c3bfb22ea86496d37edcc44a2aaac1eb4ad4efb705784a7257671303e6af333"
+    },
+    {
+      "path": "frontend/js/games/ordering-game.js",
+      "bytes": 304,
+      "sha256": "0c9a9e8d2394c9c57d4172f2915950afdeb061b73a742acd3a32c5556145ac43"
+    },
+    {
+      "path": "frontend/js/games/quick-challenge.js",
+      "bytes": 252,
+      "sha256": "df4649c62f3c790e68c19dc994b3430b2370ad582cdad09b745eca954f3fa331"
+    },
+    {
+      "path": "frontend/js/games/word-game.js",
+      "bytes": 295,
+      "sha256": "677ee00a078aeb49c0f4c37853b5b9af4eb8843855d146204d4713edbafb4b3d"
+    },
+    {
+      "path": "frontend/js/i18n/admin-dashboard.js",
+      "bytes": 12744,
+      "sha256": "a4cc97ffc4be6533b86e1791bd0f4dca73fcc13af2c354a2d21d85fb75d59f56"
+    },
+    {
+      "path": "frontend/js/i18n/i18n.js",
+      "bytes": 2036,
+      "sha256": "2b28dda7506ae3de6fd744d4f11d6f80d0e3caa213a6b0167402044add44e030"
+    },
+    {
+      "path": "frontend/js/i18n/monitor-account.js",
+      "bytes": 17991,
+      "sha256": "398167ac2d2ca65ea7e759b3d3199c7b7330e69dbcc7906a62b83ed09889d457"
+    },
+    {
+      "path": "frontend/js/i18n/monitor-calendar.js",
+      "bytes": 493,
+      "sha256": "ca132a08e4c6796cc785c2b42718b328fe73e2a567810dfd80ff76b7a6530726"
+    },
+    {
+      "path": "frontend/js/monitor/academic-reports.js",
+      "bytes": 13073,
+      "sha256": "55455fe399d01767c40c3b26aaecc59c29dc01e094570c5fb0ae5fc2876ee29f"
+    },
+    {
+      "path": "frontend/js/monitor/account.js",
+      "bytes": 18773,
+      "sha256": "e7edb097fc8300903efc56f0108c8de400ad3ff0206c31db7ec0fa1973b1bccf"
+    },
+    {
+      "path": "frontend/js/monitor/calendar-views.js",
+      "bytes": 13501,
+      "sha256": "8ad356d7bb56e350d4e5a6696b4e4b612f1efcfbaf2c397572ac923aa364de05"
+    },
+    {
+      "path": "frontend/js/monitor/content-editor.js",
+      "bytes": 25568,
+      "sha256": "60931e23c3f4007a183fb7019e6729c87d4149476f61d9235f2cdc9ec1122e68"
+    },
+    {
+      "path": "frontend/js/monitor/content-studio.js",
+      "bytes": 23958,
+      "sha256": "c379e2fb209d7120c4e936588824b485f9dda795b4f67a00c9738d0befd4c79c"
+    },
+    {
+      "path": "frontend/js/monitor/dashboard.js",
+      "bytes": 15815,
+      "sha256": "5afc0039dd292de96e9daafe73803183256e40725ce18c5f5d76b6c82ae14c7c"
+    },
+    {
+      "path": "frontend/js/monitor/evaluation-assignment.js",
+      "bytes": 5519,
+      "sha256": "ac240c5e38b1acc8648fa5f0b417702fba778a1115dc2038ade04da2aa25ec08"
+    },
+    {
+      "path": "frontend/js/monitor/evaluation-editor.js",
+      "bytes": 9246,
+      "sha256": "1d6b9399a2e86a12038d9e91bc77bca320c021052d03fc7edbe86cad2e16c0b1"
+    },
+    {
+      "path": "frontend/js/monitor/evaluation-grading.js",
+      "bytes": 11189,
+      "sha256": "b649ff8d456f0068b00877aad74670360c9daf0f442bde767916308fded55df5"
+    },
+    {
+      "path": "frontend/js/monitor/evaluations.js",
+      "bytes": 1869,
+      "sha256": "0310ff4ba32ec7018a278e3fda6198a6ff582d2d52224f1502ecc4abfbbe8807"
+    },
+    {
+      "path": "frontend/js/monitor/gradebook.js",
+      "bytes": 20265,
+      "sha256": "bd1d2e60bbc7e3808942e033c886f2a472a1b5ab984caa7184d0061956d92b52"
+    },
+    {
+      "path": "frontend/js/monitor/grades.js",
+      "bytes": 3178,
+      "sha256": "9dd43fe752adfd078be534c9962aeab126413298468279f2eb1939c64438f099"
+    },
+    {
+      "path": "frontend/js/monitor/management-shell.js",
+      "bytes": 4156,
+      "sha256": "c72ab26323cbf72a3a89172fc0659f8fc1d9f4a4a7e467748f52ca1465feb8de"
+    },
+    {
+      "path": "frontend/js/monitor/management.js",
+      "bytes": 14881,
+      "sha256": "93c17741f8359927e85c1f6eeab033983b5c712a1b9aacd3995d2087516f4952"
+    },
+    {
+      "path": "frontend/js/monitor/organizer-forms.js",
+      "bytes": 3769,
+      "sha256": "81388c0d9a3dcdf7b766fd690a71601851ce0e45a03ea90e800b8e3060852e0d"
+    },
+    {
+      "path": "frontend/js/monitor/organizer-personal.js",
+      "bytes": 12701,
+      "sha256": "433477756e72b8084151f5a48a609e33ff85467479bf75fa6770eede0a9d50a6"
+    },
+    {
+      "path": "frontend/js/monitor/organizer.js",
+      "bytes": 4450,
+      "sha256": "aca630c472a8a0aab1e7a18dc73fc4750f05a06fd4bf8f60f3e7e474119bb013"
+    },
+    {
+      "path": "frontend/js/monitor/planner-api-view.js",
+      "bytes": 5560,
+      "sha256": "0ee2b97110427a8fe4cc45d445798de208d034efbbd3e053dcfb84caf2145b6d"
+    },
+    {
+      "path": "frontend/js/monitor/question-editor.js",
+      "bytes": 12930,
+      "sha256": "0258072751c5898ac18e5c767fbf9123f1f191398f64253e16d16cd1ebd13e0b"
+    },
+    {
+      "path": "frontend/js/monitor/support-assignment.js",
+      "bytes": 10285,
+      "sha256": "2e18b15287f2426ad9923be318912938ab64fac49fb6a1c3eec0cf3d73f3c838"
+    },
+    {
+      "path": "frontend/js/monitor/support-editor.js",
+      "bytes": 11820,
+      "sha256": "e505f80c18a097b7e3dff33dbdd415dcd651c4cddca0e5a38e598bc9638328e4"
+    },
+    {
+      "path": "frontend/js/monitor/support-tracking.js",
+      "bytes": 16719,
+      "sha256": "fdf8923051574e335b3df9711ae27942e5c87d018bdc1b8b2805a927a9f22f29"
+    },
+    {
+      "path": "frontend/js/monitor/support.js",
+      "bytes": 3411,
+      "sha256": "f66a370d45cf3b92fd71e60b787845ed63d12c1d82bf8e0896c96244853d2849"
+    },
+    {
+      "path": "frontend/js/offline/bootstrap.js",
+      "bytes": 190,
+      "sha256": "8c625afe85a96a83b724d601bbf684515d5fb1e7dd5c01c4dac8ca081cef000a"
+    },
+    {
+      "path": "frontend/js/offline/cache-manager.js",
+      "bytes": 893,
+      "sha256": "6829d2c88e97579176bf6a470cf4a2783452d4f74a866c234ad5e880308cddee"
+    },
+    {
+      "path": "frontend/js/offline/confirmed-sync.js",
+      "bytes": 4352,
+      "sha256": "dabfb25eab6fa05342fc943979de4b702d27dfb6c55e4003894f4921743f5556"
+    },
+    {
+      "path": "frontend/js/offline/connectivity.js",
+      "bytes": 370,
+      "sha256": "0786717db6feccd703f289238f4a869ff9b755e6200def444bfd1f5fc7e6942c"
+    },
+    {
+      "path": "frontend/js/offline/database-schema.js",
+      "bytes": 4276,
+      "sha256": "670d8d5187652a81ff0879df4e5002d07e6f4963a7101d49ba0f9d383fb36481"
+    },
+    {
+      "path": "frontend/js/offline/database.js",
+      "bytes": 1701,
+      "sha256": "e013c36c20abad9ebfafde7e45544ebbd2da470613d1d303910d2299cb00a9b5"
+    },
+    {
+      "path": "frontend/js/offline/download-manager.js",
+      "bytes": 1388,
+      "sha256": "5dd35c6769c2134f4e6e9e348e58fea57c403038d6ffeb9efab20d9bce77b65e"
+    },
+    {
+      "path": "frontend/js/offline/evaluation-draft-store.js",
+      "bytes": 1338,
+      "sha256": "8587db67cda5ddb4ee4619173b0570ca1881749c7bce405ad07ffa432a05c374"
+    },
+    {
+      "path": "frontend/js/offline/monitor-preparation.js",
+      "bytes": 3474,
+      "sha256": "c2ebd485df8717c98288d63ce8c12fdde24cf059e422d441231507f0f1806c7f"
+    },
+    {
+      "path": "frontend/js/offline/package-manager.js",
+      "bytes": 811,
+      "sha256": "802e526bf7d379971cd1afa5f80b139be45974e34db9646156a686b35e1a3957"
+    },
+    {
+      "path": "frontend/js/offline/pwa.js",
+      "bytes": 536,
+      "sha256": "8bf1b6a21efa1c86d6baa82974df0c404aac87bff790bd387598ee3a69359b7d"
+    },
+    {
+      "path": "frontend/js/offline/storage-manager.js",
+      "bytes": 1051,
+      "sha256": "667261efa3263e5eec018fed8b0dd515295ac81e8757a47662ffb574cec9b08f"
+    },
+    {
+      "path": "frontend/js/offline/sync-queue.js",
+      "bytes": 1328,
+      "sha256": "86ac6457d23ddfcec58c740b13727b2dba8477e7d949d9c26683f2905d7bce72"
+    },
+    {
+      "path": "frontend/js/pages/forgot-password.js",
+      "bytes": 246,
+      "sha256": "13756c1ddd4cbb73f9654010185ac17974c1908d11f7279b6755b7b72f3b982b"
+    },
+    {
+      "path": "frontend/js/pages/login.js",
+      "bytes": 3515,
+      "sha256": "559665300b4e7f01a107e34d513778aa1f1f277ea2bc7883569a28b7ba068200"
+    },
+    {
+      "path": "frontend/js/pages/register.js",
+      "bytes": 1599,
+      "sha256": "5c17120323368b842a6c36b443b8806c113bc8b2403177d4467fc8c58655a95b"
+    },
+    {
+      "path": "frontend/js/pages/reset-password.js",
+      "bytes": 315,
+      "sha256": "d81bf09e35bc75e9daad359e45ffefa9cc10d9281dee9373ed776a2e2ab45b85"
+    },
+    {
+      "path": "frontend/js/pages/role-selection.js",
+      "bytes": 3162,
+      "sha256": "0fa50910b3aa487f1947cac9d7f77aebb3676a113a69bec4e3018c3f0f411fef"
+    },
+    {
+      "path": "frontend/js/services/academic-organization.service.js",
+      "bytes": 5649,
+      "sha256": "5e3e9c4fb5b8fdd02da04523cfed916025ae8b09420d38587c659e7aba715c4d"
+    },
+    {
+      "path": "frontend/js/services/academic-planner-api.service.js",
+      "bytes": 2327,
+      "sha256": "63b0c7cf7185925886b9ba5744064c6a90e31a7b0b317a5f31d105fb60c44d2f"
+    },
+    {
+      "path": "frontend/js/services/activity-session.service.js",
+      "bytes": 1645,
+      "sha256": "6e528197f99893941224310b0a59d634397b8e3ab253862d6970e1d63462da8b"
+    },
+    {
+      "path": "frontend/js/services/admin-academic-monitoring.service.js",
+      "bytes": 545,
+      "sha256": "054ffaa532187503c204979637c28fbd7ba574bab6474c381861af1e709bafa3"
+    },
+    {
+      "path": "frontend/js/services/admin-academic-movements.service.js",
+      "bytes": 3855,
+      "sha256": "56a20e8ce7a63839d45898f21b4137ecf06d972a0f65bd804af3029ecee4cfa3"
+    },
+    {
+      "path": "frontend/js/services/admin-academic-periods.service.js",
+      "bytes": 2941,
+      "sha256": "9a892853eee6bcc3def701c3c5a221da062c19d9f2cd3ecaeccec4dd5f82a006"
+    },
+    {
+      "path": "frontend/js/services/admin-activity.service.js",
+      "bytes": 2128,
+      "sha256": "c725b53ffec14e8dd2b3eb50908f2c284871379ee28ff29928026d0865f9c886"
+    },
+    {
+      "path": "frontend/js/services/admin-classrooms.service.js",
+      "bytes": 5277,
+      "sha256": "9b6e49a41e54acdc9e4a679e7d6e82918024d3d97cffa86ab14424f7f08adf83"
+    },
+    {
+      "path": "frontend/js/services/admin-configuration-proposals.service.js",
+      "bytes": 4230,
+      "sha256": "2397fc256cf8a456f66a3a5374e0b8b2724f57a82c9bad2c2fca0898d7b9ad02"
+    },
+    {
+      "path": "frontend/js/services/admin-content-review.service.js",
+      "bytes": 2139,
+      "sha256": "c53357e5a71e22479ded7f056a8181301c41ee3aeb285e96432bb401f00caa39"
+    },
+    {
+      "path": "frontend/js/services/admin-content-summary.service.js",
+      "bytes": 1767,
+      "sha256": "33a81113d9af10b15ad36930c34530a7e3177449b9a08ba2fdf38bddfa709073"
+    },
+    {
+      "path": "frontend/js/services/admin-content-validation.service.js",
+      "bytes": 1762,
+      "sha256": "0df3dc956990c363448e5cbfbf3d904161c7025ac100e0ce98a57055be1d0571"
+    },
+    {
+      "path": "frontend/js/services/admin-content-versions.service.js",
+      "bytes": 1075,
+      "sha256": "24ec94fa752500aaf2f6f23091305c64673959f84f606964cfa12b9b1d07beee"
+    },
+    {
+      "path": "frontend/js/services/admin-contents.service.js",
+      "bytes": 2486,
+      "sha256": "22f422986d1eda06fb0c2a3f10208f7e8bc8fee75363bcbba1ffac4802839aeb"
+    },
+    {
+      "path": "frontend/js/services/admin-dashboard.service.js",
+      "bytes": 6217,
+      "sha256": "b9998379109902af7d3023f9c77d3a63b583a396be64a557eb37d875eea14535"
+    },
+    {
+      "path": "frontend/js/services/admin-data-quality.service.js",
+      "bytes": 8830,
+      "sha256": "ecd901d78106499162b4d1fd756cfcc94c81f1d53059d439ac9f37895c7e68f9"
+    },
+    {
+      "path": "frontend/js/services/admin-enrollments-api.service.js",
+      "bytes": 6664,
+      "sha256": "a91243e8b25f4deab3bbaddb2d16ab7dcba7a23c68495ff4cf2e49f2d6e36f8d"
+    },
+    {
+      "path": "frontend/js/services/admin-enrollments.service.js",
+      "bytes": 4609,
+      "sha256": "afd6f1ef2de4f1b755b47371555a3a067373b70be10adeeeab81b4f91bf052cb"
+    },
+    {
+      "path": "frontend/js/services/admin-grades-sections.service.js",
+      "bytes": 4019,
+      "sha256": "4a70d735dba95e932fdaf649b49efca26de99ff5e8bf00c32374c5b59f3d86c1"
+    },
+    {
+      "path": "frontend/js/services/admin-institutional-reports.service.js",
+      "bytes": 3894,
+      "sha256": "2f33fbf929e3ef5c7fd4ec4deca0b4bd3dd3ff761c48310f92ef4de55a2a1ab3"
+    },
+    {
+      "path": "frontend/js/services/admin-offline-packages.service.js",
+      "bytes": 4110,
+      "sha256": "a17d2afafe2c7c3f8111f24b267fe24eaf4cba0ee0fc29c13fd02567be5c3ba4"
+    },
+    {
+      "path": "frontend/js/services/admin-organization-drafts.service.js",
+      "bytes": 5265,
+      "sha256": "e09c9682eb0260b56a3f17436db004728099ffa9de3a10e6875cd7388a15216c"
+    },
+    {
+      "path": "frontend/js/services/admin-organization-validation.service.js",
+      "bytes": 3181,
+      "sha256": "5631449a18a060601224b72442c35f09bf9ebb63f67f9f4faafdfc515acc4602"
+    },
+    {
+      "path": "frontend/js/services/admin-platform-activity.service.js",
+      "bytes": 3403,
+      "sha256": "5fcb0f6d0ab51cacfafc19c8760d475c7e53f888dd63a30a9062d724f467572c"
+    },
+    {
+      "path": "frontend/js/services/admin-publication-preparation.service.js",
+      "bytes": 855,
+      "sha256": "aab238aad3fefdbba0233ad68a0a6e0ed70bb26a7cea0b4e08cc47c15d923bc2"
+    },
+    {
+      "path": "frontend/js/services/admin-pwa-diagnostics.service.js",
+      "bytes": 1754,
+      "sha256": "ab4e2ede35f7bf2465190ea4b3472362bd3ca8a427a5e9d4617287255683c3b7"
+    },
+    {
+      "path": "frontend/js/services/admin-report-history.service.js",
+      "bytes": 2343,
+      "sha256": "4163d0ca7e12c32c3518c6c88238c5ce3fbbe51be27587d1f2cb93dd7b411828"
+    },
+    {
+      "path": "frontend/js/services/admin-reports.service.js",
+      "bytes": 2478,
+      "sha256": "799cbb565d9e96c03c125270b1d4a44a2c9c5f20e257a0c88ae75949589b08c4"
+    },
+    {
+      "path": "frontend/js/services/admin-review-history.service.js",
+      "bytes": 1260,
+      "sha256": "5917eed3a5fbc684ca020f80a4ed013f3ffadb3e2608b6e7dc322069081c50c3"
+    },
+    {
+      "path": "frontend/js/services/admin-service-status.service.js",
+      "bytes": 3299,
+      "sha256": "1fc0a330bc237290c8d3b8485aa78fd714ad24ce724a28bf170bdc0b03b60175"
+    },
+    {
+      "path": "frontend/js/services/admin-services-status.service.js",
+      "bytes": 6543,
+      "sha256": "a1639c8d8471d70ced02a21851bac7992406e6925806fec32013d455700d2033"
+    },
+    {
+      "path": "frontend/js/services/admin-statistics.service.js",
+      "bytes": 575,
+      "sha256": "ddf130f35f10158c07091385b2ed5d6df3e303c198b06b32db0ebdc292ba4791"
+    },
+    {
+      "path": "frontend/js/services/admin-storage-diagnostics.service.js",
+      "bytes": 3813,
+      "sha256": "6a40d7c6a4e48d2aa6b564c8c04c819240146834a984fbb0257c6262b7b04bdb"
+    },
+    {
+      "path": "frontend/js/services/admin-sync-operations.service.js",
+      "bytes": 2520,
+      "sha256": "903275e8dc14494dfcff0cd4a17fdcd23436b994a0d944038d75b5e07eff1fa4"
+    },
+    {
+      "path": "frontend/js/services/admin-sync.service.js",
+      "bytes": 1368,
+      "sha256": "cba067b69d5ffa9053095d72107d28c2502e2b33245e706b3ea3ed2a24c73d9a"
+    },
+    {
+      "path": "frontend/js/services/admin-teacher-assignments.service.js",
+      "bytes": 4783,
+      "sha256": "022baa04febd1638d5728a60be81eed4302d641bfe1f7dc49ef930dcdf9217c9"
+    },
+    {
+      "path": "frontend/js/services/admin-technical-activity.service.js",
+      "bytes": 3860,
+      "sha256": "f3b0305996166bba4b404739591d14ef4f3efce739c384fe046eb418a7c523a5"
+    },
+    {
+      "path": "frontend/js/services/admin-technical-diagnostics.service.js",
+      "bytes": 3040,
+      "sha256": "6685c3a862f5b2ea2d35206a25dbb468af9f3dee0fa78f26c0523035015906e3"
+    },
+    {
+      "path": "frontend/js/services/admin-technical-incidents.service.js",
+      "bytes": 6065,
+      "sha256": "49104c82d9971500601b19732c5bd611f45e24079b3ead74f927c41ba6c798cf"
+    },
+    {
+      "path": "frontend/js/services/admin-technical-report.service.js",
+      "bytes": 6853,
+      "sha256": "786eb5ba9a59edc349c86696e2d5b5944788bfbf493385604650abd8975ddb49"
+    },
+    {
+      "path": "frontend/js/services/admin-user-drafts.service.js",
+      "bytes": 6681,
+      "sha256": "a2a6f9af7f9cd7d35cd74b778fa1c30bccb3ca87078c68b6c701daacc65db077"
+    },
+    {
+      "path": "frontend/js/services/admin-users.service.js",
+      "bytes": 4712,
+      "sha256": "8905236f5a75475f72a22ce7cea2141d73c98bc6eb30eae5be23322e0f0a2fd5"
+    },
+    {
+      "path": "frontend/js/services/ai-api.service.js",
+      "bytes": 1259,
+      "sha256": "48c3cfc438b18699451093de3e7433342bd2c47d7c2ea09482db42469c8ce446"
+    },
+    {
+      "path": "frontend/js/services/auth.service.js",
+      "bytes": 10082,
+      "sha256": "6101ee24729148da6637d591d28f6ee12a3a491960476ff34f0be702f2a1e9e1"
+    },
+    {
+      "path": "frontend/js/services/course.service.js",
+      "bytes": 985,
+      "sha256": "7cb9e780a3c23ab57735f6b62d9d5c6176ac7ce3f716742a9405fa7aecd6d207"
+    },
+    {
+      "path": "frontend/js/services/evaluation-attempt.service.js",
+      "bytes": 888,
+      "sha256": "3590ef690ab8b136d1be581d7c4083cffff28a8aac75b15e7b459ff73709806c"
+    },
+    {
+      "path": "frontend/js/services/evaluation.service.js",
+      "bytes": 109,
+      "sha256": "b5c7d4112b2a4cb3d20740c4b649d1601fdf0c7a7d3c2a9635fa69e976c27148"
+    },
+    {
+      "path": "frontend/js/services/game.service.js",
+      "bytes": 383,
+      "sha256": "6644d51d692b29add3e3b4c53433833bdced4ee20acfffa0fa79e4c657a195a0"
+    },
+    {
+      "path": "frontend/js/services/insights-api.service.js",
+      "bytes": 691,
+      "sha256": "cba21649730e8ec4c8739442bf883c7ec3ffe0e79ff01d2946de1e532f4c49fa"
+    },
+    {
+      "path": "frontend/js/services/lesson.service.js",
+      "bytes": 337,
+      "sha256": "edb45d16d46d9c7f28313daf7bbf82fc57427354b305c5b40e38d42e9c38a381"
+    },
+    {
+      "path": "frontend/js/services/microphone.service.js",
+      "bytes": 662,
+      "sha256": "6370af98460cd32394f5110c4237059be61bb13bc504569cb983079be10aab26"
+    },
+    {
+      "path": "frontend/js/services/monitor-calendar.service.js",
+      "bytes": 8680,
+      "sha256": "82378936142542b634395500778c0258190d8f25a442cae5830fcd9c18bcb3f0"
+    },
+    {
+      "path": "frontend/js/services/monitor-content-drafts.service.js",
+      "bytes": 9141,
+      "sha256": "db1ba92e6994a6c82e82737acabcad6bf25a208cc0e65e7b02246385af02c5d1"
+    },
+    {
+      "path": "frontend/js/services/monitor-content-packages.service.js",
+      "bytes": 4115,
+      "sha256": "63785bed70d376e19426b53e4bd13a4394bebf5a09035c7a9e679731cac0f5db"
+    },
+    {
+      "path": "frontend/js/services/monitor-content-validation.service.js",
+      "bytes": 7156,
+      "sha256": "ee37685ec6696e810231b5408aff24b2227978014a9ca19f924ce64061ad29e9"
+    },
+    {
+      "path": "frontend/js/services/monitor-courses.service.js",
+      "bytes": 1212,
+      "sha256": "b61a7ae9e7373a8e29676bcd4d95c406273745f8e51686263ee95509c0fd05f5"
+    },
+    {
+      "path": "frontend/js/services/monitor-dashboard.service.js",
+      "bytes": 1452,
+      "sha256": "9c962c1933d913bad868e5900803177e2f0f55819383d47fce621499eb160985"
+    },
+    {
+      "path": "frontend/js/services/monitor-evaluations.service.js",
+      "bytes": 8150,
+      "sha256": "1e551ab12c430440bc08b1ba5d4ad6ce9bcbefd6b74a5a33b4e19a5ca2331a45"
+    },
+    {
+      "path": "frontend/js/services/monitor-grades.service.js",
+      "bytes": 8784,
+      "sha256": "8380a41ccf15a914bc06d21cd8488de6ddaac9ba5ce7b03241fe52bb0dd318d1"
+    },
+    {
+      "path": "frontend/js/services/monitor-learning-resources.service.js",
+      "bytes": 4611,
+      "sha256": "335bee48eb50c6f40182be2222c4585d67ae66a9ea033c0932f3badda4f3fb7b"
+    },
+    {
+      "path": "frontend/js/services/monitor-notifications.service.js",
+      "bytes": 4925,
+      "sha256": "c039265d51c3105115371c21fe9287b5ed8ab86e081d5d5ab50a25741ae45c9c"
+    },
+    {
+      "path": "frontend/js/services/monitor-organizer.service.js",
+      "bytes": 8741,
+      "sha256": "4ece3725b8c177d37d7122a8cda86b1f594d7365232d407129c7b1ca58c162d1"
+    },
+    {
+      "path": "frontend/js/services/monitor-profile.service.js",
+      "bytes": 1432,
+      "sha256": "31751e3968256c8af9dd517e8fafd1e96767b28de3abf9d500e6a3dceddeab7d"
+    },
+    {
+      "path": "frontend/js/services/monitor-reports.service.js",
+      "bytes": 4283,
+      "sha256": "1486fb57dd569276999997e1e4068eedb7e41b5c4ab19899ae05953f14f82e1e"
+    },
+    {
+      "path": "frontend/js/services/monitor-resources.service.js",
+      "bytes": 2621,
+      "sha256": "773f1a87a855b0b748fd6155a31d504272ac06255a5859c542cbc446c7ad9979"
+    },
+    {
+      "path": "frontend/js/services/monitor-settings.service.js",
+      "bytes": 1826,
+      "sha256": "348ed704e50ca67ef15eddd99c1404f713b86d1cb7b6ab0452fee6da3fa2c286"
+    },
+    {
+      "path": "frontend/js/services/monitor-students.service.js",
+      "bytes": 2800,
+      "sha256": "3d177c1984f0fc843202053c0324c6e92fd60f3ca9bc81d05cf1c79cceab3850"
+    },
+    {
+      "path": "frontend/js/services/monitor-support-tracking.service.js",
+      "bytes": 3979,
+      "sha256": "2549749a9e1f7c856993097c95c971c52e0bf858dca0b69c8ccfc8b86a3b2dea"
+    },
+    {
+      "path": "frontend/js/services/monitor-tasks.service.js",
+      "bytes": 9713,
+      "sha256": "6b8a835bbdb22dd993943f59943fa32e78224ac50e34baefbbb655bc7486e583"
+    },
+    {
+      "path": "frontend/js/services/practice.service.js",
+      "bytes": 407,
+      "sha256": "b9a37eba0995fad89f494895f146731b672215343cf5dda12f20d16113448b9f"
+    },
+    {
+      "path": "frontend/js/services/preferences.service.js",
+      "bytes": 4564,
+      "sha256": "0f40864dc0c5e6ad5c758c0c41162915cddf69fb047504316b72de5963dd203f"
+    },
+    {
+      "path": "frontend/js/services/progress-api.service.js",
+      "bytes": 927,
+      "sha256": "9d7bea54c00ad7a6e767aa97601b5f79f73a773842a3a6c9b23e4c1d86449d4f"
+    },
+    {
+      "path": "frontend/js/services/pronunciation.service.js",
+      "bytes": 977,
+      "sha256": "25bef55ce8ed6fe963ba71057252f19ce8950d2484d878846c8b17bc886a3bab"
+    },
+    {
+      "path": "frontend/js/services/recording.service.js",
+      "bytes": 1723,
+      "sha256": "cd73bd63837e334782671432db13b786b3048bd29ee18aab5d6a147913faee5c"
+    },
+    {
+      "path": "frontend/js/services/reports-api.service.js",
+      "bytes": 960,
+      "sha256": "1aa6b034733408f5d1ae0a7efd6287be6b64bb57924f27ef6256578a3ba6d938"
+    },
+    {
+      "path": "frontend/js/services/speech-recognition.service.js",
+      "bytes": 391,
+      "sha256": "ba7155879434d973e733ffaac629cf6064a26dbb03ed1148ff97778fb617f2c9"
+    },
+    {
+      "path": "frontend/js/services/speech.service.js",
+      "bytes": 2345,
+      "sha256": "98ebd478bb17ef8e6e7000f85563d925365e7826fdcd1d8b762b63df40e8d61c"
+    },
+    {
+      "path": "frontend/js/services/student.service.js",
+      "bytes": 872,
+      "sha256": "fb7838324aa4d6273e561f0e144c98bc5bb4a72e30931450348c7d0b830edb03"
+    },
+    {
+      "path": "frontend/js/services/sync-api.service.js",
+      "bytes": 512,
+      "sha256": "16b2ed83a49a4760c1c2d2f8757f42fcb1da24857fbabd55cf80647042dea8f8"
+    },
+    {
+      "path": "frontend/js/services/translation-api.service.js",
+      "bytes": 567,
+      "sha256": "fa2bb91f2659e6b4aaa8c13c85162929d9826c8fd01afe08e48e383a18d6ce89"
+    },
+    {
+      "path": "frontend/js/services/translation.service.js",
+      "bytes": 1227,
+      "sha256": "560ac85f1a4429f2cc95223548785a4ad74276328f57c77b3e38438dd811df5c"
+    },
+    {
+      "path": "frontend/js/services/tutor-api.service.js",
+      "bytes": 572,
+      "sha256": "67bf9f7f0df9846410c19dce4fe2149b26c5241c0d207377583a839d030f6d2a"
+    },
+    {
+      "path": "frontend/js/services/tutor.service.js",
+      "bytes": 1628,
+      "sha256": "5be201f48c3ba5d1a62fe3c6aeb14c04664b0d7d17c3efb613a4409417cc711d"
+    },
+    {
+      "path": "frontend/js/services/vocabulary.service.js",
+      "bytes": 2344,
+      "sha256": "dfe7ee852d6b401157899636cbafd39db21ca6962eafa3b0d12efac6598d2744"
+    },
+    {
+      "path": "frontend/js/student/accessibility.js",
+      "bytes": 2156,
+      "sha256": "2abe686ea2a0b63bfa026121e861accfe588616028efa2ef33e73c42005fad35"
+    },
+    {
+      "path": "frontend/js/student/achievement-detail.js",
+      "bytes": 1406,
+      "sha256": "44a14279bb9d21619123b83978ed7d5c35e1e0482dc586564d31f6b108f34c28"
+    },
+    {
+      "path": "frontend/js/student/achievements.js",
+      "bytes": 1453,
+      "sha256": "05530de7528cb2613622fdb51821a782303638f1432c7ce434d3521f4b89afb5"
+    },
+    {
+      "path": "frontend/js/student/activity-catalog.js",
+      "bytes": 4921,
+      "sha256": "2871b002681021722e299785432202a157612b04277952cd469d88db6528d91c"
+    },
+    {
+      "path": "frontend/js/student/activity-model.js",
+      "bytes": 1485,
+      "sha256": "1f0df0db5ffd40640e0a85bc4a0ed33fa5fa797d15dbf71f3e71283452474dd0"
+    },
+    {
+      "path": "frontend/js/student/activity-results-view.js",
+      "bytes": 1288,
+      "sha256": "4c8713e3ca7100a4e640859461de32aaec8d9cc753a973e51cd1cb9716882dd7"
+    },
+    {
+      "path": "frontend/js/student/activity-runner.js",
+      "bytes": 8545,
+      "sha256": "7be4e6738296bd0d1a9e442be9270dcad8b65b24a652a2961075a1b6ff165c88"
+    },
+    {
+      "path": "frontend/js/student/agenda.js",
+      "bytes": 4794,
+      "sha256": "302ac246e7ee80acfaf5269fb5ea4f05b31d7b54c673c20865f56a500a401b82"
+    },
+    {
+      "path": "frontend/js/student/course-detail.js",
+      "bytes": 2550,
+      "sha256": "4efa6eecf30977066035345655b84f1c16b9eca9722d16052b3f590f0c8495b5"
+    },
+    {
+      "path": "frontend/js/student/course-progress.js",
+      "bytes": 1797,
+      "sha256": "1469bdbcda95d111489673250de559cf20b9fdbb9d7a49c52529bc3d9b9cafd5"
+    },
+    {
+      "path": "frontend/js/student/courses.js",
+      "bytes": 3072,
+      "sha256": "b576e937414026fefc8bb035d43c473663e446c8e158ccf9a3ec0c06bfe92654"
+    },
+    {
+      "path": "frontend/js/student/dashboard.js",
+      "bytes": 13033,
+      "sha256": "d0e3580e4a37df9ba9f6a37f83684b354c714dfc15bda6628a7c7c79a5af6685"
+    },
+    {
+      "path": "frontend/js/student/downloaded-content.js",
+      "bytes": 1532,
+      "sha256": "effb69c4325ac73a1be4d700f2b22058a254dfe4e4c2ef4620cff926ff92a905"
+    },
+    {
+      "path": "frontend/js/student/downloads.js",
+      "bytes": 4158,
+      "sha256": "5bfc4fe0345890f38669598c7bebb54c896819ef96a41b9db8f3ff213f87eb36"
+    },
+    {
+      "path": "frontend/js/student/edit-profile.js",
+      "bytes": 1707,
+      "sha256": "61d0a9aa29050d28c720f81d781b00c6fecdb171bafe6ebc4344667a42574659"
+    },
+    {
+      "path": "frontend/js/student/evaluaciones.js",
+      "bytes": 3323,
+      "sha256": "2014adcc928ce65da35f35b3d7d9e4ce3933a18af5f8b7e0b985f5ec12d09044"
+    },
+    {
+      "path": "frontend/js/student/evaluation-answer-review.js",
+      "bytes": 1709,
+      "sha256": "252fa9b18aae8a2f3179975f8fbc7382ca1d5ec7be4d9ca5a76f28d70b6aaf69"
+    },
+    {
+      "path": "frontend/js/student/evaluation-detail.js",
+      "bytes": 2611,
+      "sha256": "f2178276d2e9d1619c03639b3d4d32e239c50682e4fda67a338645e2e056ec29"
+    },
+    {
+      "path": "frontend/js/student/evaluation-player.js",
+      "bytes": 5025,
+      "sha256": "647f5253acee86d2a9b8f61f03e77165d134a3bb10af18fade1a4c36d922c4c2"
+    },
+    {
+      "path": "frontend/js/student/evaluation-results.js",
+      "bytes": 2224,
+      "sha256": "c72cc5b67165b963edc3228225c5c6b696183eb72e8b9762132c6584f449732f"
+    },
+    {
+      "path": "frontend/js/student/evaluation-review.js",
+      "bytes": 3522,
+      "sha256": "228072b39c5ddee580eb61b11ce7c20e348771db86e116969c78608ee7d2620f"
+    },
+    {
+      "path": "frontend/js/student/event-detail.js",
+      "bytes": 1153,
+      "sha256": "03215eacd995faae24b6128f6a4074b1cb439093c3be9127bd9652240d4a9b5e"
+    },
+    {
+      "path": "frontend/js/student/exercise.js",
+      "bytes": 473,
+      "sha256": "32df05e988ae8ad85d467b6c98e08947542396038a86e10d34cdcad84a3ba7e1"
+    },
+    {
+      "path": "frontend/js/student/game-player.js",
+      "bytes": 843,
+      "sha256": "9763b8f867601dd5920eb2a788c2b0b3b44428cdac28792febed5d38e164b177"
+    },
+    {
+      "path": "frontend/js/student/games.js",
+      "bytes": 90,
+      "sha256": "ad965292da9be09edb7f6b2d739cb3bc7c6f03a73a8fd9a0536883c8b4105d6f"
+    },
+    {
+      "path": "frontend/js/student/historial-pronunciacion.js",
+      "bytes": 2059,
+      "sha256": "07f02cfdcdfa5029d5ba8df32fe10fa000ddeab06e9e7863c84a37a0cb3617fc"
+    },
+    {
+      "path": "frontend/js/student/i18n.js",
+      "bytes": 9091,
+      "sha256": "517aa45a4d39b8eb9cd9faf4af8dce3226b2024f78db398d5282165301c51bd5"
+    },
+    {
+      "path": "frontend/js/student/learning-i18n.js",
+      "bytes": 6876,
+      "sha256": "ee1d317d26128797f6407ef1bdb3375f8761b5c2ddd0b19d6614d517ebd3b21a"
+    },
+    {
+      "path": "frontend/js/student/learning-page.js",
+      "bytes": 1849,
+      "sha256": "62897dafd6c5ef3a2c59fd056c544a0e952d7633295473deb487f2e7ea7f4e29"
+    },
+    {
+      "path": "frontend/js/student/learning-routes.js",
+      "bytes": 3806,
+      "sha256": "9a38d7953516e6835980f0e33be8232f4a54f9b01bb170cf7d9cb88a5c272a99"
+    },
+    {
+      "path": "frontend/js/student/learning-shell.js",
+      "bytes": 9577,
+      "sha256": "3ecfa9b6e8d43f1e29b9e7efb2e90a7c0661b8a51956b2ec572869740f509ae8"
+    },
+    {
+      "path": "frontend/js/student/lessons.js",
+      "bytes": 8016,
+      "sha256": "1de8b20b08cc44c7b670501cf450a4afe85a27ae27bbc07b2528cfc48ae45ad9"
+    },
+    {
+      "path": "frontend/js/student/missions.js",
+      "bytes": 1525,
+      "sha256": "c80c5245aeb1c6b3be21157c674772839803ca415cdf46c29f33fbbaf2fd63b5"
+    },
+    {
+      "path": "frontend/js/student/offline-status.js",
+      "bytes": 1870,
+      "sha256": "44a18be1c5aa561fe3662c1d7c6a2906cf9fe32461280b9e773a63c667a03165"
+    },
+    {
+      "path": "frontend/js/student/pending-activities.js",
+      "bytes": 1305,
+      "sha256": "e4217f5b1ca97cf2eb088174cfff0de64b6841366ec79ae981607f0291b2e3ec"
+    },
+    {
+      "path": "frontend/js/student/planner-api-view.js",
+      "bytes": 11387,
+      "sha256": "a555b6f5161d36833b24c7f12816747ebf958e141714bf5d7bc0ca6a45e15805"
+    },
+    {
+      "path": "frontend/js/student/practicar-pronunciacion.js",
+      "bytes": 8143,
+      "sha256": "1ae735be85670327bbe163af33e5883c4cf7bd0c61e1ceb323bde2a4f5e5f246"
+    },
+    {
+      "path": "frontend/js/student/practice-i18n.js",
+      "bytes": 7537,
+      "sha256": "89584d0927491b90a52c6d6ae85102d4f506750628f0b0ebd956ebdcf5f43fbd"
+    },
+    {
+      "path": "frontend/js/student/practice-results.js",
+      "bytes": 1564,
+      "sha256": "8c9bda39345f21b57231cf123e2320fd72e304c28ffb8175a784a9178bdf1fce"
+    },
+    {
+      "path": "frontend/js/student/practice.js",
+      "bytes": 94,
+      "sha256": "7f5dc5848b6a8b9855a11563249a1d7be402f17d0352ddb8196c954a907875a4"
+    },
+    {
+      "path": "frontend/js/student/preferences.js",
+      "bytes": 2157,
+      "sha256": "1ded88293feb3174a40a2678a4cc075211c9cc13811018ff8987266c18a2d596"
+    },
+    {
+      "path": "frontend/js/student/profile.js",
+      "bytes": 2364,
+      "sha256": "7a7778aa385ba7d3647082d1a251688f64489e33f4bf2825835fd1cab4f4b012"
+    },
+    {
+      "path": "frontend/js/student/progress.js",
+      "bytes": 7303,
+      "sha256": "327e80a4534dadf29fe7f409c089fb3d1f5e719cd05dda51cd9118b8f0494f83"
+    },
+    {
+      "path": "frontend/js/student/pronuncia.js",
+      "bytes": 3008,
+      "sha256": "b459acf20927b971447c34774fbc4b70d4f08c024ab1e033f865f25c5ac47e2d"
+    },
+    {
+      "path": "frontend/js/student/pronunciation-api-practice.js",
+      "bytes": 2606,
+      "sha256": "7b503389371b42ad2f5470d1b41c5b4740888a8f4e83daaccfcfadc75d10920c"
+    },
+    {
+      "path": "frontend/js/student/pronunciation-i18n.js",
+      "bytes": 2152,
+      "sha256": "5561272c418d9e683d58eca59746b10e72f28ac590a4bf19589d1b9b607df534"
+    },
+    {
+      "path": "frontend/js/student/reminder-editor.js",
+      "bytes": 1724,
+      "sha256": "75a4c0cfb8ec46ea01d8962634946b3580c0f83aa20a814eace33c147852e57f"
+    },
+    {
+      "path": "frontend/js/student/reminders.js",
+      "bytes": 1416,
+      "sha256": "bf5bc9271644206e6ef4eeccbcb852c0d92a98d90a883071a665e316598ab0c8"
+    },
+    {
+      "path": "frontend/js/student/resultado-pronunciacion.js",
+      "bytes": 1620,
+      "sha256": "7bbd551eea505ef04aa4ffc45a7023aaa6e3900ff2f5d7cc1af2f6ed00f90f6b"
+    },
+    {
+      "path": "frontend/js/student/section-navigation.js",
+      "bytes": 1043,
+      "sha256": "bf91c4b4188217b648339ff5c843352a60c66ffa2afd68f98e2f712ce757a092"
+    },
+    {
+      "path": "frontend/js/student/settings.js",
+      "bytes": 2196,
+      "sha256": "570b32f058144ad574859f3cfb4eaf85f98e42f5ba049ab5a24f1358479b2f75"
+    },
+    {
+      "path": "frontend/js/student/storage-management.js",
+      "bytes": 1835,
+      "sha256": "d4834040543753a585c549962d45861b326dd06159825d39b9f445e18129ece8"
+    },
+    {
+      "path": "frontend/js/student/sync-queue.js",
+      "bytes": 1009,
+      "sha256": "cc003920e8a93e91e6f0e77de564b348872107cab41820c7f85609853e5e7790"
+    },
+    {
+      "path": "frontend/js/student/synchronization.js",
+      "bytes": 5598,
+      "sha256": "f9dd672f65eb82c0a791ca153a9481a960bf44747402576171788dcf8d956331"
+    },
+    {
+      "path": "frontend/js/student/translator-i18n.js",
+      "bytes": 12435,
+      "sha256": "789b4b33cde6792be2af5c343471af2f806d4178623d1f910d8355ef50ea6b07"
+    },
+    {
+      "path": "frontend/js/student/translator.js",
+      "bytes": 14189,
+      "sha256": "2574eba19940db6ca0ead403b929b39f0d381e45a3560d6a233b5e31a6fac047"
+    },
+    {
+      "path": "frontend/js/student/tutor-i18n.js",
+      "bytes": 7525,
+      "sha256": "3bb4db7a2b06ec95b5d61c4f6ddac3102a6cfc6389b7362449016025fb25801a"
+    },
+    {
+      "path": "frontend/js/student/tutor.js",
+      "bytes": 17777,
+      "sha256": "4ca3de60f7361283ba8faf7baea9883e148af699405a95baa602f13a658d3182"
+    },
+    {
+      "path": "frontend/js/student/units.js",
+      "bytes": 3350,
+      "sha256": "17a18fea8a06ceedb05e01da72db213435f23a1fd0052b879c8c61d222651670"
+    },
+    {
+      "path": "frontend/js/student/vocabulary-review.js",
+      "bytes": 9015,
+      "sha256": "b9e358998d8d44077a48bfb1959393a0f2a6701255e5803b79d03a3adbb4b5b6"
+    },
+    {
+      "path": "frontend/js/student/vocabulary.js",
+      "bytes": 5554,
+      "sha256": "3445e790a2e0fbe0183aef332e7c49dfcdb1fef744b82e1c9f6abbba66d439ca"
+    },
+    {
+      "path": "frontend/js/student/word-detail.js",
+      "bytes": 4834,
+      "sha256": "01f2e6d8042daeae489ca859c377eebd89c0ac36ef49fdd8367295d35245b90b"
+    },
+    {
+      "path": "frontend/js/sync/protocol.js",
+      "bytes": 2485,
+      "sha256": "a5d7c52e036805def5254cfd698851b4228e4faccdbb99ca22feee678aeb01ae"
+    },
+    {
+      "path": "frontend/js/utils/academic-movement-validation.js",
+      "bytes": 5025,
+      "sha256": "7371dc4b9ad0542b62beeb5c01edd9fe2ff87d87b63901753ea71170ed06762c"
+    },
+    {
+      "path": "frontend/js/utils/academic-relations.js",
+      "bytes": 5567,
+      "sha256": "5167fa72a1f4e66b2d3df8bafdc7f59db3e34faeca39152feb124a26ae961fd1"
+    },
+    {
+      "path": "frontend/js/utils/academic-statistics.js",
+      "bytes": 2075,
+      "sha256": "39a8f016dd33628556699475f938a09cf5292eabcd7c1759b8a619a380a2fad2"
+    },
+    {
+      "path": "frontend/js/utils/accessibility-manager.js",
+      "bytes": 1166,
+      "sha256": "e8bd4fa5d28eb4e5a1788b0238933052dcf6fa01cc3e409ac762d6b44438d59e"
+    },
+    {
+      "path": "frontend/js/utils/achievement-rules.js",
+      "bytes": 299,
+      "sha256": "ff246b8236e6a90e65d083ff079b9f67565a39294b9bbddbca27aca1f8edc93f"
+    },
+    {
+      "path": "frontend/js/utils/admin-statistics.js",
+      "bytes": 1705,
+      "sha256": "eaa1b9d70ad34c0e5d6ed26bfd7ab51c898fcd9fcdc3239dd3dd955d0b0efc7b"
+    },
+    {
+      "path": "frontend/js/utils/admin-user-validation.js",
+      "bytes": 7420,
+      "sha256": "a2203cafd853e809e13b30a6ebeb6518f9ac42690a234ee8888b0f8bf6653981"
+    },
+    {
+      "path": "frontend/js/utils/answer-validation.js",
+      "bytes": 1842,
+      "sha256": "a0d0a9baa255e2e1565a7de1c171c462316bd1fbf8f0b550af1d653a61a4578b"
+    },
+    {
+      "path": "frontend/js/utils/calendar-dates.js",
+      "bytes": 3637,
+      "sha256": "6c18c930f1dcad26a7fcfd3abad8d7bd6337fd7bb46a4e9fcb0547b792ef0e73"
+    },
+    {
+      "path": "frontend/js/utils/classroom-statistics.js",
+      "bytes": 3351,
+      "sha256": "6105a440326be3eb4980f9de87a53937ad012b7065f475523203614a04672f66"
+    },
+    {
+      "path": "frontend/js/utils/classroom-validation.js",
+      "bytes": 4393,
+      "sha256": "81526ddf908f28935f5f3a80f4be4aee79fe499bd7fbc9866be85d96ced7de88"
+    },
+    {
+      "path": "frontend/js/utils/connectivity-status.js",
+      "bytes": 902,
+      "sha256": "66249299a57db41db4dee60f2e28d75ce2751d1414243fade60cbd0fa56455dc"
+    },
+    {
+      "path": "frontend/js/utils/content-safety.js",
+      "bytes": 361,
+      "sha256": "eb53716f4d3f39706851ef616f876260801324bd0cb07d82744a2c93607b03f4"
+    },
+    {
+      "path": "frontend/js/utils/csv-safety.js",
+      "bytes": 716,
+      "sha256": "a06d1fb6c13b64914e27291b2529beead4e9d9a0a2e885032a54ef6bf72fe838"
+    },
+    {
+      "path": "frontend/js/utils/date-format.js",
+      "bytes": 344,
+      "sha256": "b5830227d700f80ed2ab39f8d2d8e5b7a94c9d7083a2e013e704617358d05708"
+    },
+    {
+      "path": "frontend/js/utils/enrollment-duplicates.js",
+      "bytes": 1738,
+      "sha256": "17766ed84d05ed905b024e27d26e95e21fe0285b45c28c657c59ad974d7b6f77"
+    },
+    {
+      "path": "frontend/js/utils/enrollment-validation.js",
+      "bytes": 2318,
+      "sha256": "54bc4776018e289aa2b33953ec17101bb5062ff2b5adae5b56495d3d5ff0760a"
+    },
+    {
+      "path": "frontend/js/utils/evaluation-results.js",
+      "bytes": 1034,
+      "sha256": "a478c3ba5a9ec8beaadf334901a89b1e0168c1dbd587a75b3502ac760a7f5650"
+    },
+    {
+      "path": "frontend/js/utils/evaluation-time.js",
+      "bytes": 455,
+      "sha256": "3263196a416143d34bbc23a677100608ea0b7df75a9585663902541a8db2984a"
+    },
+    {
+      "path": "frontend/js/utils/evaluation-validation.js",
+      "bytes": 1325,
+      "sha256": "89ff3be5a288125b3f65a15dbea4a80a36866b98ffa0aa4f01a5ace0ba47216a"
+    },
+    {
+      "path": "frontend/js/utils/event-filter.js",
+      "bytes": 358,
+      "sha256": "4d225b3080df46c6075dcff910a52ca90aeac691508d8a42291260a88f81b239"
+    },
+    {
+      "path": "frontend/js/utils/event-status.js",
+      "bytes": 197,
+      "sha256": "6e1fad32fad79efa707095888f95c5de8f530f0895e2f5237711cfa8b62575ae"
+    },
+    {
+      "path": "frontend/js/utils/language-format.js",
+      "bytes": 1214,
+      "sha256": "2f3d2d0dff78a6392439f74ead289751ce7f3467730fed9b7baaeaf1b4e9a888"
+    },
+    {
+      "path": "frontend/js/utils/learning-support-validation.js",
+      "bytes": 6864,
+      "sha256": "6544185c4b1c655253d00503100ba2932768313eaa1d062c84d94d0f67f56233"
+    },
+    {
+      "path": "frontend/js/utils/mission-validator.js",
+      "bytes": 222,
+      "sha256": "0417e4cf1abdbb08335a5e45c5b42e50015ddae44bb3e91e19ab3a7743d3220c"
+    },
+    {
+      "path": "frontend/js/utils/monitor-data-events.js",
+      "bytes": 649,
+      "sha256": "e2dfb231c006dd0eb026226044d9f4ff8014f4472b58ce65032370376427316b"
+    },
+    {
+      "path": "frontend/js/utils/monitor-evaluation-validation.js",
+      "bytes": 5316,
+      "sha256": "e548a0adcd8d381addc0c016b6df7b7842744a881b5715a1a1368cf9361ff4a4"
+    },
+    {
+      "path": "frontend/js/utils/monitor-grading.js",
+      "bytes": 1469,
+      "sha256": "330e60896159c362a2ea63c2a8e5486bb10a24942bf4e704b1861807bb6114d4"
+    },
+    {
+      "path": "frontend/js/utils/offline-package-validation.js",
+      "bytes": 2549,
+      "sha256": "cd16fb8f7db9aaddb7a5e84bad432a690a7cf75e4a166a4898bc4aa4443939b6"
+    },
+    {
+      "path": "frontend/js/utils/organization-filters.js",
+      "bytes": 2797,
+      "sha256": "5d06aba7c148dd3a3fa057b038943995e92337dd1d855743f19f08a711814d33"
+    },
+    {
+      "path": "frontend/js/utils/period-validation.js",
+      "bytes": 2642,
+      "sha256": "0d27a21aa0151dea995c2698d40dd043effd7962d14f3124ffd651d61cd3f744"
+    },
+    {
+      "path": "frontend/js/utils/progress-calculator.js",
+      "bytes": 537,
+      "sha256": "c053c93c07dafba613272128165108e1d41a25dcb69eeb02505ceddfc1a44f61"
+    },
+    {
+      "path": "frontend/js/utils/pronunciation-validation.js",
+      "bytes": 294,
+      "sha256": "7e86f6a0a60b9ca918ddbd12ce6a77cd3ad79a2b9aeadb8f76076df614c02166"
+    },
+    {
+      "path": "frontend/js/utils/pwa-capability-check.js",
+      "bytes": 912,
+      "sha256": "c3924787085962cb94ab44c098fa9b6ad7dd61834c23dd7bd45b3bbbd437155d"
+    },
+    {
+      "path": "frontend/js/utils/reward-calculator.js",
+      "bytes": 92,
+      "sha256": "84a59e103c759d434ac4b3992b512f3ebc5a473050aa0ec09fa9141bbee4fd34"
+    },
+    {
+      "path": "frontend/js/utils/safe-technical-export.js",
+      "bytes": 6288,
+      "sha256": "dcd478ea537dbb252006d5cfd00c805c179fb602a398a979fd7d4064450f4c11"
+    },
+    {
+      "path": "frontend/js/utils/score-calculator.js",
+      "bytes": 473,
+      "sha256": "c7ea25584382f9c1752b620f752c71fc45fdd5ada56642c9adef772c2ad6ccd3"
+    },
+    {
+      "path": "frontend/js/utils/service-status-normalization.js",
+      "bytes": 2635,
+      "sha256": "1f9a7c1901c4a2bae51fb1e74e59b1501fcb415f1244ff8b56a631dde78def1e"
+    },
+    {
+      "path": "frontend/js/utils/service-worker-check.js",
+      "bytes": 1567,
+      "sha256": "9cce23fc0647b80c712b0762eec85f7e0464b1019fd3606debc378e2e0cbc98f"
+    },
+    {
+      "path": "frontend/js/utils/speech-compatibility.js",
+      "bytes": 768,
+      "sha256": "ecf76af46a7a77f5305a69f466fe571660eefad52b90e3d0318fb3445fb2c11d"
+    },
+    {
+      "path": "frontend/js/utils/storage-availability.js",
+      "bytes": 2649,
+      "sha256": "d9c15bd6d46e956520dd08dbab8d83d909ea750672a1ede177546379296387e7"
+    },
+    {
+      "path": "frontend/js/utils/storage-estimate.js",
+      "bytes": 1828,
+      "sha256": "037499e60e1fef8473348137e779914bdf51da1cf62a978fd3b5232e9c201e2a"
+    },
+    {
+      "path": "frontend/js/utils/storage-format.js",
+      "bytes": 291,
+      "sha256": "bf65c4d7f7a42e1d946f1596bf787c7bce30c5fd0ec28ee0c12f1e9e514e95cf"
+    },
+    {
+      "path": "frontend/js/utils/sync-operation-status.js",
+      "bytes": 2317,
+      "sha256": "959086eebe96da1f5dea4edcad1f4fde9002aac877518213851743bba557d7f0"
+    },
+    {
+      "path": "frontend/js/utils/teacher-assignment-validation.js",
+      "bytes": 3136,
+      "sha256": "baec7d5ad301aacb4a821001653786d00173fdda7759e1f1868a2483ec01e3da"
+    },
+    {
+      "path": "frontend/js/utils/technical-date-format.js",
+      "bytes": 2237,
+      "sha256": "8225b0d7c369f3554f371f5fb1fc4c265247200a76bc084044ae7c3df1ffbda0"
+    },
+    {
+      "path": "frontend/js/utils/technical-diagnostic-rules.js",
+      "bytes": 1450,
+      "sha256": "c7701c118a2eb54a9a774ba30e9b6f051e8e753e141ccecb81cc7b70751d87e7"
+    },
+    {
+      "path": "frontend/js/utils/technical-incident-deduplication.js",
+      "bytes": 2029,
+      "sha256": "fb507ddc5bd1f43500edacf4e2e17daece46539bce6fbe21efe3811b73e73de4"
+    },
+    {
+      "path": "frontend/js/utils/text-direction.js",
+      "bytes": 576,
+      "sha256": "ebc108d4a54b2d71f79c48b1bed72e21b5653a12952fef4de534c972231b6160"
+    },
+    {
+      "path": "frontend/js/utils/theme-manager.js",
+      "bytes": 1082,
+      "sha256": "c5a5ce4ef45856758bcc57464486b39972a94a07ccb74474a7a518e8593d7fff"
+    },
+    {
+      "path": "frontend/js/utils/translation-validation.js",
+      "bytes": 564,
+      "sha256": "718b3f82e6fbf45dbf7a37480a0ff1f7b2b9d6776c71965baba5b7966cf6ce51"
+    },
+    {
+      "path": "frontend/js/utils/tutor-format.js",
+      "bytes": 1922,
+      "sha256": "47140972c31da2c07a8c1ec245e821b3269d9577e3d701e4e9c71fb34934db46"
+    },
+    {
+      "path": "frontend/js/utils/tutor-validation.js",
+      "bytes": 445,
+      "sha256": "7387c207d3e318c365bdddc076f27da8706a2e4050ccf0af469cfdb4f6867823"
+    },
+    {
+      "path": "frontend/login.html",
+      "bytes": 4628,
+      "sha256": "79e2c769c9600347c9bf1d070d64cce234c751b69ee9bb27079b52d4a63e53e4"
+    },
+    {
+      "path": "frontend/manifest.webmanifest",
+      "bytes": 338,
+      "sha256": "295c18200fa810b5c434676cc1051d6f2c8b70d39abd445a014a8b5e0446c4ad"
+    },
+    {
+      "path": "frontend/monitor/accesibilidad.html",
+      "bytes": 1476,
+      "sha256": "2ce319db2f41a17a775f946a3e42bb47ce8e325827cf64104ed5d434823c0225"
+    },
+    {
+      "path": "frontend/monitor/agenda.html",
+      "bytes": 1356,
+      "sha256": "46fcad538163588a7223f348e2ef1d57548a72a884229c67f08fec64c3d6267e"
+    },
+    {
+      "path": "frontend/monitor/analisis-resultados.html",
+      "bytes": 1430,
+      "sha256": "395de9a412d00ba0c63ead5d4d78c6b46f80f9c40842a27f774f38985c7168e1"
+    },
+    {
+      "path": "frontend/monitor/asignar-actividad.html",
+      "bytes": 1413,
+      "sha256": "85083101db5646d768dc3d6f60b349fd52cbcb3cbac0f53fd3e870d4c2a1521a"
+    },
+    {
+      "path": "frontend/monitor/asignar-evaluacion.html",
+      "bytes": 1416,
+      "sha256": "342f69b1bfbe21e15b6e14908b542aa88df71d09f06d4cad944338d8f3a2fad1"
+    },
+    {
+      "path": "frontend/monitor/aulas.html",
+      "bytes": 1243,
+      "sha256": "17c8c8edae1422ccbe96397d09a09989de0856ed74e5b229222a226de269f6f8"
+    },
+    {
+      "path": "frontend/monitor/ayuda.html",
+      "bytes": 1471,
+      "sha256": "b4de31ae10d2b875ed749e073d3cecf4e0a4fa6d82675a626fd7c879a2cd179d"
+    },
+    {
+      "path": "frontend/monitor/calendario.html",
+      "bytes": 1356,
+      "sha256": "c1fe0227decc046deba5ac174dd92b3f199965547954f3e144fbb071f5f2bae4"
+    },
+    {
+      "path": "frontend/monitor/configuracion.html",
+      "bytes": 1473,
+      "sha256": "298a567a7374e5ede131c3ab3d134477cbf56fd23c83a54aed2bfc3b79a78a9e"
+    },
+    {
+      "path": "frontend/monitor/corregir-evaluacion.html",
+      "bytes": 1389,
+      "sha256": "eda29f91b4e9008f0ea9458fb8b4d92e0259cbd929ef0df9cd691eeb5f0437a9"
+    },
+    {
+      "path": "frontend/monitor/crear-refuerzo.html",
+      "bytes": 1414,
+      "sha256": "9c53b5dda84a6fc8bb535711a59cd095576b93b79e7bd8148da6b4442484ff0f"
+    },
+    {
+      "path": "frontend/monitor/cursos.html",
+      "bytes": 1636,
+      "sha256": "277f9307b50beb3c1f0f125a068220719f5eada11dd75d0f8aaa762e983f52fe"
+    },
+    {
+      "path": "frontend/monitor/detalle-actividad.html",
+      "bytes": 1413,
+      "sha256": "19ec9ee3468f8de1c9d0562a87eed1fa747b59de2bf04d3436969e49fc2231e8"
+    },
+    {
+      "path": "frontend/monitor/detalle-aula.html",
+      "bytes": 1290,
+      "sha256": "cfcc0ad05433e4df7a2cf5b811dddce586a30bfc448c991c4a436f600ef32ed9"
+    },
+    {
+      "path": "frontend/monitor/detalle-calificacion.html",
+      "bytes": 1440,
+      "sha256": "30bc5a6850db7aa2c75195b9318600ac657fd28294b5b959d06e6a385621c2b9"
+    },
+    {
+      "path": "frontend/monitor/detalle-curso.html",
+      "bytes": 1530,
+      "sha256": "6fce6301acc7aedd77b41b91176aa03a2be277a34e27a05e0156e2af867f2857"
+    },
+    {
+      "path": "frontend/monitor/detalle-estudiante.html",
+      "bytes": 1327,
+      "sha256": "9dd3c4fb0e56b9ce7440b441631138eb0e2a3e9469989c0b8f31c0f73c7d9b0f"
+    },
+    {
+      "path": "frontend/monitor/detalle-evento.html",
+      "bytes": 1335,
+      "sha256": "97ed47760ffa94ad5b15ed86bb4d8a88584913a921863a68ef38323222cd550a"
+    },
+    {
+      "path": "frontend/monitor/editar-evaluacion.html",
+      "bytes": 1377,
+      "sha256": "9bc977c3a44a9c11d9893ed698ab126ca9814f2e1f0bbc32ba00169ce62fc1b0"
+    },
+    {
+      "path": "frontend/monitor/editar-leccion.html",
+      "bytes": 1540,
+      "sha256": "2e1415862881dc5d53bbed1f705b4b5abbf2e24570559c6ae9e87de6fb3bc911"
+    },
+    {
+      "path": "frontend/monitor/editar-perfil.html",
+      "bytes": 1455,
+      "sha256": "ffc4cb1d2cc36646e8e1745cae6b32c93cb2577b4b7caf1c9083fce47b1676d9"
+    },
+    {
+      "path": "frontend/monitor/editar-recordatorio.html",
+      "bytes": 1349,
+      "sha256": "5fb166812747afed64634adea44c6338bff50944152d7cc879ce37735b899ebb"
+    },
+    {
+      "path": "frontend/monitor/editar-tarea.html",
+      "bytes": 1388,
+      "sha256": "3175e34799b989828807ee7bf57a59749b5bca4003ad41dd9874e69445c7bf30"
+    },
+    {
+      "path": "frontend/monitor/editar-unidad.html",
+      "bytes": 1550,
+      "sha256": "80eea8a83dd4e79fc92b6b278fc9506d01707a728f5762bf707ac4bb2c23927a"
+    },
+    {
+      "path": "frontend/monitor/entregas-evaluacion.html",
+      "bytes": 1400,
+      "sha256": "9fba66d431543ebbddb9d1797d3749aa7cdb8c36b662313e352d70314a335a09"
+    },
+    {
+      "path": "frontend/monitor/estudiantes.html",
+      "bytes": 1334,
+      "sha256": "8c744cacfa8fcfccc1260489438c78e8267a95e0a55f6f1b4b84d330e1bffb2a"
+    },
+    {
+      "path": "frontend/monitor/evaluaciones.html",
+      "bytes": 1393,
+      "sha256": "6c7ab9a2cc156014168854cbd89324f99746b0696a53cec663975fa78783b370"
+    },
+    {
+      "path": "frontend/monitor/historial-academico.html",
+      "bytes": 1435,
+      "sha256": "8e7e3445b2dbca3442739d27c1cdd59af106d98c94459f5dc56d666bed51d9d5"
+    },
+    {
+      "path": "frontend/monitor/index.html",
+      "bytes": 1413,
+      "sha256": "65eb2a2e1c9186b7b5ec29ebc0d11682db864e21e2639536bcd9fb9e00b838b5"
+    },
+    {
+      "path": "frontend/monitor/lecciones.html",
+      "bytes": 1515,
+      "sha256": "86c806dc5b360848756a80a3004db127fc803f2e75146885d6f030f334940f3a"
+    },
+    {
+      "path": "frontend/monitor/notas.html",
+      "bytes": 1425,
+      "sha256": "6050889e22574e17cb27173abfbecbf0e97b96f7cff1cadb2251767ea94be14a"
+    },
+    {
+      "path": "frontend/monitor/notificaciones.html",
+      "bytes": 1357,
+      "sha256": "dce9d83b848d0e36863515cfa68033e064935662fb3d1256eaae3771140bfe4a"
+    },
+    {
+      "path": "frontend/monitor/organizar-contenidos.html",
+      "bytes": 1553,
+      "sha256": "328a4ff6fffbdb8ffc3f430183ea3b5f5f5c86ee19db53ecde99854fc19655da"
+    },
+    {
+      "path": "frontend/monitor/perfil.html",
+      "bytes": 1466,
+      "sha256": "7ff7d9c68eea869743f7375c617b1e0819789ab7a5950a569cd5c6e7546bdb12"
+    },
+    {
+      "path": "frontend/monitor/planificacion-semanal.html",
+      "bytes": 1360,
+      "sha256": "93a4b35705c9d8b80814d24f92881c9df939d362145ba91045d0a287d7f8c7c3"
+    },
+    {
+      "path": "frontend/monitor/preferencias-notificaciones.html",
+      "bytes": 1351,
+      "sha256": "4e6ee75dca0d9ed72cfbb31de1255e858df5cf0f723d9f85f099727e7396d787"
+    },
+    {
+      "path": "frontend/monitor/preferencias.html",
+      "bytes": 1494,
+      "sha256": "3d3064c214a32dde3662c7448cc1b3bff6e26be1165910c4ffe7e9752f7ff226"
+    },
+    {
+      "path": "frontend/monitor/preguntas-evaluacion.html",
+      "bytes": 1391,
+      "sha256": "7a70e69939a7c1421b7126d7a0eeede6595b0931d1634d71936be8f7c006ed9a"
+    },
+    {
+      "path": "frontend/monitor/privacidad.html",
+      "bytes": 1480,
+      "sha256": "fdc6647fd10432991359ec6377345b218f1eb8b3414ca305f04d3417a4353c5d"
+    },
+    {
+      "path": "frontend/monitor/recordatorios.html",
+      "bytes": 1356,
+      "sha256": "0f9c7e7311d1700d9c906be08eef6e609a83b3f40ed5d7408499296247557de0"
+    },
+    {
+      "path": "frontend/monitor/recursos-educativos.html",
+      "bytes": 1543,
+      "sha256": "8e5d4248adc3b4e562685e7eda94b94e634c8c71a45d6774cc4cdc277e1b3bc3"
+    },
+    {
+      "path": "frontend/monitor/refuerzos.html",
+      "bytes": 1382,
+      "sha256": "54100271a8ed334db09276f0af8a689a3e27b48c3b7932fec5e7eec8e3477a7c"
+    },
+    {
+      "path": "frontend/monitor/registro-notas.html",
+      "bytes": 1432,
+      "sha256": "581f2ae22c2d61e2b6adef3cc4250d5fb48b29bad935d7d07df6127a2d8175dd"
+    },
+    {
+      "path": "frontend/monitor/reporte-aula.html",
+      "bytes": 1446,
+      "sha256": "0e401bb73b71f17aebe100d71f1302a1b35917ca1f6e64a76074341cd3e37bda"
+    },
+    {
+      "path": "frontend/monitor/reporte-estudiante.html",
+      "bytes": 1448,
+      "sha256": "c85a6997f94e7696ee21d19a66898054faf8265aeb89ba26ee203b6a69d6259e"
+    },
+    {
+      "path": "frontend/monitor/reportes.html",
+      "bytes": 1408,
+      "sha256": "035bccafa40aed9df4082c0e238909139747f687c528ddf9e0026404194fa6cd"
+    },
+    {
+      "path": "frontend/monitor/resultados-evaluacion.html",
+      "bytes": 1413,
+      "sha256": "07b3d236a7f826e3db149a2bf84988ec85c9a5d96c25aa334bb5f9b1f09b763d"
+    },
+    {
+      "path": "frontend/monitor/seguimiento-actividades.html",
+      "bytes": 1431,
+      "sha256": "21215289f69572e88e1e4719b9035176d9d4003d835a466c5a4ddb120f2dabe1"
+    },
+    {
+      "path": "frontend/monitor/seguimiento-aula.html",
+      "bytes": 1324,
+      "sha256": "8916cc15905c172d454e43ce61506a03d4f107dc6983a87b4a5088f73823b69b"
+    },
+    {
+      "path": "frontend/monitor/seguimiento-refuerzo.html",
+      "bytes": 1435,
+      "sha256": "736ed19c04c409c7f3897b0aa9ee57be6c88a175974a16194b693a0afc26b777"
+    },
+    {
+      "path": "frontend/monitor/seguridad.html",
+      "bytes": 1489,
+      "sha256": "f90e80144b142c4a3804c9b465d2a26ac29caa62020810cccbf81022733f85fd"
+    },
+    {
+      "path": "frontend/monitor/tareas.html",
+      "bytes": 1406,
+      "sha256": "07f8b3f47c65f736dd8b2f7b8dd47c2f0f46aea3878d9e7e08c9dc18f0fcd0b9"
+    },
+    {
+      "path": "frontend/monitor/unidades.html",
+      "bytes": 1533,
+      "sha256": "e43c84d7bcc1836a73623fe7dbec9b034c6887a80d56506cb8edb76108143bf4"
+    },
+    {
+      "path": "frontend/monitor/vista-previa-evaluacion.html",
+      "bytes": 1383,
+      "sha256": "0eda337403cdafa53067fee928ccb7a6c6ecd4381cd1bf4be9a3259d8c4fc46a"
+    },
+    {
+      "path": "frontend/monitor/vista-previa-leccion.html",
+      "bytes": 1545,
+      "sha256": "be3ca8ae348739546269810119c43ca461eab764453f3126d5d8055e6c717768"
+    },
+    {
+      "path": "frontend/notificaciones.html",
+      "bytes": 1360,
+      "sha256": "3ed91773aebe8953272bcc9bdda90ebdcb0e6fbf6325090e22df8bf8c28173f0"
+    },
+    {
+      "path": "frontend/offline.html",
+      "bytes": 764,
+      "sha256": "db1d51f9ce36b9f9bc4d8c305df928409fcc5f9c77d538e5555263419efa749d"
+    },
+    {
+      "path": "frontend/planificacion-semanal.html",
+      "bytes": 1363,
+      "sha256": "d34108e02cbf5277fa898ee15a99d6623c9a8d22a99dbdb8ddde2fd87d22dc3b"
+    },
+    {
+      "path": "frontend/preferencias-notificaciones.html",
+      "bytes": 1354,
+      "sha256": "a3095c594a0e12545c11c51598ce264c514cba7c05f22bc9b6f9fbb55e28f52c"
+    },
+    {
+      "path": "frontend/recordatorios.html",
+      "bytes": 1359,
+      "sha256": "334c2328b551c4f660a257e7cbe5b26d40cef637f6e1651b24366b4cbd05ee51"
+    },
+    {
+      "path": "frontend/register.html",
+      "bytes": 8366,
+      "sha256": "903bb0996c33f603885ce5b1d8dbf9db1e546cae4afc5be33f2e9b27d223191c"
+    },
+    {
+      "path": "frontend/reset-password.html",
+      "bytes": 4994,
+      "sha256": "5bcb6dd8a5a567ec1fa8324271740afd5503419130e7a3d8728865451e867aba"
+    },
+    {
+      "path": "frontend/role-selection.html",
+      "bytes": 5911,
+      "sha256": "3681ebcf50498747e0788d5541c20d7cbc305248b71dfd57f01f8f000155abd8"
+    },
+    {
+      "path": "frontend/student/accesibilidad.html",
+      "bytes": 1021,
+      "sha256": "3dbd2f3fcb6f6683b6d4b54020abcb4490179da6dd4b4a92f01bf6905db74982"
+    },
+    {
+      "path": "frontend/student/actividades-pendientes.html",
+      "bytes": 1032,
+      "sha256": "c67206247f1348fff31ff1a9cf82e1874e1e35b092eade5c327ebe29c2eccdb9"
+    },
+    {
+      "path": "frontend/student/agenda.html",
+      "bytes": 1007,
+      "sha256": "3f0482e12e0eecbe6d565800b2915aff51256959c32caed35ab7303249fad3c2"
+    },
+    {
+      "path": "frontend/student/almacenamiento.html",
+      "bytes": 884,
+      "sha256": "802fea67e52be942923d5a8d7143cc40d9e702a671d2c888483fd103ca8b5c57"
+    },
+    {
+      "path": "frontend/student/aprende.html",
+      "bytes": 2147,
+      "sha256": "2cbaec6a4ab41b75238b464fff8255765cfa446968e63d33b7ac917bf0a494f7"
+    },
+    {
+      "path": "frontend/student/cola-sincronizacion.html",
+      "bytes": 879,
+      "sha256": "9ecc44e8a1a787c8e5e49c8197358999d52c42fcff3c9a1ebbfb6f41631446e3"
+    },
+    {
+      "path": "frontend/student/configuracion.html",
+      "bytes": 1017,
+      "sha256": "d96eb8d9489de34c2263fd76b31790fa6ca8d6cbf056fe21edd4d00394f260eb"
+    },
+    {
+      "path": "frontend/student/curso.html",
+      "bytes": 2120,
+      "sha256": "e777a8dd7bd4d5a1d3a95ffd4869ebe5d08685ea5c10bbb8570f2323aeb841fe"
+    },
+    {
+      "path": "frontend/student/descargas.html",
+      "bytes": 876,
+      "sha256": "9479f7ff0a602e457c90cf3baed846d039e72e8a2babefdd508f67ba82c6d780"
+    },
+    {
+      "path": "frontend/student/detalle-evaluacion.html",
+      "bytes": 1043,
+      "sha256": "ceea12ee079c1384ca691a4660b0d0d728b5de1fd44cc96a7bddcd1ee44b52b7"
+    },
+    {
+      "path": "frontend/student/detalle-evento.html",
+      "bytes": 1018,
+      "sha256": "65ba901e68a4a1ae7d5cfbffb7f8f4d896f5dee5bc22cf61f4a4051bd1d090ba"
+    },
+    {
+      "path": "frontend/student/detalle-logro.html",
+      "bytes": 1033,
+      "sha256": "5865c3e70e2a50432f254942583320cf7eb49d232749b76603345b5c87edd8a7"
+    },
+    {
+      "path": "frontend/student/editar-perfil.html",
+      "bytes": 1020,
+      "sha256": "fa106efc98316d3cbabbac90216e0698353056c201dd93c4518671fae99c02b5"
+    },
+    {
+      "path": "frontend/student/editar-recordatorio.html",
+      "bytes": 1026,
+      "sha256": "6c11d93dec5d361bc5fac80817f3d86769b83777a19d69b28110e57f1a9c9b9c"
+    },
+    {
+      "path": "frontend/student/ejercicio.html",
+      "bytes": 2196,
+      "sha256": "1bd5400c0aba097ca4a2956f362f0c658f0dba03ddc7fcec386a7f473790231e"
+    },
+    {
+      "path": "frontend/student/estado-offline.html",
+      "bytes": 874,
+      "sha256": "8b37c501703b208cda6ab9273d5efc95c2c17723eed4e85896ad2e45f65cef47"
+    },
+    {
+      "path": "frontend/student/evaluacion.html",
+      "bytes": 1035,
+      "sha256": "1e6adf81771209bf8045aca14923271b8bb8d48d4d8268e83dc03b324ac14f46"
+    },
+    {
+      "path": "frontend/student/evaluaciones.html",
+      "bytes": 1035,
+      "sha256": "d5f9d81550e7e3a2d262e2deb2e5adccf59f3b494a96e59522ce542fb220f562"
+    },
+    {
+      "path": "frontend/student/historial-pronunciacion.html",
+      "bytes": 1063,
+      "sha256": "e324b24b57e3ad34cbea268a70bc86a85693c1e10194d24fb0ef353086b37474"
+    },
+    {
+      "path": "frontend/student/index.html",
+      "bytes": 5783,
+      "sha256": "c55df1f3f4a7b9647b701ec80b55ef20c00fea6b2ad4ea0c20c643099ca12d03"
+    },
+    {
+      "path": "frontend/student/juego.html",
+      "bytes": 2232,
+      "sha256": "0be13ac3a7783080d53926c4855b2e7656f85f2a6755cbcd86df973dfa1eee90"
+    },
+    {
+      "path": "frontend/student/juegos.html",
+      "bytes": 2149,
+      "sha256": "96f7041c63cf46e75c028207fe8a0d6ca5d09821b2d2198ccac79f66a3414e22"
+    },
+    {
+      "path": "frontend/student/leccion.html",
+      "bytes": 2105,
+      "sha256": "17633f8010a0e114f6cbb686b1ba4eba1cd32a5f2dfebe36e4905de1ceb7638a"
+    },
+    {
+      "path": "frontend/student/logros.html",
+      "bytes": 1024,
+      "sha256": "368720080dc81eda03c88cadfdebac3a24dbc5d5241ff27a2e9d34e963ae7642"
+    },
+    {
+      "path": "frontend/student/mis-descargas.html",
+      "bytes": 877,
+      "sha256": "d6c773e4161fa967601fb171e3c6cb3ad98d4aa9a3d0b1b7185346142be4e882"
+    },
+    {
+      "path": "frontend/student/misiones.html",
+      "bytes": 1018,
+      "sha256": "0c524b3493276f5ee47928018b8b80b2d76717de29fa517e13418f3b1fe84290"
+    },
+    {
+      "path": "frontend/student/palabra.html",
+      "bytes": 2024,
+      "sha256": "a9372cb1c7216f8a324f29487847fec321a3d5d53372695978906a888d08ed45"
+    },
+    {
+      "path": "frontend/student/perfil.html",
+      "bytes": 1011,
+      "sha256": "7abecb137f2d68d85a00ad885ff2e3d595c0f07dab8a206b7a3c305d99249018"
+    },
+    {
+      "path": "frontend/student/practica.html",
+      "bytes": 2088,
+      "sha256": "5b5190e9886aeeb24c7bee0e5e540d2bd35b585e18a37cf5a0b9d7e7f0c9cf6f"
+    },
+    {
+      "path": "frontend/student/practicar-pronunciacion.html",
+      "bytes": 1060,
+      "sha256": "41e5e52c6a42922ecafe2cfae23c484f1da9be1338be5ce6cf2a0f9e41a1c4ff"
+    },
+    {
+      "path": "frontend/student/preferencias.html",
+      "bytes": 1018,
+      "sha256": "b1efdbbb36fcb54687f5dc2fd76fe92b8894dcc41658dcd3a79cf7d1a0f08c57"
+    },
+    {
+      "path": "frontend/student/progreso-curso.html",
+      "bytes": 1031,
+      "sha256": "06f55cac8b317861c3bfcd40d1625fa095e80f634b2cf5fabef06a22807036ac"
+    },
+    {
+      "path": "frontend/student/progreso.html",
+      "bytes": 1017,
+      "sha256": "3df21fa43759ee98a860a766ff6a7344b7ec00cd01448acfed05af1c12f71c6d"
+    },
+    {
+      "path": "frontend/student/pronuncia.html",
+      "bytes": 1039,
+      "sha256": "0059d8cdb7da24b2f2248506619f30c7be0afe1f67d10f2696059b474ecf5dc8"
+    },
+    {
+      "path": "frontend/student/recordatorios.html",
+      "bytes": 1018,
+      "sha256": "75dea9d93b3d1851e96ec03fe18f2d1bbdd28e3a4a6df0c98c2e0afb6e500de2"
+    },
+    {
+      "path": "frontend/student/repaso-vocabulario.html",
+      "bytes": 2070,
+      "sha256": "02e236e6af3fc5cfc45faf5083e69953c5b2367e761153a7e16792b46a150802"
+    },
+    {
+      "path": "frontend/student/resultado-evaluacion.html",
+      "bytes": 1046,
+      "sha256": "c95992120109438eaa88f472a1635fa3ca9c897c830479524cbde6977a2e9cbd"
+    },
+    {
+      "path": "frontend/student/resultado-practica.html",
+      "bytes": 2154,
+      "sha256": "fa8fc5498545f7604d2c6dcafce27bf0a25582b92adbaa06ad4f2f3d2bd62f91"
+    },
+    {
+      "path": "frontend/student/resultado-pronunciacion.html",
+      "bytes": 1060,
+      "sha256": "cbc34df446ea73fe2bae4f2d13b3376388729725f4b1b192799a734882b11b39"
+    },
+    {
+      "path": "frontend/student/revisar-evaluacion.html",
+      "bytes": 1043,
+      "sha256": "5a429f3984b3d75137eb09333ad58935e884a294e6dc6996b4a29874310aa20c"
+    },
+    {
+      "path": "frontend/student/revision-evaluacion.html",
+      "bytes": 1055,
+      "sha256": "684e9d45df3e47bffe3a92ad703056e5aec911f1069d9fb1f6a17bde91d253a1"
+    },
+    {
+      "path": "frontend/student/sincronizacion.html",
+      "bytes": 873,
+      "sha256": "8ac771ec7c985b1499bf3032c96c29b4a135803ecf2dd83a9b230cf4abb0fdcb"
+    },
+    {
+      "path": "frontend/student/traductor.html",
+      "bytes": 2265,
+      "sha256": "25ba0f07c5bf2e9b770cd99e5f7d7fcb6da76345f702f53dd03df6270244eb47"
+    },
+    {
+      "path": "frontend/student/tutor.html",
+      "bytes": 2460,
+      "sha256": "38df55fb46f093d66f6f997de49ee75afbf309d97eed266a9029e2b27f3c15a5"
+    },
+    {
+      "path": "frontend/student/unidad.html",
+      "bytes": 2169,
+      "sha256": "bda0591ef40f9f02e82687e2e961823b6fe6bcad597a2616d20d2cae8497c93c"
+    },
+    {
+      "path": "frontend/student/vocabulario.html",
+      "bytes": 2051,
+      "sha256": "48eb0f0424e2bcbe5b04dbea329ab3ab05f9ae070a8daca05d72b90eadcbcbef"
+    },
+    {
+      "path": "frontend/sw.js",
+      "bytes": 2636,
+      "sha256": "a5cb2cdfba09aebb7f3e97475a668135f16d230e5569e3d5d55586db9996f961"
+    },
+    {
+      "path": "frontend/unauthorized.html",
+      "bytes": 2566,
+      "sha256": "d7e185b4564423621973c625e8b82fbf8ca1e2e7cee48e78d0fb44223c67011a"
+    }
+  ]
+}

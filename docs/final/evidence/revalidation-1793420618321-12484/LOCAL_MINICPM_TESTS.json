@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-31T04:23:38.320Z",
+  "scope": "Service unit tests with a fake wllama runtime, plus real installed artifact hashes. NOT real model generation, device compatibility, pedagogy, authorization or pilot approval.",
+  "checks": [
+    {
+      "name": "Explicit consent before probe, runtime or model resources",
+      "pass": true
+    },
+    {
+      "name": "Unsupported WebAssembly fails closed without model or runtime requests",
+      "pass": true
+    },
+    {
+      "name": "Private/unsafe questions and malformed output rejected",
+      "pass": true
+    },
+    {
+      "name": "Pinned local-only wllama configuration and bounded single-turn generation",
+      "pass": true
+    },
+    {
+      "name": "Duplicate generation rejected and late answer suppressed after disposal",
+      "pass": true
+    },
+    {
+      "name": "Disposal during capability probe prevents later runtime loading",
+      "pass": true
+    },
+    {
+      "name": "Installed model, licence, template and wllama runtime match pinned hashes",
+      "pass": true
+    },
+    {
+      "name": "Inventory excludes local weights and retains no Qwen/WebLLM source",
+      "pass": true
+    }
+  ],
+  "hashes": [
+    {
+      "file": "frontend/js/services/local-tutor.service.js",
+      "sha256": "a531892f6dd5a43d2f73fe9c9b981046cd5915a0dc8ee3a22ddd1c4f1ae9d29b"
+    },
+    {
+      "file": "frontend/js/student/local-tutor.js",
+      "sha256": "0839e2af99065df631f77b155ec3d3d31a8b638118bc0603091b14ec13de297e"
+    },
+    {
+      "file": "frontend/js/student/tutor.js",
+      "sha256": "2a0654d7fb6f661c3fc4e495e48099ef08cee4b449496fc6b45584fd196dc330"
+    },
+    {
+      "file": "frontend/student/tutor.html",
+      "sha256": "875ac907891ea3616aea88af4bec880ccd9391a7db71e8ad5d839c9936d6c759"
+    },
+    {
+      "file": "frontend/css/student/local-tutor.css",
+      "sha256": "669828f6648debd763701f1c325d13a285357c2053d12031578ff6a8883fcfa2"
+    },
+    {
+      "file": "tools/install-local-minicpm.cjs",
+      "sha256": "902869c6f8fb7ad7b58afe378eba24e2e0dfccb67c07c76007dccd9576af002c"
+    },
+    {
+      "file": "tools/final-inventory.cjs",
+      "sha256": "1582e1059220a0ac0b465bc192beea2409324937d165cae7ac9a72ee7601d3d4"
+    },
+    {
+      "file": "tools/demo-audit.cjs",
+      "sha256": "52c1fc9f690645beaeaf1bb25a33b26cb846cb704ace8b8afd6fed3c2814433d"
+    },
+    {
+      "file": "tools/demo-server.cjs",
+      "sha256": "a8050018ee392fa0d8ecf8507a7b72463fbe79e467a88485c60e4dbc930646e3"
+    },
+    {
+      "file": "infra/docker/nginx.conf",
+      "sha256": "39d6b6e1886f15ee9bd0dcb92b93f6288ed72e03eb8e9b46985fa3a1caedc2e7"
+    },
+    {
+      "file": ".gitignore",
+      "sha256": "c3aafa70c298265e7d832546942d6c21b8eac58f3f682848d06edb0da5fe543e"
+    },
+    {
+      "file": "tests/local-minicpm.cjs",
+      "sha256": "760ed19cad3ec19900ea16d4a7ce46e01ee07d430285215b2da5bb44e9da4d00"
+    },
+    {
+      "file": "tests/frontend-refresh.browser.cjs",
+      "sha256": "284c497c64bf3c8664706ab0f2a296bfe52c988a99166d2caa12b99fda75d0a3"
+    },
+    {
+      "file": "tests/fixtures/local-minicpm-browser.cjs",
+      "sha256": "7bca4f202327c5cc76999ae83991d3db98da3c74a5c72325bebd4f943bf460c5"
+    },
+    {
+      "file": "docs/LOCAL_MINICPM_SETUP.md",
+      "sha256": "340f18d5a8d6d17cfd0f8287954fd9b1aa2f3916e556085bc705801d3a4bd7c4"
+    },
+    {
+      "file": "README.md",
+      "sha256": "1320d67bc959505a0728b520e5639e14132f4654a995ad3b728104786156d67e"
+    },
+    {
+      "file": "frontend/js/vendor/wllama/index.js",
+      "sha256": "e5506753e41a59c11f61f2c52422045be9fc76e32a7e47f037aaad5df4ec723e"
+    },
+    {
+      "file": "frontend/js/vendor/wllama/wllama.wasm",
+      "sha256": "551f13439366eff11e057b1b91fe46a7fdac29d56d67372d4c5f19a549dfe70c"
+    },
+    {
+      "file": "frontend/js/vendor/wllama/LICENSE",
+      "sha256": "5866e3bd7e3cbd3f7c8bea6efd8a1e7fa7cc8de68c30f428aff7c6584a0fb720"
+    },
+    {
+      "file": "frontend/js/vendor/wllama/PROVENANCE.json",
+      "sha256": "ef8c8f62a137534dd7b10816c75f611b2167ae13ab2ea9fd22c41f21ad950525"
+    },
+    {
+      "file": "frontend/assets/models/minicpm5-2b-gguf/EDUNEXT_INSTALL.json",
+      "sha256": "959dc44b29b5b010fb8e30d3f8ca94ee116b24940ddd6ca8b66c6180103b5254"
+    },
+    {
+      "file": "frontend/assets/models/minicpm5-2b-gguf/PROVENANCE.json",
+      "sha256": "a68c67372ba392dec111283ae8467bb6eb2dd62457e21ffbec854976433d0b6a"
+    }
+  ],
+  "pass": true,
+  "decision": "NO-GO"
+}

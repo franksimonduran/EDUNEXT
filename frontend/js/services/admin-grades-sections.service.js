@@ -1,0 +1,20 @@
+import {organizationModel,sectionsOfGrade,roomsOfGrade,sectionById,studentsOfClassroom} from '../utils/academic-relations.js';
+import {listAcademicRecords,newAcademicRecord,saveAcademicRecord,archiveAcademicRecord,deleteAcademicRecord,getAcademicRecord} from './admin-organization-drafts.service.js';
+import {validateSectionDraft} from '../utils/classroom-validation.js';
+import {filterClassrooms,sortRows} from '../utils/organization-filters.js';
+import {gradeCatalog,sectionId,sectionName,gradeName} from '../data/admin-organization-demo.data.js';
+export async function gradeList(filters={}){
+ const model=await organizationModel();const records=await listAcademicRecords('section');
+ const rows=model.grades.map(grade=>{const sections=sectionsOfGrade(model,grade.id);const rooms=roomsOfGrade(model,grade.id);const students=rooms.reduce((acc,room)=>acc+studentsOfClassroom(model,room.id).length,0);const proposed=records.filter(r=>r.state!=='archived'&&Number(r.data?.grade)===grade.id);
+  return {id:grade.id,name:grade.name,level:grade.level,shortName:grade.shortName,sections:sections.length,rooms:rooms.length,students,proposals:proposed.length,state:'base-demo',source:'Grado de la estructura base de demostración'};});
+ const rowsFiltered=rows.filter(r=>(!filters.grade||Number(r.id)===Number(filters.grade))&&(!filters.search||String(r.name).toLowerCase().includes(String(filters.search).toLowerCase())));
+ return {grades:sortRows(rowsFiltered,'alias',filters.direction||'asc'),sections:model.sections,records,model};
+}
+export async function sectionList(grade=null){const model=await organizationModel();const records=await listAcademicRecords('section');const base=model.sections.filter(s=>!grade||Number(s.grade)===Number(grade)).map(s=>({id:s.id,grade:s.grade,gradeName:s.gradeName,name:s.name,section:s.section,periodId:s.periodId,rooms:roomsOfGrade(model,s.grade).filter(r=>r.sectionId===s.id).length,students:roomsOfGrade(model,s.grade).filter(r=>r.sectionId===s.id).reduce((acc,r)=>acc+studentsOfClassroom(model,r.id).length,0),state:s.state,source:s.source,kind:'base'}));const drafts=records.filter(r=>r.state!=='archived').map(r=>({id:r.id,grade:Number(r.data?.grade)||null,gradeName:gradeName(r.data?.grade),name:sectionName(r.data?.grade,r.data?.section),section:String(r.data?.section||'').toUpperCase(),periodId:r.data?.periodId||null,rooms:0,students:0,state:r.state,source:'Propuesta local sin efectos',kind:'draft'}));return {sections:[...base,...drafts],model,records};}
+export async function sectionDetail(id){const model=await organizationModel();const records=await listAcademicRecords('section');const base=sectionById(model,id);const record=await getAcademicRecord(id);if(!base&&!record)return null;const rooms=base?roomsOfGrade(model,base.grade).filter(r=>r.sectionId===base.id):[];return {section:base?{...base,kind:'base'}:{...record.data,id:record.id,kind:'draft',state:record.state},rooms,students:rooms.flatMap(r=>studentsOfClassroom(model,r.id)),model,records,record};}
+export async function saveSectionProposal(data,id=null,{ready=false}={}){const model=await organizationModel();const records=await listAcademicRecords('section');const record=id?await getAcademicRecord(id):newAcademicRecord('section',data);if(!record)throw new Error('La propuesta de sección ya no existe.');const merged={...record,data:{...record.data,...data}};return saveAcademicRecord(merged,{allowIncomplete:true,ready,validator:(candidate,all)=>validateSectionDraft(candidate,model,all)});}
+export async function archiveSectionProposal(record){return archiveAcademicRecord(record);}
+export async function deleteSectionProposal(record){const records=await listAcademicRecords('classroom');const dependencies=records.filter(r=>r.state!=='archived'&&r.data?.sectionDraftId===record.id);return deleteAcademicRecord(record,{dependencies});}
+export const gradeCatalogSnapshot=gradeCatalog.map(g=>({...g}));
+export const sectionIdentifier=(grade,section)=>sectionId(grade,section);
+export {filterClassrooms};

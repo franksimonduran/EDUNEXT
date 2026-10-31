@@ -1,0 +1,177 @@
+{
+  "date": "2026-10-31T05:32:15.959Z",
+  "scope": "Local data/source/documentation/gate checks only; no PostgreSQL, authenticated E2E, pedagogical approval, pilot or release.",
+  "results": [
+    {
+      "name": "All 50 phases have explicit status and existing source/evidence references",
+      "status": "pass"
+    },
+    {
+      "name": "Two synthetic institutions and all target grades, with no seeded credentials",
+      "status": "pass"
+    },
+    {
+      "name": "Demonstration catalogue has consistent grade references and local lesson audio files",
+      "status": "pass"
+    },
+    {
+      "name": "28 functional requirements remain honestly partial/blocked and selected routes exist in source",
+      "status": "pass"
+    },
+    {
+      "name": "Final/manual/pilot/operation documents and root Markdown links point to existing local files",
+      "status": "pass"
+    },
+    {
+      "name": "No real pilot/training/production approval is fabricated and release gates deny",
+      "status": "pass"
+    },
+    {
+      "name": "Internal candidate corpus excludes private environment, keys, dumps and logs",
+      "status": "pass"
+    }
+  ],
+  "functionalCases": [
+    {
+      "id": "R01",
+      "result": "BLOCKED",
+      "issue": "F50-01"
+    },
+    {
+      "id": "R02",
+      "result": "BLOCKED",
+      "issue": "F50-01"
+    },
+    {
+      "id": "R03",
+      "result": "BLOCKED",
+      "issue": "F50-01"
+    },
+    {
+      "id": "R04",
+      "result": "BLOCKED",
+      "issue": "F50-02"
+    },
+    {
+      "id": "R05",
+      "result": "BLOCKED",
+      "issue": "F50-01"
+    },
+    {
+      "id": "R06",
+      "result": "BLOCKED",
+      "issue": "F50-02"
+    },
+    {
+      "id": "R07",
+      "result": "BLOCKED",
+      "issue": "F50-02"
+    },
+    {
+      "id": "R08",
+      "result": "BLOCKED",
+      "issue": "F50-01"
+    },
+    {
+      "id": "R09",
+      "result": "BLOCKED",
+      "issue": "F50-01"
+    },
+    {
+      "id": "R10",
+      "result": "BLOCKED",
+      "issue": "F50-03"
+    },
+    {
+      "id": "R11",
+      "result": "BLOCKED",
+      "issue": "F50-03"
+    },
+    {
+      "id": "R12",
+      "result": "BLOCKED",
+      "issue": "F50-01"
+    },
+    {
+      "id": "R13",
+      "result": "BLOCKED",
+      "issue": "F50-01"
+    },
+    {
+      "id": "R14",
+      "result": "BLOCKED",
+      "issue": "F50-01"
+    },
+    {
+      "id": "R15",
+      "result": "BLOCKED",
+      "issue": "F50-01"
+    },
+    {
+      "id": "R16",
+      "result": "BLOCKED",
+      "issue": "F50-02"
+    },
+    {
+      "id": "R17",
+      "result": "BLOCKED",
+      "issue": "F50-02"
+    },
+    {
+      "id": "R18",
+      "result": "BLOCKED",
+      "issue": "F50-03"
+    },
+    {
+      "id": "R19",
+      "result": "BLOCKED",
+      "issue": "F50-02"
+    },
+    {
+      "id": "R20",
+      "result": "BLOCKED",
+      "issue": "F50-02"
+    },
+    {
+      "id": "R21",
+      "result": "BLOCKED",
+      "issue": "F50-01"
+    },
+    {
+      "id": "R22",
+      "result": "NOT_IMPLEMENTED",
+      "issue": "F50-04"
+    },
+    {
+      "id": "R23",
+      "result": "BLOCKED",
+      "issue": "F50-05"
+    },
+    {
+      "id": "R24",
+      "result": "NOT_IMPLEMENTED",
+      "issue": "F50-04"
+    },
+    {
+      "id": "R25",
+      "result": "BLOCKED",
+      "issue": "F50-06"
+    },
+    {
+      "id": "R26",
+      "result": "BLOCKED",
+      "issue": "F50-02"
+    },
+    {
+      "id": "R27",
+      "result": "PARTIAL",
+      "issue": "F50-01"
+    },
+    {
+      "id": "R28",
+      "result": "PARTIAL",
+      "issue": "F50-07"
+    }
+  ],
+  "decision": "NO-GO"
+}

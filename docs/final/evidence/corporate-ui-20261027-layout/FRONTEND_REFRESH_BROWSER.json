@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-27T22:43:59.744Z",
+  "scope": "Public demo, real Edge, synthetic disposable profile. No authenticated E2E, PostgreSQL, physical mobile, screen reader or WCAG certification.",
+  "results": [
+    {
+      "section": "home",
+      "active": "home",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "courses",
+      "active": "courses",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "practice",
+      "active": "practice",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "games",
+      "active": "games",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "evaluations",
+      "active": "evaluations",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "agenda",
+      "active": "agenda",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "progress",
+      "active": "progress",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "missions",
+      "active": "missions",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "achievements",
+      "active": "achievements",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "downloads",
+      "active": "downloads",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "tutor",
+      "active": "tutor",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "translator",
+      "active": "translator",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "pronunciation",
+      "active": "pronunciation",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "profile",
+      "active": "profile",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "check": "download-filter-focus-and-keyboard-section-navigation",
+      "filter": {
+        "pressed": "true",
+        "empty": true,
+        "focus": "descargados"
+      },
+      "keyboardNavigation": true,
+      "pass": true
+    },
+    {
+      "pass": false,
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   hero: 'rgb(255, 255, 255)',\n-   hero: 'rgb(23, 58, 117)',\n    selectBackground: 'rgb(26, 38, 56)'\n  }\n",
+      "exceptions": []
+    }
+  ],
+  "missing": [
+    "/favicon.ico"
+  ],
+  "pass": false
+}

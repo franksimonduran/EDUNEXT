@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-27T22:31:30.434Z",
+  "scope": "Public JS compilation, static ES imports, existing monitor navigation and private-view doubles. Does not execute backend or prove E2E.",
+  "modules": 437,
+  "failures": [],
+  "suites": [
+    {
+      "args": [
+        "tests/monitor-navigation.cjs"
+      ],
+      "exitCode": 0,
+      "stdout": "PASS monitor navigation: groups, active state, icons, ARIA and admin isolation\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "--experimental-vm-modules",
+        "tests/phase47-private-views.cjs"
+      ],
+      "exitCode": 0,
+      "stdout": "PASS private-view boundaries: immediate logout cleanup, observer isolation/unsubscribe, escaped Insights, 403 clearing, pagination, filter recovery, late-response suppression. Transport/DOM doubles only.\n",
+      "stderr": "(node:2728) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    }
+  ],
+  "pass": true
+}

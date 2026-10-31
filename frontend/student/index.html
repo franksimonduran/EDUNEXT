@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183b72">
+  <meta name="description" content="Espacio de aprendizaje de demostración de EDUNEXT.">
+  <title>Inicio del estudiante | EDUNEXT</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/images/branding/mark.svg">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/student/dashboard.css">
+  <script type="module" src="../js/offline/bootstrap.js"></script>
+  <script type="module" src="../js/student/dashboard.js"></script>
+</head>
+<body class="student-dashboard student-overview">
+  <a class="skip-link" href="#dashboard-main" data-i18n="skip">Ir al contenido</a>
+  <div class="student-shell" id="student-shell">
+    <aside class="student-sidebar" id="student-sidebar" aria-label="EDUNEXT"></aside>
+    <div class="student-workspace">
+      <header class="student-topbar" id="student-topbar"></header>
+      <main id="dashboard-main" tabindex="-1" aria-busy="true">
+        <p class="offline-notice" id="offline-notice" role="status" hidden></p>
+        <div id="dashboard-loading" class="dashboard-loading" role="status"><span class="spinner" aria-hidden="true"></span><span data-i18n="loading">Preparando tu espacio de muestra…</span></div>
+        <div class="dashboard-error" id="dashboard-error" role="alert" hidden><p data-i18n="loadError">No se pudo cargar la demostración.</p><button class="button-secondary" id="retry-dashboard" type="button" data-i18n="retry">Reintentar</button></div>
+        <div id="dashboard-content" hidden>
+          <header class="dashboard-intro page-heading">
+            <div><p class="page-eyebrow" data-i18n="workspaceLabel">ESPACIO ACADÉMICO</p><h1 data-i18n="overviewTitle">Mi aprendizaje</h1><p data-i18n="overviewDescription">Continúa tus lecciones y consulta tus actividades.</p></div>
+            <button type="button" class="button-secondary" data-open="guide" data-i18n="guideShort">Ayuda</button>
+          </header>
+          <div class="demo-toolbar context-toolbar">
+            <div class="context-source"><span class="demo-badge" data-i18n="demoShort">Demostración</span><span class="context-description" data-i18n="sampleData">Datos ficticios</span></div>
+            <label for="grade-select"><span class="sr-only" data-i18n="demoGrade">Grado de muestra</span><select id="grade-select" disabled><option value="4">4.º primaria</option><option value="5" selected>5.º primaria</option><option value="6">6.º primaria</option></select></label>
+          </div>
+          <div class="dashboard-primary">
+            <section class="continue-card" id="continue-learning" aria-labelledby="continue-title"></section>
+            <section class="dashboard-card agenda-preview" aria-labelledby="evaluations-title"><div class="section-heading"><div><h2 id="evaluations-title" data-i18n="upcoming">Próximas evaluaciones</h2><p data-i18n="sampleCalendar">Agenda de muestra</p></div></div><div id="upcoming-evaluations"></div></section>
+          </div>
+          <section class="summary-grid dashboard-kpis" id="academic-summary" aria-label="Resumen académico de muestra"></section>
+          <section class="courses-section" aria-labelledby="courses-title">
+            <div class="section-heading"><div><h2 id="courses-title" tabindex="-1" data-i18n="yourCourses">Mis cursos</h2><p data-i18n="courseHint">Cinco áreas para explorar a tu ritmo</p></div><span class="section-count">05</span></div>
+            <div class="course-grid" id="course-grid"></div>
+          </section>
+          <div class="dashboard-secondary" id="activity-column">
+            <section class="dashboard-card" aria-labelledby="progress-title"><div class="section-heading"><h2 id="progress-title" tabindex="-1" data-i18n="myProgress">Mi progreso</h2></div><div id="progress-content"></div></section>
+            <section class="dashboard-card mission-card" id="mission-card" aria-labelledby="mission-title"></section>
+          </div>
+          <section class="dashboard-tools-section" aria-labelledby="quick-title"><div class="section-heading"><h2 id="quick-title" data-i18n="quickAccess">Herramientas de aprendizaje</h2></div><div class="quick-grid" id="quick-access"></div></section>
+          <section class="dashboard-card" aria-labelledby="recent-title"><div class="section-heading"><h2 id="recent-title" data-i18n="recentActivity">Actividad reciente</h2></div><div id="recent-activity"></div></section>
+          <div id="student-guide"></div>
+          <p class="dataset-caption" data-i18n="demoNote">Perfil ficticio. Los avances y actividades son de muestra.</p>
+        </div>
+        <noscript><p class="notice">Esta demostración necesita JavaScript. No hay una sesión autenticada. <a href="../role-selection.html">Volver a perfiles</a></p></noscript>
+        <footer class="student-footer" data-i18n="footer">EDUNEXT · Aprende, descubre y crece.</footer>
+      </main>
+    </div>
+  </div>
+  <nav class="student-bottom-nav" id="student-bottom-nav" aria-label="Navegación del estudiante"></nav>
+  <dialog id="dashboard-dialog" class="dashboard-dialog" aria-labelledby="dashboard-dialog-title"><div class="dialog-header"><h2 id="dashboard-dialog-title"></h2><button class="icon-button" id="close-dialog" type="button" aria-label="Cerrar">×</button></div><div id="dashboard-dialog-content"></div></dialog>
+</body>
+</html>

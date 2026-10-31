@@ -1,0 +1,15 @@
+/* Scoped compatibility fixes for the legacy F27–29 templates. */
+.admin-body{--admin-muted:#475569;--report-muted:#475569;--admin-text:#1e293b;--report-text:#1e293b;--report-card:#fff;--report-border:#cbd5e1;--report-radius:10px;--report-shadow:0 2px 8px #17255414}
+.admin-body .monitor-workspace,.admin-body .admin-main,.admin-body main,.admin-body section,.admin-body article{min-width:0;max-width:100%}
+.admin-body .service-grid,.admin-body .catalog-grid,.admin-body .diagnostic-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))}
+.admin-body .table-wrap,.admin-body .storage-panel{max-width:100%;overflow-x:auto}
+.admin-body dl,.admin-body dd,.admin-body pre,.admin-body .service-meta{overflow-wrap:anywhere;min-width:0}
+.admin-body .content-card dl,.admin-body .data-table th{color:#475569}
+.admin-body .status-badge,.admin-body .result-badge{background:#334155!important;color:#fff!important}
+.admin-body .tab-btn.active{background:#334155;color:white}.admin-body .tab-btn.active .tab-count{color:#172554;background:#fff}
+.admin-body .diag-category-panel:not([hidden]){display:block}
+.admin-body input,.admin-body select,.admin-body textarea{max-width:100%;min-width:0}
+.admin-body button:focus-visible,.admin-body a:focus-visible{outline:3px solid #7145bf;outline-offset:3px}
+[data-theme="dark"] .admin-body{--admin-muted:#cbd5e1;--report-muted:#cbd5e1;--admin-text:#f1f5f9;--report-text:#f1f5f9;--report-card:#18243a;--report-border:#64748b;background:#101b2e;color:#f1f5f9}
+[data-theme="dark"] .admin-body .content-card dl,[data-theme="dark"] .admin-body .data-table th{color:#cbd5e1;background:#18243a}
+@media(max-width:600px){.admin-body .admin-content{padding:1rem}.admin-body .service-footer,.admin-body .page-actions{flex-wrap:wrap}.admin-body .admin-topbar{padding:.6rem}}

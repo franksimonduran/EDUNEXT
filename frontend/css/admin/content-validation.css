@@ -1,0 +1,9 @@
+/* Content Validation */
+
+.validation-toolbar{display:flex;align-items:flex-end;gap:1rem;flex-wrap:wrap;margin-bottom:1.5rem;padding:1.25rem;background:var(--admin-card);border:1px solid var(--admin-border);border-radius:var(--admin-radius)}
+.validation-toolbar .field{flex:1;min-width:200px}
+.validation-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin-bottom:1.5rem}
+#val-details{display:grid;gap:.5rem}
+.detail.error{background:#fee2e2;color:#991b1b;padding:.75rem;border-radius:8px;border-left:3px solid var(--admin-error)}
+.detail.warning{background:#fef3c7;color:#92400c;padding:.75rem;border-radius:8px;border-left:3px solid var(--admin-warning)}
+.detail.info{background:#eef2fc;color:#1e3a8a;padding:.75rem;border-radius:8px;border-left:3px solid var(--admin-primary)}

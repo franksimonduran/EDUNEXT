@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reporte por Aula | EDUNEXT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/admin/layout.css">
+  <link rel="stylesheet" href="../css/admin/reports.css">
+  <link rel="stylesheet" href="../css/admin/reports-responsive.css">
+  <style>@media print{.admin-sidebar,.admin-topbar,.filter-card,.page-actions,.preview-actions,.demo-banner,.preview-badges,.preview-footer .demo-notice{display:none!important}.admin-shell{grid-template-columns:1fr!important}.admin-main{width:100%!important}.admin-content{padding:0!important}body{background:#fff!important}.preview-section{break-inside:avoid;page-break-inside:avoid}}</style>
+</head>
+<body class="admin-body">
+  <div class="admin-shell"><aside class="admin-sidebar" id="admin-sidebar"></aside>
+  <div class="admin-main"><header class="admin-topbar" id="admin-topbar"></header>
+  <main class="admin-content" id="admin-content" aria-live="polite">
+    <section class="demo-banner"><strong>Reporte de demostración — No constituye un informe oficial.</strong></section>
+    <header class="page-header"><div><nav class="breadcrumb" aria-label="Migas de pan"><a href="index.html">Administración</a><span>/</span><a href="reportes.html">Reportes</a><span>/</span><span>Reporte por Aula</span></nav><h1>Reporte por Aula</h1><p class="page-subtitle">Organización, indicadores agregados y calidad de datos de un aula concreta</p></div><div class="page-actions"><a class="button-secondary" href="reportes.html">Centro de Reportes</a><button class="button-primary" id="print-report" type="button">Imprimir</button><button class="button-secondary" id="export-csv" type="button">Exportar CSV</button></div></header>
+    <form class="filter-card" id="report-filters"><div class="filter-grid">
+      <label class="field"><span>Periodo</span><select name="period"><option value="2026-1" selected>2026-1</option><option value="2026-2">2026-2</option><option value="all">Todos</option><option value="undated">Sin fecha</option></select></label>
+      <label class="field"><span>Grado</span><select name="grade"><option value="4" selected>4.º primaria</option><option value="5">5.º primaria</option><option value="6">6.º primaria</option></select></label>
+      <label class="field"><span>Aula</span><select name="room"><option value="a4" selected>Aula 4ºA</option><option value="a5">Aula 5ºA</option><option value="a6">Aula 6ºA</option></select></label>
+      <label class="field"><span>Asignatura</span><select name="course"><option value="all" selected>Todas</option><option value="math">Matemática</option><option value="com">Comunicación</option><option value="sci">Ciencia y Tecnología</option><option value="soc">Personal Social</option><option value="eng">Inglés</option></select></label>
+    </div><div class="filter-actions"><button class="button-secondary" type="reset">Limpiar</button><button class="button-primary" type="submit" id="generate-report">Generar</button></div></form>
+    <section class="report-preview" id="report-preview">
+      <header class="preview-header"><div class="preview-meta"><h1>EDUNEXT</h1><p class="report-title">Reporte por Aula</p><div class="preview-badges"><span class="badge demo">Demostración</span><span class="badge" id="preview-date"></span></div></div><div class="preview-actions"><button class="button-secondary" id="print-report" type="button">Imprimir</button><button class="button-secondary" id="export-csv" type="button">Exportar CSV</button></div></header>
+      <section class="preview-content" id="preview-content"><p class="muted">Configura los filtros y pulsa "Generar" para ver el reporte.</p></section>
+      <footer class="preview-footer"><p><strong>Metodología:</strong> Datos de demostración; cálculos locales. No constituye informe oficial.</p><p class="limitations"><strong>Limitaciones:</strong> Sin autorización institucional; datos ficticios; una sola aula; privacidad.</p><p class="demo-notice"><strong>Reporte de demostración — No oficial.</strong></p></footer>
+    </section>
+  </main></div></div>
+  <dialog class="admin-dialog" id="admin-dialog"><div class="dialog-header"><h2 id="dialog-title"></h2><button class="icon-button" id="close-dialog" aria-label="Cerrar">×</button></div><div class="dialog-content" id="dialog-content"></div></dialog>
+  <script type="module" src="../js/admin/classroom-report.js"></script>
+</body></html>

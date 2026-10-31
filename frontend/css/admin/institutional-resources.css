@@ -1,0 +1,8 @@
+/* Institutional Resources */
+
+.resources-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}
+.resource-card{background:var(--admin-card);border:1px solid var(--admin-border);border-radius:var(--admin-radius);padding:1.25rem;box-shadow:var(--admin-shadow)}
+.resource-card header{display:flex;align-items:flex-start;justify-content:space-between;gap:.5rem}
+.resource-card dl{display:grid;grid-template-columns:auto 1fr;gap:.25rem .75rem;font-size:.8125rem;color:var(--admin-muted);margin:0}
+.resource-card dt{font-weight:500}
+.resource-card .actions{margin-top:1rem}

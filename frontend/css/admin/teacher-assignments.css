@@ -1,0 +1,7 @@
+/* FASE 26 · Asignaciones docentes */
+.admin-page #assignment-results .user-table-wrap{margin-top:8px}
+.admin-page .assignment-monitor{font-weight:600}
+.admin-page .assignment-monitor small{font-weight:400;color:var(--color-text-muted)}
+.admin-page .assignment-course{font-style:italic}
+.admin-page .assignment-rooms-summary{gap:6px}
+@media(max-width:700px){.admin-page .assignment-course{font-style:normal}}

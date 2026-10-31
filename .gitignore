@@ -1,0 +1,30 @@
+# Local secrets and development environments. This does not untrack committed files.
+.env
+.env.*
+!.env.example
+!**/.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+node_modules/
+*.log
+*.dump
+*.dump.age
+*.sql.gz
+*.key
+*.pem
+.build/
+infra/backups/private/
+# Local translation weights and download receipts; never upload model binaries.
+/backend/.local/
+*.argosmodel
+*.egg-info/
+# Large local GGUF weights and staging files, never source or an automatic GitHub upload.
+/frontend/assets/models/minicpm5-2b-gguf/*.gguf
+/frontend/assets/models/minicpm5-2b-gguf/*.tmp
+/frontend/assets/models/minicpm5-2b-gguf/*.installing
+/frontend/js/vendor/wllama.installing/

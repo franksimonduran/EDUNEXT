@@ -1,0 +1,4 @@
+import {esc} from './admin-dashboard-ui.js';
+export {serviceStatusCard} from './admin-service-status.js';
+export {offlinePackageCard} from './admin-offline-package.js';
+export function syncSummaryCard(s){return `<section class="sync-summary-card"><h2>Estado local EDUNEXT Sync</h2><p>${s.connectivity?'Navegador reporta conexión':'Navegador reporta desconexión'}. Esto no confirma acceso a Internet ni al backend.</p><p>Sincronización remota pendiente de integración.</p><p>Operaciones pendientes conocidas: ${esc(String(s.pendingOperations))} · Paquetes registrados localmente: ${esc(String(s.offlinePackages))}</p><p>SW registrado: ${s.swRegistered?'Sí':'No'} · Control de esta página: ${s.swControlling?'Sí':'No'}</p><p>Última comprobación local: ${esc(new Date(s.lastCheck).toLocaleString('es'))}. Última sincronización confirmada: no disponible.</p></section>`;}

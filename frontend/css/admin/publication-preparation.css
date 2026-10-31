@@ -1,0 +1,10 @@
+/* Publication Preparation */
+
+.prep-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem}
+.prep-toolbar{display:flex;align-items:flex-end;gap:1rem;flex-wrap:wrap;margin-bottom:1.5rem;padding:1.25rem;background:var(--admin-card);border:1px solid var(--admin-border);border-radius:var(--admin-radius)}
+.obs{padding:.75rem;background:#f8fafc;border-radius:8px;margin-bottom:.5rem;font-size:.875rem}
+.obs strong{color:var(--admin-primary)}
+#prep-form{display:grid;gap:1rem}
+#prep-form .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+#prep-decision{background:#f8fafc;border:1px solid var(--admin-border);border-radius:8px;padding:1.5rem}
+#prep-decision p{margin:.5rem 0}

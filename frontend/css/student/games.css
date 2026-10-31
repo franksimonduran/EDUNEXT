@@ -1,0 +1,3 @@
+.game-catalog-page .practice-card-art {min-height:125px;background:linear-gradient(135deg,var(--tone-soft),#fff);}
+.game-catalog-page .practice-card-art > .icon {width:56px;height:56px;}
+.game-catalog-page .activity-catalog-header h1 {color:var(--color-secondary);}

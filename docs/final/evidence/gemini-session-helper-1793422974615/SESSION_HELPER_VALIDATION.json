@@ -1,0 +1,19 @@
+﻿{
+    "date":  "2026-10-31T05:02:54.8009820Z",
+    "pass":  true,
+    "hashes":  [
+                   {
+                       "sha256":  "AA99CE72037569C2B4B7142611A0CAD955BC75C0160601F1C4CCEF4B13E6752D",
+                       "file":  "tools/configure-gemini-session.ps1"
+                   },
+                   {
+                       "sha256":  "BC987DA943EB90B07E1FD6F3222D492318FD9721059FD0AE2A560D6F873CED66",
+                       "file":  "backend/.env.example"
+                   },
+                   {
+                       "sha256":  "8F5A36383DD7E54047D0532295275C7E87BCC1AF06283BCD88BA1EBB6CA02905",
+                       "file":  "docs/GEMINI_ONLINE_SETUP.md"
+                   }
+               ],
+    "scope":  "PowerShell parser and public file hashes only. No private environment read, prompt execution, credential validation or service activation."
+}

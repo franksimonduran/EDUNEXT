@@ -1,0 +1,36 @@
+import {institutionDirectory,courseKey} from '../services/admin-users.service.js';
+import {ROLES} from '../core/roles.js';
+import {basePeriods} from '../data/admin-academic-periods-demo.data.js';
+import {gradeCatalog,gradeName,sectionId,sectionName,classroomCode,referentialCapacities,organizationInstitution,organizationTimezone} from '../data/admin-organization-demo.data.js';
+const uniqueBy=(rows,key)=>[...new Map(rows.map(r=>[key(r),r])).values()];
+export async function organizationModel(){
+ const directory=await institutionDirectory();
+ const rooms=directory.rooms.map(r=>({id:r.id,code:classroomCode(r.id),grade:r.grade,gradeName:gradeName(r.grade),section:String(r.section||'').toUpperCase(),sectionId:sectionId(r.grade,r.section),periodId:null,capacity:referentialCapacities[r.id]?.capacity??null,capacitySource:referentialCapacities[r.id]?.source||null,institutionId:organizationInstitution.id,state:'base-demo',source:'Relación de demostración · Periodo sin confirmar'}));
+ const sections=uniqueBy(rooms,r=>r.sectionId).map(r=>({id:r.sectionId,grade:r.grade,gradeName:r.gradeName,name:sectionName(r.grade,r.section),section:r.section,periodId:null,institutionId:organizationInstitution.id,state:'base-demo',source:'Sección derivada de las aulas compartidas'}));
+ const students=directory.users.filter(u=>u.roles.includes(ROLES.STUDENT)).map(u=>({id:u.id,alias:u.alias,code:u.code,grade:u.grade,gradeName:gradeName(u.grade),roomId:u.roomIds[0]||null,sectionId:u.roomIds[0]?sectionId(u.grade,rooms.find(r=>r.id===u.roomIds[0])?.section):null,periodId:null,courseKeys:u.courseKeys||[],institutionId:organizationInstitution.id,state:'base-demo',source:'Estudiante del conjunto base de demostración'}));
+ const monitors=directory.users.filter(u=>u.roles.includes(ROLES.MONITOR)).map(u=>({id:u.id,alias:u.alias,code:u.code,grades:u.grades||[],roomIds:u.roomIds||[],courseKeys:u.courseKeys||[],periodId:null,institutionId:organizationInstitution.id,state:'base-demo',source:'Docente del conjunto base de demostración'}));
+ const courses=directory.courses.map(c=>({...c,key:courseKey(c),name:c.name?.es||c.name||c.id,gradeName:gradeName(c.grade),roomIds:c.rooms.map(r=>r.id),source:'Catálogo compartido de las Fases 5 y 22'}));
+ const enrollments=directory.studentRelations.map(r=>({id:r.id,studentId:r.userId,institutionId:organizationInstitution.id,periodId:r.periodId||null,roomId:r.roomId,grade:r.grade,state:'base-demo',source:r.source||'Relación de demostración'}));
+ const assignments=directory.teachingRelations.map(r=>({id:r.id,monitorId:r.userId,institutionId:organizationInstitution.id,periodId:r.periodId||null,roomId:r.roomId,courseKey:r.courseKey,grade:rooms.find(x=>x.id===r.roomId)?.grade??null,responsibility:null,state:'base-demo',source:r.source||'Relación de demostración'}));
+ return {institution:organizationInstitution,timezone:organizationTimezone,grades:gradeCatalog.map(g=>({...g})),periods:basePeriods.map(p=>({...p})),rooms,sections,students,monitors,courses,enrollments,assignments,directory};
+}
+export const classroomById=(model,id)=>model.rooms.find(r=>r.id===id)||null;
+export const studentById=(model,id)=>model.students.find(s=>s.id===id)||null;
+export const monitorById=(model,id)=>model.monitors.find(m=>m.id===id)||null;
+export const sectionById=(model,id)=>model.sections.find(s=>s.id===id)||null;
+export const courseByKey=(model,key)=>model.courses.find(c=>c.key===key||c.id===key)||null;
+export const periodById=(model,id)=>model.periods.find(p=>p.id===id)||null;
+export const studentsOfClassroom=(model,roomId)=>model.enrollments.filter(e=>e.roomId===roomId).map(e=>studentById(model,e.studentId)).filter(Boolean);
+export const enrollmentsOfClassroom=(model,roomId)=>model.enrollments.filter(e=>e.roomId===roomId);
+export const enrollmentsOfStudent=(model,studentId)=>model.enrollments.filter(e=>e.studentId===studentId);
+export const assignmentsOfClassroom=(model,roomId)=>model.assignments.filter(a=>a.roomId===roomId);
+export const assignmentsOfMonitor=(model,monitorId)=>model.assignments.filter(a=>a.monitorId===monitorId);
+export const monitorsOfClassroom=(model,roomId)=>[...new Set(assignmentsOfClassroom(model,roomId).map(a=>a.monitorId))].map(id=>monitorById(model,id)).filter(Boolean);
+export const coursesOfClassroom=(model,roomId)=>{const room=classroomById(model,roomId);if(!room)return[];return model.courses.filter(c=>c.grade===room.grade&&c.roomIds.includes(roomId));};
+export const coursesOfMonitor=(model,monitorId)=>{const monitor=monitorById(model,monitorId);if(!monitor)return[];return model.courses.filter(c=>monitor.courseKeys.includes(c.key));};
+export const classroomOfStudent=(model,studentId)=>{const enrollment=enrollmentsOfStudent(model,studentId)[0];return enrollment?classroomById(model,enrollment.roomId):null;};
+export const sectionsOfGrade=(model,grade)=>model.sections.filter(s=>s.grade===Number(grade));
+export const roomsOfGrade=(model,grade)=>model.rooms.filter(r=>r.grade===Number(grade));
+export const academicStructure=(model)=>model.grades.map(g=>({...g,sections:sectionsOfGrade(model,g.id),rooms:roomsOfGrade(model,g.id),courses:model.courses.filter(c=>c.grade===g.id)}));
+export const relationshipStatus=(record)=>record?.state==='base-demo'?'Relación de demostración':record?.state==='draft'?'Propuesta local':record?.state==='incomplete'?'Validación pendiente':record?.state==='ready'?'Lista para revisión local':record?.state==='archived'?'Archivada localmente':'Estado no disponible';
+export const sourceLabel=source=>source||'Fuente no disponible';

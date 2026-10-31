@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Actividad Técnica Local | EDUNEXT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/admin/layout.css">
+  <link rel="stylesheet" href="../css/admin/sync.css">
+  <link rel="stylesheet" href="../css/admin/system-control-responsive.css">
+</head>
+<body class="admin-body">
+  <div class="admin-shell">
+    <aside class="admin-sidebar" id="admin-sidebar"></aside>
+    <div class="admin-main">
+      <header class="admin-topbar" id="admin-topbar"></header>
+      <main class="admin-content" id="admin-content" aria-live="polite">
+        <section class="demo-banner">
+          <strong>Actividad local — No constituye auditoría institucional oficial.</strong>
+        </section>
+        <header class="page-header">
+          <div>
+            <nav class="breadcrumb" aria-label="Migas de pan"><a href="index.html">Administración</a><span>/</span><a href="sync.html">EDUNEXT Sync</a><span>/</span><span>Actividad Técnica</span></nav>
+            <h1>Actividad Técnica Local</h1>
+            <p class="page-subtitle">Consulta las comprobaciones y operaciones técnicas registradas en este navegador</p>
+          </div>
+          <div class="page-actions">
+            <a class="button-secondary" href="sync.html">Centro de Control</a>
+            <button class="button-secondary" id="export-report">Exportar resumen</button>
+          </div>
+        </header>
+        <section class="activity-stats" id="activity-stats"></section>
+        <form class="filter-card" id="activity-filters" aria-label="Filtros de actividad">
+          <div class="filter-grid">
+            <label class="field"><span>Tipo</span><select name="type"><option value="">Todos</option><option value="diagnostic-run">Diagnóstico ejecutado</option><option value="package-validation">Validación de paquete</option><option value="storage-error">Error de almacenamiento</option><option value="state-change">Cambio de estado verificado</option><option value="sync-operation">Operación de sincronización</option><option value="resource-check">Comprobación de recursos</option><option value="pwa-diagnostic">Diagnóstico PWA</option><option value="service-check">Comprobación de servicio</option><option value="quality-check">Validación de calidad</option><option value="incident-detected">Incidencia detectada</option><option value="incident-resolved">Incidencia resuelta</option><option value="config-change">Cambio de configuración</option><option value="cache-cleared">Caché limpiada</option><option value="db-upgrade">Actualización de BD</option></select></label>
+            <label class="field"><span>Resultado</span><select name="result"><option value="">Todos</option><option value="success">Éxito</option><option value="warning">Advertencia</option><option value="error">Error</option><option value="unknown">Desconocido</option></select></label>
+            <label class="field"><span>Origen</span><select name="source"><option value="">Todos</option><option value="manual">Manual</option><option value="auto">Automático</option><option value="diagnostic">Diagnóstico</option><option value="sync">Sincronización</option></select></label>
+            <label class="field"><span>Desde</span><input type="date" name="from"></label>
+            <label class="field"><span>Hasta</span><input type="date" name="to"></label>
+            <label class="field field-search"><span>Buscar</span><input type="search" name="q" placeholder="Descripción o referencia"></label>
+          </div>
+          <div class="filter-actions"><button class="button-secondary" type="reset">Limpiar</button><button class="button-primary" type="submit">Filtrar</button></div>
+        </form>
+        <section class="activity-stats" id="activity-stats"></section>
+        <section class="activity-grid" id="activity-grid"></section>
+      </main>
+    </div>
+  </div>
+  <dialog class="admin-dialog" id="admin-dialog">
+    <div class="dialog-header"><h2 id="dialog-title"></h2><button class="icon-button" id="close-dialog" aria-label="Cerrar">×</button></div>
+    <div class="dialog-content" id="dialog-content"></div>
+  </dialog>
+  <script type="module" src="../js/admin/actividad-tecnica.js"></script>
+</body>
+</html>

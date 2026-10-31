@@ -1,0 +1,8 @@
+const {spawn}=require('node:child_process'),fs=require('node:fs'),path=require('node:path');
+const {chromium}=require('C:/Users/Frank/AppData/Local/Temp/opencode/node_modules/playwright');
+const root=path.resolve(__dirname,'../frontend'),server=spawn('python',['-m','http.server','8131','--bind','127.0.0.1'],{cwd:root,stdio:'ignore'});
+function walk(d){return fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(d,e.name)):[path.join(d,e.name)]);}
+(async()=>{let browser;try{await new Promise(r=>setTimeout(r,1000));browser=await chromium.launch();const context=await browser.newContext(),page=await context.newPage();const results=[];let errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error'&&!m.text().includes('net::ERR'))errors.push(m.text());});page.on('dialog',d=>d.dismiss());
+for(const f of walk(root).filter(f=>f.endsWith('.html'))){const route=path.relative(root,f).replaceAll('\\','/');errors=[];await page.goto('http://127.0.0.1:8131/'+route,{waitUntil:'load',timeout:15000});await page.waitForTimeout(180);const info=await page.evaluate(()=>({title:document.title,body:document.body.innerText.slice(0,220),duplicateIds:[...document.querySelectorAll('[id]')].map(e=>e.id).filter((id,i,a)=>a.indexOf(id)!==i)}));if(errors.length||info.duplicateIds.length)results.push({route,errors:[...new Set(errors)],duplicates:info.duplicateIds});}
+console.log(JSON.stringify({pages:walk(root).filter(f=>f.endsWith('.html')).length,issues:results},null,2));
+}finally{if(browser)await browser.close();server.kill();}})().catch(e=>{console.error(e);process.exitCode=1;});

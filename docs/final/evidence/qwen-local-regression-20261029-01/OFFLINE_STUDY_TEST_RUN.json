@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-29T06:20:13.453Z",
+  "result": "PASS",
+  "scope": "Synthetic generator checks only; no mobile browser, real AI, pedagogical approval, DB or pilot verification.",
+  "hashes": {
+    "frontend/js/services/offline-study.service.js": "aca9d619e6fc906b14d62505c5041ff491de1113eec48603a09208da6b93af79",
+    "frontend/js/student/tutor.js": "caff98cbf13d6f3476c481a9d5900c9287857335e670956b478573e8bb77ce2a",
+    "tests/offline-study.cjs": "7ce7ea30eac16ce4b95a3f76441078ca114d21cbfaec659c23e20dd4fcb56095"
+  },
+  "decision": "NO-GO"
+}

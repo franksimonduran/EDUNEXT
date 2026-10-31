@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-27T22:47:53.463Z",
+  "node": "v24.19.0",
+  "scope": "Four Node contract/policy/resilience/session suites and three syntax checks. Durations are test runner wall time, NOT platform latency or throughput. Public login browser test has separate evidence.",
+  "results": [
+    {
+      "file": "tests/phase47-api.cjs",
+      "exitCode": 0,
+      "elapsedMs": 1074,
+      "stdout": "PASS phase47: refresh single-flight, HTTP errors, validation, network, timeout, path rejection, login fails closed. Fake transport only.\n",
+      "stderr": ""
+    },
+    {
+      "file": "tests/phase48-security.cjs",
+      "exitCode": 0,
+      "elapsedMs": 978,
+      "stdout": "PASS SW does not cache private HTML\nPASS SW never looks up arbitrary private URLs offline\nPASS SW excludes bearer resources\nPASS SW excludes no-store public-looking response\nPASS SW excludes API\nPASS SW still caches public script\nPASS SW excludes cookie-varying public response\nPASS SW excludes query-bearing resources\nPASS Cache quota failure preserves network success\nPASS phase48 SW policy tests (VM only; no browser, database or tenant proof).\n",
+      "stderr": ""
+    },
+    {
+      "file": "tests/phase48-resilience.cjs",
+      "exitCode": 0,
+      "elapsedMs": 1177,
+      "stdout": "PASS phase48 loopback HTTP: JSON, slow-body timeout, cancellation, 403/request ID, download path validation. Not FastAPI/PostgreSQL/E2E.\n",
+      "stderr": ""
+    },
+    {
+      "file": "tests/phase48-session.cjs",
+      "exitCode": 0,
+      "elapsedMs": 625,
+      "stdout": "PASS phase48 client lifecycle: stale response rejected, pending refresh cannot restore access token after logout, revocation attempted. Simulated server only.\n",
+      "stderr": ""
+    }
+  ],
+  "syntax": [
+    {
+      "file": "frontend/sw.js",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "frontend/js/services/auth.service.js",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "frontend/js/core/config.js",
+      "exitCode": 0,
+      "stderr": ""
+    }
+  ],
+  "notExecuted": [
+    "Python unittest/pytest",
+    "FastAPI/PostgreSQL/Alembic",
+    "Authenticated browser E2E and historical browser suites",
+    "Load/stress/soak",
+    "EXPLAIN and backup restoration",
+    "Full WCAG, physical mobile devices, Firefox and Safari"
+  ]
+}

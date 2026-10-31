@@ -1,0 +1,10 @@
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
+const root=path.resolve(__dirname,'..'),front=path.join(root,'frontend');
+function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);}
+const files=walk(root),js=files.filter(f=>f.startsWith(front)&&f.endsWith('.js')),inventory={};for(const f of files){const ext=path.extname(f)||'(none)';inventory[ext]=(inventory[ext]||0)+1;}
+const issues=[],modules=new Map();
+for(const f of js){try{modules.set(f,new vm.SourceTextModule(fs.readFileSync(f,'utf8'),{identifier:f}));}catch(e){issues.push({file:path.relative(root,f),kind:'syntax',message:e.message});}}
+for(const [f,m] of modules){for(const spec of m.dependencySpecifiers){if(!spec.startsWith('.'))continue;const dest=path.resolve(path.dirname(f),spec);if(!fs.existsSync(dest)){issues.push({file:path.relative(root,f),kind:'missing-import',message:spec});continue;}const text=fs.readFileSync(f,'utf8');const rx=/import\s*\{([^}]+)\}\s*from\s*['"]([^'"]+)['"]/g;for(const match of text.matchAll(rx)){if(match[2]!==spec)continue;const target=fs.readFileSync(dest,'utf8');for(const field of match[1].split(',')){const name=field.trim().split(/\s+as\s+/)[0];if(name&&!new RegExp('\\b'+name+'\\b').test(target))issues.push({file:path.relative(root,f),kind:'missing-export-candidate',message:name+' from '+spec});}}}}
+const routes=[];for(const f of files.filter(f=>f.startsWith(front)&&f.endsWith('.html'))){routes.push(path.relative(front,f));const text=fs.readFileSync(f,'utf8');for(const match of text.matchAll(/(?:src|href)=["']([^"'#]+)["']/g)){const ref=match[1];if(/^(https?:|data:|mailto:|tel:)/.test(ref)||ref.includes('${'))continue;const dest=path.resolve(ref.startsWith('/')?front:path.dirname(f),ref.replace(/^\//,'').split(/[?#]/)[0]);if(!fs.existsSync(dest))issues.push({file:path.relative(root,f),kind:'missing-resource',message:ref});}}
+console.log(JSON.stringify({inventory,javascript:js.length,routes,issues},null,2));
+process.exitCode=issues.some(i=>i.kind==='syntax'||i.kind==='missing-import')?1:0;

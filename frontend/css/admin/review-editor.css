@@ -1,0 +1,24 @@
+/* Review Editor — Revisar Propuesta */
+
+.review-layout{display:grid;grid-template-columns:280px 1fr 340px;gap:1.5rem}
+@media (max-width:1100px){
+  .review-layout{grid-template-columns:1fr}
+  .review-layout aside{order:3}
+  .review-layout .panel-preview{order:1}
+  .review-layout aside:first-child{order:2}
+}
+.preview-body{background:#f8fafc;border:1px solid var(--admin-border);border-radius:8px;padding:1.5rem;min-height:300px;max-height:60vh;overflow:auto}
+.preview-body p{margin:.5rem 0;line-height:1.6}
+.preview-body img{max-width:100%;height:auto;border-radius:6px}
+.criteria-group{margin-bottom:1.5rem}
+.criteria-group h3{font-size:.875rem;font-weight:600;margin:0 0 .5rem}
+.criteria-group ul{list-style:none;padding:0;margin:0;display:grid;gap:.5rem}
+.criteria-group li{display:flex;align-items:flex-start;gap:.5rem;padding:.5rem;background:#f8fafc;border-radius:6px}
+.criteria-group li.ok{color:var(--admin-success)}
+.criteria-group li.error{color:var(--admin-error)}
+.criteria-group li.warning{color:var(--admin-warning)}
+#obs-form{display:grid;gap:.75rem}
+#obs-form .field{margin:0}
+#obs-list{margin-top:1rem;display:grid;gap:.5rem}
+.obs-item{padding:.75rem;background:#f8fafc;border-radius:8px;border-left:3px solid var(--admin-primary);font-size:.875rem}
+.obs-item strong{color:var(--admin-primary)}

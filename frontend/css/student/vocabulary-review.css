@@ -1,0 +1,33 @@
+.review-header { display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:space-between; gap:var(--space-4); padding:var(--space-5) var(--space-5) 0; }
+.review-title-row { display:flex; gap:var(--space-4); align-items:flex-start; }
+.review-avatar { width:3.25rem; height:3.25rem; border-radius:50%; background:radial-gradient(120% 120% at 50% 20%, var(--color-admin-soft), var(--color-surface)); display:flex; align-items:center; justify-content:center; color:var(--color-admin); box-shadow:var(--shadow-card); }
+.review-avatar .icon { width:1.75rem; height:1.75rem; }
+.review-heading h1 { margin:0; font-size:var(--text-title); }
+.review-heading .kicker { color:var(--color-admin); font-weight:600; text-transform:uppercase; letter-spacing:.04em; font-size:.875rem; }
+.review-heading p { margin:var(--space-2) 0 0; color:var(--color-muted); }
+.review-layout { display:flex; flex-direction:column; gap:var(--space-5); padding:var(--space-5); }
+.review-modes { display:flex; flex-wrap:wrap; gap:var(--space-2); padding:var(--space-3) var(--space-4); background:var(--color-surface); border:1px solid var(--color-border); border-radius:999px; width:fit-content; box-shadow:var(--shadow-card); }
+.mode-button { padding:.5rem 1rem; border-radius:999px; border:none; background:transparent; font-weight:600; }
+.mode-button.is-active { background:var(--color-primary); color:var(--color-surface); }
+.review-workspace { display:flex; flex-direction:column; align-items:center; gap:var(--space-5); }
+.flashcard { display:flex; flex-direction:column; gap:var(--space-5); padding:var(--space-6); background:var(--color-surface); border:1px solid var(--color-border); border-radius:calc(var(--radius-card)*1.2); box-shadow:var(--shadow-card); width:min(36rem,90vw); text-align:center; }
+.flashcard-counter { margin:0; color:var(--color-muted); }
+.flashcard-word { margin:var(--space-2) 0; font-size:2.5rem; font-weight:700; }
+.flashcard-translation { margin:0; font-size:2rem; font-weight:700; }
+.flashcard-actions { display:flex; flex-wrap:wrap; justify-content:space-between; gap:var(--space-2); }
+.choice-question { text-align:center; margin-bottom:var(--space-4); }
+.choice-list { display:grid; gap:var(--space-2); width:min(28rem,90vw); }
+.choice-option { padding:var(--space-4); border:1px solid var(--color-border); border-radius:var(--radius-field); background:var(--color-surface); text-align:left; }
+.choice-option.is-correct { border-color:var(--color-success); background:rgba(23,107,74,.08); }
+.choice-option.is-wrong { border-color:var(--color-error); background:rgba(180,35,50,.08); }
+.choice-option[disabled] { opacity:.9; }
+.match-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:var(--space-2); width:min(36rem,90vw); }
+.match-pair { display:flex; flex-direction:column; gap:var(--space-2); }
+.match-token { padding:var(--space-4); border:1px solid var(--color-border); border-radius:var(--radius-field); background:var(--color-surface); min-height:3rem; display:flex; align-items:center; justify-content:center; text-align:center; }
+.match-token.is-selected { border-color:var(--color-primary); box-shadow:var(--focus-ring); }
+.match-token.is-matched { background:rgba(23,107,74,.08); border-color:var(--color-success); color:var(--color-success); }
+.review-results { display:flex; flex-direction:column; align-items:center; gap:var(--space-4); padding:var(--space-6); background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-card); text-align:center; width:min(32rem,90vw); }
+.results-score { font-size:3rem; font-weight:700; color:var(--color-primary); }
+.results-list { margin:0; padding:0; list-style:none; display:grid; gap:.5rem; }
+.review-empty { display:flex; flex-direction:column; align-items:center; text-align:center; gap:var(--space-3); padding:var(--space-6); background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-card); width:min(28rem,90vw); }
+@media (max-width: 640px) { .flashcard { padding:var(--space-5); width:100%; } .match-grid { grid-template-columns:1fr; } }

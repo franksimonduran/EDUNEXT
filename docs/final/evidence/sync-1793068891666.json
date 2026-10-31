@@ -1,0 +1,136 @@
+{
+  "generated_at": "2026-10-27T02:41:31.663Z",
+  "AITHRON_FINAL_VALIDATION": 1,
+  "scope": "Synthetic protocol/storage doubles, source, syntax and existing SW VM checks; no real DB/browser/provider.",
+  "protocol": {
+    "exit_code": 0,
+    "output": "PASS finite operation type and privileged payload rejection\nPASS demo and foreign operations excluded\nPASS identity required and protocol version checked\nPASS no receipt from send or mismatched operation\nPASS errors classified without treating auth as offline\nPASS bounded backoff and retry budget\nPASS Retry-After cannot shorten local backoff\nPASS local save and queue share simulated transaction\nPASS storage failure does not report local success\nPASS simulated transaction abort preserves queue when progress write fails\nPASS confirmed receipt saved only for owning operation\nPASS lost or invalid receipt keeps provisional work\nPASS expired session blocks without deleting or confirming\nPASS cross-account preconditions accompany every push\nPASS missing Web Locks prevents dispatch\n{\"passed\":15,\"scope\":\"synthetic protocol and storage doubles only\"}\n(node:1424) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  "service_worker_regression": {
+    "exit_code": 0,
+    "output": "PASS SW does not cache private HTML\nPASS SW never looks up arbitrary private URLs offline\nPASS SW excludes bearer resources\nPASS SW excludes no-store public-looking response\nPASS SW excludes API\nPASS SW still caches public script\nPASS SW excludes cookie-varying public response\nPASS SW excludes query-bearing resources\nPASS Cache quota failure preserves network success\nPASS phase48 SW policy tests (VM only; no browser, database or tenant proof).\n"
+  },
+  "python_ast": {
+    "exit_code": 0,
+    "output": "Python AST passed\r\n"
+  },
+  "python_contract": {
+    "exit_code": 1,
+    "output": "test_sync_contract (unittest.loader._FailedTest.test_sync_contract) ... ERROR\r\n\r\n======================================================================\r\nERROR: test_sync_contract (unittest.loader._FailedTest.test_sync_contract)\r\n----------------------------------------------------------------------\r\nImportError: Failed to import test module: test_sync_contract\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\simon\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\unittest\\loader.py\", line 407, in _find_test_path\r\n    module = self._get_module_from_name(name)\r\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Users\\simon\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\unittest\\loader.py\", line 350, in _get_module_from_name\r\n    __import__(name)\r\n  File \"D:\\Programing\\ATHRON EDU\\backend\\verification\\test_sync_contract.py\", line 7, in <module>\r\n    from pydantic import ValidationError\r\nModuleNotFoundError: No module named 'pydantic'\r\n\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.000s\r\n\r\nFAILED (errors=1)\r\n"
+  },
+  "syntax": [
+    {
+      "path": "frontend/js/offline/database-schema.js",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "path": "frontend/js/sync/protocol.js",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "path": "frontend/js/services/sync-api.service.js",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "path": "frontend/js/offline/confirmed-sync.js",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "path": "frontend/js/student/synchronization.js",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "path": "tests/sync-protocol.cjs",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "path": "tools/validate-sync.cjs",
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "hashes": [
+    {
+      "path": "backend/app/schemas/sync.py",
+      "sha256": "079a99e40a895419650e1dfbe29dae1fa50f06a1ea19905703cbea053eb1402f"
+    },
+    {
+      "path": "backend/app/db/models/sync_receipt.py",
+      "sha256": "4141c97797ce55ad2d4173a98789ecdebfef496d750b7232b8a2c00e1eb6cb64"
+    },
+    {
+      "path": "backend/app/db/models/__init__.py",
+      "sha256": "75870776bde2375ecb2b6df00593302e7695786118128a4f44a9844a1f107908"
+    },
+    {
+      "path": "backend/alembic/versions/20261026_phase46_sync_receipts.py",
+      "sha256": "f52d22cccf657626c3a8192c5f1af3f4163804450a3b1675a8da3aceb1fd61fc"
+    },
+    {
+      "path": "backend/app/repositories/sync_repository.py",
+      "sha256": "0f4ca052d19f665a45dabad7183a2abb4df59b9e3358b32490fe93190b3b753a"
+    },
+    {
+      "path": "backend/app/services/sync_service.py",
+      "sha256": "adc209ae1d20687d8bcd313c09d9a37147a4010493c5952b5ddcdb6bb5e2c6d7"
+    },
+    {
+      "path": "backend/app/api/v1/endpoints/sync.py",
+      "sha256": "fcb79ef60efb4d4c43b2d960448aa77fcd4484a48902681b33dc6f4364be109a"
+    },
+    {
+      "path": "backend/app/api/v1/router.py",
+      "sha256": "05054e20ab3f8599020d551a8103b298672fe663b446abb0732d2d68fbbb884d"
+    },
+    {
+      "path": "backend/app/core/config.py",
+      "sha256": "4ece1cd946280f5b5e3dcbe21dac44b0d753b37b5e942976fb408dac3977236e"
+    },
+    {
+      "path": "backend/app/core/ai_middleware.py",
+      "sha256": "1a73366b725911549a4bb1bbe4750a3ff2b763223735978aed45c097b4635167"
+    },
+    {
+      "path": "backend/app/main.py",
+      "sha256": "5c2223382a1245c7e068dc17e1daed6e93c64ff18c8654c7243903a0b4817d04"
+    },
+    {
+      "path": "backend/verification/test_sync_contract.py",
+      "sha256": "8b9e912c5c1d998897a093ce75b58db14eb22ad718e566e6f216b1b00f7247df"
+    },
+    {
+      "path": "frontend/js/offline/database-schema.js",
+      "sha256": "670d8d5187652a81ff0879df4e5002d07e6f4963a7101d49ba0f9d383fb36481"
+    },
+    {
+      "path": "frontend/js/sync/protocol.js",
+      "sha256": "a5d7c52e036805def5254cfd698851b4228e4faccdbb99ca22feee678aeb01ae"
+    },
+    {
+      "path": "frontend/js/services/sync-api.service.js",
+      "sha256": "16b2ed83a49a4760c1c2d2f8757f42fcb1da24857fbabd55cf80647042dea8f8"
+    },
+    {
+      "path": "frontend/js/offline/confirmed-sync.js",
+      "sha256": "dabfb25eab6fa05342fc943979de4b702d27dfb6c55e4003894f4921743f5556"
+    },
+    {
+      "path": "frontend/js/student/synchronization.js",
+      "sha256": "b13953aef7ee78eb293c67c758b9ca7f64bc56d1948a4ea90a43510eafaaaf0b"
+    },
+    {
+      "path": "tests/sync-protocol.cjs",
+      "sha256": "0717087eb0ee66474ad8abfddc00ed511a1f0354698069e81ae379a21938c16c"
+    },
+    {
+      "path": "tools/validate-sync.cjs",
+      "sha256": "16d00f062406bb6102aef359ff0be980e1ea789269919e5faa2159c37e3bba0b"
+    }
+  ]
+}

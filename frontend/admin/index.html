@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#183b72">
+  <title>Resumen institucional | EDUNEXT</title>
+  <link rel="icon" href="../assets/images/branding/mark.svg">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/student/dashboard.css">
+  <link rel="stylesheet" href="../css/monitor/dashboard.css">
+  <link rel="stylesheet" href="../css/admin/dashboard.css">
+  <script type="module" src="../js/admin/dashboard.js"></script>
+</head>
+<body class="admin-page admin-overview">
+  <a class="skip-link" href="#admin-main">Ir al contenido</a>
+  <div class="monitor-shell admin-shell">
+    <aside id="admin-sidebar" class="student-sidebar" aria-label="Navegación administrativa"></aside>
+    <div class="monitor-workspace">
+      <header id="admin-topbar" class="student-topbar"></header>
+      <main id="admin-main" tabindex="-1">
+        <header class="admin-heading page-heading"><div><p class="page-eyebrow">GESTIÓN INSTITUCIONAL</p><h1 id="admin-title">Resumen institucional</h1><p id="admin-demo"></p></div><a class="button-primary" href="usuarios.html">Gestionar usuarios</a></header>
+        <details class="reference-filters"><summary>Periodo académico y filtros</summary><section id="admin-controls" class="context-toolbar" aria-label="Filtros del resumen institucional"></section></details>
+        <p id="admin-feedback" class="dataset-caption" role="status" aria-live="polite"></p>
+        <div id="admin-content" aria-busy="true"><p role="status">Consultando fuentes locales…</p></div>
+        <section id="admin-presentation" aria-label="Presentación y recursos del dispositivo"></section>
+        <details class="environment-disclosure"><summary>Estado de datos y conexión</summary><p id="admin-network" role="status"></p></details>
+        <footer class="admin-footer" id="admin-footer"></footer>
+        <noscript>Activa JavaScript para consultar el resumen de demostración.</noscript>
+      </main>
+    </div>
+  </div>
+  <dialog id="admin-dialog" aria-labelledby="dialog-title"><h2 id="dialog-title"></h2><div id="dialog-content"></div><button id="close-dialog" type="button">Cerrar</button></dialog>
+</body>
+</html>

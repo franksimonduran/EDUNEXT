@@ -1,0 +1,8 @@
+/* FASE 26 · Editor de aula */
+.admin-page .classroom-editor-form .form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:14px}
+.admin-page .classroom-editor-form label{display:flex;flex-direction:column;gap:6px;font-size:.92rem}
+.admin-page .classroom-editor-form input,.admin-page .classroom-editor-form select,.admin-page .classroom-editor-form textarea{width:100%;min-height:44px;padding:10px;border:1px solid var(--color-border);border-radius:9px;font:inherit;color:var(--color-text);background:var(--color-surface)}
+.admin-page .classroom-editor-form textarea{resize:vertical;min-height:96px}
+.admin-page .classroom-editor-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.admin-page .classroom-editor-actions button{min-height:44px}
+@media(max-width:700px){.admin-page .classroom-editor-actions{flex-direction:column}.admin-page .classroom-editor-actions button{width:100%}}

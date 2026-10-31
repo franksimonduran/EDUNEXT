@@ -1,0 +1,15 @@
+.local-tutor{max-width:56rem;margin:auto;display:grid;gap:1rem;padding:clamp(.5rem,2vw,1.5rem);overflow-wrap:anywhere}.local-tutor :is(header,aside,.local-answer){padding:1rem;border:1px solid var(--color-border);border-radius:var(--radius-card);background:var(--color-surface);color:var(--color-text)}.local-tutor h1{font-size:clamp(1.4rem,4vw,2rem)}.local-tutor :is(p,h1,h2){margin:.4rem 0}.local-tutor form{display:grid;gap:.75rem}.local-tutor :is(select,textarea,progress){width:100%;min-width:0;max-width:100%;box-sizing:border-box}.local-tutor :is(select,textarea){padding:.75rem;border:1px solid var(--color-border);border-radius:.5rem;background:var(--color-surface);color:var(--color-text);font:inherit}.local-tutor textarea{resize:vertical}.local-tutor .local-consent{display:flex;gap:.75rem;align-items:flex-start}.local-consent input{flex:none;width:1.25rem;height:1.25rem}.local-actions{display:flex;flex-wrap:wrap;gap:.75rem}.local-tutor :is(button,select){min-height:44px}.local-tutor button{white-space:normal;max-width:100%}.local-answer #local-answer,.local-tutor #local-lesson-note{white-space:pre-wrap}@media(max-width:480px){.local-actions>*{width:100%}}
+.local-tutor .local-chat-header { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.local-chat-header h2 { font-size:1.2rem; }
+.local-chat-header p,.local-memory-note,.local-composer-footer p { font-size:.8rem; color:var(--color-muted); }
+.local-start { display:grid; gap:12px; }
+.local-tutor .local-consent[hidden],.local-tutor button[hidden] { display:none; }
+.local-chat-log { height:clamp(220px,36vh,420px); overflow-y:auto; padding:18px; border:1px solid var(--color-border); border-radius:16px; background:var(--color-surface); }
+.local-chat-welcome { padding:50px 8px; text-align:center; color:var(--color-muted); font-size:1.2rem; }
+.local-chat-message { max-width:88%; width:fit-content; padding:12px 16px; margin-bottom:16px; border-radius:16px; background:#eef2ff; color:#152653; white-space:pre-wrap; }
+.local-chat-message strong { font-size:.75rem; }
+.local-chat-user { margin-left:auto; background:#265cf3; color:white; }
+.local-composer-footer { display:flex; justify-content:space-between; align-items:center; gap:12px; }
+.local-support,.local-model-details { border-top:1px solid var(--color-border); padding-top:10px; }
+.local-tutor summary { cursor:pointer; padding:8px 0; }
+.local-model-details p { font-size:.85rem; }

@@ -1,0 +1,33 @@
+﻿{
+    "output":  "PASS monitor navigation: groups, active state, icons, ARIA and admin isolation",
+    "exit_code":  0,
+    "AITHRON_FINAL_VALIDATION":  1,
+    "browser":  "Not run: existing phase23 suite requires missing hardcoded Playwright path",
+    "test":  "node tests/monitor-navigation.cjs",
+    "hashes":  [
+                   {
+                       "sha256":  "69042EDB808513C6A2BE3F07FF5DC44D7026E9793D34B855942D84B0DD45E749",
+                       "path":  "frontend/js/components/sidebar.js"
+                   },
+                   {
+                       "sha256":  "FA5208F9E7EB3883840C18C32CBC0C9BC53F825074C4C9020E7CC6800CC68220",
+                       "path":  "frontend/js/data/monitor-demo.data.js"
+                   },
+                   {
+                       "sha256":  "BD8239AD98B324D1E4E8C1DC1AADC640ADFE6B13F02529EFE31E8550BC8EB41A",
+                       "path":  "frontend/css/monitor/dashboard.css"
+                   },
+                   {
+                       "sha256":  "5C73514B5DA23B8829435D589051E68A2A4BAE7D5DA5F26EC063C79A1610978C",
+                       "path":  "frontend/css/monitor/dashboard-layout.css"
+                   },
+                   {
+                       "sha256":  "E483D7ED94E468A0169667E362A3552EDA5125772C00D61EAA9C0E84FA0FE7E2",
+                       "path":  "frontend/css/monitor/navigation.css"
+                   },
+                   {
+                       "sha256":  "D09BA6F2F1E253D41F27099B4FE0BE5D7EC87DE4D8DEEC6AF741127BDB3B4596",
+                       "path":  "tests/monitor-navigation.cjs"
+                   }
+               ]
+}

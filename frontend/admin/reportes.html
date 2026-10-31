@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reportes Institucionales | EDUNEXT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/admin/layout.css">
+  <link rel="stylesheet" href="../css/admin/reports.css">
+  <link rel="stylesheet" href="../css/admin/reports-responsive.css">
+</head>
+<body class="admin-body">
+  <div class="admin-shell">
+    <aside class="admin-sidebar" id="admin-sidebar"></aside>
+    <div class="admin-main">
+      <header class="admin-topbar" id="admin-topbar"></header>
+      <main class="admin-content" id="admin-content" aria-live="polite">
+        <section class="demo-banner">
+          <strong>Reportes de demostración — No oficiales.</strong>
+          <p>Consulta indicadores y prepara informes sobre la organización y actividad académica. Los datos son ficticios y locales.</p>
+        </section>
+        <header class="page-header">
+          <div>
+            <nav class="breadcrumb" aria-label="Migas de pan"><a href="index.html">Administración</a><span>/</span><span>Reportes Institucionales</span></nav>
+            <h1>Reportes Institucionales</h1>
+            <p class="page-subtitle">Consulta indicadores y prepara informes sobre la organización y actividad académica de tu institución</p>
+          </div>
+          <div class="page-actions">
+            <a class="button-secondary" href="estadisticas-institucionales.html">Estadísticas</a>
+            <a class="button-secondary" href="calidad-datos.html">Calidad de Datos</a>
+            <a class="button-secondary" href="historial-reportes.html">Historial</a>
+          </div>
+        </header>
+        
+        <section class="summary-grid" id="reports-summary"></section>
+        
+        <form class="filter-card" id="global-filters" aria-label="Filtros globales de reportes">
+          <div class="filter-grid">
+            <label class="field"><span>Institución</span><select name="institution" disabled><option value="demo-institution" selected>Institución de demostración</option></select></label>
+            <label class="field"><span>Año académico</span><select name="year"><option value="2026" selected>2026</option></select></label>
+            <label class="field"><span>Periodo</span><select name="period"><option value="all">Todos</option><option value="2026-1">2026-1</option><option value="2026-2">2026-2</option><option value="undated">Sin fecha</option></select></label>
+            <label class="field"><span>Grado</span><select name="grade"><option value="all">Todos</option><option value="4">4.º</option><option value="5">5.º</option><option value="6">6.º</option></select></label>
+            <label class="field"><span>Aula</span><select name="room"><option value="all">Todas</option></select></label>
+            <label class="field"><span>Asignatura</span><select name="course"><option value="all">Todas</option><option value="math">Matemática</option><option value="com">Comunicación</option><option value="sci">Ciencia y Tecnología</option><option value="soc">Personal Social</option><option value="eng">Inglés</option></select></label>
+            <label class="field"><span>Tipo de información</span><select name="infoType"><option value="all">Todos</option><option value="organization">Organización</option><option value="progress">Progreso</option><option value="practices">Prácticas</option><option value="evaluations">Evaluaciones</option><option value="content">Contenidos</option><option value="activity">Actividad</option></select></label>
+          </div>
+          <div class="filter-actions"><button class="button-secondary" type="reset">Limpiar filtros</button></div>
+        </form>
+        
+        <section class="report-types-section">
+          <header class="section-header"><h2>Tipos de Reporte Disponibles</h2></header>
+          <div class="report-type-grid" id="report-types-grid"></div>
+        </section>
+        
+        <section class="config-section" id="config-section" hidden>
+          <header class="section-header"><h2>Configurar Reporte</h2><button class="button-secondary" id="back-to-types" type="button">Volver a tipos</button></header>
+          <div id="config-form-container"></div>
+        </section>
+      </main>
+    </div>
+  </div>
+  <dialog class="admin-dialog" id="admin-dialog">
+    <div class="dialog-header"><h2 id="dialog-title"></h2><button class="icon-button" id="close-dialog" aria-label="Cerrar">×</button></div>
+    <div class="dialog-content" id="dialog-content"></div>
+  </dialog>
+  <script type="module" src="../js/admin/reports.js"></script>
+</body>
+</html>

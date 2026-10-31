@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detalle de Contenido | EDUNEXT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/admin/layout.css">
+  <link rel="stylesheet" href="../css/admin/content-detail.css">
+  <link rel="stylesheet" href="../css/admin/content-admin-responsive.css">
+</head>
+<body class="admin-body">
+  <div class="admin-shell">
+    <aside class="admin-sidebar" id="admin-sidebar"></aside>
+    <div class="admin-main">
+      <header class="admin-topbar" id="admin-topbar"></header>
+      <main class="admin-content" id="admin-content" aria-live="polite">
+        <header class="page-header">
+          <div>
+            <nav class="breadcrumb" aria-label="Migas de pan"><a href="index.html">Administración</a><span>/</span><a href="contenidos.html">Contenidos</a><span>/</span><span>Detalle</span></nav>
+            <h1>Detalle de Contenido</h1>
+            <p class="page-subtitle">Estructura, recursos, versiones y validaciones</p>
+          </div>
+          <div class="page-actions">
+            <a class="button-secondary" href="contenidos.html">Volver al catálogo</a>
+            <a class="button-secondary" href="versiones-contenido.html" id="link-versions">Versiones</a>
+            <a class="button-secondary" href="validacion-contenidos.html" id="link-validation">Validar</a>
+            <button class="button-primary" id="preview-content" type="button">Vista previa administrativa</button>
+          </div>
+        </header>
+        <section class="content-hero" id="content-hero"></section>
+        <div class="detail-grid">
+          <section class="panel" id="panel-info"><h2>Información General</h2><div id="info-body"></div></section>
+          <section class="panel" id="panel-structure"><h2>Estructura Académica</h2><div id="structure-body"></div></section>
+          <section class="panel panel-wide" id="panel-blocks"><h2>Contenido (bloques)</h2><div id="blocks-body"></div></section>
+          <section class="panel" id="panel-resources"><h2>Recursos Asociados</h2><div id="resources-body"></div></section>
+          <section class="panel" id="panel-versions"><h2>Versiones</h2><div id="versions-body"></div></section>
+          <section class="panel" id="panel-validations"><h2>Validaciones</h2><div id="validations-body"></div></section>
+          <section class="panel" id="panel-deps"><h2>Dependencias</h2><div id="deps-body"></div></section>
+          <section class="panel" id="panel-actions"><h2>Acciones</h2><div class="action-list"><a class="button-secondary" href="revisar-contenido.html">Revisar propuesta</a><a class="button-secondary" href="paquetes-offline.html">Preparar paquete offline</a></div></section>
+        </div>
+      </main>
+    </div>
+  </div>
+  <dialog class="admin-dialog" id="admin-dialog">
+    <div class="dialog-header">
+      <h2 id="dialog-title"></h2>
+      <button class="icon-button" id="close-dialog" aria-label="Cerrar">×</button>
+    </div>
+    <div class="dialog-content" id="dialog-content"></div>
+  </dialog>
+  <script type="module" src="../js/admin/content-detail.js"></script>
+</body>
+</html>

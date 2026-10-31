@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-29",
+  "scope": "Reviewed Service Worker change for prepared monitor/admin shells and the five student lesson shells. Historical BRAND_AUDIT_BEFORE.json is preserved unchanged.",
+  "swBeforeSha256": "a5cb2cdfba09aebb7f3e97475a668135f16d230e5569e3d5d55586db9996f961",
+  "swAfterSha256": "532935bfe3cf7ea3efe2d03e873745116595857ddcca64770398abfdde42d195",
+  "reviewedDocSha256": {
+    "docs/final/FINAL_OFFLINE_VALIDATION.md": "d0f47b76d3808bf3abbcb73ddb55fcc1b708adb5fb2c607ddddd2c7645d51768"
+  },
+  "decision": "NO-GO"
+}

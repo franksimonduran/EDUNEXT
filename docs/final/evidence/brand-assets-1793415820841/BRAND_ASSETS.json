@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-31T03:03:40.841Z",
+  "status": "pass",
+  "scope": "Static asset existence, embedded icon identity, PNG dimensions and sidebar CSS. Browser rendering and installed PWA not verified.",
+  "hashes": {
+    "/assets/images/branding/edunext-192.png": "cb332679dc19d0eea18ea0e41810e8270899c9d5956821774aa24cca22ec88ef",
+    "/assets/images/branding/edunext-512.png": "4e7bb18cfbb0a9f637c6566f2c69aefc430d5b1661936d9b910117d33a00b161",
+    "/assets/images/branding/mark.svg": "c20508a6e7e2cd86d3e3cd813c48cc8acdb1da5e9bdbc0b7a90f90bbc6cc172a"
+  }
+}

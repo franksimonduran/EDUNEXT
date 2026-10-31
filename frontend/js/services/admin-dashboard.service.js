@@ -1,0 +1,31 @@
+import {demoInstitution,demoAdministrator,demoTeachers} from '../data/admin-demo.data.js';
+import {minimumAggregateSample} from '../data/admin-dashboard-config.data.js';
+import {authorizedRooms,queryStudents} from './monitor-students.service.js';
+import {assignedCourses} from './monitor-courses.service.js';
+import {loadAcademicData,academicScope,formativeFor,dateInPeriod} from './monitor-grades.service.js';
+import {initSupport,listActivities} from './monitor-tasks.service.js';
+import {adminContentSummary} from './admin-content-summary.service.js';
+import {administrativeActivity,administrativeAlerts} from './admin-activity.service.js';
+import {distinct,distributionPercent,roleDistribution,curriculumSummary,validateAdminFilters} from '../utils/admin-statistics.js';
+import {institutionDirectory} from './admin-users.service.js';
+import {listUserRequests} from './admin-user-drafts.service.js';
+export const defaultAdminFilters=Object.freeze({institution:demoInstitution.id,period:'all',grade:'all',room:'all'});
+export async function loadAdminDashboard(input={}){
+ const filters=Object.fromEntries(Object.entries({...defaultAdminFilters,...input}).map(([k,v])=>[k,String(v)])),allRooms=distinct(authorizedRooms()),errors=validateAdminFilters(filters,allRooms,demoInstitution.periods,demoInstitution.id);if(errors.length)throw new Error(errors.join(' '));
+ const sourceErrors=[],rooms=allRooms.filter(r=>(filters.grade==='all'||r.grade===Number(filters.grade))&&(filters.room==='all'||r.id===filters.room)),roomIds=new Set(rooms.map(r=>r.id)),allStudents=distinct(queryStudents()),students=allStudents.filter(s=>roomIds.has(s.classroomId)),teachers=distinct(demoTeachers.filter(t=>t.institutionId===demoInstitution.id&&t.classroomIds.some(id=>roomIds.has(id)))),allCourses=await assignedCourses(),courses=allCourses.filter(c=>c.rooms.some(r=>roomIds.has(r.id))),curriculum=curriculumSummary(courses);
+ let content=null,academic=null,activities=[];
+ const [contentResult,academicResult,activityResult]=await Promise.allSettled([adminContentSummary(courses,filters),loadAcademicData(),initSupport().then(listActivities)]);
+ if(contentResult.status==='fulfilled')content=contentResult.value;else sourceErrors.push('Borradores: '+contentResult.reason.message);
+ if(academicResult.status==='fulfilled'){const scope=academicScope(academicResult.value,{grade:filters.grade==='all'?'':filters.grade,room:filters.room,period:filters.period});if(scope.errors.length)sourceErrors.push(...scope.errors);else{
+  const formative=formativeFor(scope),assigned=students.reduce((n,s)=>n+(s.assigned||0),0),completed=students.reduce((n,s)=>n+(s.completed||0),0),sufficientGroups=scope.summary.groups.filter(g=>new Set(g.rows.map(r=>r.studentId)).size>=minimumAggregateSample),evidence=scope.summary.evidence.filter(e=>e.n>=minimumAggregateSample&&e.studentCount>=minimumAggregateSample).map(({students:ignored,...e})=>({course:e.course,theme:e.theme,n:e.n,studentCount:e.studentCount,errors:e.errors,version:e.version}));
+  academic={configured:scope.evaluations.length,scheduled:scope.evaluations.filter(e=>e.state==='scheduled').length,reviewed:scope.summary.reviewed,pending:scope.summary.pending,sample:scope.summary.represented,formative:formative.length,completed,assigned,progress:assigned?Math.round(100*completed/assigned):null,progressSample:students.length,sufficientCourses:distinct(sufficientGroups,g=>g.course).length,evidence,source:academicResult.value.source,evaluations:scope.evaluations.map(e=>({id:e.id,title:e.title,state:e.state,createdAt:e.createdAt,updatedAt:e.updatedAt}))};
+ }}else sourceErrors.push('Evaluaciones: '+academicResult.reason.message);
+ if(activityResult.status==='fulfilled')activities=activityResult.value.filter(a=>rooms.some(r=>r.grade===a.grade)&&dateInPeriod(a.updatedAt||a.createdAt||null,filters.period));else sourceErrors.push('Tareas y refuerzos: '+activityResult.reason.message);
+ const users=(await institutionDirectory()).users.map(u=>({id:u.id,role:(['ADMIN','MONITOR','STUDENT'].find(r=>u.roles.includes(r))||'STUDENT').toLowerCase()}));let administrativeDraftCount=null;try{administrativeDraftCount=(await listUserRequests()).filter(r=>r.state!=='archived').length;}catch{sourceErrors.push('No se pudieron consultar los borradores administrativos locales.');}
+ const grades=[4,5,6].map(grade=>{const selected=students.filter(s=>s.grade===grade);return {id:String(grade),count:selected.length,rooms:rooms.filter(r=>r.grade===grade).length,percent:distributionPercent(selected.length,students.length),institutionPercent:distributionPercent(selected.length,allStudents.length)};});
+ const roomSummary=rooms.map(r=>({id:r.id,grade:r.grade,section:r.section,students:students.filter(s=>s.classroomId===r.id).length,teachers:demoTeachers.filter(t=>t.classroomIds.includes(r.id)).map(t=>t.alias),subjects:distinct(courses.filter(c=>c.rooms.some(x=>x.id===r.id)),c=>c.id).length}));
+ const subjectSummary=distinct(courses,c=>c.id).map(c=>{const definitions=courses.filter(x=>x.id===c.id),summary=curriculumSummary(definitions);return {id:c.id,name:c.name.es,icon:c.icon,grades:[...new Set(definitions.map(x=>x.grade))],...summary};});
+ const activity=administrativeActivity({content:content?.entries||[],evaluations:academic?.evaluations||[],activities},filters.period);
+ return {institution:demoInstitution,administrator:demoAdministrator,filters,scope:{rooms:rooms.map(r=>r.id),grade:filters.grade,period:filters.period},metrics:{students:students.length,teachers:teachers.length,rooms:rooms.length,courses:curriculum.subjects,content:curriculum.content,pending:content?content.ready.length:null},curriculum,administrativeDraftCount,users:{total:users.length,distribution:roleDistribution(users),staff:[...demoTeachers.map(t=>({id:t.id,alias:t.alias,role:'monitor',state:'demo'})),{...demoAdministrator,state:'demo'}]},grades,rooms:roomSummary,subjects:subjectSummary,content,academic,activity,sourceErrors,alerts:administrativeAlerts({content,sourceErrors}),loadedAt:new Date().toISOString()};
+}
+export const adminApiCapability=Object.freeze({available:false,reason:'Requiere identidad, institución y autorización verificadas en FastAPI; no se realizan peticiones remotas.'});

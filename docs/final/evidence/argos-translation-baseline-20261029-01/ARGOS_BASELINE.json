@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-29T05:26:42.830Z",
+  "files": [
+    {
+      "file": "backend/app/providers/provider_registry.py",
+      "sha256": "3c0f5a1c98831878ff826a885790d448d8babf10c472a904234b79d57cfe4cc1"
+    },
+    {
+      "file": "backend/app/core/config.py",
+      "sha256": "56fb4c971d087625fd5065f69482c5075dabf65c0b8359841c319a3002ccf940"
+    },
+    {
+      "file": "backend/app/services/ai_gateway_service.py",
+      "sha256": "cedf580b30e5d6aa8ea544acdbe7575d5bc5e49c3744d135b564784a72137d75"
+    },
+    {
+      "file": "frontend/js/student/translator.js",
+      "sha256": "1c1d51406cb716e41d404c36d14b80daa106aa72a5087ef3f18181979a5866b0"
+    },
+    {
+      "file": "backend/app/api/v1/endpoints/assessments.py",
+      "sha256": "0e5692d8284fa02b1957c6239e4999105c58f20c73f97001fd5c32309d88d75c"
+    },
+    {
+      "file": "backend/app/schemas/assessment.py",
+      "sha256": "f58e01eb33320aad0eb024e6c076724da6ea98d263c8c9eb181da1df00877963"
+    },
+    {
+      "file": "backend/pyproject.toml",
+      "sha256": "899029663a8a488ff874da176f6a68caca31887217dc8fe8c460415e722164c3"
+    },
+    {
+      "file": "backend/.env.example",
+      "sha256": "dca6c40aa1d72b0d720b333a62fa0b5696f658eb033b990c650cca600842c750"
+    },
+    {
+      "file": "frontend/sw.js",
+      "sha256": "4d66f467353998b48e629eb97acb5ba87e6d420c89fa92661963bca0bd010a9d"
+    },
+    {
+      "file": "frontend/js/offline/database-schema.js",
+      "sha256": "12ba430d2ac2f1f456268bcdc81b5604a1b1e5d07819f63fe057f064f05d0a58"
+    },
+    {
+      "file": "docs/PHASE_47_ACCEPTANCE.md",
+      "sha256": "e0f0b83f590b1b90217980e82d82daf3d3bbdc3a33e68c97f9c239170fd14a6e"
+    },
+    {
+      "file": "docs/PHASE_48_ACCEPTANCE.md",
+      "sha256": "9d5af0fd226bdf3327156cfd0f1ae66aaf27492faf307c1eb69f8022ef02054b"
+    },
+    {
+      "file": "docs/PHASE_49_ACCEPTANCE.md",
+      "sha256": "4139a3da994706e13f6faee934aaea887f1122203eab5713abb6620560e31551"
+    },
+    {
+      "file": "docs/final/PHASE_50_ACCEPTANCE.md",
+      "sha256": "d193af352668046d87f7f5e93e481cde7bd5539909f34e2ece49e36b264ca3af"
+    },
+    {
+      "file": "docs/VULNERABILITY_REGISTER.md",
+      "sha256": "811a622aedf1438e9b91908808fe94863faf9afc2517b9c4fa64291efb3b8af1"
+    },
+    {
+      "file": "docs/PRODUCTION_SECURITY_GATE.md",
+      "sha256": "1f8e4687fafabd2fdce4852622fd39953b2a4555e9b3567ae3b56f8861c6a233"
+    }
+  ],
+  "scope": "Public source and explicitly public environment template only; no private .env or database access."
+}

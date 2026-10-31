@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-10-27T02:21:01.966067+00:00",
+  "AITHRON_FINAL_VALIDATION": "1",
+  "python": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+  "checks": [
+    {
+      "path": "backend/app/rules/insight_rules.py",
+      "sha256": "1fd1f1749644c1a1f48cb838d7312c72ec04a26f7ad9c0fd17ba554c4d629309"
+    },
+    {
+      "path": "backend/app/services/insights_service.py",
+      "sha256": "9a149ab64c1c8a77d2b8e0c3d42c606cfa260b85c773215e407d05abf5d5e2da"
+    },
+    {
+      "path": "backend/app/api/v1/endpoints/insights.py",
+      "sha256": "e87f87d8b148843fa643e6374e0f62d1a5409062bc93b9eed7f0223e92b2ac70"
+    },
+    {
+      "path": "backend/app/api/v1/router.py",
+      "sha256": "175a3e09d3e5439acad31164852e5d8cfa5f5261401ecc4d293e0b906de8fdda"
+    },
+    {
+      "path": "backend/verification/test_insight_rules.py",
+      "sha256": "15270d3199e3f4185b51d2beb8375abe53ff7cd0c6fa89145483858ba2f31b29"
+    },
+    {
+      "path": "frontend/js/services/insights-api.service.js",
+      "sha256": "0206368b94ec4b295801f038dc65c2a42deed8b1afecefc07cb2a51bca52af6b"
+    },
+    {
+      "path": "tools/validate-insights.py",
+      "sha256": "f9387765c5fd57b5fd8a9df4c0cf4506580282c69f9f0df2af291c8084ab5353"
+    }
+  ],
+  "rules": {
+    "exit_code": 0,
+    "output": "test_identity_separates_context_and_changed_evidence (test_insight_rules.InsightRuleTests.test_identity_separates_context_and_changed_evidence) ... ok\ntest_invalid_counts (test_insight_rules.InsightRuleTests.test_invalid_counts) ... ok\ntest_positive_and_no_condition (test_insight_rules.InsightRuleTests.test_positive_and_no_condition) ... ok\ntest_reproducible_and_versioned (test_insight_rules.InsightRuleTests.test_reproducible_and_versioned) ... ok\ntest_zero_published_lessons (test_insight_rules.InsightRuleTests.test_zero_published_lessons) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nOK\n"
+  },
+  "javascript_syntax": {
+    "exit_code": 0,
+    "output": ""
+  },
+  "scope": "Synthetic rules and syntax only; no database, API, auth or browser validation"
+}

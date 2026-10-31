@@ -1,0 +1,2936 @@
+{
+  "date": "2026-10-27T19:30:03.989Z",
+  "scope": "Public demo, real Edge, synthetic disposable profile. No authenticated E2E, PostgreSQL, physical mobile, screen reader or WCAG certification.",
+  "results": [
+    {
+      "page": "login.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Iniciar sesión | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "login.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Iniciar sesión | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "login.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Iniciar sesión | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "register.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Crea tu cuenta | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "register.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Crea tu cuenta | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "register.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Crea tu cuenta | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "forgot-password.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Recuperar acceso | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "forgot-password.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Recuperar acceso | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "forgot-password.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Recuperar acceso | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "reset-password.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Nueva contraseña | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "reset-password.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Nueva contraseña | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "reset-password.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Nueva contraseña | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/index.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Inicio del estudiante | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/index.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Inicio del estudiante | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/index.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Inicio del estudiante | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/aprende.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis cursos | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/aprende.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis cursos | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/aprende.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis cursos | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/practica.html",
+      "width": 320,
+      "overflow": false,
+      "title": "¡Vamos a practicar! | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/practica.html",
+      "width": 768,
+      "overflow": false,
+      "title": "¡Vamos a practicar! | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/practica.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "¡Vamos a practicar! | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/juegos.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Aprende jugando | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/juegos.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Aprende jugando | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/juegos.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Aprende jugando | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/evaluaciones.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis evaluaciones | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/evaluaciones.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis evaluaciones | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/evaluaciones.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis evaluaciones | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/agenda.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mi Agenda | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/agenda.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mi Agenda | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/agenda.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mi Agenda | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/progreso.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mi progreso | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/progreso.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mi progreso | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/progreso.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mi progreso | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/misiones.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis misiones | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/misiones.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis misiones | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/misiones.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis misiones | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/logros.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis logros | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/logros.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis logros | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/logros.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis logros | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/descargas.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Centro de Descargas | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/descargas.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Centro de Descargas | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/descargas.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Centro de Descargas | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/tutor.html",
+      "width": 320,
+      "overflow": false,
+      "title": "AITHRON TUTOR | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/tutor.html",
+      "width": 768,
+      "overflow": false,
+      "title": "AITHRON TUTOR | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/tutor.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "AITHRON TUTOR | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/traductor.html",
+      "width": 320,
+      "overflow": false,
+      "title": "AITHRON TRANSLATE | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/traductor.html",
+      "width": 768,
+      "overflow": false,
+      "title": "AITHRON TRANSLATE | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/traductor.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "AITHRON TRANSLATE | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/pronuncia.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Aithron Pronuncia | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/pronuncia.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Aithron Pronuncia | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/pronuncia.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Aithron Pronuncia | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/perfil.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mi Perfil | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/perfil.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mi Perfil | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/perfil.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mi Perfil | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/configuracion.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Configuración | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/configuracion.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Configuración | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/configuracion.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Configuración | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/index.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Dashboard Monitor | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/index.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Dashboard Monitor | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/index.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Dashboard Monitor | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/cursos.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis Cursos | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/cursos.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis Cursos | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/cursos.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis Cursos | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/estudiantes.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis estudiantes | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/estudiantes.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis estudiantes | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/estudiantes.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis estudiantes | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/tareas.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis Tareas | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/tareas.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis Tareas | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/tareas.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis Tareas | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/index.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Panel de Administración | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/index.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Panel de Administración | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/index.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Panel de Administración | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/usuarios.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Gestión de Usuarios | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/usuarios.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Gestión de Usuarios | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/usuarios.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Gestión de Usuarios | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/matriculas.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Matrículas | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/matriculas.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Matrículas | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/matriculas.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Matrículas | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/curso.html?course=math",
+      "width": 320,
+      "overflow": false,
+      "title": "Matemática | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 11,
+        "smallText": [
+          {
+            "tag": "SPAN",
+            "className": "",
+            "parentClass": "hero-facts",
+            "text": "1 unidad",
+            "fontSize": 13
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "parentClass": "hero-facts",
+            "text": "4 lecciones",
+            "fontSize": 13
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "parentClass": "hero-facts",
+            "text": "45% avance",
+            "fontSize": 13
+          },
+          {
+            "tag": "DT",
+            "className": "",
+            "parentClass": "",
+            "text": "Unidades",
+            "fontSize": 13
+          },
+          {
+            "tag": "DD",
+            "className": "",
+            "parentClass": "",
+            "text": "1",
+            "fontSize": 13
+          },
+          {
+            "tag": "DT",
+            "className": "",
+            "parentClass": "",
+            "text": "Lecciones",
+            "fontSize": 13
+          },
+          {
+            "tag": "DD",
+            "className": "",
+            "parentClass": "",
+            "text": "4",
+            "fontSize": 13
+          },
+          {
+            "tag": "DT",
+            "className": "",
+            "parentClass": "",
+            "text": "Lecciones completadas",
+            "fontSize": 13
+          },
+          {
+            "tag": "DD",
+            "className": "",
+            "parentClass": "",
+            "text": "1",
+            "fontSize": 13
+          },
+          {
+            "tag": "DT",
+            "className": "",
+            "parentClass": "",
+            "text": "Actividades pendientes",
+            "fontSize": 13
+          },
+          {
+            "tag": "DD",
+            "className": "",
+            "parentClass": "",
+            "text": "3",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/curso.html?course=math",
+      "width": 768,
+      "overflow": false,
+      "title": "Matemática | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 11,
+        "smallText": [
+          {
+            "tag": "SPAN",
+            "className": "",
+            "parentClass": "hero-facts",
+            "text": "1 unidad",
+            "fontSize": 13
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "parentClass": "hero-facts",
+            "text": "4 lecciones",
+            "fontSize": 13
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "parentClass": "hero-facts",
+            "text": "45% avance",
+            "fontSize": 13
+          },
+          {
+            "tag": "DT",
+            "className": "",
+            "parentClass": "",
+            "text": "Unidades",
+            "fontSize": 13
+          },
+          {
+            "tag": "DD",
+            "className": "",
+            "parentClass": "",
+            "text": "1",
+            "fontSize": 13
+          },
+          {
+            "tag": "DT",
+            "className": "",
+            "parentClass": "",
+            "text": "Lecciones",
+            "fontSize": 13
+          },
+          {
+            "tag": "DD",
+            "className": "",
+            "parentClass": "",
+            "text": "4",
+            "fontSize": 13
+          },
+          {
+            "tag": "DT",
+            "className": "",
+            "parentClass": "",
+            "text": "Lecciones completadas",
+            "fontSize": 13
+          },
+          {
+            "tag": "DD",
+            "className": "",
+            "parentClass": "",
+            "text": "1",
+            "fontSize": 13
+          },
+          {
+            "tag": "DT",
+            "className": "",
+            "parentClass": "",
+            "text": "Actividades pendientes",
+            "fontSize": 13
+          },
+          {
+            "tag": "DD",
+            "className": "",
+            "parentClass": "",
+            "text": "3",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/curso.html?course=math",
+      "width": 1440,
+      "overflow": false,
+      "title": "Matemática | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 11,
+        "smallText": [
+          {
+            "tag": "SPAN",
+            "className": "",
+            "parentClass": "hero-facts",
+            "text": "1 unidad",
+            "fontSize": 13
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "parentClass": "hero-facts",
+            "text": "4 lecciones",
+            "fontSize": 13
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "parentClass": "hero-facts",
+            "text": "45% avance",
+            "fontSize": 13
+          },
+          {
+            "tag": "DT",
+            "className": "",
+            "parentClass": "",
+            "text": "Unidades",
+            "fontSize": 13
+          },
+          {
+            "tag": "DD",
+            "className": "",
+            "parentClass": "",
+            "text": "1",
+            "fontSize": 13
+          },
+          {
+            "tag": "DT",
+            "className": "",
+            "parentClass": "",
+            "text": "Lecciones",
+            "fontSize": 13
+          },
+          {
+            "tag": "DD",
+            "className": "",
+            "parentClass": "",
+            "text": "4",
+            "fontSize": 13
+          },
+          {
+            "tag": "DT",
+            "className": "",
+            "parentClass": "",
+            "text": "Lecciones completadas",
+            "fontSize": 13
+          },
+          {
+            "tag": "DD",
+            "className": "",
+            "parentClass": "",
+            "text": "1",
+            "fontSize": 13
+          },
+          {
+            "tag": "DT",
+            "className": "",
+            "parentClass": "",
+            "text": "Actividades pendientes",
+            "fontSize": 13
+          },
+          {
+            "tag": "DD",
+            "className": "",
+            "parentClass": "",
+            "text": "3",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/unidad.html?course=math&unit=math-g4-u1",
+      "width": 320,
+      "overflow": false,
+      "title": "Fracciones básicas | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "STRONG",
+            "className": "",
+            "parentClass": "unit-goal",
+            "text": "Objetivos de aprendizaje",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/unidad.html?course=math&unit=math-g4-u1",
+      "width": 768,
+      "overflow": false,
+      "title": "Fracciones básicas | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "STRONG",
+            "className": "",
+            "parentClass": "unit-goal",
+            "text": "Objetivos de aprendizaje",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/unidad.html?course=math&unit=math-g4-u1",
+      "width": 1440,
+      "overflow": false,
+      "title": "Fracciones básicas | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "STRONG",
+            "className": "",
+            "parentClass": "unit-goal",
+            "text": "Objetivos de aprendizaje",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/leccion.html?course=math&unit=math-g4-u1&lesson=math-g4-u1-l1",
+      "width": 320,
+      "overflow": false,
+      "title": "¿Qué es una fracción? | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/leccion.html?course=math&unit=math-g4-u1&lesson=math-g4-u1-l1",
+      "width": 768,
+      "overflow": false,
+      "title": "¿Qué es una fracción? | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/leccion.html?course=math&unit=math-g4-u1&lesson=math-g4-u1-l1",
+      "width": 1440,
+      "overflow": false,
+      "title": "¿Qué es una fracción? | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/ejercicio.html?activity=practice-math-4",
+      "width": 320,
+      "overflow": false,
+      "title": "Practiquemos: Fracciones básicas | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 3,
+        "smallText": [
+          {
+            "tag": "SPAN",
+            "className": "",
+            "parentClass": "practice-progress",
+            "text": "Pregunta 1 de 4",
+            "fontSize": 13
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "parentClass": "practice-progress",
+            "text": "0%",
+            "fontSize": 13
+          },
+          {
+            "tag": "PROGRESS",
+            "className": "",
+            "parentClass": "practice-progress",
+            "text": "0%",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/ejercicio.html?activity=practice-math-4",
+      "width": 768,
+      "overflow": false,
+      "title": "Practiquemos: Fracciones básicas | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 3,
+        "smallText": [
+          {
+            "tag": "SPAN",
+            "className": "",
+            "parentClass": "practice-progress",
+            "text": "Pregunta 1 de 4",
+            "fontSize": 13
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "parentClass": "practice-progress",
+            "text": "0%",
+            "fontSize": 13
+          },
+          {
+            "tag": "PROGRESS",
+            "className": "",
+            "parentClass": "practice-progress",
+            "text": "0%",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/ejercicio.html?activity=practice-math-4",
+      "width": 1440,
+      "overflow": false,
+      "title": "Practiquemos: Fracciones básicas | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 3,
+        "smallText": [
+          {
+            "tag": "SPAN",
+            "className": "",
+            "parentClass": "practice-progress",
+            "text": "Pregunta 1 de 4",
+            "fontSize": 13
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "parentClass": "practice-progress",
+            "text": "0%",
+            "fontSize": 13
+          },
+          {
+            "tag": "PROGRESS",
+            "className": "",
+            "parentClass": "practice-progress",
+            "text": "0%",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/juego.html?activity=game-memory-4",
+      "width": 320,
+      "overflow": false,
+      "title": "Memoria educativa | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 12,
+        "smallTextCount": 2,
+        "smallText": [
+          {
+            "tag": "STRONG",
+            "className": "",
+            "parentClass": "memory-stats",
+            "text": "Movimientos: 0",
+            "fontSize": 12
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "parentClass": "memory-stats",
+            "text": "Parejas encontradas: 0 / 3",
+            "fontSize": 12
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/juego.html?activity=game-memory-4",
+      "width": 768,
+      "overflow": false,
+      "title": "Memoria educativa | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 2,
+        "smallText": [
+          {
+            "tag": "STRONG",
+            "className": "",
+            "parentClass": "memory-stats",
+            "text": "Movimientos: 0",
+            "fontSize": 13
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "parentClass": "memory-stats",
+            "text": "Parejas encontradas: 0 / 3",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/juego.html?activity=game-memory-4",
+      "width": 1440,
+      "overflow": false,
+      "title": "Memoria educativa | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 2,
+        "smallText": [
+          {
+            "tag": "STRONG",
+            "className": "",
+            "parentClass": "memory-stats",
+            "text": "Movimientos: 0",
+            "fontSize": 13
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "parentClass": "memory-stats",
+            "text": "Parejas encontradas: 0 / 3",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/actividades-pendientes.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Actividades pendientes | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/actividades-pendientes.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Actividades pendientes | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/actividades-pendientes.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Actividades pendientes | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/recordatorios.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis recordatorios | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/recordatorios.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis recordatorios | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/recordatorios.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis recordatorios | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/accesibilidad.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Accesibilidad | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/accesibilidad.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Accesibilidad | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/accesibilidad.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Accesibilidad | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/mis-descargas.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis Descargas | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/mis-descargas.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis Descargas | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/mis-descargas.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis Descargas | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/editar-evaluacion.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Crear / editar evaluación | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/editar-evaluacion.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Crear / editar evaluación | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/editar-evaluacion.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Crear / editar evaluación | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/notas.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Notas y Calificaciones | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/notas.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Notas y Calificaciones | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/notas.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Notas y Calificaciones | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/reportes.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Reportes Académicos | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/reportes.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Reportes Académicos | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/reportes.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Reportes Académicos | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/configuracion.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Configuración | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13.6,
+        "smallTextCount": 10,
+        "smallText": [
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Categorías internas activas: 7",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "monitor/configuracion.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Configuración | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13.6,
+        "smallTextCount": 10,
+        "smallText": [
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Categorías internas activas: 7",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "monitor/configuracion.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Configuración | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13.6,
+        "smallTextCount": 10,
+        "smallText": [
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Categorías internas activas: 7",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "account-card-status",
+            "parentClass": "monitor-card",
+            "text": "Solo en este dispositivo",
+            "fontSize": 13.6
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "monitor/perfil.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mi Perfil Docente | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/perfil.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mi Perfil Docente | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/perfil.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mi Perfil Docente | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/aulas.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Gestión de Aulas | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/aulas.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Gestión de Aulas | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/aulas.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Gestión de Aulas | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/editar-usuario.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Preparar Registro de Usuario | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/editar-usuario.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Preparar Registro de Usuario | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/editar-usuario.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Preparar Registro de Usuario | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/periodos-academicos.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Periodos Académicos | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/periodos-academicos.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Periodos Académicos | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/periodos-academicos.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Periodos Académicos | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/asignaciones-docentes.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Asignaciones Docentes | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/asignaciones-docentes.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Asignaciones Docentes | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/asignaciones-docentes.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Asignaciones Docentes | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "section": "home",
+      "active": "home",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "courses",
+      "active": "courses",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "practice",
+      "active": "practice",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "games",
+      "active": "games",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "evaluations",
+      "active": "evaluations",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "agenda",
+      "active": "agenda",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "progress",
+      "active": "progress",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "missions",
+      "active": "missions",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "achievements",
+      "active": "achievements",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "downloads",
+      "active": "downloads",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "tutor",
+      "active": "tutor",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "translator",
+      "active": "translator",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "pronunciation",
+      "active": "pronunciation",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "profile",
+      "active": "profile",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "check": "download-filter-focus-and-keyboard-section-navigation",
+      "filter": {
+        "pressed": "true",
+        "empty": true,
+        "focus": "descargados"
+      },
+      "keyboardNavigation": true,
+      "pass": true
+    },
+    {
+      "check": "calendar-focus-menu-disclosure-dark-and-text-200-percent",
+      "dark": "rgb(26, 38, 56)",
+      "zoomOverflow": false,
+      "pass": true
+    }
+  ],
+  "missing": [
+    "/favicon.ico"
+  ],
+  "pass": false
+}

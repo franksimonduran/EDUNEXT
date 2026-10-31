@@ -1,0 +1,31 @@
+import {organizationShell,queryParams,installProposalActions,statusMessage,emptyState} from './organization-kernel.js';
+import {gradeList,sectionList,saveSectionProposal,archiveSectionProposal,deleteSectionProposal} from '../services/admin-grades-sections.service.js';
+import {getAcademicRecord} from '../services/admin-organization-drafts.service.js';
+import {validateOrganizationRecord} from '../services/admin-organization-validation.service.js';
+import {gradeCards,sectionCards,sectionTable,gradeFilters,gradeSummary} from '../components/admin-grade-card.js';
+import {orgLink,orgNote,validationPanel,esc,field,select} from '../components/admin-relationship-validation.js';
+import {prepareStaticResources} from '../offline/monitor-preparation.js';
+const {root,open}=organizationShell('Grados y Secciones','grades');
+const params=queryParams(),raw=Object.fromEntries(params);
+let data=null,sections=null;
+function toolbar(){return `<div class="directory-toolbar">${orgLink('index','Dashboard')}${orgLink('aulas','Aulas')}${orgLink('matriculas','Matrículas')}${orgLink('asignaciones-docentes','Asignaciones Docentes')}<button type="button" id="prepare-grades-offline">Preparar módulo offline</button></div><p id="org-message" role="status"></p>`;}
+function view(){
+  root.innerHTML=`<p>Consulta la estructura de grados y secciones derivada de las aulas compartidas. Las secciones propuestas son identificadores locales: no crean aulas ni habilitan matrículas.</p>${toolbar()}<form class="monitor-card" id="grade-filters">${gradeFilters({grades:data.grades,values:raw})}<button type="reset">Limpiar filtros</button></form><div id="grade-results"></div><section class="monitor-card"><h2>Proponer sección local</h2><p>La sección se interpreta dentro de su grado: dos secciones «A» de grados distintos no son la misma entidad.</p><form id="section-form"><div class="form-grid">${select('sectionGrade','Grado de la sección',data.grades.map(g=>[g.id,g.name]),raw.grade||data.grades[0]?.id||'')}${field('section','Identificador de sección','','text','maxlength="3" required')}${select('sectionPeriod','Periodo (opcional)',[['','Sin periodo en la propuesta'],...data.model.periods.map(p=>[p.id,p.name])],'')}</div>${field('sectionNotes','Observaciones (opcional)','','text','maxlength="400"')}<button type="submit">Guardar propuesta de sección</button></form><div id="section-validation"></div></section><h2>Secciones</h2><div id="section-results"></div>`;
+ const form=root.querySelector('#grade-filters');
+ const renderGrades=()=>{const filters=Object.fromEntries(new FormData(form));const rows=data.grades.filter(g=>(!filters.grade||Number(g.id)===Number(filters.grade))&&(!filters.search||g.name.toLowerCase().includes(String(filters.search).toLowerCase())));root.querySelector('#grade-results').innerHTML=rows.length?gradeCards(rows):emptyState('Sin grados coincidentes.');};
+ form.onsubmit=e=>e.preventDefault();form.oninput=renderGrades;form.onreset=()=>setTimeout(renderGrades,0);renderGrades();
+ const renderSections=()=>{const rows=sections.sections.filter(s=>!raw.grade||Number(s.grade)===Number(raw.grade));root.querySelector('#section-results').innerHTML=rows.length?sectionTable(rows)+sectionCards(rows):emptyState('Sin secciones coincidentes.');};
+ renderSections();
+ const sectionForm=root.querySelector('#section-form');
+  sectionForm.onsubmit=async e=>{e.preventDefault();const raw=Object.fromEntries(new FormData(sectionForm));const payload={grade:raw.sectionGrade,section:raw.section,periodId:raw.sectionPeriod,notes:raw.sectionNotes};try{const saved=await saveSectionProposal(payload);await refresh();root.querySelector('#section-validation').innerHTML=validationPanel(saved.validation||{errors:[],warnings:[]},'Resultado del guardado local')+`<p>Estado local: ${esc(saved.state)} · Revisión ${saved.revision}. La sección propuesta no habilita aulas ni matrículas.</p>`;root.querySelector('#section-validation').dataset.record=saved.id;root.querySelector('#section-validation').dataset.marker=saved.id+':'+saved.revision;sectionForm.reset();}catch(error){root.querySelector('#section-validation').innerHTML=`<section class="monitor-card" role="alert"><h2>No se pudo guardar</h2><p>${esc(error.message)}</p></section>`;}};
+}
+async function load(){data=await gradeList(raw);sections=await sectionList(raw.grade||null);}
+async function refresh(){await load();view();}
+installProposalActions({root,open,refresh,load:async id=>{const record=await getAcademicRecord(id);return record&&record.type==='section'?record:null;},handlers:{
+ detail:async(record,{open})=>{const result=await validateOrganizationRecord(record);open('Propuesta local de sección',`<p>${esc(record.data?.grade||'')}.º · ${esc(record.data?.section||'')}</p>${validationPanel(result)}`);},
+ validate:async(record,{open})=>{const result=await validateOrganizationRecord(record);open('Validación local de la propuesta',validationPanel(result));},
+ archive:async(record,{refresh})=>{if(confirm('¿Archivar esta propuesta local de sección?')){await archiveSectionProposal(record);await refresh();statusMessage(root,'Propuesta archivada localmente.');}},
+ delete:async(record,{refresh})=>{if(confirm('¿Eliminar esta propuesta local de sección?')){await deleteSectionProposal(record);await refresh();statusMessage(root,'Propuesta eliminada del dispositivo.');}}
+}});
+document.addEventListener('click',async e=>{const b=e.target.closest('#prepare-grades-offline');if(!b)return;b.disabled=true;try{const base=new URL('../../',import.meta.url),files=await prepareStaticResources(['grados-secciones','aulas','matriculas','asignaciones-docentes','periodos-academicos','movimientos-academicos'].map(p=>new URL('admin/'+p+'.html',base).href),n=>statusMessage(root,n+' archivos preparados…'));statusMessage(root,'Módulo preparado offline: '+files.length+' archivos verificados en este dispositivo. Sin envío a servidor.');}catch(error){statusMessage(root,error.message);}finally{b.disabled=false;}});
+try{await load();view();}catch(error){root.innerHTML=`<section class="monitor-card" role="alert"><h2>No se pudo cargar la estructura</h2><p>${esc(error.message)}</p>${orgLink('index','Volver al panel')}</section>`;}finally{root.setAttribute('aria-busy','false');}

@@ -1,0 +1,34 @@
+/* Shared theme/a11y presentation, scoped to monitor shells and legacy calendar views. */
+:root[data-theme="dark"]{color-scheme:dark;--color-background:#101827;--color-surface:#1a2638;--color-text:#e9f0ff;--color-muted:#b4c2d8;--color-border:#536781;--color-primary:#80b2ff;--color-primary-hover:#a6c9ff;--color-secondary:#bbd4ff;--color-monitor:#c9acff;--color-monitor-soft:#302744;--color-info-background:#233852;--color-error:#ffb3bc;--color-success:#8be0bd;--shadow-card:0 6px 24px #0003}
+:root[data-font="large"]{font-size:112.5%}:root[data-font="xlarge"]{font-size:125%}
+:root[data-reading-spacing="relaxed"] :is(main p,main li,main dd){line-height:1.95;letter-spacing:.025em}
+:root[data-reduce-motion="true"] *, :root[data-reduce-motion="true"] *::before,:root[data-reduce-motion="true"] *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+:root[data-focus-highlight="true"] :focus-visible{outline:3px solid var(--color-primary,#2868eb);outline-offset:4px;box-shadow:0 0 0 6px var(--color-surface,#fff)}
+.profile-avatar-art{display:block;width:100%;height:100%}.monitor-avatar{display:inline-flex;align-items:center;justify-content:center;flex:0 0 44px;width:44px;height:44px;border-radius:50%;overflow:hidden;background:var(--color-monitor-soft)}.tone-blue{--avatar-background:#dfedff;--avatar-ink:#2868eb}.tone-purple{--avatar-background:#ede5fc;--avatar-ink:#7145bf}.tone-green{--avatar-background:#d9f4e7;--avatar-ink:#19734f}
+.account-menu{display:grid;gap:14px}.account-menu a{padding:10px;border:1px solid var(--color-border);border-radius:8px}
+.avatar-opt .profile-avatar-art{width:72px;height:72px}
+:root[data-density="compact"] :is(.monitor-shell td,.monitor-shell th,body[data-view] #app td,body[data-view] #app th){padding:6px 10px}
+:root[data-readable-tables="true"] :is(.monitor-shell td,.monitor-shell th,#app td,#app th){font-size:1rem;line-height:1.7;border:1px solid var(--color-border);padding-block:14px}
+:root[data-theme="dark"] :is(.monitor-shell,.topbar,#app,dialog){color:var(--color-text);background:var(--color-background)}
+:root[data-theme="dark"] :is(.student-topbar,.monitor-card,.record,.eval-card,.question-card,.report-document,.calendar-event,.calendar-week-day,.cal-cell,.date-navigation,.calendar-filters,.studio-preview,.editor-grid details,.studio-empty,dialog,.settings-card){color:var(--color-text);background:var(--color-surface);border-color:var(--color-border)}
+:root[data-theme="dark"] :is(.monitor-shell,#app,dialog) :is(input,textarea,select,button){color:var(--color-text);background:var(--color-surface);border-color:var(--color-border)}
+:root[data-theme="dark"] :is(.monitor-shell,#app,dialog) :is(.studio-link,.eval-link,.primary,.button-primary){background:#174c9d;color:#fff;border-color:#80b2ff}
+:root[data-theme="dark"] :is(.monitor-shell,#app) :is(td,th){background:var(--color-surface);color:var(--color-text);border-color:var(--color-border)}
+:root[data-theme="dark"] :is(.monitor-shell,#app) :is(.concept-callout,.content-example,.studio-notice,.locked,.content-status,.cal-weekdays,.date-navigation,.event-session,.event-reminder,.concept-callout,.course-illustration){background:#25374f;color:var(--color-text)}
+:root[data-theme="dark"] .monitor-shell .student-sidebar{background:#132d56}:root[data-theme="dark"] .monitor-shell .student-sidebar button{background:transparent;color:#eaf2ff}
+:root[data-theme="dark"] :is(.monitor-shell,#app) :is(.muted,.resource-meta,.demo-label){color:var(--color-muted)}
+:root[data-theme="dark"] :is(.monitor-shell,#app) svg text{fill:var(--color-text)}
+:root[data-theme="dark"] .studio-preview :is(.learning-figure,.concept-callout){background:#25374f}
+:root[data-theme="dark"] :is(.monitor-shell,#app) a{color:#bbd4ff}:root[data-theme="dark"] .monitor-hero a{background:#174c9d;color:white}
+:root[data-theme="dark"] .monitor-shell a.account-link{background:#174c9d;color:#fff;border-color:#a8d3ff}
+:root[data-theme="dark"] .monitor-hero{color:#fff}:root[data-theme="dark"] :is(.monitor-shell,#app) .content-error{color:#ffb3bc}
+:root[data-contrast="high"]{--color-text:#101010;--color-muted:#292929;--color-background:#fff;--color-surface:#fff;--color-border:#333;--color-primary:#0649b5;--color-secondary:#093672;--color-primary-hover:#003077;--color-monitor:#54208d;--color-monitor-soft:#f1e6ff;--color-success:#07522f;--color-error:#8b0a20}
+:root[data-theme="dark"][data-contrast="high"]{--color-text:#fff;--color-muted:#fff;--color-background:#000;--color-surface:#111;--color-border:#eee;--color-primary:#a8d3ff;--color-secondary:#cce4ff;--color-monitor:#e2c9ff;--color-monitor-soft:#282034;--color-info-background:#192b44;--color-success:#a5edcf;--color-error:#ffc3cc}
+:root[data-contrast="high"] :is(.monitor-shell,#app,dialog) :is(input,textarea,select,button,td,th,.monitor-card){border:2px solid var(--color-border)}
+:root[data-contrast="high"] :is(.monitor-shell,#app) :is(p,label,li,td,th,h1,h2,h3){color:inherit}:root[data-contrast="high"] .monitor-shell .student-sidebar{color:#fff}
+:root[data-report-header="false"] .report-header :is(img,h2){display:none}:root[data-report-date="false"] .report-generated{display:none}:root[data-report-metrics="false"] .report-metric-explanation{display:none}
+:root[data-editor-warnings="false"] #validation-panel .pedagogical-warnings{display:none}
+.monitor-shell .topbar-actions{flex-wrap:wrap;flex-shrink:1;min-width:0;max-width:100%}.monitor-shell .topbar-greeting>div{min-width:0}.monitor-shell .topbar-greeting p{overflow-wrap:anywhere}.monitor-shell .topbar-actions [data-monitor-alias]{max-width:240px;overflow-wrap:anywhere}
+@media(max-width:480px){.monitor-shell .student-topbar{padding:12px}.monitor-shell .topbar-actions [data-monitor-alias]{max-width:170px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+@media print{:root[data-theme],:root[data-contrast]{color-scheme:light;--color-surface:#fff;--color-background:#fff;--color-text:#000;--color-muted:#333;--color-border:#555}body,.report-document,.report-document :is(section,header,table,th,td){background:#fff!important;color:#000!important}.report-document a{color:#000!important}:root[data-print-size="large"] .report-document{font-size:14pt}.report-demo{display:block!important;color:#000!important;background:#fff!important}}

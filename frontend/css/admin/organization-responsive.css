@@ -1,0 +1,23 @@
+/* FASE 26 · Estilos compartidos y adaptables de la organización académica */
+.admin-page .org-toolbar-actions{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.admin-page .org-filter-card form{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end}
+.admin-page .org-filter-card label{display:flex;flex-direction:column;gap:6px;font-size:.92rem;flex:1 1 190px;min-width:0}
+.admin-page .org-filter-card input,.admin-page .org-filter-card select{width:100%;min-height:44px;padding:9px 10px;border:1px solid var(--color-border);border-radius:9px;font:inherit;color:var(--color-text);background:var(--color-surface)}
+.admin-page .org-count{margin:10px 0;font-weight:600}
+.admin-page .org-card-header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
+.admin-page .org-card-header h3{margin:0}
+.admin-page .org-dl{display:grid;grid-template-columns:minmax(120px,auto) 1fr;gap:6px 14px;margin:12px 0}
+.admin-page .org-dl dt{font-weight:600;color:var(--color-text-muted)}
+.admin-page .org-dl dd{margin:0;overflow-wrap:anywhere}
+.admin-page .org-state{display:inline-block;padding:3px 9px;border-radius:999px;font-size:.78rem;font-weight:600;background:var(--color-info-background);color:var(--color-text)}
+.admin-page .org-proposal{background:var(--color-warning-background,#fff4e0)}
+.admin-page .org-empty{padding:18px;border:1px dashed var(--color-border);border-radius:12px;text-align:center}
+.admin-page .org-validation-error{color:var(--color-error,#b3261e)}
+.admin-page .org-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.admin-page .org-actions button,.admin-page .org-actions a{min-height:44px}
+.admin-page .org-inline-list{margin:8px 0;padding-left:18px}
+.admin-page .org-inline-list li{margin:4px 0}
+.admin-page .org-tag{display:inline-block;padding:2px 8px;border-radius:8px;font-size:.78rem;background:var(--color-info-background);margin:0 4px 4px 0}
+@media(max-width:900px){.admin-page .org-filter-card label{flex:1 1 100%}}
+@media(max-width:700px){.admin-page .org-dl{grid-template-columns:1fr}.admin-page .org-dl dt{margin-top:8px}}
+@media(max-width:480px){.admin-page .org-actions{flex-direction:column}.admin-page .org-actions button,.admin-page .org-actions a{width:100%}}

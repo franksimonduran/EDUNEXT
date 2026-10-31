@@ -1,0 +1,19 @@
+{
+  "planPrepared": true,
+  "technicalReadinessApproved": false,
+  "institutionSelected": false,
+  "authorized": false,
+  "started": false,
+  "executed": false,
+  "evaluated": false,
+  "realParticipants": 0,
+  "trainingSessionsHeld": 0,
+  "institution": null,
+  "institutionalResponsible": null,
+  "technicalResponsible": null,
+  "privacyResponsible": null,
+  "supportChannel": null,
+  "dates": null,
+  "decision": "NO-GO",
+  "note": "Plan/instruments only. Synthetic fixture accounts are not actual participants or seeded users. No invitation, consent, session or educational outcome recorded."
+}

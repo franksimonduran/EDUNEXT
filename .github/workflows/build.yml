@@ -1,0 +1,29 @@
+name: Release image build (locked dependencies required; no publish)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Require reviewed dependency lock
+        run: test -s backend/requirements.lock
+      - name: Build API and frontend without pushing
+        run: |
+          docker build --build-arg REQUIRE_LOCK=true --build-arg BUILD_REVISION=${{ github.sha }} -f backend/Dockerfile -t aithron-api:${{ github.sha }} .
+          docker build --build-arg BUILD_REVISION=${{ github.sha }} -f infra/docker/frontend.Dockerfile -t aithron-web:${{ github.sha }} .
+      - name: Validate static server configuration without backend DNS
+        run: docker run --rm --add-host api:127.0.0.1 --entrypoint nginx aithron-web:${{ github.sha }} -t
+      - name: Record image identifiers
+        run: |
+          mkdir -p .build
+          docker image inspect --format '{{.Id}}' aithron-api:${{ github.sha }} > .build/api-image-id.txt
+          docker image inspect --format '{{.Id}}' aithron-web:${{ github.sha }} > .build/web-image-id.txt
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: image-identifiers-${{ github.sha }}
+          path: .build/*-image-id.txt
+          retention-days: 7

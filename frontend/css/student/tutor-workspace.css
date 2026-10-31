@@ -1,0 +1,9 @@
+.ai-tabs { display: flex; gap: 10px; margin: 16px 0 24px; flex-wrap: wrap; }
+.ai-tabs [role="tab"] { min-height: 48px; padding: 12px 24px; border: 1px solid #dce1f5; border-radius: 12px; color: #183b72; background: #fff; font: inherit; cursor: pointer; }
+.ai-tabs [aria-selected="true"] { background: #265cf3; color: white; border-color: #265cf3; }
+.tutor-workspace [role="tabpanel"][hidden] { display: none; }
+#ai-online-panel { padding: clamp(16px, 3vw, 32px); background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 18px; }
+#ai-online-panel p { margin-block: 12px; }
+#ai-online-form { display: grid; gap: 12px; margin-block: 20px; }
+#ai-online-form :is(select, textarea) { width: 100%; max-width: 100%; font: inherit; padding: 12px; border: 1px solid var(--color-border); border-radius: 10px; }
+#ai-online-log { overflow-wrap: anywhere; }

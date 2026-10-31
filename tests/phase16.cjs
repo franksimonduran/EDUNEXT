@@ -1,0 +1,25 @@
+const {spawn}=require('child_process');
+const assert=require('node:assert/strict');
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'C:/Users/Frank/AppData/Local/Temp/opencode/node_modules/playwright');
+const server=spawn('python',['-m','http.server','8096','--bind','127.0.0.1'],{cwd:require('path').join(__dirname,'../frontend'),stdio:'ignore'});
+(async()=>{let browser;try{
+ await new Promise(r=>setTimeout(r,1200));browser=await chromium.launch({headless:true});const page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)errors.push(r.status()+' '+r.url());});
+ const go=path=>page.goto('http://127.0.0.1:8096/monitor/'+path);
+ await go('estudiantes.html');await page.waitForSelector('tbody tr');assert.equal(await page.locator('tbody tr').count(),10);
+ const consistency=await page.evaluate(async()=>{const s=await import('/js/services/monitor-students.service.js');const d=await import('/js/services/monitor-dashboard.service.js');const rows=s.queryStudents();return {total:rows.length,unique:new Set(rows.map(s=>s.id)).size,valid:rows.every(row=>{const detail=s.getStudent(row.id);return detail.courses.reduce((n,c)=>n+c.completed,0)===row.completed&&detail.courses.reduce((n,c)=>n+c.assigned,0)===row.assigned;}),rooms:s.authorizedRooms().every(c=>s.getRoom(c.id).students.length===d.getDashboard(c.id).pupils.length)};});assert.deepEqual(consistency,{total:76,unique:76,valid:true,rooms:true});
+ await page.selectOption('#room','a5');assert.match(await page.locator('#page').innerText(),/28 resultados/);
+ await page.click('#next');assert.match(await page.locator('#page').innerText(),/Página 2/);assert.equal(await page.inputValue('#room'),'a5');
+ await page.fill('#search','estudiante 5-01');assert.equal(await page.locator('tbody tr').count(),1);await page.selectOption('#grade','4');assert.match(await page.locator('#results').innerText(),/Sin coincidencias/);
+ await page.getByRole('button',{name:'Limpiar filtros'}).click();await page.waitForTimeout(100);assert.equal(await page.inputValue('#room'),'all');await page.selectOption('#sort','progress');
+ await page.fill('#search','a4-s1');assert.match(await page.locator('#results').innerText(),/a4-s1/);
+ await go('detalle-estudiante.html?id=a5-s1');assert.match(await page.locator('#page-content').innerText(),/Estudiante 5-01/);assert.match(await page.locator('#page-content').innerText(),/6\/10/);await page.locator('[data-course]').first().click();assert.equal(await page.locator('[data-course]').first().getAttribute('aria-expanded'),'true');
+ await go('detalle-estudiante.html?id=unknown');assert.match(await page.locator('#page-content').innerText(),/Estudiante no encontrado/);
+ await go('aulas.html');await page.selectOption('#grade','5');assert.equal(await page.locator('#rooms>article').count(),1);assert.match(await page.locator('#rooms').innerText(),/28 estudiantes/);
+ await go('detalle-aula.html?id=a5');assert.equal(await page.locator('tbody tr').count(),28);await page.fill('#room-search','5-01');assert.equal(await page.locator('tbody tr').count(),1);
+ await go('seguimiento-aula.html?id=a5');assert.equal(await page.locator('.chart-row').count(),5);await page.getByRole('button',{name:'Preparar refuerzo',exact:true}).click();await page.waitForURL('**/crear-refuerzo.html?room=a5');await page.waitForSelector('#support-form');assert.equal(await page.inputValue('#grade'),'5');assert.equal(new URL(page.url()).searchParams.has('id'),false);
+ for(const path of ['estudiantes.html','detalle-estudiante.html?id=a4-s1','aulas.html','detalle-aula.html?id=a4','seguimiento-aula.html?id=a4']){await go(path);for(const width of [1280,768,320]){await page.setViewportSize({width,height:900});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,path+' overflow '+width);}for(const href of await page.locator('main a[href]').evaluateAll(a=>a.map(a=>a.href))){assert((await page.request.get(href.split('#')[0])).ok(),href);}}
+ await page.getByRole('button',{name:'Notificaciones',exact:true}).click();assert(await page.locator('dialog').isVisible());await page.keyboard.press('Escape');await page.getByRole('button',{name:'Menú de perfil'}).click();assert(await page.locator('dialog').isVisible());await page.keyboard.press('Escape');await page.keyboard.press('Tab');assert(await page.evaluate(()=>document.activeElement!==document.body));
+ await go('detalle-aula.html?id=invalid');assert.match(await page.locator('#page-content').innerText(),/Aula no encontrado/);
+ await go('index.html');await page.setViewportSize({width:1280,height:900});await page.locator('[data-module="students"]').first().click();await page.waitForURL('**/estudiantes.html');
+ assert.deepEqual(errors,[]);console.log('PASS: búsqueda, filtros combinados, paginación, ordenación, perfiles, IDs inválidos, aulas, seguimiento, diálogos, teclado básico, enlaces y responsive de cinco páginas; sin errores.');
+ }finally{if(browser)await browser.close();server.kill();}})().catch(e=>{console.error(e);process.exitCode=1;});

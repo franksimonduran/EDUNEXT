@@ -1,0 +1,5 @@
+{
+  "pass": true,
+  "cases": 4,
+  "scope": "Settings import in empty CWD with synthetic values. No dotenv secrets, database or provider requests."
+}

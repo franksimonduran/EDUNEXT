@@ -1,0 +1,524 @@
+{
+  "date": "2026-10-31T05:41:50.558Z",
+  "results": [
+    {
+      "name": "Edge",
+      "version": "Edg/156.0.4314.50",
+      "status": "pass",
+      "checks": [
+        {
+          "width": 320,
+          "height": 720,
+          "overflow": false,
+          "lang": "es",
+          "h1": 1,
+          "main": true,
+          "unlabelled": 0,
+          "navigationMs": 81.10000000149012
+        },
+        {
+          "width": 375,
+          "height": 812,
+          "overflow": false,
+          "lang": "es",
+          "h1": 1,
+          "main": true,
+          "unlabelled": 0,
+          "navigationMs": 47.29999999701977
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "overflow": false,
+          "lang": "es",
+          "h1": 1,
+          "main": true,
+          "unlabelled": 0,
+          "navigationMs": 60.100000001490116
+        },
+        {
+          "width": 1440,
+          "height": 900,
+          "overflow": false,
+          "lang": "es",
+          "h1": 1,
+          "main": true,
+          "unlabelled": 0,
+          "navigationMs": 62.100000001490116
+        },
+        {
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "lang": "es",
+          "h1": 1,
+          "main": true,
+          "unlabelled": 0,
+          "navigationMs": 56
+        },
+        {
+          "width": 1280,
+          "height": 600,
+          "overflow": false,
+          "lang": "es",
+          "h1": 1,
+          "main": true,
+          "unlabelled": 0,
+          "navigationMs": 67.19999999552965
+        },
+        {
+          "desktopFit": {
+            "width": 1280,
+            "height": 600,
+            "documentHeight": 600,
+            "fits": true
+          }
+        }
+      ],
+      "validation": {
+        "focus": "identifier",
+        "identifierInvalid": "true",
+        "passwordInvalid": "true"
+      },
+      "tabFocus": "password",
+      "exceptions": [],
+      "scope": "Static public login only. Desktop viewport emulation, not physical mobile, screen reader, WCAG or authenticated E2E."
+    },
+    {
+      "name": "Edge",
+      "version": "Edg/156.0.4314.50",
+      "page": "/student/tutor.html?grade=4",
+      "status": "pass",
+      "viewports": [
+        {
+          "title": "EDUNEXT AI | EDUNEXT",
+          "width": 375,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 175.30000000447035,
+          "loaded": true,
+          "exceptions": []
+        },
+        {
+          "title": "EDUNEXT AI | EDUNEXT",
+          "width": 1440,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 170.5,
+          "loaded": true,
+          "exceptions": []
+        }
+      ],
+      "scope": "Public demonstration UI only. No authenticated role, database, academic persistence or user study verified."
+    },
+    {
+      "name": "Edge",
+      "version": "Edg/156.0.4314.50",
+      "page": "/student/index.html?grade=4",
+      "status": "pass",
+      "viewports": [
+        {
+          "title": "Inicio del estudiante | EDUNEXT",
+          "width": 375,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 67.29999999701977,
+          "loaded": true,
+          "exceptions": []
+        },
+        {
+          "title": "Inicio del estudiante | EDUNEXT",
+          "width": 1440,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 91.40000000596046,
+          "loaded": true,
+          "exceptions": []
+        }
+      ],
+      "scope": "Public demonstration UI only. No authenticated role, database, academic persistence or user study verified."
+    },
+    {
+      "name": "Edge",
+      "version": "Edg/156.0.4314.50",
+      "page": "/student/aprende.html?grade=4",
+      "status": "pass",
+      "viewports": [
+        {
+          "title": "Mis cursos | EDUNEXT",
+          "width": 375,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 142.60000000149012,
+          "loaded": true,
+          "exceptions": []
+        },
+        {
+          "title": "Mis cursos | EDUNEXT",
+          "width": 1440,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 195.29999999701977,
+          "loaded": true,
+          "exceptions": []
+        }
+      ],
+      "scope": "Public demonstration UI only. No authenticated role, database, academic persistence or user study verified."
+    },
+    {
+      "name": "Edge",
+      "version": "Edg/156.0.4314.50",
+      "page": "/student/leccion.html?grade=4&course=math&unit=math-g4-u1&lesson=math-g4-u1-l1",
+      "status": "pass",
+      "viewports": [
+        {
+          "title": "¿Qué es una fracción? | EDUNEXT",
+          "width": 375,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 288.90000000596046,
+          "loaded": true,
+          "exceptions": []
+        },
+        {
+          "title": "¿Qué es una fracción? | EDUNEXT",
+          "width": 1440,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 225,
+          "loaded": true,
+          "exceptions": []
+        }
+      ],
+      "scope": "Public demonstration UI only. No authenticated role, database, academic persistence or user study verified."
+    },
+    {
+      "name": "Edge",
+      "version": "Edg/156.0.4314.50",
+      "page": "/monitor/index.html",
+      "status": "pass",
+      "viewports": [
+        {
+          "title": "Resumen docente | EDUNEXT",
+          "width": 375,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 206.20000000298023,
+          "loaded": true,
+          "exceptions": []
+        },
+        {
+          "title": "Resumen docente | EDUNEXT",
+          "width": 1440,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 190.79999999701977,
+          "loaded": true,
+          "exceptions": []
+        }
+      ],
+      "scope": "Public demonstration UI only. No authenticated role, database, academic persistence or user study verified."
+    },
+    {
+      "name": "Edge",
+      "version": "Edg/156.0.4314.50",
+      "page": "/admin/index.html",
+      "status": "pass",
+      "viewports": [
+        {
+          "title": "Panel de Administración | EDUNEXT",
+          "width": 375,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 191.10000000149012,
+          "loaded": true,
+          "exceptions": []
+        },
+        {
+          "title": "Panel de Administración | EDUNEXT",
+          "width": 1440,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 206.80000000447035,
+          "loaded": true,
+          "exceptions": []
+        }
+      ],
+      "scope": "Public demonstration UI only. No authenticated role, database, academic persistence or user study verified."
+    },
+    {
+      "name": "Chrome",
+      "version": "Chrome/156.0.8078.76",
+      "status": "pass",
+      "checks": [
+        {
+          "width": 320,
+          "height": 720,
+          "overflow": false,
+          "lang": "es",
+          "h1": 1,
+          "main": true,
+          "unlabelled": 0,
+          "navigationMs": 66.5
+        },
+        {
+          "width": 375,
+          "height": 812,
+          "overflow": false,
+          "lang": "es",
+          "h1": 1,
+          "main": true,
+          "unlabelled": 0,
+          "navigationMs": 39.100000001490116
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "overflow": false,
+          "lang": "es",
+          "h1": 1,
+          "main": true,
+          "unlabelled": 0,
+          "navigationMs": 42.100000001490116
+        },
+        {
+          "width": 1440,
+          "height": 900,
+          "overflow": false,
+          "lang": "es",
+          "h1": 1,
+          "main": true,
+          "unlabelled": 0,
+          "navigationMs": 42.80000000447035
+        },
+        {
+          "width": 1366,
+          "height": 768,
+          "overflow": false,
+          "lang": "es",
+          "h1": 1,
+          "main": true,
+          "unlabelled": 0,
+          "navigationMs": 40.399999998509884
+        },
+        {
+          "width": 1280,
+          "height": 600,
+          "overflow": false,
+          "lang": "es",
+          "h1": 1,
+          "main": true,
+          "unlabelled": 0,
+          "navigationMs": 38.400000005960464
+        },
+        {
+          "desktopFit": {
+            "width": 1280,
+            "height": 600,
+            "documentHeight": 600,
+            "fits": true
+          }
+        }
+      ],
+      "validation": {
+        "focus": "identifier",
+        "identifierInvalid": "true",
+        "passwordInvalid": "true"
+      },
+      "tabFocus": "password",
+      "exceptions": [],
+      "scope": "Static public login only. Desktop viewport emulation, not physical mobile, screen reader, WCAG or authenticated E2E."
+    },
+    {
+      "name": "Chrome",
+      "version": "Chrome/156.0.8078.76",
+      "page": "/student/tutor.html?grade=4",
+      "status": "pass",
+      "viewports": [
+        {
+          "title": "EDUNEXT AI | EDUNEXT",
+          "width": 375,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 204.5,
+          "loaded": true,
+          "exceptions": []
+        },
+        {
+          "title": "EDUNEXT AI | EDUNEXT",
+          "width": 1440,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 157.30000000447035,
+          "loaded": true,
+          "exceptions": []
+        }
+      ],
+      "scope": "Public demonstration UI only. No authenticated role, database, academic persistence or user study verified."
+    },
+    {
+      "name": "Chrome",
+      "version": "Chrome/156.0.8078.76",
+      "page": "/student/index.html?grade=4",
+      "status": "pass",
+      "viewports": [
+        {
+          "title": "Inicio del estudiante | EDUNEXT",
+          "width": 375,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 66.10000000149012,
+          "loaded": true,
+          "exceptions": []
+        },
+        {
+          "title": "Inicio del estudiante | EDUNEXT",
+          "width": 1440,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 137.30000000447035,
+          "loaded": true,
+          "exceptions": []
+        }
+      ],
+      "scope": "Public demonstration UI only. No authenticated role, database, academic persistence or user study verified."
+    },
+    {
+      "name": "Chrome",
+      "version": "Chrome/156.0.8078.76",
+      "page": "/student/aprende.html?grade=4",
+      "status": "pass",
+      "viewports": [
+        {
+          "title": "Mis cursos | EDUNEXT",
+          "width": 375,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 163.39999999850988,
+          "loaded": true,
+          "exceptions": []
+        },
+        {
+          "title": "Mis cursos | EDUNEXT",
+          "width": 1440,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 140.10000000149012,
+          "loaded": true,
+          "exceptions": []
+        }
+      ],
+      "scope": "Public demonstration UI only. No authenticated role, database, academic persistence or user study verified."
+    },
+    {
+      "name": "Chrome",
+      "version": "Chrome/156.0.8078.76",
+      "page": "/student/leccion.html?grade=4&course=math&unit=math-g4-u1&lesson=math-g4-u1-l1",
+      "status": "pass",
+      "viewports": [
+        {
+          "title": "¿Qué es una fracción? | EDUNEXT",
+          "width": 375,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 202.89999999850988,
+          "loaded": true,
+          "exceptions": []
+        },
+        {
+          "title": "¿Qué es una fracción? | EDUNEXT",
+          "width": 1440,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 161.20000000298023,
+          "loaded": true,
+          "exceptions": []
+        }
+      ],
+      "scope": "Public demonstration UI only. No authenticated role, database, academic persistence or user study verified."
+    },
+    {
+      "name": "Chrome",
+      "version": "Chrome/156.0.8078.76",
+      "page": "/monitor/index.html",
+      "status": "pass",
+      "viewports": [
+        {
+          "title": "Resumen docente | EDUNEXT",
+          "width": 375,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 151.19999999552965,
+          "loaded": true,
+          "exceptions": []
+        },
+        {
+          "title": "Resumen docente | EDUNEXT",
+          "width": 1440,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 171.5,
+          "loaded": true,
+          "exceptions": []
+        }
+      ],
+      "scope": "Public demonstration UI only. No authenticated role, database, academic persistence or user study verified."
+    },
+    {
+      "name": "Chrome",
+      "version": "Chrome/156.0.8078.76",
+      "page": "/admin/index.html",
+      "status": "pass",
+      "viewports": [
+        {
+          "title": "Panel de Administración | EDUNEXT",
+          "width": 375,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 171.69999999552965,
+          "loaded": true,
+          "exceptions": []
+        },
+        {
+          "title": "Panel de Administración | EDUNEXT",
+          "width": 1440,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 174.19999999552965,
+          "loaded": true,
+          "exceptions": []
+        }
+      ],
+      "scope": "Public demonstration UI only. No authenticated role, database, academic persistence or user study verified."
+    }
+  ],
+  "notes": [
+    "No real credentials or minors data",
+    "Disposable browser profiles retained in approved temp; no user profile touched",
+    "Navigation duration is local static fixture measurement, not production performance or Web Vitals"
+  ]
+}

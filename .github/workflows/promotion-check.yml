@@ -1,0 +1,25 @@
+name: Manual promotion eligibility (NO deployment)
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        type: choice
+        options: [staging, production]
+        required: true
+permissions:
+  contents: read
+jobs:
+  eligibility:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    environment: ${{ inputs.target }}
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+      - name: Evaluate requested environment without shell interpolation
+        env:
+          TARGET: ${{ inputs.target }}
+        run: node infra/scripts/check-release-gate.cjs "$TARGET"
+      - run: echo "Eligibility only. Provider-specific deployment is not implemented or authorized."

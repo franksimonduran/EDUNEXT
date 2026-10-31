@@ -1,0 +1,1799 @@
+{
+  "date": "2026-10-30T15:45:12.990Z",
+  "scope": "Public JS compilation, static ES imports, existing monitor navigation and private-view doubles. Does not execute backend or prove E2E.",
+  "modules": 443,
+  "failures": [
+    {
+      "file": "frontend\\js\\admin\\academic-monitoring.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\academic-movements.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\academic-periods.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\actividad-tecnica.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\admin-settings.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\admin-shell.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\assignment-editor.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\classroom-detail.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\classroom-editor.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\classroom-report.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\classrooms.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\content-detail.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\content-review.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\content-validation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\content-versions.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\contents.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\course-report.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\dashboard.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\data-quality.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\diagnostico.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\enrollment-editor.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\enrollments.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\grade-report.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\grades-sections.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\incidencias-tecnicas.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\institutional-report.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\institutional-resources.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\institutional-statistics.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\local-storage.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\offline-packages.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\organization-kernel.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\platform-activity.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\publication-preparation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\pwa-diagnostics.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\reports-history.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\reports.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\review-editor.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\review-history.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\services-status.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\sync-operaciones.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\sync-paquetes.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\sync.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\teacher-assignments.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\user-editor.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\user-proposals.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\admin\\users-workspace.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\achievement-card.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\achievement-modal.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\activity-illustration.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-academic-movement.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-classroom-card.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-dashboard-ui.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-data-quality.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-diagnostic-result.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-enrollment-table.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-grade-card.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-institutional-summary.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-offline-package.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-period-card.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-pwa-status.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-relationship-validation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-report-card.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-report-export.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-report-filters.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-report-history-card.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-report-preview.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-service-status.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-statistics-chart.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-storage-summary.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-sync-operation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-sync-summary.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-teacher-assignment.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-technical-activity.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-technical-incident.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-technical-report.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\admin-user-ui.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\ai-configuration-panel.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\answer-feedback.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\audio-controls.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\audio-player.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\avatar-selector.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\calendar-month.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\course-card.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\course-progress-card.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\dashboard-composition.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\evaluation-card.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\evaluation-confirmation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\evaluation-instructions.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\evaluation-timer.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\flashcard.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\icons.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\insights-api-view.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\language-selector.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\learning-recommendation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\learning-tabs.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\learning-visual.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\lesson-content.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\lesson-navigation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\microphone-control.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\mission-card.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\monitor-academic-ui.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\monitor-account-navigation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\monitor-calendar-ui.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\monitor-content-ui.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\monitor-dashboard-cards.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\monitor-evaluation-ui.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\monitor-lesson-block-editor.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\monitor-resource-selector.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\monitor-student-table.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\monitor-support-ui.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\notification-panel.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\practice-card.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\practice-progress.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\practice-steps.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\profile-header.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\progress-card.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\progress-summary.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\pronunciation-card.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\pronunciation-feedback.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\question-navigator.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\question-renderer.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\reference-dashboard.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\reports-api-view.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\result-summary.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\sidebar.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\student-guide.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\student-ui.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\topbar.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\translation-panel.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\translation-result.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\tutor-context.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\tutor-conversations.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\tutor-input.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\tutor-learning-actions.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\tutor-message.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\tutor-suggestions.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\unit-card.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\vocabulary-card.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\components\\voice-visualizer.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\core\\auth-form.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\core\\config.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\core\\navigation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\core\\roles.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\core\\work-guard.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\achievements-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\admin-academic-periods-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\admin-academic-rules.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\admin-content-review-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\admin-content-rules.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\admin-dashboard-config.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\admin-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\admin-diagnostic-rules.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\admin-organization-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\admin-permissions.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\admin-publication-requirements.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\admin-report-config-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\admin-report-types.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\admin-report-validation-rules.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\admin-service-definitions.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\admin-system-status-descriptions.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\agenda-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\avatars.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\courses-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\dictionary-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\evaluation-questions-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\evaluations-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\games-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\languages.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\lesson-block-types.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\lessons-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\missions-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\monitor-academic-periods.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\monitor-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\monitor-evaluations-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\monitor-help.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\monitor-support-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\offline-packages.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\practices-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\preferences-defaults.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\profile-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\progress-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\pronunciation-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\reminders-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\student-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\tutor-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\units-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\data\\vocabulary-demo.data.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\games\\matching-game.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\games\\memory-game.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\games\\ordering-game.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\games\\quick-challenge.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\games\\word-game.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\i18n\\admin-dashboard.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\i18n\\i18n.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\i18n\\monitor-account.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\i18n\\monitor-calendar.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\academic-reports.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\account.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\calendar-views.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\content-editor.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\content-studio.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\dashboard.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\demo-navigation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\evaluation-assignment.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\evaluation-editor.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\evaluation-grading.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\evaluations.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\gradebook.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\grades.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\management-shell.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\management.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\organizer-forms.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\organizer-personal.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\organizer.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\planner-api-view.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\question-editor.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\support-assignment.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\support-editor.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\support-tracking.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\monitor\\support.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\offline\\bootstrap.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\offline\\cache-manager.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\offline\\confirmed-sync.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\offline\\connectivity.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\offline\\database-schema.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\offline\\database.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\offline\\download-manager.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\offline\\evaluation-draft-store.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\offline\\monitor-preparation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\offline\\package-manager.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\offline\\pwa.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\offline\\storage-manager.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\offline\\sync-queue.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\pages\\forgot-password.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\pages\\login.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\pages\\register.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\pages\\reset-password.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\pages\\role-selection.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\academic-organization.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\academic-planner-api.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\activity-session.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-academic-monitoring.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-academic-movements.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-academic-periods.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-activity.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-classrooms.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-configuration-proposals.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-content-review.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-content-summary.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-content-validation.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-content-versions.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-contents.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-dashboard.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-data-quality.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-enrollments-api.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-enrollments.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-grades-sections.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-institutional-reports.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-offline-packages.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-organization-drafts.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-organization-validation.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-platform-activity.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-publication-preparation.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-pwa-diagnostics.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-report-history.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-reports.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-review-history.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-service-status.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-services-status.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-statistics.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-storage-diagnostics.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-sync-operations.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-sync.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-teacher-assignments.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-technical-activity.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-technical-diagnostics.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-technical-incidents.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-technical-report.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-user-drafts.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\admin-users.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\ai-api.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\auth.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\course.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\evaluation-attempt.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\evaluation.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\game.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\insights-api.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\lesson.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\local-tutor.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\microphone.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\monitor-calendar.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\monitor-content-drafts.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\monitor-content-packages.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\monitor-content-validation.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\monitor-courses.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\monitor-dashboard.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\monitor-evaluations.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\monitor-grades.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\monitor-learning-resources.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\monitor-notifications.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\monitor-organizer.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\monitor-profile.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\monitor-reports.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\monitor-resources.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\monitor-settings.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\monitor-students.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\monitor-support-tracking.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\monitor-tasks.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\offline-study.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\practice.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\preferences.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\progress-api.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\pronunciation.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\recording.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\reports-api.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\speech-recognition.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\speech.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\student.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\sync-api.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\translation-api.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\translation.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\tutor-api.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\tutor.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\services\\vocabulary.service.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\accessibility.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\achievement-detail.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\achievements.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\activity-catalog.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\activity-model.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\activity-results-view.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\activity-runner.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\agenda.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\course-detail.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\course-progress.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\courses.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\dashboard.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\downloaded-content.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\downloads.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\edit-profile.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\evaluaciones.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\evaluation-answer-review.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\evaluation-detail.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\evaluation-player.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\evaluation-results.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\evaluation-review.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\event-detail.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\exercise.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\game-player.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\games.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\historial-pronunciacion.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\i18n.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\learning-i18n.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\learning-page.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\learning-routes.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\learning-shell.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\lessons.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\local-tutor.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\missions.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\offline-status.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\pending-activities.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\planner-api-view.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\practicar-pronunciacion.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\practice-i18n.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\practice-results.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\practice.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\preferences.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\profile.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\progress.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\pronuncia.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\pronunciation-api-practice.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\pronunciation-i18n.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\reminder-editor.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\reminders.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\resultado-pronunciacion.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\section-navigation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\settings.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\storage-management.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\sync-queue.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\synchronization.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\translator-i18n.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\translator.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\tutor-i18n.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\tutor.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\units.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\vocabulary-review.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\vocabulary.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\student\\word-detail.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\sync\\protocol.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\academic-movement-validation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\academic-relations.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\academic-statistics.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\accessibility-manager.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\achievement-rules.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\admin-statistics.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\admin-user-validation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\answer-validation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\calendar-dates.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\classroom-statistics.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\classroom-validation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\connectivity-status.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\content-safety.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\csv-safety.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\date-format.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\enrollment-duplicates.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\enrollment-validation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\evaluation-results.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\evaluation-time.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\evaluation-validation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\event-filter.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\event-status.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\language-format.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\learning-support-validation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\mission-validator.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\monitor-data-events.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\monitor-evaluation-validation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\monitor-grading.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\offline-package-validation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\organization-filters.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\period-validation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\progress-calculator.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\pronunciation-validation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\pwa-capability-check.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\reward-calculator.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\safe-technical-export.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\score-calculator.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\service-status-normalization.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\service-worker-check.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\speech-compatibility.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\storage-availability.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\storage-estimate.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\storage-format.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\sync-operation-status.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\teacher-assignment-validation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\technical-date-format.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\technical-diagnostic-rules.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\technical-incident-deduplication.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\text-direction.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\theme-manager.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\translation-validation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\tutor-format.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\utils\\tutor-validation.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\js\\vendor\\wllama\\index.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    },
+    {
+      "file": "frontend\\sw.js",
+      "error": "vm.SourceTextModule is not a constructor"
+    }
+  ],
+  "suites": [
+    {
+      "args": [
+        "tests/monitor-navigation.cjs"
+      ],
+      "exitCode": 0,
+      "stdout": "PASS monitor navigation: groups, active state, icons, ARIA and admin isolation\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "--experimental-vm-modules",
+        "tests/phase47-private-views.cjs"
+      ],
+      "exitCode": 0,
+      "stdout": "PASS private-view boundaries: immediate logout cleanup, observer isolation/unsubscribe, escaped Insights, 403 clearing, pagination, filter recovery, late-response suppression. Transport/DOM doubles only.\n",
+      "stderr": "(node:16144) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    }
+  ],
+  "pass": false
+}

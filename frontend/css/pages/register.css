@@ -1,0 +1,113 @@
+.registration-page .auth-card { max-width: 500px; }
+.registration-page .card-heading { margin-bottom: 24px; }
+.registration-page .brand-story h2 { max-width: 430px; margin-inline: auto; }
+.registration-page .form-panel { padding-block: 36px; }
+.registration-page .form-help { margin-top: 20px; text-align: center; }
+@media (max-width: 700px) { .registration-page .form-panel { padding-block: 24px; } }
+
+/* Registration scene is separate from the login and recovery styles. */
+.registration-help { margin-top: 14px; font-size: .8125rem; color: #596589; }
+.registration-help summary { cursor: pointer; color: #314fbc; padding-block: 6px; }
+.registration-help p { margin-top: 8px; line-height: 1.5; }
+body.registration-page {
+  min-height: 100svh;
+  background: #193b83 url('../../assets/images/componentes/registro.png') left center / cover no-repeat fixed;
+}
+body.registration-page .login-layout {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 100svh;
+  padding: 22px clamp(16px, 2.5vw, 48px);
+}
+body.registration-page .brand-panel { display: none; }
+body.registration-page .login-layout .form-panel {
+  width: min(100%, 560px);
+  min-width: 0;
+  padding: 26px 32px;
+  border: 1px solid #ffffffdc;
+  border-radius: 28px;
+  background: linear-gradient(145deg, #fffffffa, #f4f5fff5);
+  box-shadow: 0 24px 65px #17234e38;
+  backdrop-filter: blur(16px);
+}
+body.registration-page.corporate-ui .login-layout .auth-card {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+body.registration-page .card-heading { margin-bottom: 18px; }
+body.registration-page .card-heading h1 { font-size: 1.65rem; color: #111a4b; line-height: 1.15; }
+body.registration-page .card-heading h1 span {
+  display: block;
+  width: fit-content;
+  margin-top: 3px;
+  font-size: clamp(2.5rem, 4vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: -.04em;
+  color: #4936e8;
+  background: linear-gradient(100deg, #082659, #164aff 55%, #a436ef);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body.registration-page .login-layout .card-heading p { margin-top: 8px; font-size: .9375rem; color: #626d93; }
+body.registration-page .auth-form { gap: 14px; }
+body.registration-page .auth-fieldset { min-width: 0; margin: 0; }
+body.registration-page .account-options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+body.registration-page .account-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 58px;
+  padding: 10px;
+  border: 1px solid #e1e4f3;
+  border-radius: 13px;
+  color: #283866;
+  background: #eff1fa;
+  cursor: pointer;
+}
+body.registration-page .account-option:has(input:checked) {
+  color: white;
+  border-color: #315bff;
+  background: linear-gradient(110deg, #0864ff, #7944ff);
+  box-shadow: 0 4px 14px #375cff2b;
+}
+body.registration-page .form-input {
+  min-height: 46px;
+  border: 1px solid #dce0f0;
+  border-radius: 11px;
+  background: #ffffffc9;
+}
+body.registration-page .form-input:focus { outline: 3px solid #315bff26; border-color: #536bff; }
+body.registration-page :is(.field-help, .school-help, .form-help) { font-size: .75rem; line-height: 1.45; color: #596589; }
+body.registration-page .form-help { margin-top: 12px; }
+body.registration-page .button-primary {
+  width: 100%;
+  min-height: 54px;
+  border: 0;
+  border-radius: 13px;
+  background: linear-gradient(105deg, #0869ff, #6b38ff 65%, #ae32f1);
+  color: white;
+  font-size: 1rem;
+}
+body.registration-page .button-primary:hover { filter: brightness(1.06); }
+body.registration-page .register { margin-top: 14px; padding-top: 12px; border-color: #dfe2f1; }
+body.registration-page .login-layout .register a { min-height: 0; padding-block: 5px; }
+body.registration-page .login-layout .identity-footer { margin-top: 14px; font-size: .65rem; }
+@media (min-width: 1100px) {
+  body.registration-page .login-layout .form-panel { width: 38%; min-width: 460px; }
+}
+@media (max-width: 760px) {
+  body.registration-page { background-position: 28% center; }
+  body.registration-page .login-layout { justify-content: center; padding: 20px 14px; background: #14336b38; }
+  body.registration-page .login-layout .form-panel { padding: 24px 20px; border-radius: 22px; }
+}
+@media (max-width: 359px) {
+  body.registration-page .account-options { grid-template-columns: 1fr; }
+}

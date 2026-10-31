@@ -1,0 +1,8 @@
+/* FASE 26 · Editor de asignación docente */
+.admin-page .assignment-editor-form .form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:14px}
+.admin-page .assignment-editor-form label{display:flex;flex-direction:column;gap:6px;font-size:.92rem}
+.admin-page .assignment-editor-form input,.admin-page .assignment-editor-form select,.admin-page .assignment-editor-form textarea{width:100%;min-height:44px;padding:10px;border:1px solid var(--color-border);border-radius:9px;font:inherit;color:var(--color-text);background:var(--color-surface)}
+.admin-page .assignment-editor-form textarea{min-height:96px;resize:vertical}
+.admin-page .assignment-editor-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.admin-page .assignment-editor-actions button{min-height:44px}
+@media(max-width:700px){.admin-page .assignment-editor-actions{flex-direction:column}.admin-page .assignment-editor-actions button{width:100%}}

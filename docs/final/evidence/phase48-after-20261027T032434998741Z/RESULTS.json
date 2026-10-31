@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-10-27T03:24:58.102680+00:00",
+  "stage": "after",
+  "AITHRON_FINAL_VALIDATION": 1,
+  "python": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+  "environment": {
+    "platform": "Windows",
+    "architecture": "AMD64",
+    "logical_cpus": 16
+  },
+  "scope": "Local synthetic files, monotonic clock doubles, ASGI health and source; no DB/provider or intrusive network",
+  "hashes_before_commands": [
+    {
+      "path": "backend/app/dependencies/auth.py",
+      "sha256": "6539f91c4a9219d1a4ec12bff4a77bc6e1e88ec964cd847956be8cb4ceeef8d0"
+    },
+    {
+      "path": "backend/app/storage/local_storage.py",
+      "sha256": "d48cff6e61c38ae3868de2931669052706d3f19f4a2de932ba944b988589a071"
+    },
+    {
+      "path": "backend/verification/test_phase48_remediation.py",
+      "sha256": "f6f9369d7711cf1ea880a114e11e8f6cc26ac26ad63fb5e9d2e15189e86830b3"
+    },
+    {
+      "path": "tools/audit-phase48.cjs",
+      "sha256": "c87f6c17e0435acd55369c151c2c15d2ebf1f545daaf74db97026eb66b227c75"
+    },
+    {
+      "path": "tools/validate-security.py",
+      "sha256": "a7a65714dba093d620d35b3e089c378ba3ea003316801b524dab0f3a271f5582"
+    }
+  ],
+  "results": [
+    {
+      "check": "source_snapshot",
+      "exit_code": 0,
+      "output": "{\"mode\":\"after\",\"evidence\":\"docs\\\\final\\\\evidence\\\\phase48-after-yxmDxu\\\\PHASE_48_AFTER_EVIDENCE.json\",\"sourceFiles\":995,\"candidates\":459,\"node\":\"v24.22.1\",\"gitMetadata\":false,\"missing\":[\"database\",\"content\",\"scripts\",\"compose.yaml\"]}\n"
+    },
+    {
+      "check": "remediation_tests",
+      "exit_code": 0,
+      "output": "................                                                         [100%]\n============================== warnings summary ===============================\n..\\aithron-integration-e4c75e81f5d0498fae58297003317fbe\\Lib\\site-packages\\passlib\\handlers\\argon2.py:716\n  C:\\Users\\simon\\AppData\\Local\\Temp\\opencode\\aithron-integration-e4c75e81f5d0498fae58297003317fbe\\Lib\\site-packages\\passlib\\handlers\\argon2.py:716: DeprecationWarning: Accessing argon2.__version__ is deprecated and will be removed in a future release. Use importlib.metadata directly to query for argon2-cffi's packaging metadata.\n    _argon2_cffi.__version__, max_version)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n16 passed, 1 warning in 1.23s\n"
+    },
+    {
+      "check": "installed_dependency_consistency",
+      "exit_code": 0,
+      "output": "No broken requirements found.\n"
+    },
+    {
+      "check": "bounded_local_smoke_measurement",
+      "exit_code": 0,
+      "output": "{\"scope\": \"Local ASGI health only, no lifespan, sockets, DB, login or workload SLA; tracemalloc is Python allocations, not RSS\", \"endpoint\": \"/api/v1/health/live\", \"requests\": 100, \"concurrency\": 4, \"duration_seconds\": 0.49614089999886346, \"p50_ms\": 13.90269999683369, \"p95_ms\": 16.592399999353802, \"p99_ms\": 89.11170000283164, \"non_200_count\": 0, \"cpu_seconds\": 0.5, \"python_current_bytes\": 166293, \"python_peak_bytes\": 387822, \"limiter_probe\": {\"checks\": 5000, \"unique_synthetic_keys\": 5000, \"retained_keys\": 4096, \"accepted\": 4096, \"duration_ms\": 113.29889999979059, \"python_peak_bytes\": 1018433}, \"acceptance\": \"Only zero unexpected health errors; no arbitrary latency/production capacity target\"}\n"
+    },
+    {
+      "check": "existing_integration_regression",
+      "exit_code": 0,
+      "output": "python_non_database_contracts 0\nresolved_dependencies 0\nphase47-api.cjs 0\nphase48-session.cjs 0\nphase48-security.cjs 0\nsync-protocol.cjs 0\nphase47-private-views.cjs 0\nsource_inventory 0\nruntime_inventory 0\npublic_demo_browser_regression 0\ndocs\\final\\evidence\\phase47-integration-20261027T032441149579Z\n"
+    }
+  ]
+}

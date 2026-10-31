@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-27T18:32:56.579Z",
+  "pass": true,
+  "lessons": 60,
+  "questions": 60,
+  "games": 15,
+  "groups": [
+    {
+      "grade": 4,
+      "practice": "practice-math-4",
+      "questions": 4
+    },
+    {
+      "grade": 4,
+      "practice": "practice-reading-4",
+      "questions": 4
+    },
+    {
+      "grade": 4,
+      "practice": "practice-science-4",
+      "questions": 4
+    },
+    {
+      "grade": 4,
+      "practice": "practice-social-4",
+      "questions": 4
+    },
+    {
+      "grade": 4,
+      "practice": "practice-english-4",
+      "questions": 4
+    },
+    {
+      "grade": 5,
+      "practice": "practice-math-5",
+      "questions": 4
+    },
+    {
+      "grade": 5,
+      "practice": "practice-reading-5",
+      "questions": 4
+    },
+    {
+      "grade": 5,
+      "practice": "practice-science-5",
+      "questions": 4
+    },
+    {
+      "grade": 5,
+      "practice": "practice-social-5",
+      "questions": 4
+    },
+    {
+      "grade": 5,
+      "practice": "practice-english-5",
+      "questions": 4
+    },
+    {
+      "grade": 6,
+      "practice": "practice-math-6",
+      "questions": 4
+    },
+    {
+      "grade": 6,
+      "practice": "practice-reading-6",
+      "questions": 4
+    },
+    {
+      "grade": 6,
+      "practice": "practice-science-6",
+      "questions": 4
+    },
+    {
+      "grade": 6,
+      "practice": "practice-social-6",
+      "questions": 4
+    },
+    {
+      "grade": 6,
+      "practice": "practice-english-6",
+      "questions": 4
+    }
+  ],
+  "scope": "Technical consistency of synthetic samples and explicit numeric/percentage expectations. Does not certify curriculum, age suitability, learning outcomes, licenses or professional review.",
+  "professionalReview": "pending"
+}

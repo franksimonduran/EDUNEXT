@@ -1,0 +1,7 @@
+/* FASE 26 · Matrículas */
+.admin-page #enrollment-results .user-table-wrap{margin-top:8px}
+.admin-page .enrollment-student{font-weight:600}
+.admin-page .enrollment-student small{font-weight:400;color:var(--color-text-muted)}
+.admin-page .enrollment-courses{color:var(--color-text-muted);font-size:.9rem}
+.admin-page .duplicates-panel ul{margin:6px 0;padding-left:18px}
+@media(max-width:700px){.admin-page .duplicates-panel ul{padding-left:16px}}

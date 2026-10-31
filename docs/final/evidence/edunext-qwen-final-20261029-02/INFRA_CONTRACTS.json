@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-29T06:25:05.517Z",
+  "node": "v24.22.1",
+  "scope": "Static text/JSON contracts and a synthetic loopback HTTP fixture, NOT YAML parse, Docker build, real API, backup, staging or deployment.",
+  "results": [
+    {
+      "name": "Production and staging gates deny current repository state",
+      "status": "pass"
+    },
+    {
+      "name": "Gate requires boolean approvals and immutable digest",
+      "status": "pass"
+    },
+    {
+      "name": "New local secret generation is independent and does not write files in tests",
+      "status": "pass"
+    },
+    {
+      "name": "Compose source has private DB persistence and loopback-only web publishing",
+      "status": "pass"
+    },
+    {
+      "name": "Release Docker build defaults to hashed lock and nonroot; dictionary packaged",
+      "status": "pass"
+    },
+    {
+      "name": "Proxy source includes same-origin API and restrictive headers",
+      "status": "pass"
+    },
+    {
+      "name": "PWA manifest is valid JSON with existing local icon and login entry",
+      "status": "pass"
+    },
+    {
+      "name": "Workflows are read-only and contain no registry push or cloud deploy command",
+      "status": "pass"
+    },
+    {
+      "name": "Backup source encrypts and restore refuses non-empty targets without cleaning",
+      "status": "pass"
+    },
+    {
+      "name": "Smoke helper accepts loopback fixture and rejects remote targets and readiness 503",
+      "status": "pass"
+    }
+  ],
+  "tools": {
+    "docker": {
+      "exitCode": null,
+      "available": false,
+      "error": "ENOENT"
+    },
+    "python": {
+      "exitCode": 9009,
+      "available": false
+    },
+    "git": {
+      "exitCode": null,
+      "available": false,
+      "error": "ENOENT"
+    },
+    "pg_dump": {
+      "exitCode": null,
+      "available": false,
+      "error": "ENOENT"
+    },
+    "age": {
+      "exitCode": null,
+      "available": false,
+      "error": "ENOENT"
+    }
+  },
+  "releaseLockPresent": false,
+  "notExecuted": [
+    "Docker build/Compose/nginx -t",
+    "Python/FastAPI/PostgreSQL/Alembic",
+    "CI on GitHub",
+    "Staging/cloud/DNS/HTTPS",
+    "Backup/restoration",
+    "Real PWA install/update/Sync/AI"
+  ]
+}

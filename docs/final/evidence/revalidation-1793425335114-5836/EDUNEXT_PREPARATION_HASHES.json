@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-31T05:42:15.113Z",
+  "scope": "Preparation files and compatible public brand aliases. No installation, database, service startup or persistent renames.",
+  "hashes": [
+    {
+      "file": "frontend/js/core/config.js",
+      "sha256": "9e2fd1309ca1b52d382476c583db3ac83231a4b18d37f69dfab7fabe312b5141"
+    },
+    {
+      "file": "backend/app/core/config.py",
+      "sha256": "3ba9df226f0c7371e5db031bc628beb95a910248bd6bc5139ef213d9ccc5d6e4"
+    },
+    {
+      "file": "backend/.env.example",
+      "sha256": "c668cc7d5d6cd26fcb596127358b3884bf0f286b5f295836bf8dee84aa60e2b0"
+    },
+    {
+      "file": "tools/configure-gemini-session.ps1",
+      "sha256": "b0a9bbd726442dbc2f5bca8417a31660d3e7f4327f0f3244a511ea9c90f0d00e"
+    },
+    {
+      "file": "frontend/js/data/admin-service-definitions.data.js",
+      "sha256": "b2dad9e05104e723712cc8557aa7bb49d8c85193095612d090cf9f3acc0b538d"
+    },
+    {
+      "file": "frontend/js/services/admin-service-status.service.js",
+      "sha256": "be9bbef7979d3bdadace1db07ccbfd33d465f112c8296189e0ae4e906d0be03e"
+    },
+    {
+      "file": "docs/EDUNEXT_LOCAL_INTEGRATION_PREPARATION.md",
+      "sha256": "87665e705ffd363228620ac6b68e426dca5b0d9a3aa3f8e1337f994bd59fe0c4"
+    },
+    {
+      "file": "docs/EDUNEXT_BRAND_MIGRATION.md",
+      "sha256": "66c7455fc308df677172cc871ce8cf20099cf902d48d8e149d6354a53f631e85"
+    },
+    {
+      "file": "docs/GEMINI_ONLINE_SETUP.md",
+      "sha256": "470b363d17052ffa299ec96a560f6ad3656516fda4c79152014e39136b7be706"
+    },
+    {
+      "file": "README.md",
+      "sha256": "76665402280298c8a6d980aa8a84f6388dce6cd640f40da89e9fca2f03922129"
+    },
+    {
+      "file": "tools/run-final-validation.cjs",
+      "sha256": "a01c626a11048f4065c0415583ec1b456a8bfb2af541afcfe2a4f1de63ae3436"
+    },
+    {
+      "file": "tests/edunext-config-alias.cjs",
+      "sha256": "5888ae0c1d27a9406f36f3ea0fac4fa491f295ad4bce0438aa3366c1bbd3d48d"
+    },
+    {
+      "file": "tests/edunext-settings-alias.py",
+      "sha256": "1703bd096671ab71cac9c8b778c55e6b31bff64f8d3447e75ee657275425d0a7"
+    }
+  ],
+  "evidence": [
+    "docs/final/evidence/revalidation-1793425300635-22452/FINAL_TEST_RUN.json",
+    "docs/final/evidence/phase47-integration-20261031T054141425258Z/RESULTS.json"
+  ]
+}

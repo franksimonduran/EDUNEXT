@@ -1,0 +1,370 @@
+{
+  "date": "2026-10-27T19:39:04.871Z",
+  "scope": "Public demo, real Edge, synthetic disposable profile. No authenticated E2E, PostgreSQL, physical mobile, screen reader or WCAG certification.",
+  "results": [
+    {
+      "section": "home",
+      "active": "home",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "courses",
+      "active": "courses",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "practice",
+      "active": "practice",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "games",
+      "active": "games",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "evaluations",
+      "active": "evaluations",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "agenda",
+      "active": "agenda",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "progress",
+      "active": "progress",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "missions",
+      "active": "missions",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "achievements",
+      "active": "achievements",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "downloads",
+      "active": "downloads",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "tutor",
+      "active": "tutor",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "translator",
+      "active": "translator",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "pronunciation",
+      "active": "pronunciation",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "profile",
+      "active": "profile",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "check": "download-filter-focus-and-keyboard-section-navigation",
+      "filter": {
+        "pressed": "true",
+        "empty": true,
+        "focus": "descargados"
+      },
+      "keyboardNavigation": true,
+      "pass": true
+    },
+    {
+      "check": "calendar-focus-menu-disclosure-dark-and-text-200-percent",
+      "dark": "rgb(26, 38, 56)",
+      "zoomOverflow": false,
+      "pass": true
+    },
+    {
+      "check": "premium-theme-layout",
+      "profile": "student",
+      "theme": "light",
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-theme-layout",
+      "profile": "student",
+      "theme": "dark",
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-theme-layout",
+      "profile": "monitor",
+      "theme": "light",
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-theme-layout",
+      "profile": "monitor",
+      "theme": "dark",
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-theme-layout",
+      "profile": "admin",
+      "theme": "light",
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-theme-layout",
+      "profile": "admin",
+      "theme": "dark",
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "login.html",
+      "width": 375,
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "login.html",
+      "width": 1440,
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "student/index.html",
+      "width": 375,
+      "overflow": true,
+      "overflowing": [
+        {
+          "className": "",
+          "text": "Cada pequeño esfuerzo cuenta. ¡Vamos por un nuevo descubrimiento!",
+          "right": 401.859375
+        }
+      ],
+      "clipped": [],
+      "pass": false
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "student/index.html",
+      "width": 1440,
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "monitor/index.html",
+      "width": 375,
+      "overflow": true,
+      "overflowing": [
+        {
+          "className": "",
+          "text": "Ver aulasMódulo en construcción",
+          "right": 560
+        },
+        {
+          "className": "",
+          "text": "Módulo en construcción",
+          "right": 533.40625
+        },
+        {
+          "className": "",
+          "text": "Revisar notasConsultar registro académico local",
+          "right": 560
+        },
+        {
+          "className": "",
+          "text": "Consultar registro académico local",
+          "right": 533.40625
+        },
+        {
+          "className": "",
+          "text": "Consultar InsightsMódulo en construcción",
+          "right": 560
+        },
+        {
+          "className": "",
+          "text": "Módulo en construcción",
+          "right": 533.40625
+        },
+        {
+          "className": "",
+          "text": "Revisar sincronizaciónMódulo en construcción",
+          "right": 560
+        },
+        {
+          "className": "",
+          "text": "Módulo en construcción",
+          "right": 533.40625
+        }
+      ],
+      "clipped": [],
+      "pass": false
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "monitor/index.html",
+      "width": 1440,
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "admin/index.html",
+      "width": 375,
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "admin/index.html",
+      "width": 1440,
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "student/leccion.html?grade=4&course=math&unit=math-g4-u1&lesson=math-g4-u1-l1&modo=demo",
+      "width": 375,
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "student/leccion.html?grade=4&course=math&unit=math-g4-u1&lesson=math-g4-u1-l1&modo=demo",
+      "width": 1440,
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "student/agenda.html?grade=4&modo=demo",
+      "width": 375,
+      "overflow": true,
+      "overflowing": [
+        {
+          "className": "",
+          "text": "AnteriorHoySiguiente\n    \n  Octubre 2026\n  LunMarMiéJueVieSábDom\n  \n  ",
+          "right": 610
+        },
+        {
+          "className": "agenda-cal-nav",
+          "text": "AnteriorHoySiguiente",
+          "right": 610
+        },
+        {
+          "className": "button-secondary",
+          "text": "Siguiente",
+          "right": 525.09375
+        },
+        {
+          "className": "",
+          "text": "Octubre 2026\n  LunMarMiéJueVieSábDom\n  \n   123456789101112131415161718",
+          "right": 610
+        },
+        {
+          "className": "agenda-events",
+          "text": "Eventos del 27/10/2026\n     Repasar vocabulario InglésInglésVer detall",
+          "right": 610
+        },
+        {
+          "className": "",
+          "text": "Eventos del 27/10/2026",
+          "right": 577
+        },
+        {
+          "className": "ev-card ev--pend",
+          "text": "Repasar vocabulario InglésInglésVer detalle",
+          "right": 577
+        },
+        {
+          "className": "",
+          "text": "Repasar vocabulario Inglés",
+          "right": 552
+        },
+        {
+          "className": "",
+          "text": "Inglés",
+          "right": 552
+        },
+        {
+          "className": "button-secondary",
+          "text": "Ver detalle",
+          "right": 552
+        }
+      ],
+      "clipped": [],
+      "pass": false
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "student/agenda.html?grade=4&modo=demo",
+      "width": 1440,
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    }
+  ],
+  "missing": [
+    "/favicon.ico"
+  ],
+  "pass": false
+}

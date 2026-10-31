@@ -1,0 +1,13 @@
+import {escapeHTML as esc} from './student-ui.js';
+import {contentStates,blockTypes} from '../data/lesson-block-types.data.js';
+export {esc};
+export const studioURL=(page,params={})=>page+'.html?'+new URLSearchParams(Object.entries(params).filter(([,v])=>v!==undefined&&v!==null&&v!==''));
+export const studioLink=(page,label,params={})=>`<a class="studio-link" href="${esc(studioURL(page,params))}">${esc(label)}</a>`;
+export const field=(name,label,value='',type='text',extra='')=>`<label for="${name}">${esc(label)}<input id="${name}" name="${name}" type="${type}" value="${esc(String(value??''))}" ${extra}></label>`;
+export const area=(name,label,value='')=>`<label for="${name}">${esc(label)}<textarea id="${name}" name="${name}" maxlength="10000" rows="4">${esc(value||'')}</textarea></label>`;
+export const select=(name,label,options,value='')=>`<label for="${name}">${esc(label)}<select id="${name}" name="${name}">${options.map(([k,t])=>`<option value="${esc(String(k))}" ${String(k)===String(value)?'selected':''}>${esc(t)}</option>`).join('')}</select></label>`;
+export const status=d=>`<span class="content-status ${d.state==='ready'?'success':''}">${esc(contentStates[d.state]||'Catálogo base · demostración')} · v${d.version||1}</span>`;
+export const summary=items=>`<section class="monitor-summary" aria-label="Resumen de contenidos">${items.map(([label,count])=>`<article class="monitor-card summary"><h2>${esc(label)}</h2><strong>${count}</strong></article>`).join('')}</section>`;
+export function validationMarkup(v){return `<h2>Validación técnica local</h2>${v.errors.length?`<ul class="content-error">${v.errors.map(e=>`<li>${esc(e.message)}</li>`).join('')}</ul>`:'<p class="content-success">Sin errores técnicos detectados.</p>'}<p>Validación local, sin aprobación institucional. Revisión docente pendiente.</p><ul class="pedagogical-warnings">${v.warnings.map(w=>`<li>${esc(w)}</li>`).join('')}</ul>`;}
+export const localActions=d=>`<div class="actions">${studioLink(d.kind==='unit'?'editar-unidad':'editar-leccion','Editar borrador',{id:d.id})}<button type="button" data-copy="${d.id}">Duplicar borrador</button><button type="button" data-validate="${d.id}">Validar</button><button type="button" data-archive="${d.id}" ${d.state==='archived'?'disabled':''}>Archivar</button><button type="button" data-delete="${d.id}">Eliminar borrador</button></div>`;
+export function blockList(blocks,selected){return `<ol class="block-list">${blocks.map((b,i)=>`<li><button type="button" data-block="${b.id}" aria-pressed="${b.id===selected}"><span>${i+1}. ${esc(blockTypes[b.type]?.label||b.type)}</span><small>${esc(b.content.text||b.content.title||b.content.question||'Sin completar').slice(0,70)}</small></button></li>`).join('')}</ol>`;}

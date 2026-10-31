@@ -1,0 +1,49 @@
+.profiles-main { width: 100%; max-width: 1200px; padding: 54px 32px 20px; margin-inline: auto; }
+.profiles-heading { text-align: center; }
+.profiles-heading h1 { font-size: clamp(1.8rem, 3.2vw, 2.65rem); line-height: 1.25; letter-spacing: -1px; margin-top: 22px; }
+.profiles-heading > p { margin-top: 12px; color: var(--color-muted); font-size: 1rem; }
+.role-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 38px; }
+.role-card { --role-color: var(--color-primary); --role-hover: var(--color-primary-hover); --role-soft: var(--color-info-background); position: relative; display: flex; flex-direction: column; align-items: center; padding: 32px 24px 26px; text-align: center; border: 1px solid #dfe7f2; border-radius: var(--radius-card); background: var(--color-surface); box-shadow: var(--shadow-card); transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition); }
+.role-card[data-role='MONITOR'] { --role-color: var(--color-monitor); --role-hover: var(--color-monitor-hover); --role-soft: var(--color-monitor-soft); }
+.role-card[data-role='ADMIN'] { --role-color: var(--color-admin); --role-hover: var(--color-admin-hover); --role-soft: var(--color-admin-soft); }
+.role-card:not([data-disabled='true']):hover { transform: translateY(-4px); border-color: var(--role-color); box-shadow: 0 18px 40px #18376b12; }
+.role-card:focus-within { border-color: var(--role-color); }
+.role-card[data-selected='true'] { border-color: var(--role-color); box-shadow: 0 0 0 2px var(--role-color), var(--shadow-card); }
+.role-icon { width: 88px; height: 88px; display: grid; place-items: center; background: var(--role-soft); border-radius: 25px; color: var(--role-color); margin-bottom: 24px; }
+.role-icon svg { width: 45px; height: 45px; }
+.role-card h2 { font-size: 1.25rem; line-height: 1.3; letter-spacing: -.3px; }
+.role-description { margin-top: 12px; margin-bottom: 22px; color: var(--color-muted); font-size: .875rem; max-width: 245px; }
+.role-state { margin-top: auto; margin-bottom: 16px; font-size: .75rem; color: var(--role-color); font-weight: 600; }
+.role-card .button-primary { background: var(--role-color); box-shadow: none; font-size: .8125rem; padding: 12px 10px; }
+.role-card .button-primary:hover { background: var(--role-hover); }
+.role-card .button-primary:focus-visible { outline-color: var(--role-color); }
+.role-card[data-disabled='true'] { background: #f5f7fb; box-shadow: none; border-style: dashed; }
+.role-card[data-disabled='true'] .role-icon { filter: grayscale(1); opacity: .65; }
+.role-card[data-disabled='true'] .role-state { color: var(--color-muted); }
+.role-card .button-primary:disabled { background: #e4e9f0; color: #546179; opacity: 1; }
+.role-card .button-primary[data-loading] { background: var(--role-color); color: #fff; cursor: wait; }
+.demo-tools { margin-top: 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; padding: 18px 20px; border: 1px solid #e2e9f3; border-radius: 14px; background: #ffffffb3; }
+.demo-tools label { font-size: var(--text-small); font-weight: 600; }
+.demo-tools p { font-size: .75rem; color: var(--color-muted); }
+.demo-tools select { max-width: 100%; min-height: 44px; padding: 10px 34px 10px 12px; border: 1px solid var(--color-border); border-radius: 8px; background: white; color: var(--color-text); font: inherit; font-size: var(--text-small); }
+.profiles-main > .preview-notice { margin-top: 20px; }
+.profiles-main > .feedback:not(:empty) { margin-top: 24px; }
+.feedback-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 14px; }
+.module-preview { margin-top: 28px; padding: 30px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-card); box-shadow: var(--shadow-card); }
+.module-preview h2 { margin-top: 16px; font-size: 1.45rem; }
+.module-preview p { color: var(--color-muted); margin-top: 10px; max-width: 680px; }
+.module-preview .button-secondary { margin-top: 20px; }
+@media (max-width: 1000px) { .profiles-main { padding: 38px 24px 20px; } .role-grid { gap: 16px; } .role-card { padding: 28px 16px 22px; } .role-card h2 { font-size: 1.1rem; } }
+@media (max-width: 760px) {
+  .profiles-main { padding: 32px 16px 12px; }
+  .profiles-heading h1 { letter-spacing: -.6px; }
+  .profiles-heading > p { font-size: .9375rem; }
+  .role-grid { grid-template-columns: minmax(0, 1fr); max-width: 480px; margin-inline: auto; gap: 18px; margin-top: 28px; grid-auto-rows: 1fr; }
+  .role-card { padding: 26px 24px; }
+  .role-icon { width: 72px; height: 72px; border-radius: 21px; margin-bottom: 18px; }
+  .role-icon svg { width: 38px; height: 38px; }
+  .role-card h2 { font-size: 1.25rem; }
+  .role-description { max-width: 290px; margin-bottom: 16px; }
+  .demo-tools { align-items: stretch; flex-direction: column; }
+  .module-preview { padding: 24px 20px; }
+}

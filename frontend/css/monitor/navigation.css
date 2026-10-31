@@ -1,0 +1,68 @@
+/* Shared monitor navigation. Keep student/admin styles and existing breakpoints. */
+.monitor-shell .monitor-navigation {
+  background: linear-gradient(175deg, #153b77 0%, #14294b 100%);
+  color: #fff;
+  padding: 16px 12px;
+  scrollbar-width: thin;
+  scrollbar-color: #7187aa #14294b;
+}
+.monitor-navigation .sidebar-brand {
+  padding: 4px 4px 18px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ffffff26;
+}
+.monitor-navigation .sidebar-brand a { color: #fff; text-decoration: none; }
+.monitor-navigation .nav-group {
+  margin: 22px 12px 8px;
+  color: #b9cce9;
+  font-size: .69rem;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.monitor-shell .monitor-navigation .sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  margin: 4px 0;
+  padding: 11px 14px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  color: #e4edfb;
+  background: transparent;
+  text-align: left;
+  font-size: .9rem;
+  line-height: 1.35;
+  transition: background-color .15s ease, border-color .15s ease;
+}
+.monitor-navigation .sidebar-link svg { width: 21px; height: 21px; flex-shrink: 0; }
+.monitor-shell .monitor-navigation .sidebar-link:hover {
+  background: #ffffff12;
+  color: #fff;
+  filter: none;
+}
+.monitor-shell .monitor-navigation .sidebar-link.is-active {
+  background: #ffffff1f;
+  border-color: #8db8ff;
+  box-shadow: inset 3px 0 0 #99c2ff;
+  color: #fff;
+  font-weight: 700;
+}
+.monitor-navigation button:focus-visible,
+.monitor-navigation a:focus-visible {
+  outline: 3px solid #ffdc82;
+  outline-offset: 2px;
+}
+.monitor-shell .monitor-navigation [data-section="logout"] {
+  margin-top: 14px;
+  color: #ffccce;
+  border-top-color: #ffffff26;
+}
+.monitor-shell.collapsed .monitor-navigation .sidebar-link {
+  justify-content: center;
+  padding-inline: 8px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .monitor-navigation .sidebar-link { transition: none; }
+}

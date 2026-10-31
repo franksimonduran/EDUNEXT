@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-10-27T03:31:51.478230+00:00",
+  "stage": "baseline",
+  "AITHRON_FINAL_VALIDATION": 1,
+  "python": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+  "environment": {
+    "platform": "Windows",
+    "architecture": "AMD64",
+    "logical_cpus": 16
+  },
+  "scope": "Local synthetic files, monotonic clock doubles, ASGI health and source; no DB/provider or intrusive network",
+  "hashes_before_commands": [
+    {
+      "path": "backend/app/dependencies/auth.py",
+      "sha256": "6539f91c4a9219d1a4ec12bff4a77bc6e1e88ec964cd847956be8cb4ceeef8d0"
+    },
+    {
+      "path": "backend/app/core/security.py",
+      "sha256": "55f170192c3d49af39d0c21ebada487760c288edf0702189c913fd11b0a106ad"
+    },
+    {
+      "path": "backend/app/storage/local_storage.py",
+      "sha256": "d48cff6e61c38ae3868de2931669052706d3f19f4a2de932ba944b988589a071"
+    },
+    {
+      "path": "backend/pyproject.toml",
+      "sha256": "0204ae74454fa85f07365046c9626d19c78e75d307973fbdf6f9f3a6753a4205"
+    },
+    {
+      "path": "backend/verification/test_phase48_remediation.py",
+      "sha256": "40da52dbf1d47e63189489241889b00df1c0f5fef6131d4f2a2eab218e128bb8"
+    },
+    {
+      "path": "tools/audit-phase48.cjs",
+      "sha256": "c87f6c17e0435acd55369c151c2c15d2ebf1f545daaf74db97026eb66b227c75"
+    },
+    {
+      "path": "tools/validate-security.py",
+      "sha256": "75d0960ccc09cca82248eda81d3eb678f0fafbcd539f0d68bdfcf91328d22ce0"
+    },
+    {
+      "path": "tools/audit-dependencies.py",
+      "sha256": "657ba23d76db492a85a2c5576642395204438ad8c66dc2f4de3fe0b1258001f6"
+    }
+  ],
+  "results": [
+    {
+      "check": "source_snapshot",
+      "exit_code": 0,
+      "output": "{\"mode\":\"baseline\",\"evidence\":\"docs\\\\final\\\\evidence\\\\phase48-baseline-qF7lzj\\\\PHASE_48_BASELINE_EVIDENCE.json\",\"sourceFiles\":996,\"candidates\":459,\"node\":\"v24.22.1\",\"gitMetadata\":false,\"missing\":[\"database\",\"content\",\"scripts\",\"compose.yaml\"]}\n"
+    },
+    {
+      "check": "remediation_tests",
+      "exit_code": 1,
+      "output": "......F.FFF.......................                                       [100%]\n================================== FAILURES ===================================\n__________ test_jwt_required_security_claims_cannot_be_omitted[aud] ___________\n\nmissing = 'aud'\n\n    @pytest.mark.parametrize(\"missing\", [\"aud\", \"iss\", \"exp\", \"iat\", \"nbf\"])\n    def test_jwt_required_security_claims_cannot_be_omitted(missing):\n        payload = jwt.get_unverified_claims(synthetic_token())  # Only used to build a synthetic test token.\n        del payload[missing]\n        token = jwt.encode(payload, settings.SECRET_KEY, algorithm=settings.ALGORITHM)\n>       assert decode_access_token(token) is None\nE       AssertionError: assert {'sub': '9edab66f-ec66-43fb-a9dd-c5ae66745899', 'sid': '982e0d89-74f7-4921-9568-16625b6e4a34', 'inst': '48d6a5c2-bc89-49a8-94c8-212a0fa87150', 'roles': [], ...} is None\nE        +  where {'sub': '9edab66f-ec66-43fb-a9dd-c5ae66745899', 'sid': '982e0d89-74f7-4921-9568-16625b6e4a34', 'inst': '48d6a5c2-bc89-49a8-94c8-212a0fa87150', 'roles': [], ...} = decode_access_token('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5ZWRhYjY2Zi1lYzY2LTQzZmItYTlkZC1jNWFlNjY3NDU4OTkiLCJzaWQiOiI5ODJlMGQ4...oiYjQ4NWU4YTMtM2UyNy00ZWRjLWJiMzctNDBmZWNlY2JmYTQyIiwidHlwZSI6ImFjY2VzcyJ9.9kwyM5a71_20EGWtfwEE7xQD1OWpq4i1mh1m7LmWjCU')\n\nD:\\Programing\\ATHRON EDU\\backend\\verification\\test_phase48_remediation.py:87: AssertionError\n__________ test_jwt_required_security_claims_cannot_be_omitted[exp] ___________\n\nmissing = 'exp'\n\n    @pytest.mark.parametrize(\"missing\", [\"aud\", \"iss\", \"exp\", \"iat\", \"nbf\"])\n    def test_jwt_required_security_claims_cannot_be_omitted(missing):\n        payload = jwt.get_unverified_claims(synthetic_token())  # Only used to build a synthetic test token.\n        del payload[missing]\n        token = jwt.encode(payload, settings.SECRET_KEY, algorithm=settings.ALGORITHM)\n>       assert decode_access_token(token) is None\nE       AssertionError: assert {'sub': 'c26bfa92-b7de-4027-85b7-0c36e6b52a75', 'sid': '82e63f06-cd7a-4c8f-9bbd-1b2a165a9216', 'inst': 'eadf9efa-fa9a-4c13-b04f-d96a26552c46', 'roles': [], ...} is None\nE        +  where {'sub': 'c26bfa92-b7de-4027-85b7-0c36e6b52a75', 'sid': '82e63f06-cd7a-4c8f-9bbd-1b2a165a9216', 'inst': 'eadf9efa-fa9a-4c13-b04f-d96a26552c46', 'roles': [], ...} = decode_access_token('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjMjZiZmE5Mi1iN2RlLTQwMjctODViNy0wYzM2ZTZiNTJhNzUiLCJzaWQiOiI4MmU2M2Yw...IjE4Nzc4ZGE0LWY0ZjYtNDgyYy1hNWM1LTY2YmJkY2Y1ZTNjNCIsInR5cGUiOiJhY2Nlc3MifQ.aLqncMkVpWnULMJNsmkL59DsKhwztrcMYeVN1eIX5-A')\n\nD:\\Programing\\ATHRON EDU\\backend\\verification\\test_phase48_remediation.py:87: AssertionError\n__________ test_jwt_required_security_claims_cannot_be_omitted[iat] ___________\n\nmissing = 'iat'\n\n    @pytest.mark.parametrize(\"missing\", [\"aud\", \"iss\", \"exp\", \"iat\", \"nbf\"])\n    def test_jwt_required_security_claims_cannot_be_omitted(missing):\n        payload = jwt.get_unverified_claims(synthetic_token())  # Only used to build a synthetic test token.\n        del payload[missing]\n        token = jwt.encode(payload, settings.SECRET_KEY, algorithm=settings.ALGORITHM)\n>       assert decode_access_token(token) is None\nE       AssertionError: assert {'sub': '9848a04f-5512-42ee-808d-6d9426ebaf62', 'sid': '75f8ba5d-4c12-4ace-96fd-ad7e5aa9fed5', 'inst': '89d6cac8-b418-458f-9e28-5ef0db5489b3', 'roles': [], ...} is None\nE        +  where {'sub': '9848a04f-5512-42ee-808d-6d9426ebaf62', 'sid': '75f8ba5d-4c12-4ace-96fd-ad7e5aa9fed5', 'inst': '89d6cac8-b418-458f-9e28-5ef0db5489b3', 'roles': [], ...} = decode_access_token('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5ODQ4YTA0Zi01NTEyLTQyZWUtODA4ZC02ZDk0MjZlYmFmNjIiLCJzaWQiOiI3NWY4YmE1...ImUwNjlkNDQzLTAwZTgtNDQ1Zi1iMGVkLWRhM2JlYWI3ZGFiZiIsInR5cGUiOiJhY2Nlc3MifQ.cPfYLO-zo3j61z6D58Hiw6b1udh8t9P2aaHYMwwpY5o')\n\nD:\\Programing\\ATHRON EDU\\backend\\verification\\test_phase48_remediation.py:87: AssertionError\n__________ test_jwt_required_security_claims_cannot_be_omitted[nbf] ___________\n\nmissing = 'nbf'\n\n    @pytest.mark.parametrize(\"missing\", [\"aud\", \"iss\", \"exp\", \"iat\", \"nbf\"])\n    def test_jwt_required_security_claims_cannot_be_omitted(missing):\n        payload = jwt.get_unverified_claims(synthetic_token())  # Only used to build a synthetic test token.\n        del payload[missing]\n        token = jwt.encode(payload, settings.SECRET_KEY, algorithm=settings.ALGORITHM)\n>       assert decode_access_token(token) is None\nE       AssertionError: assert {'sub': '1e744738-f063-4aad-b3ea-4af9ca1d9bfc', 'sid': '5d015f71-82fd-426e-9aff-41b82ef24fec', 'inst': 'e9b49b88-f667-4c6e-9cbd-ca9262a1b536', 'roles': [], ...} is None\nE        +  where {'sub': '1e744738-f063-4aad-b3ea-4af9ca1d9bfc', 'sid': '5d015f71-82fd-426e-9aff-41b82ef24fec', 'inst': 'e9b49b88-f667-4c6e-9cbd-ca9262a1b536', 'roles': [], ...} = decode_access_token('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxZTc0NDczOC1mMDYzLTRhYWQtYjNlYS00YWY5Y2ExZDliZmMiLCJzaWQiOiI1ZDAxNWY3...ImJhMjliYTIxLWQzZWUtNDlhMy1hZjczLWM0ZGFhNjVhOTY0ZSIsInR5cGUiOiJhY2Nlc3MifQ.bour8gvDuwDTnd2roD_zoVeSQKBKWY6zd-usKN0pEOk')\n\nD:\\Programing\\ATHRON EDU\\backend\\verification\\test_phase48_remediation.py:87: AssertionError\n============================== warnings summary ===============================\n..\\aithron-integration-e4c75e81f5d0498fae58297003317fbe\\Lib\\site-packages\\passlib\\handlers\\argon2.py:716\n  C:\\Users\\simon\\AppData\\Local\\Temp\\opencode\\aithron-integration-e4c75e81f5d0498fae58297003317fbe\\Lib\\site-packages\\passlib\\handlers\\argon2.py:716: DeprecationWarning: Accessing argon2.__version__ is deprecated and will be removed in a future release. Use importlib.metadata directly to query for argon2-cffi's packaging metadata.\n    _argon2_cffi.__version__, max_version)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ===========================\nFAILED D:\\Programing\\ATHRON EDU\\backend\\verification\\test_phase48_remediation.py::test_jwt_required_security_claims_cannot_be_omitted[aud]\nFAILED D:\\Programing\\ATHRON EDU\\backend\\verification\\test_phase48_remediation.py::test_jwt_required_security_claims_cannot_be_omitted[exp]\nFAILED D:\\Programing\\ATHRON EDU\\backend\\verification\\test_phase48_remediation.py::test_jwt_required_security_claims_cannot_be_omitted[iat]\nFAILED D:\\Programing\\ATHRON EDU\\backend\\verification\\test_phase48_remediation.py::test_jwt_required_security_claims_cannot_be_omitted[nbf]\n4 failed, 30 passed, 1 warning in 1.62s\n"
+    },
+    {
+      "check": "installed_dependency_consistency",
+      "exit_code": 0,
+      "output": "No broken requirements found.\n"
+    },
+    {
+      "check": "bounded_local_smoke_measurement",
+      "exit_code": 0,
+      "output": "{\"scope\": \"Local ASGI health only, no lifespan, sockets, DB, login or workload SLA; tracemalloc is Python allocations, not RSS\", \"endpoint\": \"/api/v1/health/live\", \"requests\": 100, \"concurrency\": 4, \"duration_seconds\": 0.48925249999956577, \"p50_ms\": 13.729899997997563, \"p95_ms\": 16.32419999805279, \"p99_ms\": 89.9463999994623, \"non_200_count\": 0, \"cpu_seconds\": 0.5, \"python_current_bytes\": 166248, \"python_peak_bytes\": 387842, \"limiter_probe\": {\"checks\": 5000, \"unique_synthetic_keys\": 5000, \"retained_keys\": 4096, \"accepted\": 4096, \"duration_ms\": 117.09739999787416, \"python_peak_bytes\": 1018433}, \"acceptance\": \"Only zero unexpected health errors; no arbitrary latency/production capacity target\"}\n"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Scenario descriptions only; NOT API payloads, seeded records, credentials or real pilot participants.",
+  "persistence": "not_seeded",
+  "timezone": "America/Lima",
+  "institutions": [
+    {"scenarioId": "synthetic-A", "label": "Institución sintética A", "adminScenario": "synthetic-A-admin", "monitorScenario": "synthetic-A-monitor", "grades": [4, 5, 6]},
+    {"scenarioId": "synthetic-B", "label": "Institución sintética B", "adminScenario": "synthetic-B-admin", "monitorScenario": "synthetic-B-monitor", "grades": [4, 5, 6]}
+  ],
+  "students": [
+    {"scenarioId": "synthetic-A-g4", "institutionScenario": "synthetic-A", "grade": 4},
+    {"scenarioId": "synthetic-A-g5", "institutionScenario": "synthetic-A", "grade": 5},
+    {"scenarioId": "synthetic-A-g6", "institutionScenario": "synthetic-A", "grade": 6},
+    {"scenarioId": "synthetic-B-g4", "institutionScenario": "synthetic-B", "grade": 4},
+    {"scenarioId": "synthetic-B-g5", "institutionScenario": "synthetic-B", "grade": 5},
+    {"scenarioId": "synthetic-B-g6", "institutionScenario": "synthetic-B", "grade": 6}
+  ],
+  "academicSetup": "One synthetic classroom/enrollment per institution and grade in an isolated database, once the environment and schema are verified. No dates, account IDs or passwords invented as confirmed data.",
+  "demonstrationReferences": [
+    {"grade": 4, "course": "math", "unit": "math-g4-u1", "lesson": "math-g4-u1-l1", "practice": "practice-math-4", "game": "game-memory-4"},
+    {"grade": 5, "course": "math", "unit": "math-g5-u1", "lesson": "math-g5-u1-l1", "practice": "practice-math-5", "game": "game-memory-5"},
+    {"grade": 6, "course": "math", "unit": "math-g6-u1", "lesson": "math-g6-u1-l1", "practice": "practice-math-6", "game": "game-memory-6"}
+  ],
+  "crossRoleScenarios": [
+    {"id": "assignment-feedback", "expected": "Teacher publishes to the authorized classroom, student submits, teacher publishes feedback; server confirms each transition", "status": "blocked_without_real_API_and_database"},
+    {"id": "content-publication", "expected": "Teacher draft, authorized review/publication, student reads exact published version", "status": "not_executed"},
+    {"id": "assessment-competency", "expected": "Assigned assessment, protected answers, human review and authorized academic publication without percentage conversion", "status": "blocked_incomplete_assessment_backend"},
+    {"id": "reinforcement", "expected": "Human explicitly creates reinforcement; recommendation alone has no academic effect", "status": "not_executed"},
+    {"id": "offline-package", "expected": "Authorized versioned manifest/checksums, local provisional operation and unique confirmed server receipt", "status": "blocked_no_verified_sync_engine"},
+    {"id": "tenant-isolation", "expected": "A cannot read or mutate B resources for any role, including UUID manipulation", "status": "not_executed"}
+  ]
+}

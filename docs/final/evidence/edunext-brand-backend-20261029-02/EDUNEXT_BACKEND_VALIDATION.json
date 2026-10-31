@@ -1,0 +1,16 @@
+{
+  "scope": "Isolated app construction, OpenAPI and ASGI without lifespan/DB. Not full startup, authenticated PostgreSQL E2E or production readiness.",
+  "checks": [
+    {
+      "name": "Python AST syntax",
+      "pass": true
+    },
+    {
+      "name": "Backend verification",
+      "pass": false,
+      "errorClass": "ImportError"
+    }
+  ],
+  "decision": "NO-GO",
+  "pass": false
+}

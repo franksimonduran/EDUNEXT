@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-31T03:43:36.625Z",
+  "scope": "Syntax and hashes of reviewed UI copy changes; browser regression saved separately. Not a complete visual audit.",
+  "checks": [
+    {
+      "file": "frontend/js/components/admin-dashboard-ui.js",
+      "pass": true,
+      "sha256": "ad89c4a7c486b30903afdc551c25f1888922887791a50c2ec211e7b90619596f"
+    },
+    {
+      "file": "frontend/js/components/monitor-lesson-block-editor.js",
+      "pass": true,
+      "sha256": "ce37cb4e95cb5c9b3e8dcf94604bddaf97308f8d0737d91448e49f4f26f6f742"
+    },
+    {
+      "file": "frontend/js/monitor/gradebook.js",
+      "pass": true,
+      "sha256": "5ce3264fddbe1f642029100ced8963bd6966a99dc6813b791dac26115f082778"
+    },
+    {
+      "file": "frontend/js/monitor/management-shell.js",
+      "pass": true,
+      "sha256": "8d3fdf6db0f4f83a0f5abb861dceffa08d39b59bcb529aa3bcb100d35f849653"
+    },
+    {
+      "file": "frontend/js/services/admin-activity.service.js",
+      "pass": true,
+      "sha256": "70bc94476388e4467f0b1afa4ad67a5b86168a83a711170793c74240e0ab2312"
+    },
+    {
+      "file": "frontend/js/services/admin-platform-activity.service.js",
+      "pass": true,
+      "sha256": "f77ac0339637c3c943c1f3cf70f24d4a55f1f87fb0bca063337c30563c87401d"
+    },
+    {
+      "file": "frontend/js/services/monitor-calendar.service.js",
+      "pass": true,
+      "sha256": "59cd6b7b7055aaf00a3a6e78ae88a691db49dfcc754e90d21799986bb0c06780"
+    },
+    {
+      "file": "frontend/js/services/monitor-grades.service.js",
+      "pass": true,
+      "sha256": "f3c47759c0a1c1f1097596d8fdbac5c86e5346d15adf21f4dba79d31bf7b504d"
+    },
+    {
+      "file": "frontend/js/services/admin-users.service.js",
+      "pass": true,
+      "sha256": "4cda9dc3b821f5297f1124411c0e1041135095c9e918592a3288940dabbf91a5"
+    },
+    {
+      "file": "frontend/js/data/admin-academic-periods-demo.data.js",
+      "pass": true,
+      "sha256": "ef5832dcb79cc49f969bdaf81751293247dbcb6eca9e60a9c1dc62c353076d43"
+    },
+    {
+      "file": "frontend/js/data/admin-dashboard-config.data.js",
+      "pass": true,
+      "sha256": "1da0ddb53340d53c579e932068d287e89c4e8e4fc7258bc199aa05ed876c3860"
+    },
+    {
+      "file": "frontend/js/utils/academic-relations.js",
+      "pass": true,
+      "sha256": "d285de35c8e314a080799c75710f2e6ad4b4afc232215db977adb2748d775934"
+    },
+    {
+      "file": "frontend/js/i18n/monitor-account.js",
+      "pass": true,
+      "sha256": "c1af376d3bd5896a1a7d637ff11a5c01c986f94ac8637c5ce584e7247e01968d"
+    },
+    {
+      "file": "frontend/js/admin/admin-shell.js",
+      "pass": true,
+      "sha256": "b753e5786de60e7ed9cd3e2e075c344b12d9290c2f3c49d6a50c1d8749e185f2"
+    },
+    {
+      "file": "frontend/js/student/evaluaciones.js",
+      "pass": true,
+      "sha256": "0757765f14512dd41a97613752c87cf864857c58c9023d97acc019413ef9e927"
+    },
+    {
+      "file": "frontend/js/student/learning-i18n.js",
+      "pass": true,
+      "sha256": "6ecdbfb0d2261b282be458cc2064a341fcd8e18fa0af15546503f7c48a653684"
+    },
+    {
+      "file": "frontend/js/student/practice-i18n.js",
+      "pass": true,
+      "sha256": "20280f2bfb86f5dc6fdd76cc101f701089e8bf5d50f2770ba940661d458c400c"
+    },
+    {
+      "file": "frontend/js/student/i18n.js",
+      "pass": true,
+      "sha256": "87bf69be501def83f182d9f32cc074825774500a6d127e2dc69a0b467b3a5b58"
+    },
+    {
+      "file": "frontend/js/monitor/support-tracking.js",
+      "pass": true,
+      "sha256": "42dc19b7dec55fcc74042616ff6e270612375ff5769ef7c64378448b3517b2c0"
+    },
+    {
+      "file": "frontend/js/monitor/calendar-views.js",
+      "pass": true,
+      "sha256": "427baa1e0c8459088edf7f9858c2ba8cced9338884a733d090ff4a6e69d4d1da"
+    }
+  ]
+}

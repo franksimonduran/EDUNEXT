@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Incidencias Técnicas | EDUNEXT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/admin/layout.css">
+  <link rel="stylesheet" href="../css/admin/sync.css">
+  <link rel="stylesheet" href="../css/admin/system-control-responsive.css">
+</head>
+<body class="admin-body">
+  <div class="admin-shell">
+    <aside class="admin-sidebar" id="admin-sidebar"></aside>
+    <div class="admin-main">
+      <header class="admin-topbar" id="admin-topbar"></header>
+      <main class="admin-content" id="admin-content" aria-live="polite">
+        <section class="demo-banner">
+          <strong>Incidencias locales — No constituyen una mesa de ayuda institucional.</strong>
+        </section>
+        <header class="page-header">
+          <div>
+            <nav class="breadcrumb" aria-label="Migas de pan"><a href="index.html">Administración</a><span>/</span><a href="sync.html">EDUNEXT Sync</a><span>/</span><span>Incidencias Técnicas</span></nav>
+            <h1>Incidencias Técnicas</h1>
+            <p class="page-subtitle">Consulta errores y advertencias identificados en este dispositivo</p>
+          </div>
+          <div class="page-actions">
+            <a class="button-secondary" href="sync.html">Centro de Control</a>
+            <button class="button-primary" id="scan-incidents">Escanear incidencias</button>
+          </div>
+        </header>
+        <section class="incident-stats" id="incident-stats"></section>
+        <form class="filter-card" id="incident-filters" aria-label="Filtros de incidencias">
+          <div class="filter-grid">
+            <label class="field"><span>Categoría</span><select name="category"><option value="">Todas</option><option value="storage">Almacenamiento</option><option value="serviceWorker">Service Worker</option><option value="cacheStorage">Cache Storage</option><option value="offlineResources">Recursos Offline</option><option value="syncOperations">Operaciones de Sincronización</option><option value="compatibility">Compatibilidad</option><option value="versions">Versiones</option><option value="integration">Integración</option><option value="resourceErrors">Errores de Recursos</option><option value="diagnostics">Diagnósticos</option><option value="quality">Calidad de Datos</option></select></label>
+            <label class="field"><span>Severidad</span><select name="severity"><option value="">Todas</option><option value="critical">Crítica</option><option value="error">Error</option><option value="warning">Advertencia</option><option value="info">Informativa</option></select></label>
+            <label class="field"><span>Estado</span><select name="status"><option value="">Todos</option><option value="open">Abierta</option><option value="reviewed">Revisada</option><option value="resolved">Resuelta</option><option value="reopened">Reabierta</option></select></label>
+            <label class="field"><span>Desde</span><input type="date" name="from"></label>
+            <label class="field"><span>Hasta</span><input type="date" name="to"></label>
+            <label class="field field-search"><span>Buscar</span><input type="search" name="q" placeholder="ID, título o descripción"></label>
+          </div>
+          <div class="filter-actions"><button class="button-secondary" type="reset">Limpiar</button><button class="button-primary" type="submit">Filtrar</button></div>
+        </form>
+        <section class="incident-stats" id="incident-stats"></section>
+        <section class="incident-grid" id="incidents-grid"></section>
+      </main>
+    </div>
+  </div>
+  <dialog class="admin-dialog" id="admin-dialog">
+    <div class="dialog-header"><h2 id="dialog-title"></h2><button class="icon-button" id="close-dialog" aria-label="Cerrar">×</button></div>
+    <div class="dialog-content" id="dialog-content"></div>
+  </dialog>
+  <script type="module" src="../js/admin/incidencias-tecnicas.js"></script>
+</body>
+</html>

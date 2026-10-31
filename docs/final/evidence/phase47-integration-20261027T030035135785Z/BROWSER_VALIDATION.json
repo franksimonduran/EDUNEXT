@@ -1,0 +1,410 @@
+{
+  "date": "2026-10-27T03:00:56.906Z",
+  "results": [
+    {
+      "name": "Edge",
+      "version": "Edg/156.0.4314.42",
+      "status": "pass",
+      "checks": [
+        {
+          "width": 320,
+          "height": 720,
+          "overflow": false,
+          "lang": "es",
+          "h1": 1,
+          "main": true,
+          "unlabelled": 0,
+          "navigationMs": 68.20000000298023
+        },
+        {
+          "width": 375,
+          "height": 812,
+          "overflow": false,
+          "lang": "es",
+          "h1": 1,
+          "main": true,
+          "unlabelled": 0,
+          "navigationMs": 37.69999999925494
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "overflow": false,
+          "lang": "es",
+          "h1": 1,
+          "main": true,
+          "unlabelled": 0,
+          "navigationMs": 28.5
+        },
+        {
+          "width": 1440,
+          "height": 900,
+          "overflow": false,
+          "lang": "es",
+          "h1": 1,
+          "main": true,
+          "unlabelled": 0,
+          "navigationMs": 30.099999997764826
+        }
+      ],
+      "validation": {
+        "focus": "identifier",
+        "identifierInvalid": "true",
+        "passwordInvalid": "true"
+      },
+      "tabFocus": "password",
+      "exceptions": [],
+      "scope": "Static public login only. Desktop viewport emulation, not physical mobile, screen reader, WCAG or authenticated E2E."
+    },
+    {
+      "name": "Edge",
+      "version": "Edg/156.0.4314.42",
+      "page": "/student/index.html?grade=4",
+      "status": "pass",
+      "viewports": [
+        {
+          "title": "Inicio del estudiante | AITHRON EDU",
+          "width": 375,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 82.19999999925494,
+          "loaded": true,
+          "exceptions": []
+        },
+        {
+          "title": "Inicio del estudiante | AITHRON EDU",
+          "width": 1440,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 72.89999999850988,
+          "loaded": true,
+          "exceptions": []
+        }
+      ],
+      "scope": "Public demonstration UI only. No authenticated role, database, academic persistence or user study verified."
+    },
+    {
+      "name": "Edge",
+      "version": "Edg/156.0.4314.42",
+      "page": "/student/aprende.html?grade=4",
+      "status": "pass",
+      "viewports": [
+        {
+          "title": "Mis cursos | AITHRON EDU",
+          "width": 375,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 86.80000000074506,
+          "loaded": true,
+          "exceptions": []
+        },
+        {
+          "title": "Mis cursos | AITHRON EDU",
+          "width": 1440,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 73.89999999850988,
+          "loaded": true,
+          "exceptions": []
+        }
+      ],
+      "scope": "Public demonstration UI only. No authenticated role, database, academic persistence or user study verified."
+    },
+    {
+      "name": "Edge",
+      "version": "Edg/156.0.4314.42",
+      "page": "/student/leccion.html?grade=4&course=math&unit=math-g4-u1&lesson=math-g4-u1-l1",
+      "status": "pass",
+      "viewports": [
+        {
+          "title": "¿Qué es una fracción? | AITHRON EDU",
+          "width": 375,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 214.69999999925494,
+          "loaded": true,
+          "exceptions": []
+        },
+        {
+          "title": "¿Qué es una fracción? | AITHRON EDU",
+          "width": 1440,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 95.69999999925494,
+          "loaded": true,
+          "exceptions": []
+        }
+      ],
+      "scope": "Public demonstration UI only. No authenticated role, database, academic persistence or user study verified."
+    },
+    {
+      "name": "Edge",
+      "version": "Edg/156.0.4314.42",
+      "page": "/monitor/index.html",
+      "status": "pass",
+      "viewports": [
+        {
+          "title": "Dashboard Monitor | AITHRON EDU",
+          "width": 375,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 89.69999999925494,
+          "loaded": true,
+          "exceptions": []
+        },
+        {
+          "title": "Dashboard Monitor | AITHRON EDU",
+          "width": 1440,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 72.19999999925494,
+          "loaded": true,
+          "exceptions": []
+        }
+      ],
+      "scope": "Public demonstration UI only. No authenticated role, database, academic persistence or user study verified."
+    },
+    {
+      "name": "Edge",
+      "version": "Edg/156.0.4314.42",
+      "page": "/admin/index.html",
+      "status": "pass",
+      "viewports": [
+        {
+          "title": "Panel de Administración | AITHRON EDU",
+          "width": 375,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 93.39999999850988,
+          "loaded": true,
+          "exceptions": []
+        },
+        {
+          "title": "Panel de Administración | AITHRON EDU",
+          "width": 1440,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 88.09999999776483,
+          "loaded": true,
+          "exceptions": []
+        }
+      ],
+      "scope": "Public demonstration UI only. No authenticated role, database, academic persistence or user study verified."
+    },
+    {
+      "name": "Chrome",
+      "version": "Chrome/156.0.8078.48",
+      "status": "pass",
+      "checks": [
+        {
+          "width": 320,
+          "height": 720,
+          "overflow": false,
+          "lang": "es",
+          "h1": 1,
+          "main": true,
+          "unlabelled": 0,
+          "navigationMs": 65.80000000074506
+        },
+        {
+          "width": 375,
+          "height": 812,
+          "overflow": false,
+          "lang": "es",
+          "h1": 1,
+          "main": true,
+          "unlabelled": 0,
+          "navigationMs": 28.600000001490116
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "overflow": false,
+          "lang": "es",
+          "h1": 1,
+          "main": true,
+          "unlabelled": 0,
+          "navigationMs": 32.5
+        },
+        {
+          "width": 1440,
+          "height": 900,
+          "overflow": false,
+          "lang": "es",
+          "h1": 1,
+          "main": true,
+          "unlabelled": 0,
+          "navigationMs": 28.399999998509884
+        }
+      ],
+      "validation": {
+        "focus": "identifier",
+        "identifierInvalid": "true",
+        "passwordInvalid": "true"
+      },
+      "tabFocus": "password",
+      "exceptions": [],
+      "scope": "Static public login only. Desktop viewport emulation, not physical mobile, screen reader, WCAG or authenticated E2E."
+    },
+    {
+      "name": "Chrome",
+      "version": "Chrome/156.0.8078.48",
+      "page": "/student/index.html?grade=4",
+      "status": "pass",
+      "viewports": [
+        {
+          "title": "Inicio del estudiante | AITHRON EDU",
+          "width": 375,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 65.39999999850988,
+          "loaded": true,
+          "exceptions": []
+        },
+        {
+          "title": "Inicio del estudiante | AITHRON EDU",
+          "width": 1440,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 65.89999999850988,
+          "loaded": true,
+          "exceptions": []
+        }
+      ],
+      "scope": "Public demonstration UI only. No authenticated role, database, academic persistence or user study verified."
+    },
+    {
+      "name": "Chrome",
+      "version": "Chrome/156.0.8078.48",
+      "page": "/student/aprende.html?grade=4",
+      "status": "pass",
+      "viewports": [
+        {
+          "title": "Mis cursos | AITHRON EDU",
+          "width": 375,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 72.5,
+          "loaded": true,
+          "exceptions": []
+        },
+        {
+          "title": "Mis cursos | AITHRON EDU",
+          "width": 1440,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 69.59999999776483,
+          "loaded": true,
+          "exceptions": []
+        }
+      ],
+      "scope": "Public demonstration UI only. No authenticated role, database, academic persistence or user study verified."
+    },
+    {
+      "name": "Chrome",
+      "version": "Chrome/156.0.8078.48",
+      "page": "/student/leccion.html?grade=4&course=math&unit=math-g4-u1&lesson=math-g4-u1-l1",
+      "status": "pass",
+      "viewports": [
+        {
+          "title": "¿Qué es una fracción? | AITHRON EDU",
+          "width": 375,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 140,
+          "loaded": true,
+          "exceptions": []
+        },
+        {
+          "title": "¿Qué es una fracción? | AITHRON EDU",
+          "width": 1440,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 101.70000000298023,
+          "loaded": true,
+          "exceptions": []
+        }
+      ],
+      "scope": "Public demonstration UI only. No authenticated role, database, academic persistence or user study verified."
+    },
+    {
+      "name": "Chrome",
+      "version": "Chrome/156.0.8078.48",
+      "page": "/monitor/index.html",
+      "status": "pass",
+      "viewports": [
+        {
+          "title": "Dashboard Monitor | AITHRON EDU",
+          "width": 375,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 172.60000000149012,
+          "loaded": true,
+          "exceptions": []
+        },
+        {
+          "title": "Dashboard Monitor | AITHRON EDU",
+          "width": 1440,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 69.10000000149012,
+          "loaded": true,
+          "exceptions": []
+        }
+      ],
+      "scope": "Public demonstration UI only. No authenticated role, database, academic persistence or user study verified."
+    },
+    {
+      "name": "Chrome",
+      "version": "Chrome/156.0.8078.48",
+      "page": "/admin/index.html",
+      "status": "pass",
+      "viewports": [
+        {
+          "title": "Panel de Administración | AITHRON EDU",
+          "width": 375,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 73.39999999850988,
+          "loaded": true,
+          "exceptions": []
+        },
+        {
+          "title": "Panel de Administración | AITHRON EDU",
+          "width": 1440,
+          "overflow": false,
+          "main": true,
+          "demoLabel": true,
+          "navigationMs": 72.09999999776483,
+          "loaded": true,
+          "exceptions": []
+        }
+      ],
+      "scope": "Public demonstration UI only. No authenticated role, database, academic persistence or user study verified."
+    }
+  ],
+  "notes": [
+    "No real credentials or minors data",
+    "Disposable browser profiles retained in approved temp; no user profile touched",
+    "Navigation duration is local static fixture measurement, not production performance or Web Vitals"
+  ]
+}

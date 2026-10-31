@@ -1,0 +1,23 @@
+/* Perfil y Configuración Fase 13 */
+.prof-header{margin-bottom:1rem}
+.prof-hero{background:linear-gradient(135deg,#18469e,#59329b);color:#fff;border-radius:var(--radius-lg);padding:1rem;display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
+.prof-hero .prof-info h1,.prof-hero .prof-info p{color:#fff}
+.prof-avatar-large{width:80px;height:80px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center}
+.prof-info h1{margin:0}
+.prof-info p{margin:.25rem 0}
+.prof-summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem;margin:1rem 0}
+.prof-sum-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:.75rem;box-shadow:var(--shadow-soft);display:flex;justify-content:space-between}
+.prof-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.prof-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1rem;box-shadow:var(--shadow-soft);display:flex;flex-direction:column;gap:.75rem}
+.settings-list{display:flex;flex-direction:column;gap:.75rem}
+.settings-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1rem;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-soft)}
+.avatar-grid{display:flex;gap:.5rem;flex-wrap:wrap}
+.avatar-opt{border:1px solid var(--color-border);border-radius:999px;padding:.5rem .75rem;background:var(--color-surface-alt);cursor:pointer}
+.avatar-opt.selected{outline:2px solid var(--color-primary)}
+.pref-row{display:flex;justify-content:space-between;align-items:center;padding:.5rem 0;border-bottom:1px solid var(--color-border)}
+.a11y-preview{border:1px dashed var(--color-border);border-radius:var(--radius-lg);padding:1rem}
+[data-theme="dark"] body, [data-theme="dark"] .learning-body{background:#0b1026;color:#e5e7eb}
+[data-theme="dark"] .prof-card,[data-theme="dark"] .settings-card,[data-theme="dark"] .prof-sum-card{background:#111827;border-color:#1f2937}
+[data-contrast="high"]{filter:contrast(1.15)}
+[data-reduce-motion="true"] *{animation:none!important;transition:none!important}
+@media(max-width:640px){.prof-hero{flex-direction:column;align-items:flex-start}}

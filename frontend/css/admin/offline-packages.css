@@ -1,0 +1,13 @@
+/* Offline Packages */
+
+.pkg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem}
+.res-item{padding:.5rem .75rem;border-radius:6px;margin-bottom:.375rem;font-size:.8125rem}
+.res-item.ok{background:#dcfce7;color:#166534}
+.res-item.warn{background:#fef3c7;color:#92400c}
+.dep{padding:.5rem .75rem;border-radius:6px;margin-bottom:.375rem;font-size:.8125rem}
+.dep.ok{background:#dcfce7;color:#166534}
+.dep.warn{background:#fef3c7;color:#92400c}
+#pkg-ready .ok{color:var(--admin-success)}
+#pkg-ready .warn{color:var(--admin-warning)}
+#pkg-ready ul{margin:.5rem 0 0;padding-left:1.25rem;font-size:.875rem}
+#pkg-ready li{color:var(--admin-warning)}

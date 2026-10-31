@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recursos Institucionales | EDUNEXT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/admin/layout.css">
+  <link rel="stylesheet" href="../css/admin/institutional-resources.css">
+  <link rel="stylesheet" href="../css/admin/content-admin-responsive.css">
+</head>
+<body class="admin-body">
+  <div class="admin-shell">
+    <aside class="admin-sidebar" id="admin-sidebar"></aside>
+    <div class="admin-main">
+      <header class="admin-topbar" id="admin-topbar"></header>
+      <main class="admin-content" id="admin-content" aria-live="polite">
+        <header class="page-header">
+          <div>
+            <nav class="breadcrumb" aria-label="Migas de pan"><a href="index.html">Administración</a><span>/</span><span>Recursos Institucionales</span></nav>
+            <h1>Recursos Educativos Institucionales</h1>
+            <p class="page-subtitle">Consulta y verifica los materiales utilizados en las lecciones</p>
+          </div>
+          <div class="page-actions">
+            <a class="button-secondary" href="contenidos.html">Catálogo</a>
+            <a class="button-secondary" href="paquetes-offline.html">Paquetes Offline</a>
+          </div>
+        </header>
+        <section class="summary-grid" id="res-summary"></section>
+        <form class="filter-card" id="res-filters">
+          <div class="filter-grid">
+            <label class="field"><span>Tipo</span><select name="type"><option value="">Todos</option><option value="image">Imagen</option><option value="audio">Audio</option><option value="document">Documento</option><option value="practice">Práctica</option></select></label>
+            <label class="field"><span>Grado</span><select name="grade"><option value="">Todos</option><option value="4">4.º</option><option value="5">5.º</option><option value="6">6.º</option></select></label>
+            <label class="field"><span>Asignatura</span><select name="course"><option value="">Todas</option><option value="math">Matemática</option><option value="com">Comunicación</option><option value="sci">Ciencia y Tecnología</option><option value="soc">Personal Social</option><option value="eng">Inglés</option></select></label>
+            <label class="field"><span>Disponibilidad offline</span><select name="offline"><option value="">Todas</option><option value="yes">Disponible localmente</option><option value="no">No descargado</option><option value="unknown">Desconocido</option></select></label>
+            <label class="field"><span>Licencia</span><select name="license"><option value="">Todas</option><option value="known">Con licencia conocida</option><option value="unknown">Permisos pendientes de verificación</option></select></label>
+            <label class="field field-search"><span>Buscar</span><input type="search" name="q" placeholder="Nombre o ruta" autocomplete="off"></label>
+          </div>
+          <div class="filter-actions"><button class="button-secondary" type="reset">Limpiar filtros</button></div>
+        </form>
+        <section class="resources-section">
+          <header class="section-header"><h2>Catálogo de recursos</h2><p id="res-count" role="status"></p></header>
+          <div class="resources-grid" id="resources-grid"></div>
+          <div id="res-empty" class="empty-state" hidden><h3>Sin recursos</h3><p>No hay recursos que coincidan con los filtros.</p></div>
+        </section>
+      </main>
+    </div>
+  </div>
+  <dialog class="admin-dialog" id="admin-dialog">
+    <div class="dialog-header"><h2 id="dialog-title"></h2><button class="icon-button" id="close-dialog" aria-label="Cerrar">×</button></div>
+    <div class="dialog-content" id="dialog-content"></div>
+  </dialog>
+  <script type="module" src="../js/admin/institutional-resources.js"></script>
+</body>
+</html>

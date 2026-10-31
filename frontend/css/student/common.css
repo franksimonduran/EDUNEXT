@@ -1,0 +1,5 @@
+/* Compatibility entry point for shared student templates; no parallel design system. */
+@import url('../base.css');
+@import url('../components.css');
+@import url('dashboard.css');
+@import url('courses.css');

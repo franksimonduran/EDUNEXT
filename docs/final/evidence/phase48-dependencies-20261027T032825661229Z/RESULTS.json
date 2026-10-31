@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-10-27T03:28:36.654449+00:00",
+  "AITHRON_FINAL_VALIDATION": 1,
+  "service": "PyPI advisory service via pip-audit",
+  "scope": "Resolved disposable application/development venv including its pip/setuptools; not Docker, model, OS or frontend dependency coverage",
+  "package_count": 54,
+  "results": [
+    {
+      "format": "json",
+      "exit_code": 1,
+      "output": "WARNING:pip_audit._cli:--no-deps is supported, but users are encouraged to fully hash their pinned dependencies\nWARNING:pip_audit._cli:Consider using a tool like `pip-compile`: https://pip-tools.readthedocs.io/en/latest/#using-hashes\nFound 26 known vulnerabilities in 4 packages\n"
+    },
+    {
+      "format": "cyclonedx-json",
+      "exit_code": 1,
+      "output": "WARNING:pip_audit._cli:--no-deps is supported, but users are encouraged to fully hash their pinned dependencies\nWARNING:pip_audit._cli:Consider using a tool like `pip-compile`: https://pip-tools.readthedocs.io/en/latest/#using-hashes\nFound 26 known vulnerabilities in 4 packages\n"
+    }
+  ],
+  "limitations": "Advisory matches require contextual triage; pip check is not a vulnerability audit; no automatic fixes or license approval"
+}

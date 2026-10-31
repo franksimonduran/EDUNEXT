@@ -1,0 +1,13 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const { corpus, root } = require('../tools/final-inventory.cjs');
+const { saveFinalEvidence } = require('../tools/final-evidence.cjs');
+const namespace = process.env.AITHRON_FRONTEND_HASH_NAMESPACE;
+assert.match(namespace || '', /^docs\/final\/evidence\/[A-Za-z0-9_-]+$/);
+const saved = JSON.parse(fs.readFileSync(path.join(root, namespace, 'FRONTEND_REFRESH_HASHES.json'), 'utf8'));
+const current = corpus().filter(file => file.path.startsWith('frontend/'));
+assert.deepEqual(current, saved.files, 'Frontend must match the browser-tested fingerprint');
+const evidence = { date: new Date().toISOString(), namespace, files: current.length, unchanged: true, scope: 'Current public frontend equals the source/resources hashed after the browser checks. No release or security certification.' };
+saveFinalEvidence('FRONTEND_REFRESH_HASH_VERIFICATION.json', evidence);
+console.log(JSON.stringify(evidence, null, 2));

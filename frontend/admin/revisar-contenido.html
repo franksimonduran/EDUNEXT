@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Revisar Propuesta | EDUNEXT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/admin/layout.css">
+  <link rel="stylesheet" href="../css/admin/review-editor.css">
+  <link rel="stylesheet" href="../css/admin/content-admin-responsive.css">
+</head>
+<body class="admin-body">
+  <div class="admin-shell">
+    <aside class="admin-sidebar" id="admin-sidebar"></aside>
+    <div class="admin-main">
+      <header class="admin-topbar" id="admin-topbar"></header>
+      <main class="admin-content" id="admin-content" aria-live="polite">
+        <section class="demo-banner">
+          <strong>Revisiones de demostración — No constituyen aprobaciones institucionales.</strong>
+        </section>
+        <header class="page-header">
+          <div>
+            <nav class="breadcrumb" aria-label="Migas de pan"><a href="index.html">Administración</a><span>/</span><a href="revision-contenidos.html">Centro de Revisión</a><span>/</span><span>Revisar Propuesta</span></nav>
+            <h1>Revisión de Contenido Educativo</h1>
+            <p class="page-subtitle" id="proposal-meta"></p>
+          </div>
+          <div class="page-actions">
+            <a class="button-secondary" href="revision-contenidos.html">Volver al centro</a>
+            <a class="button-secondary" href="versiones-contenido.html" id="link-compare">Comparar versiones</a>
+            <button class="button-primary" id="save-review" type="button">Guardar observaciones</button>
+            <button class="button-secondary" id="complete-review" type="button">Marcar revisión local completada</button>
+          </div>
+        </header>
+        <div class="review-layout">
+          <aside class="panel" id="panel-structure">
+            <h2>Estructura de la propuesta</h2>
+            <div id="structure-body"></div>
+          </aside>
+          <section class="panel panel-preview" id="panel-preview">
+            <h2>Vista previa del contenido</h2>
+            <p class="muted">Vista previa administrativa — No publicada.</p>
+            <div id="preview-body" class="preview-body"></div>
+          </section>
+          <aside class="panel" id="panel-criteria">
+            <h2>Criterios de revisión</h2>
+            <section class="criteria-group"><h3>Revisión estructural</h3><ul id="crit-struct"></ul></section>
+            <section class="criteria-group"><h3>Revisión pedagógica (apoyo humano)</h3><ul id="crit-ped"></ul><p class="muted">La selección no equivale a certificación pedagógica oficial.</p></section>
+            <section class="criteria-group"><h3>Revisión de accesibilidad</h3><ul id="crit-access"></ul></section>
+            <section class="criteria-group"><h3>Revisión de recursos</h3><ul id="crit-res"></ul></section>
+            <section class="criteria-group"><h3>Observaciones</h3><form id="obs-form"><label class="field"><span>Categoría</span><select name="category"><option value="estructural">Estructural</option><option value="pedagogico">Pedagógico</option><option value="accesibilidad">Accesibilidad</option><option value="recursos">Recursos</option><option value="seguridad">Seguridad</option></select></label><label class="field"><span>Bloque (opcional)</span><select name="blockId"><option value="">Sin asociar</option></select></label><label class="field"><span>Descripción</span><textarea name="text" rows="4" maxlength="400" required></textarea></label><button class="button-secondary" type="submit">Añadir observación</button></form><div id="obs-list"></div></section>
+          </aside>
+        </div>
+      </main>
+    </div>
+  </div>
+  <dialog class="admin-dialog" id="admin-dialog">
+    <div class="dialog-header">
+      <h2 id="dialog-title"></h2>
+      <button class="icon-button" id="close-dialog" aria-label="Cerrar">×</button>
+    </div>
+    <div class="dialog-content" id="dialog-content"></div>
+  </dialog>
+  <script type="module" src="../js/admin/review-editor.js"></script>
+</body>
+</html>

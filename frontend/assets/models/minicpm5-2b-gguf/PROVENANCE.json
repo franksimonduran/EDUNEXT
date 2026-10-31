@@ -1,0 +1,28 @@
+{
+  "model_id": "MiniCPM5-2B-Q4_K_M-GGUF",
+  "repository": "openbmb/MiniCPM5-2B-GGUF",
+  "revision": "2079a22f3beaa4e306449978533478fe0522f4b3",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "base_model_revision": "f97400052a43d642bbc6e9975e2397e3ae6a6b52",
+  "license": "Apache-2.0",
+  "license_source": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+  "chat_template_source": "https://huggingface.co/openbmb/MiniCPM5-2B/raw/f97400052a43d642bbc6e9975e2397e3ae6a6b52/chat_template.jinja",
+  "files": [
+    {
+      "path": "MiniCPM5-2B-Q4_K_M.gguf",
+      "bytes": 1561318368,
+      "sha256": "ec2d5801640099e97d8d7e8003ad4d81f336e757811f03a26173dddf386602fd"
+    },
+    {
+      "path": "chat_template.jinja",
+      "bytes": 5435,
+      "sha256": "bc1f78ef8a86b6bdf64a056cf89dd0ac506db4f198ab363d85168e2500ab44dd"
+    },
+    {
+      "path": "LICENSE-APACHE-2.0.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    }
+  ],
+  "scope": "Internal local-tutor weight installation. Apache-2.0 model weights, not a pedagogical, device-compatibility, Android or release approval."
+}

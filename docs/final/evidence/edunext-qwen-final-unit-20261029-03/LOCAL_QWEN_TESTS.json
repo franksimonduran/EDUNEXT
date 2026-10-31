@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-29T06:26:32.065Z",
+  "scope": "Service unit tests with fake GPU/engine, plus real installed artifact hashes. NOT real model generation, device compatibility, pedagogy, authorization or pilot approval.",
+  "checks": [
+    {
+      "name": "Explicit consent before probe, runtime or model resources",
+      "pass": true
+    },
+    {
+      "name": "Unsupported WebGPU fails closed without model or runtime requests",
+      "pass": true
+    },
+    {
+      "name": "Private/unsafe questions and malformed output rejected",
+      "pass": true
+    },
+    {
+      "name": "Pinned local-only runtime configuration and bounded single-turn generation",
+      "pass": true
+    },
+    {
+      "name": "Duplicate generation rejected and late answer suppressed after disposal",
+      "pass": true
+    },
+    {
+      "name": "Disposal during GPU probe prevents later runtime loading",
+      "pass": true
+    },
+    {
+      "name": "Public model files and wasm match installed hashes",
+      "pass": true
+    },
+    {
+      "name": "Existing API, Argos, SW, IDB, manifest and historical gates unchanged",
+      "pass": true
+    }
+  ],
+  "hashes": [
+    {
+      "file": "frontend/js/services/local-tutor.service.js",
+      "sha256": "ddf9bf892760bafcf3406574f68cfa0ff02aa78fd3e125491f32b2812cd96faa"
+    },
+    {
+      "file": "frontend/js/workers/local-tutor.worker.js",
+      "sha256": "695ca002afc4fa1f45422156b2536bb6c7806f2b4949d9ceb4df9c999fb340de"
+    },
+    {
+      "file": "frontend/js/student/local-tutor.js",
+      "sha256": "1bbecfc7b7c0150e724328a28c9ebed063260aaf4fc84f623f654d6e6976c5c9"
+    },
+    {
+      "file": "frontend/js/student/tutor.js",
+      "sha256": "caff98cbf13d6f3476c481a9d5900c9287857335e670956b478573e8bb77ce2a"
+    },
+    {
+      "file": "frontend/student/tutor.html",
+      "sha256": "764ef95d2cb4d8f716879fb05e7c0c9d2d01dec40a80668bed815e0b67747b3e"
+    },
+    {
+      "file": "frontend/css/student/local-tutor.css",
+      "sha256": "661b901130ede181447c5d7af4b5459e3139f2a8d9cc56c671894b6f7ae479e0"
+    },
+    {
+      "file": "tools/install-local-qwen.cjs",
+      "sha256": "2adc8a0effe91550b135afd403e332c3d3f4926ebff67a7983fa399ffdb344f2"
+    },
+    {
+      "file": "tools/final-inventory.cjs",
+      "sha256": "364cd5e48eed899dd14136df62894b3750a1ba5f9fcecfa9c9c61a0218532f20"
+    },
+    {
+      "file": ".gitignore",
+      "sha256": "27a98b5f197f2d147d21f8c264f8c56e67b47d3c82491f622f80b2fdcfbd39ae"
+    },
+    {
+      "file": "tests/local-qwen.cjs",
+      "sha256": "f40b7349cfdc27f098f467728e4430474ca60ede144ed0df4ee50f0b8f5121a5"
+    },
+    {
+      "file": "tests/frontend-refresh.browser.cjs",
+      "sha256": "ee60f1cb2989f1b574763091ab78d33d6e934df3a7aa05ad42b53780696a76f4"
+    },
+    {
+      "file": "tests/fixtures/local-qwen-browser.cjs",
+      "sha256": "b1ab2b3540081773e4ba01511d57a12ab1d27e59fd589d16b8a60bb37e570771"
+    },
+    {
+      "file": "docs/LOCAL_QWEN_SETUP.md",
+      "sha256": "9831753cf9cd9bcfc705dd69d670710c12bdef7ec5c56de2a212665bef5a8a1f"
+    },
+    {
+      "file": "README.md",
+      "sha256": "0fe02796450c463f910dda8cba417bc0c261a8cd5e31cc2bbf566df47e0ee9f1"
+    },
+    {
+      "file": "frontend/js/vendor/webllm/index.js",
+      "sha256": "ae2642e73a4a9896c21efb3a067c4666446f8b49cbe2012f4b576f5d83d5f206"
+    },
+    {
+      "file": "frontend/js/vendor/webllm/LICENSE",
+      "sha256": "87935f332472db09253871326ef23d5d6a45f4fd2e6c96772f72052866dfab0d"
+    },
+    {
+      "file": "frontend/js/vendor/webllm/LOGLEVEL-LICENSE",
+      "sha256": "18e8cf5f0dbaf13d9562e93b9bef79aff2acff18fab698c2d589d2159375a1f9"
+    },
+    {
+      "file": "frontend/js/vendor/webllm/PROVENANCE.json",
+      "sha256": "8712c0ea983542f574076eb7898cfc4dfb996b923ac68413bbfa6c9dc499f9bd"
+    },
+    {
+      "file": "frontend/js/vendor/webllm/QWEN3-LICENSE",
+      "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+    }
+  ],
+  "pass": true,
+  "decision": "NO-GO"
+}

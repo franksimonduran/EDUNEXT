@@ -1,0 +1,64 @@
+.tutor-chat {min-width:0;display:grid;grid-template-rows:auto minmax(0,1fr) auto auto;height:clamp(590px,calc(var(--tutor-viewport-height,100dvh) - 275px),820px);background:white;border:1px solid #dce5f3;border-radius:18px;box-shadow:0 6px 24px #18376b05;overflow:hidden;}
+.tutor-chat-toolbar {display:flex;justify-content:space-between;align-items:center;gap:10px;padding:15px 17px;border-bottom:1px solid #e9edf6;}
+.tutor-chat-toolbar > span {display:flex;align-items:center;gap:8px;color:var(--color-secondary);font-size:.8125rem;font-weight:600;}
+.tutor-chat-toolbar > span .icon {color:var(--tutor-accent);width:19px;height:19px;}
+.tutor-chat-toolbar .button-secondary {min-height:38px;font-size:.6875rem;padding:8px 10px;}
+.tutor-log {min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:22px 18px;scrollbar-width:thin;scrollbar-color:#cbd8ed transparent;background:linear-gradient(180deg,#fcfdff,#f9fbff);outline-offset:-4px;}
+.tutor-welcome {text-align:center;padding:7px 4px;}
+.welcome-avatar {width:64px;height:64px;margin:0 auto 17px;border-radius:20px;}
+.welcome-avatar .icon {width:34px;height:34px;}
+.tutor-welcome h2 {font-size:1.0625rem;line-height:1.7;max-width:420px;margin:0 auto;}
+.tutor-welcome > p {font-size:.8125rem;color:var(--color-muted);line-height:1.8;margin-top:9px;}
+.tutor-welcome p.welcome-note {font-size:.6875rem;margin-top:18px;}
+.tutor-suggestions {display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px;}
+.tutor-suggestions button {min-width:0;display:flex;align-items:flex-start;gap:10px;min-height:90px;text-align:left;padding:13px;border:1px solid #e0e7f3;border-radius:11px;background:white;color:var(--color-text);font:inherit;transition:border-color var(--transition),background var(--transition);}
+.tutor-suggestions button:hover {background:#f8f5ff;border-color:#c2adde;}
+.suggestion-icon {display:grid;place-items:center;width:30px;height:30px;flex-shrink:0;border-radius:9px;background:var(--tutor-soft);color:var(--tutor-accent);}
+.suggestion-icon .icon {width:16px;height:16px;}
+.tutor-suggestions strong {display:block;font-size:.75rem;line-height:1.5;}
+.tutor-suggestions small {display:block;color:var(--color-muted);font-size:.6875rem;line-height:1.7;margin-top:6px;}
+.tutor-message {margin-bottom:22px;min-width:0;}
+.tutor-message-user {max-width:86%;margin-left:auto;}
+.message-author {font-size:.6875rem;font-weight:600;color:var(--color-muted);line-height:1.6;margin-bottom:7px;}
+.tutor-message-user .message-author {text-align:right;}
+.tutor-bubble {border:1px solid #e0e7f3;border-radius:3px 14px 14px 14px;padding:16px;background:white;color:var(--color-text);font-size:.875rem;line-height:1.9;overflow-wrap:anywhere;}
+.tutor-message-user .tutor-bubble {background:var(--color-primary);border-color:var(--color-primary);color:white;border-radius:14px 3px 14px 14px;white-space:normal;}
+.tutor-message-assistant {display:flex;gap:10px;align-items:flex-start;}
+.tutor-avatar {width:30px;height:30px;flex-shrink:0;border-radius:10px;margin-top:22px;}
+.tutor-avatar .icon {width:18px;height:18px;}
+.assistant-message-content {flex:1;min-width:0;max-width:740px;}
+.response-tag {display:inline-block;margin-left:5px;padding:2px 6px;font-size:.625rem;background:var(--tutor-soft);color:#6336a6;border-radius:5px;font-weight:500;}
+.tutor-bubble > p + p {margin-top:14px;}
+.tutor-explanation {margin-top:14px;padding:13px;border-radius:10px;background:var(--color-background);border-left:3px solid #b7cceb;}
+.tutor-explanation h3,.tutor-math h3 {font-size:.75rem;margin:0 0 6px;}
+.tutor-explanation p {font-size:.8125rem;}
+.tutor-example {background:#f6f1fe;border-left-color:#ad90d6;}
+.tutor-hint {background:#fff7e9;border-left-color:#d8ad62;}
+.tutor-question {background:#edf7f0;border-left-color:#88b898;}
+.tutor-steps {padding-left:22px;display:grid;gap:12px;}
+.tutor-review-link {display:block;margin-top:15px;padding-top:12px;border-top:1px solid #e9eef7;color:var(--color-primary-hover);font-size:.75rem;line-height:1.7;min-height:44px;}
+.tutor-notice {font-size:.8125rem;color:var(--color-secondary);}
+.tutor-quick-actions {display:flex;gap:7px;flex-wrap:wrap;margin-top:10px;}
+.tutor-quick-actions button {min-height:36px;padding:7px 9px;border:1px solid #dce5f3;border-radius:8px;color:var(--color-primary-hover);background:white;font:inherit;font-size:.625rem;}
+.tutor-quick-actions button:hover {background:var(--color-info-background);}
+.tutor-math {margin-top:18px;padding:16px;border:1px solid #dce7f7;border-radius:12px;background:#f7faff;}
+.tutor-operation {display:flex;align-items:center;justify-content:center;gap:17px;font-size:1.4rem;padding:14px 0;color:var(--color-secondary);flex-wrap:wrap;}
+.tutor-fraction {display:inline-grid;grid-template-rows:1fr 1fr;text-align:center;min-width:36px;font-size:1.25rem;line-height:1.5;}
+.tutor-fraction > span:first-child {border-bottom:2px solid var(--color-secondary);padding:0 7px 2px;}
+.tutor-fraction > span:last-child {padding-top:2px;}
+.tutor-bubble .learning-figure {padding:12px;margin-top:0;}
+.tutor-bubble .learning-figure figcaption {font-size:.75rem;}
+.tutor-new-messages-row {border-top:1px solid #e9edf6;padding:0 16px;background:#fff;}
+.tutor-new-messages-row > button {min-height:36px;margin:8px 0;font-size:.6875rem;}
+#tutor-request-status:not(:empty) {font-size:.6875rem;color:var(--color-muted);padding:7px 0;}
+.tutor-composer {padding:14px 16px max(12px,env(safe-area-inset-bottom));background:white;}
+.composer-row {display:flex;gap:10px;align-items:flex-end;}
+.composer-row textarea {display:block;resize:none;min-width:0;width:100%;min-height:62px;max-height:128px;border:1px solid #cfdcec;border-radius:11px;padding:12px 13px;font:inherit;font-size:.875rem;line-height:1.6;background:#fcfdff;color:var(--color-text);overflow-y:auto;}
+.composer-row textarea:focus {outline:0;border-color:var(--color-primary);box-shadow:var(--focus-ring);}
+.composer-row textarea[aria-invalid='true'] {border-color:var(--color-error);}
+.composer-row .button-primary {width:44px;min-width:44px;min-height:44px;height:44px;border-radius:10px;box-shadow:none;}
+.composer-row .button-primary > span {display:none;}
+.composer-row .button-primary .icon {width:19px;height:19px;}
+.composer-meta {display:flex;justify-content:space-between;gap:9px;margin-top:8px;font-size:.6875rem;color:var(--color-muted);}
+.composer-privacy {margin-top:7px;font-size:.6875rem;color:var(--color-muted);}
+.tutor-input-error:not(:empty) {font-size:.75rem;color:var(--color-error);margin-top:8px;}

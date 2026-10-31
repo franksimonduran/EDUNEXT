@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario Docente - EDUNEXT</title>
+  <link rel="stylesheet" href="css/monitor.css">
+</head>
+<body data-view="calendar">
+  <header class="topbar" role="banner">
+    <nav class="topbar-nav" aria-label="Navegación principal">
+      <a href="monitor/index.html" class="brand">EDUNEXT</a>
+      <ul class="topbar-menu">
+        <li><a href="calendario.html" aria-current="page">Calendario</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="planificacion-semanal.html">Planificación</a></li>
+        <li><a href="recordatorios.html">Recordatorios</a></li>
+        <li><a href="notificaciones.html">Notificaciones</a></li>
+      </ul>
+      <button type="button" data-open="notifications" aria-label="Notificaciones" aria-expanded="false">
+        <span aria-hidden="true">🔔</span>
+      </button>
+    </nav>
+  </header>
+  <main id="app" role="main"></main>
+  <dialog id="monitor-dialog" aria-modal="true">
+    <header>
+      <h2 id="dialog-title"></h2>
+      <button type="button" id="dialog-close" aria-label="Cerrar">✕</button>
+    </header>
+    <div id="dialog-content"></div>
+  </dialog>
+  <script type="module" src="js/monitor/organizer.js"></script>
+</body>
+</html>

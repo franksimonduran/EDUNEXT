@@ -1,0 +1,88 @@
+# Local synthetic development only. Not an authorized staging/production deployment.
+name: aithron-local
+services:
+  db:
+    image: postgres:16-alpine@sha256:f4610795587492cd4fb887c2dc3de301b813278bb6f616992061141b5f15ac36
+    environment:
+      POSTGRES_DB: aithron_local
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${PG_ADMIN_PASSWORD:?Generate a new local admin password}
+      AITHRON_APP_PASSWORD: ${PG_APP_PASSWORD:?Generate a new local app password}
+      AITHRON_MIGRATION_PASSWORD: ${PG_MIGRATION_PASSWORD:?Generate a new local migration password}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./infra/docker/init-local-db.sh:/docker-entrypoint-initdb.d/01-aithron.sh:ro
+    networks: [private]
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -h 127.0.0.1 -U postgres -d aithron_local"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: "on-failure:3"
+    logging: &logging
+      driver: json-file
+      options: {max-size: 10m, max-file: "3"}
+  api:
+    image: aithron-api:${BUILD_REVISION:-local-dev}
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+      args: {REQUIRE_LOCK: "false", BUILD_REVISION: "${BUILD_REVISION:-local-dev}"}
+    environment: &api-environment
+      APP_ENV: development
+      DEBUG: "false"
+      DATABASE_URL: postgresql+asyncpg://aithron_app:${PG_APP_PASSWORD:?Required}@db:5432/aithron_local
+      DATABASE_SSL_MODE: disable
+      SECRET_KEY: ${SECRET_KEY:?Generate a local signing secret}
+      CSRF_SECRET_KEY: ${CSRF_SECRET_KEY:?Generate a different local CSRF secret}
+      CORS_ORIGINS: http://127.0.0.1:8080,http://localhost:8080
+      TRUSTED_HOSTS: localhost,127.0.0.1,api
+      COOKIE_SECURE: "false"
+      EXPECTED_ALEMBIC_REVISION: phase46receipts
+      AITHRON_AI_ENABLED: "false"
+      SYNC_ENABLED: "false"
+    depends_on:
+      db: {condition: service_healthy}
+    networks: [private, edge]
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    stop_grace_period: 40s
+    restart: "on-failure:3"
+    logging: *logging
+  migrate:
+    image: aithron-api:${BUILD_REVISION:-local-dev}
+    profiles: [tools]
+    environment:
+      <<: *api-environment
+      DATABASE_COMMAND_TIMEOUT_SECONDS: "300"
+      DATABASE_URL: postgresql+asyncpg://aithron_migrator:${PG_MIGRATION_PASSWORD:?Required}@db:5432/aithron_local
+    command: [python, -m, alembic, upgrade, head]
+    networks: [private]
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    logging: *logging
+  web:
+    image: aithron-web:${BUILD_REVISION:-local-dev}
+    build:
+      context: .
+      dockerfile: infra/docker/frontend.Dockerfile
+      args: {BUILD_REVISION: "${BUILD_REVISION:-local-dev}"}
+    ports: ["127.0.0.1:8080:8080"]
+    depends_on:
+      api: {condition: service_healthy}
+    networks: [edge]
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    restart: "on-failure:3"
+    logging: *logging
+networks:
+  private: {internal: true}
+  edge: {}
+volumes:
+  postgres_data: {}

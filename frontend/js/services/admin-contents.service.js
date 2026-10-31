@@ -1,0 +1,12 @@
+import {assignedCourses} from './monitor-courses.service.js';
+import {listDrafts} from './monitor-content-drafts.service.js';
+import {contentResources} from './monitor-resources.service.js';
+export const courseMap={};
+export async function listContentCatalog(filters={}){
+ const courses=await assignedCourses(),resources=await contentResources(),proposals=await listReviewProposals();const rows=[];
+ for(const c of courses){const common={courseId:c.id,courseName:c.name.es,grade:c.grade,state:'available',source:'Catálogo base de demostración',version:c.version||1};rows.push({...common,id:'course:'+c.grade+':'+c.id,type:'course',title:c.name.es+' '+c.grade+'º',units:c.units.length,lessons:c.units.flatMap(u=>u.lessons).length,resources:[]});for(const u of c.units){rows.push({...common,id:u.id,type:'unit',title:u.title,description:u.description,unitId:u.id,resources:[]});for(const l of u.lessons)rows.push({...common,...l,id:l.id,type:'lesson',unitId:u.id,unitTitle:u.title,blocks:l.blocks||[],resources:resources.filter(r=>r.courseId===c.id&&(!r.grade||r.grade===c.grade))});}}
+ const filtered=rows.filter(r=>(!filters.grade||String(r.grade)===String(filters.grade))&&(!filters.course||r.courseId===filters.course)&&(!filters.type||r.type===filters.type)&&(!filters.state||r.state===filters.state)&&(!filters.q||r.title.toLocaleLowerCase('es').includes(filters.q.toLocaleLowerCase('es'))));
+ return {rows:filtered,summary:{courses:new Set(rows.filter(r=>r.type==='course').map(r=>r.courseId)).size,units:new Set(rows.filter(r=>r.type==='unit').map(r=>r.id)).size,lessons:new Set(rows.filter(r=>r.type==='lesson').map(r=>r.id)).size,resources:resources.length,proposals:proposals.length,errors:null}};
+}
+export async function getCourseUnits(courseId,grade){return (await assignedCourses()).find(c=>c.id===courseId&&c.grade===Number(grade))?.units||[];}
+export async function listReviewProposals(filters={}){const courses=await assignedCourses();return (await listDrafts()).filter(d=>d.state!=='archived').map(d=>({...d,type:d.kind,courseName:courses.find(c=>c.id===d.courseId&&c.grade===d.grade)?.name.es||d.courseId,author:'Docente de demostración',source:'Borrador de este navegador; no recibido remotamente',resources:[]})).filter(d=>(!filters.grade||String(d.grade)===String(filters.grade))&&(!filters.course||d.courseId===filters.course)&&(!filters.type||d.type===filters.type)&&(!filters.q||d.title.toLocaleLowerCase('es').includes(filters.q.toLocaleLowerCase('es'))));}

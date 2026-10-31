@@ -1,0 +1,25 @@
+import {apiRequest} from './auth.service.js';
+
+const id=value=>encodeURIComponent(value);
+const query=values=>new URLSearchParams(Object.entries(values).filter(([,v])=>v!==undefined&&v!==null)).toString();
+export const operationKey=()=>crypto.randomUUID();
+const write=(path,body,key,method='POST')=>apiRequest(path,{method,body,headers:key?{'Idempotency-Key':key}:{}});
+export const ownAssignments=(page=1)=>apiRequest(`/assignments/me?${query({page,page_size:25})}`);
+export const ownCalendar=(start,end,page=1)=>apiRequest(`/academic-calendar/me?${query({start,end,page,page_size:100})}`);
+export const ownPlannerSummary=()=>apiRequest('/planner-summary/me');
+export const assignmentDetail=task=>apiRequest(`/assignments/${id(task)}`);
+export const beginSubmission=(task,key)=>write(`/assignments/${id(task)}/submissions`,undefined,key);
+export const readSubmission=submission=>apiRequest(`/assignment-submissions/${id(submission)}`);
+export const saveSubmission=(submission,revision,text)=>write(`/assignment-submissions/${id(submission)}`,{expected_revision:revision,response_text:text},null,'PATCH');
+export const submitAssignment=(submission,revision,key)=>write(`/assignment-submissions/${id(submission)}/submit`,{expected_revision:revision},key);
+export const resubmitAssignment=(submission,key)=>write(`/assignment-submissions/${id(submission)}/resubmit`,undefined,key);
+export const createAssignment=data=>write('/assignments',data);
+export const teachingContexts=()=>apiRequest('/planner-context/me?page_size=100');
+export const publishAssignment=(task,revision,key)=>write(`/assignments/${id(task)}/publish`,{expected_revision:revision},key);
+export const assignedAssignments=(page=1)=>apiRequest(`/assignments?page=${page}&page_size=25`);
+export const assignmentSubmissions=task=>apiRequest(`/assignments/${id(task)}/submissions?page_size=100`);
+export const createFeedback=(submission,data)=>write(`/assignment-submissions/${id(submission)}/feedback`,data);
+export const publishFeedback=(feedback,revision)=>write(`/assignment-feedback/${id(feedback)}/publish`,{expected_revision:revision});
+export const ownReinforcements=()=>apiRequest('/reinforcement-plans/me');
+export const createReinforcement=data=>write('/reinforcement-plans',data);
+export const createCalendarEvent=data=>write('/calendar-events',data);

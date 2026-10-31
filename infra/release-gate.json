@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "phase47Accepted": false,
+  "phase48Accepted": false,
+  "dependencyLockReviewed": false,
+  "stagingDeploymentAuthorized": false,
+  "providerConfigured": false,
+  "separateEnvironmentsVerified": false,
+  "stagingVerified": false,
+  "restoreVerified": false,
+  "productionDeploymentAuthorized": false,
+  "responsibleApprovalRecorded": false,
+  "imageDigest": null,
+  "note": "Default deny. No deployment implementation or authorization. Update only through reviewed evidence and explicit operator approval."
+}

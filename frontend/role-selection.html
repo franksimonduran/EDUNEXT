@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#18469e">
+  <meta name="description" content="Vista previa de los espacios de Estudiante, Monitor y Administrador en EDUNEXT.">
+  <title>Selección de perfil | EDUNEXT</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/branding/mark.svg">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/app-shell.css">
+  <link rel="stylesheet" href="css/pages/role-selection.css">
+  <script type="module" src="js/pages/role-selection.js"></script>
+  <script type="module" src="js/offline/bootstrap.js"></script>
+</head>
+<body class="platform-page corporate-ui">
+  <a class="skip-link" href="#profiles-title">Ir a los perfiles</a>
+  <header class="app-header">
+    <div class="app-header-inner">
+      <a class="app-brand" href="login.html" aria-label="EDUNEXT, volver al inicio">
+        <img src="assets/images/branding/mark.svg" alt="" width="44" height="44">
+        <span><span class="app-brand-name">EDUNEXT</span><span class="app-brand-description">Plataforma educativa · Aprender sin límites</span></span>
+      </a>
+      <a class="button-secondary" href="login.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>Volver al inicio</a>
+    </div>
+  </header>
+  <main class="profiles-main">
+    <header class="profiles-heading">
+      <span class="preview-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>Perfiles de tu cuenta</span>
+      <h1 id="profiles-title" tabindex="-1">¿Cómo deseas continuar?</h1>
+      <p>Selecciona tu espacio dentro de EDUNEXT</p>
+    </header>
+    <section class="role-grid" aria-label="Perfiles autorizados" aria-describedby="preview-explanation" aria-busy="true">
+      <article class="role-card" data-role="STUDENT" data-selected="false">
+        <div class="role-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 13C18 8 10 8 5 10v27c7-2 13-1 19 3 6-4 12-5 19-3V10c-5-2-13-2-19 3Zm0 0v27M11 17c3-1 6 0 8 1m-8 6c3-1 6 0 8 1m10-7c2-1 5-2 8-1m-8 8c2-1 5-2 8-1"/></svg></div>
+        <h2>Estudiante</h2>
+        <p>EDUNEXT Student</p>
+        <p class="role-description">Aprende, practica y descubre nuevos conocimientos</p>
+        <p class="role-state" id="student-state">Comprobando sesión…</p>
+        <button class="button-primary" type="button" data-select-role="STUDENT" aria-pressed="false" aria-describedby="student-state" disabled><span class="spinner" aria-hidden="true" hidden></span><span>Continuar como estudiante</span></button>
+      </article>
+      <article class="role-card" data-role="MONITOR" data-selected="false">
+        <div class="role-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="18" y="6" width="25" height="23" rx="3"/><path d="M25 13h11m-11 6h7M11 29v13m-6 0V31a6 6 0 0 1 6-6h3l8 8 6-6m-11 8v7M31 29v9m-5 4 5-4 5 4"/><circle cx="11" cy="15" r="5"/></svg></div>
+        <h2>Monitor / Docente</h2>
+        <p>EDUNEXT Monitor</p>
+        <p class="role-description">Acompaña el aprendizaje y gestiona tus aulas</p>
+        <p class="role-state" id="monitor-state">Comprobando sesión…</p>
+        <button class="button-primary" type="button" data-select-role="MONITOR" aria-pressed="false" aria-describedby="monitor-state" disabled><span class="spinner" aria-hidden="true" hidden></span><span>Continuar como monitor</span></button>
+      </article>
+      <article class="role-card" data-role="ADMIN" data-selected="false">
+        <div class="role-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m24 5 16 6v12c0 10-16 20-16 20S8 33 8 23V11z"/><path d="m17 24 5 5 10-11"/></svg></div>
+        <h2>Administrador</h2>
+        <p>EDUNEXT Admin</p>
+        <p class="role-description">Gestiona usuarios, instituciones y contenidos</p>
+        <p class="role-state" id="admin-state">Comprobando sesión…</p>
+        <button class="button-primary" type="button" data-select-role="ADMIN" aria-pressed="false" aria-describedby="admin-state" disabled><span class="spinner" aria-hidden="true" hidden></span><span>Continuar como administrador</span></button>
+      </article>
+    </section>
+    <p class="preview-notice" id="preview-explanation">Solo se muestran los perfiles asignados a tu cuenta. La sesión y los permisos se validan en el servidor.</p>
+    <p class="feedback" id="role-status" role="status" aria-live="polite" aria-atomic="true">Comprobando tu sesión…</p>
+    <div class="feedback" id="role-error" role="alert" hidden>
+      <p id="role-error-message">No se pudieron cargar tus perfiles. Revisa tu conexión e inténtalo de nuevo.</p>
+      <div class="feedback-actions"><button class="button-secondary" id="retry-preview" type="button">Reintentar</button><a class="button-secondary" href="demo.html">Explorar demo sin iniciar sesión</a></div>
+    </div>
+    <div class="feedback" id="role-denied" hidden>
+      <p>Tu cuenta no tiene perfiles habilitados en esta institución. Contacta al administrador.</p>
+      <div class="feedback-actions"><a class="button-secondary" href="login.html">Volver al inicio de sesión</a></div>
+    </div>
+    <noscript><p class="notice">Activa JavaScript para continuar. La selección de perfiles requiere una sesión autenticada.</p></noscript>
+  </main>
+  <footer class="app-footer"><strong>EDUNEXT</strong> · Un espacio para aprender y crecer.</footer>
+</body>
+</html>

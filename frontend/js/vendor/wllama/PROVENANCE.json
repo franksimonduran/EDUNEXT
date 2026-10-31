@@ -1,0 +1,25 @@
+{
+  "package": "@wllama/wllama",
+  "version": "3.8.1",
+  "source": "https://registry.npmjs.org/@wllama/wllama/-/wllama-3.8.1.tgz",
+  "integrity": "sha512-Pl7BEJhPU8OHnV/yhn3DFZYhLLOdSHh+4TND79WCftHnlUAdQPAsyc/CfIOY+4mVxvf5VW3Xw3Uf7BBfotS1gw==",
+  "license": "MIT",
+  "files": [
+    {
+      "path": "index.js",
+      "source": "package/esm/index.js",
+      "sha256": "e5506753e41a59c11f61f2c52422045be9fc76e32a7e47f037aaad5df4ec723e"
+    },
+    {
+      "path": "wllama.wasm",
+      "source": "package/esm/wasm/wllama.wasm",
+      "sha256": "551f13439366eff11e057b1b91fe46a7fdac29d56d67372d4c5f19a549dfe70c"
+    },
+    {
+      "path": "LICENSE",
+      "source": "package/LICENCE",
+      "sha256": "5866e3bd7e3cbd3f7c8bea6efd8a1e7fa7cc8de68c30f428aff7c6584a0fb720"
+    }
+  ],
+  "notes": "Vendored for opt-in browser inference from same-origin files only; no CDN or remote model fallback. Keep licence text when redistributing."
+}

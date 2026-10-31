@@ -1,0 +1,3362 @@
+{
+  "date": "2026-10-27T19:26:02.409Z",
+  "scope": "Public demo, real Edge, synthetic disposable profile. No authenticated E2E, PostgreSQL, physical mobile, screen reader or WCAG certification.",
+  "results": [
+    {
+      "page": "login.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Iniciar sesión | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "login.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Iniciar sesión | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "login.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Iniciar sesión | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "register.html",
+      "width": 320,
+      "overflow": true,
+      "title": "Crea tu cuenta | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [
+        "account-options",
+        "account-option",
+        "field-help"
+      ],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "register.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Crea tu cuenta | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "register.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Crea tu cuenta | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "forgot-password.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Recuperar acceso | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "forgot-password.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Recuperar acceso | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "forgot-password.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Recuperar acceso | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "reset-password.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Nueva contraseña | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "reset-password.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Nueva contraseña | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "reset-password.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Nueva contraseña | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "student/index.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Inicio del estudiante | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/index.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Inicio del estudiante | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/index.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Inicio del estudiante | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/aprende.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis cursos | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/aprende.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis cursos | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/aprende.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis cursos | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/practica.html",
+      "width": 320,
+      "overflow": false,
+      "title": "¡Vamos a practicar! | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/practica.html",
+      "width": 768,
+      "overflow": false,
+      "title": "¡Vamos a practicar! | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/practica.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "¡Vamos a practicar! | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/juegos.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Aprende jugando | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/juegos.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Aprende jugando | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/juegos.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Aprende jugando | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/evaluaciones.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis evaluaciones | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/evaluaciones.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis evaluaciones | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/evaluaciones.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis evaluaciones | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/agenda.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mi Agenda | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 12,
+        "smallTextCount": 5,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          },
+          {
+            "tag": "SPAN",
+            "className": "cal-dot",
+            "text": "1",
+            "fontSize": 12
+          },
+          {
+            "tag": "SPAN",
+            "className": "cal-dot",
+            "text": "1",
+            "fontSize": 12
+          },
+          {
+            "tag": "SPAN",
+            "className": "cal-dot",
+            "text": "1",
+            "fontSize": 12
+          },
+          {
+            "tag": "SPAN",
+            "className": "cal-dot",
+            "text": "1",
+            "fontSize": 12
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/agenda.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mi Agenda | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 12,
+        "smallTextCount": 5,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          },
+          {
+            "tag": "SPAN",
+            "className": "cal-dot",
+            "text": "1",
+            "fontSize": 12
+          },
+          {
+            "tag": "SPAN",
+            "className": "cal-dot",
+            "text": "1",
+            "fontSize": 12
+          },
+          {
+            "tag": "SPAN",
+            "className": "cal-dot",
+            "text": "1",
+            "fontSize": 12
+          },
+          {
+            "tag": "SPAN",
+            "className": "cal-dot",
+            "text": "1",
+            "fontSize": 12
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/agenda.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mi Agenda | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 12,
+        "smallTextCount": 5,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          },
+          {
+            "tag": "SPAN",
+            "className": "cal-dot",
+            "text": "1",
+            "fontSize": 12
+          },
+          {
+            "tag": "SPAN",
+            "className": "cal-dot",
+            "text": "1",
+            "fontSize": 12
+          },
+          {
+            "tag": "SPAN",
+            "className": "cal-dot",
+            "text": "1",
+            "fontSize": 12
+          },
+          {
+            "tag": "SPAN",
+            "className": "cal-dot",
+            "text": "1",
+            "fontSize": 12
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/progreso.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mi progreso | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/progreso.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mi progreso | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/progreso.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mi progreso | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/misiones.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis misiones | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/misiones.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis misiones | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/misiones.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis misiones | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/logros.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis logros | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/logros.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis logros | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/logros.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis logros | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/descargas.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Centro de Descargas | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/descargas.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Centro de Descargas | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/descargas.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Centro de Descargas | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/tutor.html",
+      "width": 320,
+      "overflow": false,
+      "title": "AITHRON TUTOR | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 10,
+        "smallTextCount": 24,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          },
+          {
+            "tag": "SPAN",
+            "className": "tutor-kicker",
+            "text": "Tu compañero de aprendizaje",
+            "fontSize": 10
+          },
+          {
+            "tag": "SPAN",
+            "className": "tutor-mode",
+            "text": "Modo demostración",
+            "fontSize": 11
+          },
+          {
+            "tag": "SUMMARY",
+            "className": "",
+            "text": "Conversaciones de esta página",
+            "fontSize": 13
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Aithron Tutor",
+            "fontSize": 12
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Explícame un tema",
+            "fontSize": 13
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Dame un ejemplo",
+            "fontSize": 13
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Ayúdame con una pregunta",
+            "fontSize": 13
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Quiero repasar",
+            "fontSize": 13
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Enter para enviar · Shift + Enter para salto de línea",
+            "fontSize": 11
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "0 / 1000",
+            "fontSize": 11
+          },
+          {
+            "tag": "SUMMARY",
+            "className": "",
+            "text": "Contexto académico",
+            "fontSize": 13
+          },
+          {
+            "tag": "DT",
+            "className": "",
+            "text": "Grado",
+            "fontSize": 10
+          },
+          {
+            "tag": "DD",
+            "className": "",
+            "text": "4.º primaria",
+            "fontSize": 12
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Matemática",
+            "fontSize": 11
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "¿Qué es una fracción?",
+            "fontSize": 11
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Comunicación",
+            "fontSize": 11
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Leemos para comprender",
+            "fontSize": 11
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Ciencia y Tecnología",
+            "fontSize": 11
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Conoce un ecosistema",
+            "fontSize": 11
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Personal Social",
+            "fontSize": 11
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Somos parte de una comunidad",
+            "fontSize": 11
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Inglés",
+            "fontSize": 11
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Saludos en inglés",
+            "fontSize": 11
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/tutor.html",
+      "width": 768,
+      "overflow": false,
+      "title": "AITHRON TUTOR | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 10,
+        "smallTextCount": 24,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          },
+          {
+            "tag": "SPAN",
+            "className": "tutor-kicker",
+            "text": "Tu compañero de aprendizaje",
+            "fontSize": 11
+          },
+          {
+            "tag": "SPAN",
+            "className": "tutor-mode",
+            "text": "Modo demostración",
+            "fontSize": 10
+          },
+          {
+            "tag": "SUMMARY",
+            "className": "",
+            "text": "Conversaciones de esta página",
+            "fontSize": 13
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Aithron Tutor",
+            "fontSize": 13
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Explícame un tema",
+            "fontSize": 12
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Dame un ejemplo",
+            "fontSize": 12
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Ayúdame con una pregunta",
+            "fontSize": 12
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Quiero repasar",
+            "fontSize": 12
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Enter para enviar · Shift + Enter para salto de línea",
+            "fontSize": 11
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "0 / 1000",
+            "fontSize": 11
+          },
+          {
+            "tag": "SUMMARY",
+            "className": "",
+            "text": "Contexto académico",
+            "fontSize": 13
+          },
+          {
+            "tag": "DT",
+            "className": "",
+            "text": "Grado",
+            "fontSize": 10
+          },
+          {
+            "tag": "DD",
+            "className": "",
+            "text": "4.º primaria",
+            "fontSize": 12
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Matemática",
+            "fontSize": 11
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "¿Qué es una fracción?",
+            "fontSize": 11
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Comunicación",
+            "fontSize": 11
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Leemos para comprender",
+            "fontSize": 11
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Ciencia y Tecnología",
+            "fontSize": 11
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Conoce un ecosistema",
+            "fontSize": 11
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Personal Social",
+            "fontSize": 11
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Somos parte de una comunidad",
+            "fontSize": 11
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Inglés",
+            "fontSize": 11
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Saludos en inglés",
+            "fontSize": 11
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/tutor.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "AITHRON TUTOR | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 10,
+        "smallTextCount": 24,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          },
+          {
+            "tag": "SPAN",
+            "className": "tutor-kicker",
+            "text": "Tu compañero de aprendizaje",
+            "fontSize": 11
+          },
+          {
+            "tag": "SPAN",
+            "className": "tutor-mode",
+            "text": "Modo demostración",
+            "fontSize": 11
+          },
+          {
+            "tag": "SUMMARY",
+            "className": "",
+            "text": "Conversaciones de esta página",
+            "fontSize": 13
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Aithron Tutor",
+            "fontSize": 13
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Explícame un tema",
+            "fontSize": 12
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Dame un ejemplo",
+            "fontSize": 12
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Ayúdame con una pregunta",
+            "fontSize": 12
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Quiero repasar",
+            "fontSize": 12
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Enter para enviar · Shift + Enter para salto de línea",
+            "fontSize": 11
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "0 / 1000",
+            "fontSize": 11
+          },
+          {
+            "tag": "SUMMARY",
+            "className": "",
+            "text": "Contexto académico",
+            "fontSize": 13
+          },
+          {
+            "tag": "DT",
+            "className": "",
+            "text": "Grado",
+            "fontSize": 10
+          },
+          {
+            "tag": "DD",
+            "className": "",
+            "text": "4.º primaria",
+            "fontSize": 12
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Matemática",
+            "fontSize": 11
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "¿Qué es una fracción?",
+            "fontSize": 11
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Comunicación",
+            "fontSize": 11
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Leemos para comprender",
+            "fontSize": 11
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Ciencia y Tecnología",
+            "fontSize": 11
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Conoce un ecosistema",
+            "fontSize": 11
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Personal Social",
+            "fontSize": 11
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Somos parte de una comunidad",
+            "fontSize": 11
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Inglés",
+            "fontSize": 11
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Saludos en inglés",
+            "fontSize": 11
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/traductor.html",
+      "width": 320,
+      "overflow": false,
+      "title": "AITHRON TRANSLATE | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/traductor.html",
+      "width": 768,
+      "overflow": false,
+      "title": "AITHRON TRANSLATE | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/traductor.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "AITHRON TRANSLATE | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/pronuncia.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Aithron Pronuncia | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 9,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Saludos",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Saludos",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Animales",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Animales",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Colores",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Objetos escolares",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Números",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Números",
+            "fontSize": 13.6
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/pronuncia.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Aithron Pronuncia | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 9,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Saludos",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Saludos",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Animales",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Animales",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Colores",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Objetos escolares",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Números",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Números",
+            "fontSize": 13.6
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/pronuncia.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Aithron Pronuncia | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 9,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Saludos",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Saludos",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Animales",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Animales",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Colores",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Objetos escolares",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Números",
+            "fontSize": 13.6
+          },
+          {
+            "tag": "SPAN",
+            "className": "pron-card-topic",
+            "text": "Números",
+            "fontSize": 13.6
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/perfil.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mi Perfil | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/perfil.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mi Perfil | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/perfil.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mi Perfil | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/configuracion.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Configuración | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/configuracion.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Configuración | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "student/configuracion.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Configuración | AITHRON EDU",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "BUTTON",
+            "className": "avatar-button",
+            "text": "EX",
+            "fontSize": 13
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "monitor/index.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Dashboard Monitor | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/index.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Dashboard Monitor | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/index.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Dashboard Monitor | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/cursos.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis Cursos | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13.12,
+        "smallTextCount": 15,
+        "smallText": [
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "4.º primaria · 4.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "5.º primaria · 5.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "6.º primaria · 6.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "4.º primaria · 4.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "5.º primaria · 5.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "6.º primaria · 6.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "4.º primaria · 4.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "5.º primaria · 5.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "6.º primaria · 6.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "4.º primaria · 4.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "5.º primaria · 5.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "6.º primaria · 6.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "4.º primaria · 4.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "5.º primaria · 5.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "6.º primaria · 6.º primaria — Sección A",
+            "fontSize": 13.12
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "monitor/cursos.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis Cursos | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13.12,
+        "smallTextCount": 15,
+        "smallText": [
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "4.º primaria · 4.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "5.º primaria · 5.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "6.º primaria · 6.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "4.º primaria · 4.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "5.º primaria · 5.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "6.º primaria · 6.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "4.º primaria · 4.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "5.º primaria · 5.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "6.º primaria · 6.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "4.º primaria · 4.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "5.º primaria · 5.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "6.º primaria · 6.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "4.º primaria · 4.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "5.º primaria · 5.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "6.º primaria · 6.º primaria — Sección A",
+            "fontSize": 13.12
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "monitor/cursos.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis Cursos | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13.12,
+        "smallTextCount": 15,
+        "smallText": [
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "4.º primaria · 4.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "5.º primaria · 5.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "6.º primaria · 6.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "4.º primaria · 4.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "5.º primaria · 5.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "6.º primaria · 6.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "4.º primaria · 4.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "5.º primaria · 5.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "6.º primaria · 6.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "4.º primaria · 4.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "5.º primaria · 5.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "6.º primaria · 6.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "4.º primaria · 4.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "5.º primaria · 5.º primaria — Sección A",
+            "fontSize": 13.12
+          },
+          {
+            "tag": "SPAN",
+            "className": "course-eyebrow",
+            "text": "6.º primaria · 6.º primaria — Sección A",
+            "fontSize": 13.12
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "monitor/estudiantes.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis estudiantes | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13.6,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "CAPTION",
+            "className": "",
+            "text": "Estudiantes ficticios asignados al monitor",
+            "fontSize": 13.6
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "monitor/estudiantes.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis estudiantes | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13.6,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "CAPTION",
+            "className": "",
+            "text": "Estudiantes ficticios asignados al monitor",
+            "fontSize": 13.6
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "monitor/estudiantes.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis estudiantes | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13.6,
+        "smallTextCount": 1,
+        "smallText": [
+          {
+            "tag": "CAPTION",
+            "className": "",
+            "text": "Estudiantes ficticios asignados al monitor",
+            "fontSize": 13.6
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "monitor/tareas.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis Tareas | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/tareas.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis Tareas | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "monitor/tareas.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis Tareas | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/index.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Panel de Administración | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 12.8,
+        "smallTextCount": 9,
+        "smallText": [
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Informativa",
+            "fontSize": 12.8
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "admin/index.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Panel de Administración | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 12.8,
+        "smallTextCount": 9,
+        "smallText": [
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Informativa",
+            "fontSize": 12.8
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "admin/index.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Panel de Administración | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 12.8,
+        "smallTextCount": 9,
+        "smallText": [
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "text": "Evaluación",
+            "fontSize": 12.8
+          },
+          {
+            "tag": "STRONG",
+            "className": "",
+            "text": "Informativa",
+            "fontSize": 12.8
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "admin/usuarios.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Gestión de Usuarios | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/usuarios.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Gestión de Usuarios | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/usuarios.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Gestión de Usuarios | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13.44,
+        "smallTextCount": 10,
+        "smallText": [
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Registro de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Registro de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Registro de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Registro de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Registro de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Registro de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Registro de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Registro de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Registro de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Registro de demostración",
+            "fontSize": 13.44
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "admin/matriculas.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Matrículas | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 13.44,
+        "smallTextCount": 76,
+        "smallText": [
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          },
+          {
+            "tag": "SPAN",
+            "className": "user-state",
+            "text": "Relación de demostración",
+            "fontSize": 13.44
+          }
+        ]
+      },
+      "exceptions": [],
+      "pass": false
+    },
+    {
+      "page": "admin/matriculas.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Matrículas | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "page": "admin/matriculas.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Matrículas | AITHRON EDU",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "readability": {
+        "minimum": 14,
+        "smallest": 14,
+        "smallTextCount": 0,
+        "smallText": []
+      },
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "section": "home",
+      "active": "home",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "courses",
+      "active": "courses",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "practice",
+      "active": "practice",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "games",
+      "active": "games",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "evaluations",
+      "active": "evaluations",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "agenda",
+      "active": "agenda",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "progress",
+      "active": "progress",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "missions",
+      "active": "missions",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "achievements",
+      "active": "achievements",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "downloads",
+      "active": "downloads",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "tutor",
+      "active": "tutor",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "translator",
+      "active": "translator",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "pronunciation",
+      "active": "pronunciation",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "profile",
+      "active": "profile",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "check": "download-filter-focus-and-keyboard-section-navigation",
+      "filter": {
+        "pressed": "true",
+        "empty": true,
+        "focus": "descargados"
+      },
+      "keyboardNavigation": true,
+      "pass": true
+    },
+    {
+      "check": "calendar-focus-menu-disclosure-dark-and-text-200-percent",
+      "dark": "rgb(26, 38, 56)",
+      "zoomOverflow": false,
+      "pass": true
+    }
+  ],
+  "missing": [
+    "/favicon.ico"
+  ],
+  "pass": false
+}

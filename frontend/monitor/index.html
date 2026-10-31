@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183b72">
+  <title>Resumen docente | EDUNEXT</title>
+  <link rel="icon" href="../assets/images/branding/mark.svg">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/student/dashboard.css">
+  <link rel="stylesheet" href="../css/monitor/dashboard.css">
+  <script type="module" src="../js/monitor/dashboard.js"></script>
+</head>
+<body class="monitor-overview">
+  <a class="skip-link" href="#monitor-main">Ir al contenido</a>
+  <div class="monitor-shell">
+    <aside id="monitor-sidebar" class="student-sidebar" aria-label="Navegación docente"></aside>
+    <div class="monitor-workspace">
+      <header id="monitor-topbar" class="student-topbar"></header>
+      <main id="monitor-main" tabindex="-1">
+        <header class="page-heading"><div><p class="page-eyebrow">GESTIÓN EDUCATIVA</p><h1>Resumen docente</h1><p>Aulas, actividades y revisión académica.</p></div><a class="button-primary" href="editar-evaluacion.html">Preparar evaluación</a></header>
+        <div class="context-toolbar"><p class="context-source"><span class="demo-badge">Demostración</span><span>Datos ficticios · Sin permisos reales</span></p><label class="classroom-select" for="classroom"><span>Aula</span><select id="classroom"></select></label></div>
+        <div id="dashboard-content" aria-live="polite">Cargando datos locales…</div>
+        <details class="environment-disclosure"><summary>Información de datos y conexión</summary><p class="demo-label">Vista de demostración · Sin autenticación ni permisos reales.</p><p id="network-notice" role="status"></p></details>
+      </main>
+    </div>
+  </div>
+  <dialog id="monitor-dialog" aria-labelledby="dialog-title"><h2 id="dialog-title"></h2><div id="dialog-content"></div><button type="button" id="close-dialog">Cerrar</button></dialog>
+</body>
+</html>

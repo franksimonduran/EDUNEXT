@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-29T05:38:24.541436+00:00",
+  "scope": "Real CPU translation with socket-denied isolated workers and synthetic text; gateway policy/session/database doubles. NOT PostgreSQL authentication, institutional approval, Android-native translation or pedagogical certification.",
+  "results": [
+    {
+      "name": "argos-adapter-and-real-models",
+      "pass": false,
+      "exitCode": 1,
+      "stdout": ".............F.                                                          [100%]\n================================== FAILURES ===================================\n_ test_real_models_through_gateway_with_synthetic_policy[es-en-El agua es importante.-water] _\n\nmonkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000016EB5534B90>\nsource = 'es', target = 'en', text = 'El agua es importante.'\nexpected = 'water'\n\n    @pytest.mark.asyncio\n    @pytest.mark.parametrize(\"source,target,text,expected\", [(\"en\", \"es\", \"Hello world!\", \"hola\"), (\"es\", \"en\", \"El agua es importante.\", \"water\")])\n    async def test_real_models_through_gateway_with_synthetic_policy(monkeypatch, source, target, text, expected):\n        provider = ArgosProvider(packages_dir=str(installed()), timeout=60)\n        assert await provider.available()\n        service, context, _, event = gateway(monkeypatch, provider)\n>       answer = await service.generate(context, TranslationRequest(text=text, source_language=source, target_language=target), uuid4(), service=\"translation\")\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nE:\\ATHRON EDU\\backend\\verification\\test_argos_provider.py:174: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <app.services.ai_gateway_service.AIGatewayService object at 0x0000016EB554FB90>\ncontext = namespace(user_id=UUID('79865ce7-f29c-46f4-a680-94847e25520e'), institution_id=UUID('f5932d7f-f274-4271-b482-5b6823da8f19'), permissions=['ai.translate.use_own', 'ai.tutor.use_own'])\ndata = TranslationRequest(text='El agua es importante.', source_language='es', target_language='en')\noperation_id = UUID('4cb90694-e6eb-43c2-814a-cce14701490f')\nservice = 'translation'\n\n    async def generate(self, context, data, operation_id, *, service):\n        institution = await self.identity(context)\n        permission(context, *( (\"ai.tutor.use_own\", \"ai.tutor.use_assigned_context\") if service == \"tutor\"\n            else (\"ai.translate.use_own\", \"ai.translate.use\")))\n        policy = await self.repo.policy(context.institution_id)\n        if not settings.AITHRON_AI_ENABLED or not getattr(policy, \"tutor_enabled\" if service == \"tutor\" else \"translation_enabled\") or not policy.provider_approved:\n            raise ServiceUnavailableError(\"Servicio generativo deshabilitado o sin aprobación institucional\")\n        provider = provider_registry.configured_provider()\n        if provider is None:\n            raise ServiceUnavailableError(\"Proveedor local no configurado o sin habilitación operativa\")\n        if (\"generate_text\" if service == \"tutor\" else \"translate_text\") not in provider.capabilities:\n            raise ServiceUnavailableError(\"El proveedor local no admite este servicio\")\n        value = plain_text(data.text, maximum=min(policy.max_input_characters, 1500 if service == \"tutor\" else 1000))\n        protected_attempt = (await self.session.execute(select(AssessmentAttempt.id).join(\n            StudentProfile, AssessmentAttempt.student_id == StudentProfile.id).join(\n            Assessment, AssessmentAttempt.assessment_id == Assessment.id).join(Course, Assessment.course_id == Course.id).where(\n            StudentProfile.user_id == str(context.user_id), Course.institution_id == str(context.institution_id),\n            AssessmentAttempt.status.in_([\"in_progress\", \"started\"]), AssessmentAttempt.submitted_at.is_(None),\n        ).limit(1))).first()\n        if protected_attempt:\n            raise ForbiddenError(\"La ayuda generativa está suspendida mientras exista una evaluación en curso registrada; consulta a tu Monitor\")\n        sources = []\n        if service == \"tutor\":\n            educational_context, source = await AIContextService(self.session).resolve(context, data.lesson_id, data.classroom_id)\n            payload = {\"question\": value, \"action\": data.action, \"authorized_context\": educational_context}\n            sources = [source]\n            system = TUTOR_SYSTEM\n        else:\n            payload = {\"text\": value, \"source_language\": data.source_language, \"target_language\": data.target_language}\n            system = TRANSLATION_SYSTEM\n        if not await provider.available():\n            raise ServiceUnavailableError(\"El modelo local configurado no está disponible\")\n        fingerprint = hmac.new(settings.SECRET_KEY.encode(), json.dumps(data.model_dump(mode=\"json\"), sort_keys=True).encode(), hashlib.sha256).hexdigest()\n        event, locked_policy = await self.repo.reserve(context, operation_id, fingerprint, service, institution.timezone)\n        # Recheck policy while holding the quota lock: no concurrent disable bypass.\n        if not getattr(locked_policy, \"tutor_enabled\" if service == \"tutor\" else \"translation_enabled\") or not locked_policy.provider_approved:\n            await self.session.rollback()\n            raise ServiceUnavailableError(\"La política institucional cambió\")\n        if len(value) > locked_policy.max_input_characters:\n            await self.session.rollback()\n            raise ValidationError(\"El límite institucional de texto cambió; acorta la consulta\")\n        max_tokens = locked_policy.max_output_tokens\n        await self.session.commit()  # Durable reservation BEFORE any potentially costly model generation.\n        start = clock.monotonic()\n        try:\n            generated = await provider.generate_text(system=system, payload=payload, max_tokens=max_tokens)\n            event.input_units, event.output_units = generated.input_units, generated.output_units\n            answer = validate_output(generated.text)\n            event.status = \"succeeded\"\n        except (ProviderFailure, ValidationError) as error:\n            event.status = \"invalid_output\" if isinstance(error, ValidationError) else \"provider_error\"\n            event.latency_ms = int((clock.monotonic()-start)*1000)\n            await self.session.commit()\n>           raise ServiceUnavailableError(\"No se obtuvo una respuesta válida del modelo; no se realizó un reintento automático\") from None\nE           app.core.exceptions.ServiceUnavailableError: No se obtuvo una respuesta válida del modelo; no se realizó un reintento automático\n\nE:\\ATHRON EDU\\backend\\app\\services\\ai_gateway_service.py:166: ServiceUnavailableError\n=========================== short test summary info ===========================\nFAILED E:\\ATHRON EDU\\backend\\verification\\test_argos_provider.py::test_real_models_through_gateway_with_synthetic_policy[es-en-El agua es importante.-water]\n1 failed, 14 passed in 11.19s\n",
+      "stderr": ""
+    },
+    {
+      "name": "existing-ai-pure-contracts",
+      "pass": true,
+      "exitCode": 0,
+      "stdout": "............                                                             [100%]\n12 passed, 19 deselected in 1.07s\n",
+      "stderr": ""
+    },
+    {
+      "name": "real-terminal-en-es",
+      "pass": true,
+      "input": "Hello world!",
+      "output": "¡Hola mundo!",
+      "stderr": ""
+    },
+    {
+      "name": "real-terminal-es-en",
+      "pass": false,
+      "input": "El agua es importante.",
+      "output": "",
+      "stderr": "Traducción no disponible: revisa modelos, límites y texto educativo sin datos personales.\n"
+    },
+    {
+      "name": "installed-dependency-consistency-not-security-audit",
+      "pass": true,
+      "stdout": "No broken requirements found.\n",
+      "stderr": ""
+    }
+  ],
+  "model_packages": {
+    "installed_at": "2026-10-29T05:32:02.884120+00:00",
+    "index": "https://raw.githubusercontent.com/argosopentech/argospm-index/main/index.json",
+    "index_sha256": "a65ae909a97ddc89a01cbf0596932dc6415df9815a11d85fe8240b367926b7b0",
+    "packages": {
+      "en-es": {
+        "package_version": "1.0",
+        "runtime_sha256": {
+          "metadata.json": "d3360ebfd9b5458b84d7c75d078e379541e4f2ce009bca84f20f360572547bbd",
+          "model/model.bin": "d5771f823c9dd7eedcf9367c116aede65613a194f761a81826351e2bccb194c4",
+          "model/shared_vocabulary.txt": "e03caf337f37b61d2e056b9cfbc5551a0c8ae7555541fba14c067d4574db1132",
+          "sentencepiece.model": "71790fd75854ce996bc9f7da40fb72af41b74296d53fee64bce141967e8e81b1"
+        },
+        "license_files": [
+          "README.md"
+        ],
+        "url": "https://argos-net.com/v1/translate-en_es-1_0.argosmodel",
+        "archive_sha256": "d698d0ef87ad70d5d184b7fa6965905bf4368f09a2bb9ffb165a79bac96af0c4",
+        "archive_bytes": 87503191
+      },
+      "es-en": {
+        "package_version": "1.9",
+        "runtime_sha256": {
+          "bpe.model": "567708133d5a722ac57c1431f9490904d9bcacd85134778e34ca2f901855855e",
+          "metadata.json": "976bb0aafb1142b7f2936ed2becad224b47aef619685fb8b17faab81080cc725",
+          "model/config.json": "152eb448f1020eb55f90971d7b95f61896abee8415d555ca51ae7897ac0a0e68",
+          "model/model.bin": "3c634f2fbfce11ba9c3db839db50079c08d3cdb12c74f2c21671f742dbbb30f1",
+          "model/shared_vocabulary.json": "8ba15845314c1291fad86b0bf52b4a8a5db2a2f01b898c8c44d9e21e896a041f"
+        },
+        "license_files": [
+          "README.md"
+        ],
+        "url": "https://argos-net.com/v1/translate-es_en-1_9.argosmodel",
+        "archive_sha256": "c54df2b62fceaf54a3ce5d97db6bf56efd7940063329f6778f4212d2acb370d4",
+        "archive_bytes": 285208831
+      }
+    },
+    "note": "Hashes record downloaded content; they are not publisher signatures or pedagogical/license approval."
+  },
+  "hashes": [
+    {
+      "file": "backend/app/providers/argos_provider.py",
+      "sha256": "325b370e819d3727aabf5b3c07d57d87824b6d95d3d7004226acf98ad8716fc9"
+    },
+    {
+      "file": "backend/app/providers/argos_worker.py",
+      "sha256": "1eac0f136c6e9cb359fef65aaf311296e1c24343364c3e38cd9da302ff160db2"
+    },
+    {
+      "file": "backend/app/providers/provider_registry.py",
+      "sha256": "871777c42ab1db87579133647a240fa2c826efa2703d52116633724d94a2a6bc"
+    },
+    {
+      "file": "backend/app/core/config.py",
+      "sha256": "ce079d290caa719b8f09e823fd7dc9a1d6b495a56939a8c6f126725981df160f"
+    },
+    {
+      "file": "backend/app/services/ai_gateway_service.py",
+      "sha256": "a6776b314d2326d3fd9cff7cd124766ad1867f0e3460288d74564f647e97ba4c"
+    },
+    {
+      "file": "backend/app/api/v1/endpoints/assessments.py",
+      "sha256": "e971c504a910523cac8ef7598a5c77e4687b26068b9ea144bae0122c949c69cc"
+    },
+    {
+      "file": "backend/app/services/assessment_service.py",
+      "sha256": "722522995291fb5c18f7873e042bae4de03c8c15f8c014d9c8e87ea2855725cd"
+    },
+    {
+      "file": "backend/scripts/install_argos_models.py",
+      "sha256": "991c556de5cccbdc6f956b2bf132deb4c078bd39563d067d74c1ac331e849a39"
+    },
+    {
+      "file": "backend/scripts/translate_local.py",
+      "sha256": "aca2a0b9cb3645f2196c3ca4f76a0f3d2b3ea872d1fc053409b62e963a004098"
+    },
+    {
+      "file": "frontend/js/student/translator.js",
+      "sha256": "254951d9a1730a1f6b7166428a924b83d98542e4984a9148e9bb885c1954c783"
+    },
+    {
+      "file": "backend/verification/test_argos_provider.py",
+      "sha256": "0289bca1a28524fd63f665d5a0ac398a018ce70c97ac70c963ba50421d4359f2"
+    },
+    {
+      "file": "backend/verification/test_ai_engine.py",
+      "sha256": "43f4e3ef407035ee7d2b1685d293294a194596fa0e2eb6444b15e33191c8b536"
+    },
+    {
+      "file": "backend/pyproject.toml",
+      "sha256": "8afc660a487cd0f3586263cf7e7fd73e7ce170df1605da860e27eebc9c313b37"
+    },
+    {
+      "file": "backend/.env.example",
+      "sha256": "c4276c897371d90795bec705eb141107fc2c098a4b37c9092c6b072531618a53"
+    },
+    {
+      "file": ".gitignore",
+      "sha256": "4c5efc7c49ada2a8ca4c8f3891c808c6f509dfdcba7b58293d2a1406e0a8b395"
+    },
+    {
+      "file": "tools/final-inventory.cjs",
+      "sha256": "1662fdae9f4487108c7c0a09371846ba66a72da035a9486948eb603fa53e4fe5"
+    },
+    {
+      "file": "tools/validate-argos.py",
+      "sha256": "80a34a9fe52043a7b75f7c97b779be137c61314f9e311e3e4076b625ce8c07c6"
+    }
+  ],
+  "pass": false,
+  "decision": "NO-GO"
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EDUNEXT Sync - Centro de Control | EDUNEXT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/admin/layout.css">
+  <link rel="stylesheet" href="../css/admin/sync.css">
+  <link rel="stylesheet" href="../css/admin/system-control-responsive.css">
+</head>
+<body class="admin-body">
+  <div class="admin-shell">
+    <aside class="admin-sidebar" id="admin-sidebar"></aside>
+    <div class="admin-main">
+      <header class="admin-topbar" id="admin-topbar"></header>
+      <main class="admin-content" id="admin-content" aria-live="polite">
+        <section class="demo-banner">
+          <strong>Esta vista muestra información disponible desde este navegador. No representa todos los dispositivos de la institución.</strong>
+        </section>
+        <header class="page-header">
+          <div>
+            <nav class="breadcrumb" aria-label="Migas de pan"><a href="index.html">Administración</a><span>/</span><span>EDUNEXT Sync</span></nav>
+            <h1>EDUNEXT Sync — Centro de Control</h1>
+            <p class="page-subtitle">Consulta el estado de la sincronización local y la disponibilidad técnica de la plataforma</p>
+          </div>
+          <div class="page-actions">
+            <a class="button-secondary" href="sync-operaciones.html">Operaciones</a>
+            <a class="button-secondary" href="sync-paquetes.html">Paquetes</a>
+            <a class="button-secondary" href="estado-servicios.html">Servicios</a>
+            <a class="button-secondary" href="diagnostico-pwa.html">PWA</a>
+            <a class="button-secondary" href="almacenamiento-local.html">Almacenamiento</a>
+            <a class="button-secondary" href="diagnostico.html">Diagnóstico</a>
+            <a class="button-secondary" href="incidencias-tecnicas.html">Incidencias</a>
+            <a class="button-secondary" href="actividad-tecnica.html">Actividad</a>
+          </div>
+        </header>
+        <section id="sync-summary"></section>
+        <section class="summary-grid" id="sync-metrics"></section>
+      </main>
+    </div>
+  </div>
+  <dialog class="admin-dialog" id="admin-dialog">
+    <div class="dialog-header"><h2 id="dialog-title"></h2><button class="icon-button" id="close-dialog" aria-label="Cerrar">×</button></div>
+    <div class="dialog-content" id="dialog-content"></div>
+  </dialog>
+  <script type="module" src="../js/admin/sync.js"></script>
+</body>
+</html>

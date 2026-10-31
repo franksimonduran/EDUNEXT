@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contenidos Educativos | EDUNEXT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/admin/layout.css">
+  <link rel="stylesheet" href="../css/admin/contents.css">
+  <link rel="stylesheet" href="../css/admin/content-admin-responsive.css">
+</head>
+<body class="admin-body">
+  <div class="admin-shell">
+    <aside class="admin-sidebar" id="admin-sidebar"></aside>
+    <div class="admin-main">
+      <header class="admin-topbar" id="admin-topbar"></header>
+      <main class="admin-content" id="admin-content" aria-live="polite">
+        <section class="demo-banner">
+          <strong>Revisiones de demostración — No constituyen aprobaciones institucionales.</strong>
+          <p>Consulta del catálogo base y propuestas accesibles. No se publica contenido ni se envían observaciones a otros dispositivos.</p>
+        </section>
+        <header class="page-header">
+          <div>
+            <nav class="breadcrumb" aria-label="Migas de pan"><a href="index.html">Administración</a><span>/</span><span>Contenidos Educativos</span></nav>
+            <h1>Contenidos Educativos</h1>
+            <p class="page-subtitle">Consulta y organiza los materiales educativos de EDUNEXT</p>
+          </div>
+          <div class="page-actions">
+            <a class="button-secondary" href="revision-contenidos.html">Centro de Revisión</a>
+            <a class="button-secondary" href="recursos-institucionales.html">Recursos</a>
+            <a class="button-secondary" href="paquetes-offline.html">Paquetes Offline</a>
+          </div>
+        </header>
+        <section class="summary-grid" id="contents-summary"></section>
+        <form class="filter-card" id="contents-filters" aria-label="Filtros de contenidos">
+          <div class="filter-grid">
+            <label class="field"><span>Grado</span><select name="grade"><option value="">Todos</option><option value="4">4.º primaria</option><option value="5">5.º primaria</option><option value="6">6.º primaria</option></select></label>
+            <label class="field"><span>Asignatura</span><select name="course"><option value="">Todas</option><option value="math">Matemática</option><option value="com">Comunicación</option><option value="sci">Ciencia y Tecnología</option><option value="soc">Personal Social</option><option value="eng">Inglés</option></select></label>
+            <label class="field"><span>Tipo</span><select name="type"><option value="">Todos</option><option value="course">Curso</option><option value="unit">Unidad</option><option value="lesson">Lección</option><option value="resource">Recurso</option></select></label>
+            <label class="field"><span>Estado</span><select name="state"><option value="">Todos</option><option value="available">Disponible</option><option value="draft">Borrador</option><option value="pending">Validación pendiente</option><option value="warnings">Con advertencias</option><option value="errors">Con errores</option><option value="published">Publicado según fuente autorizada</option><option value="unknown">Estado desconocido</option></select></label>
+            <label class="field field-search"><span>Buscar</span><input type="search" name="q" placeholder="Título, unidad o tema" autocomplete="off"></label>
+          </div>
+          <div class="filter-actions">
+            <button class="button-secondary" type="reset">Limpiar filtros</button>
+          </div>
+        </form>
+        <section class="catalog-section">
+          <header class="section-header">
+            <h2>Catálogo Institucional</h2>
+            <p id="contents-count" role="status"></p>
+          </header>
+          <div id="contents-catalog" class="catalog-grid" aria-live="polite"></div>
+          <div id="contents-empty" class="empty-state" hidden>
+            <h3>Sin contenidos</h3>
+            <p>No hay contenidos que coincidan con los filtros aplicados.</p>
+          </div>
+        </section>
+        <section class="units-section" id="units-section" hidden>
+          <header class="section-header">
+            <h2>Unidades y lecciones</h2>
+            <button class="button-secondary" id="back-to-catalog" type="button">Volver al catálogo</button>
+          </header>
+          <div id="units-list"></div>
+        </section>
+      </main>
+    </div>
+  </div>
+  <dialog class="admin-dialog" id="admin-dialog">
+    <div class="dialog-header">
+      <h2 id="dialog-title"></h2>
+      <button class="icon-button" id="close-dialog" aria-label="Cerrar">×</button>
+    </div>
+    <div class="dialog-content" id="dialog-content"></div>
+  </dialog>
+  <script type="module" src="../js/admin/contents.js"></script>
+</body>
+</html>

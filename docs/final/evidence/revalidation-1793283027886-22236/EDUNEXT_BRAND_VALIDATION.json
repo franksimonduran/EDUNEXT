@@ -1,0 +1,4566 @@
+{
+  "date": "2026-10-29T14:10:27.883Z",
+  "scope": "Static source, syntax, links and hash compatibility only; browser and backend evidence saved separately. Not installed-PWA/physical Android/account-isolation/pilot acceptance.",
+  "baseline": "docs/final/evidence/edunext-brand-20261029-01/BRAND_AUDIT_BEFORE.json",
+  "reviewedBefore": 1436,
+  "frontendReviewed": 712,
+  "changedFiles": [
+    "AGENTS.md",
+    "PROJECT_STRUCTURE.md",
+    "README.md",
+    "backend/.env.example",
+    "backend/README.md",
+    "backend/app/api/v1/endpoints/ai.py",
+    "backend/app/api/v1/endpoints/meta.py",
+    "backend/app/core/config.py",
+    "backend/app/core/exceptions.py",
+    "backend/app/db/__init__.py",
+    "backend/app/exporters/csv_exporter.py",
+    "backend/app/main.py",
+    "backend/app/repositories/dictionary_repository.py",
+    "backend/pyproject.toml",
+    "backend/tests/test_meta.py",
+    "docs/AITHRON_AI_ARCHITECTURE.md",
+    "docs/AITHRON_SYNC_ARCHITECTURE.md",
+    "docs/AI_INTEGRATION_STATUS.md",
+    "docs/AUTHENTICATION_ARCHITECTURE.md",
+    "docs/BACKEND_API_V1.md",
+    "docs/BACKEND_ARCHITECTURE.md",
+    "docs/BACKEND_ENVIRONMENT.md",
+    "docs/BACKEND_INTEGRATION_PLAN.md",
+    "docs/BACKEND_SECURITY_FOUNDATION.md",
+    "docs/INSIGHTS_ENGINE_ARCHITECTURE.md",
+    "docs/PLANNER_KNOWN_LIMITATIONS.md",
+    "docs/PLANNER_OFFLINE_CONTRACTS.md",
+    "docs/PROGRESS_KNOWN_LIMITATIONS.md",
+    "docs/REINFORCEMENT_API.md",
+    "docs/REPORT_KNOWN_LIMITATIONS.md",
+    "docs/SYNC_INTEGRATION_STATUS.md",
+    "docs/manuals/STUDENT_USER_MANUAL.md",
+    "frontend/admin/actividad-plataforma.html",
+    "frontend/admin/actividad-tecnica.html",
+    "frontend/admin/almacenamiento-local.html",
+    "frontend/admin/asignaciones-docentes.html",
+    "frontend/admin/aula-detalle.html",
+    "frontend/admin/aulas.html",
+    "frontend/admin/ayuda.html",
+    "frontend/admin/calidad-datos.html",
+    "frontend/admin/configuracion-academica.html",
+    "frontend/admin/configuracion.html",
+    "frontend/admin/contenidos.html",
+    "frontend/admin/detalle-contenido.html",
+    "frontend/admin/detalle-estudiante.html",
+    "frontend/admin/detalle-monitor.html",
+    "frontend/admin/detalle-usuario.html",
+    "frontend/admin/diagnostico-pwa.html",
+    "frontend/admin/diagnostico.html",
+    "frontend/admin/editar-asignacion.html",
+    "frontend/admin/editar-aula.html",
+    "frontend/admin/editar-matricula.html",
+    "frontend/admin/editar-perfil.html",
+    "frontend/admin/editar-usuario.html",
+    "frontend/admin/estadisticas-institucionales.html",
+    "frontend/admin/estado-servicios.html",
+    "frontend/admin/estudiantes.html",
+    "frontend/admin/grados-secciones.html",
+    "frontend/admin/historial-reportes.html",
+    "frontend/admin/historial-revisiones.html",
+    "frontend/admin/incidencias-tecnicas.html",
+    "frontend/admin/index.html",
+    "frontend/admin/institucion.html",
+    "frontend/admin/matriculas.html",
+    "frontend/admin/monitores.html",
+    "frontend/admin/movimientos-academicos.html",
+    "frontend/admin/paquetes-offline.html",
+    "frontend/admin/parametros-plataforma.html",
+    "frontend/admin/perfil.html",
+    "frontend/admin/periodos-academicos.html",
+    "frontend/admin/preferencias-notificaciones.html",
+    "frontend/admin/preferencias.html",
+    "frontend/admin/preparacion-publicacion.html",
+    "frontend/admin/privacidad.html",
+    "frontend/admin/recursos-institucionales.html",
+    "frontend/admin/reporte-aula.html",
+    "frontend/admin/reporte-curso.html",
+    "frontend/admin/reporte-grado.html",
+    "frontend/admin/reporte-institucional.html",
+    "frontend/admin/reportes.html",
+    "frontend/admin/revisar-contenido.html",
+    "frontend/admin/revision-configuracion.html",
+    "frontend/admin/revision-contenidos.html",
+    "frontend/admin/roles-permisos.html",
+    "frontend/admin/seguimiento-academico.html",
+    "frontend/admin/seguridad.html",
+    "frontend/admin/solicitudes-usuarios.html",
+    "frontend/admin/sync-operaciones.html",
+    "frontend/admin/sync-paquetes.html",
+    "frontend/admin/sync.html",
+    "frontend/admin/usuarios.html",
+    "frontend/admin/validacion-contenidos.html",
+    "frontend/admin/versiones-contenido.html",
+    "frontend/agenda.html",
+    "frontend/assets/images/branding/mark.svg",
+    "frontend/calendario.html",
+    "frontend/css/student/pronunciation.css",
+    "frontend/css/variables.css",
+    "frontend/editar-recordatorio.html",
+    "frontend/forgot-password.html",
+    "frontend/js/admin/actividad-tecnica.js",
+    "frontend/js/admin/admin-settings.js",
+    "frontend/js/admin/admin-shell.js",
+    "frontend/js/admin/dashboard.js",
+    "frontend/js/admin/sync.js",
+    "frontend/js/admin/user-proposals.js",
+    "frontend/js/components/admin-sync-operation.js",
+    "frontend/js/components/admin-sync-summary.js",
+    "frontend/js/components/admin-technical-report.js",
+    "frontend/js/components/ai-configuration-panel.js",
+    "frontend/js/components/insights-api-view.js",
+    "frontend/js/components/reference-dashboard.js",
+    "frontend/js/components/reports-api-view.js",
+    "frontend/js/components/sidebar.js",
+    "frontend/js/components/topbar.js",
+    "frontend/js/components/tutor-message.js",
+    "frontend/js/data/admin-dashboard-config.data.js",
+    "frontend/js/data/admin-service-definitions.data.js",
+    "frontend/js/data/monitor-demo.data.js",
+    "frontend/js/data/profile-demo.data.js",
+    "frontend/js/i18n/admin-dashboard.js",
+    "frontend/js/i18n/i18n.js",
+    "frontend/js/i18n/monitor-account.js",
+    "frontend/js/monitor/academic-reports.js",
+    "frontend/js/monitor/account.js",
+    "frontend/js/monitor/dashboard.js",
+    "frontend/js/monitor/management-shell.js",
+    "frontend/js/monitor/organizer.js",
+    "frontend/js/monitor/support-tracking.js",
+    "frontend/js/offline/database-schema.js",
+    "frontend/js/services/admin-activity.service.js",
+    "frontend/js/services/admin-service-status.service.js",
+    "frontend/js/services/admin-services-status.service.js",
+    "frontend/js/services/admin-technical-report.service.js",
+    "frontend/js/services/offline-study.service.js",
+    "frontend/js/services/reports-api.service.js",
+    "frontend/js/student/accessibility.js",
+    "frontend/js/student/achievement-detail.js",
+    "frontend/js/student/achievements.js",
+    "frontend/js/student/activity-catalog.js",
+    "frontend/js/student/agenda.js",
+    "frontend/js/student/course-detail.js",
+    "frontend/js/student/course-progress.js",
+    "frontend/js/student/courses.js",
+    "frontend/js/student/dashboard.js",
+    "frontend/js/student/downloaded-content.js",
+    "frontend/js/student/downloads.js",
+    "frontend/js/student/edit-profile.js",
+    "frontend/js/student/evaluaciones.js",
+    "frontend/js/student/evaluation-answer-review.js",
+    "frontend/js/student/evaluation-detail.js",
+    "frontend/js/student/evaluation-player.js",
+    "frontend/js/student/evaluation-results.js",
+    "frontend/js/student/evaluation-review.js",
+    "frontend/js/student/event-detail.js",
+    "frontend/js/student/exercise.js",
+    "frontend/js/student/game-player.js",
+    "frontend/js/student/historial-pronunciacion.js",
+    "frontend/js/student/i18n.js",
+    "frontend/js/student/learning-i18n.js",
+    "frontend/js/student/lessons.js",
+    "frontend/js/student/missions.js",
+    "frontend/js/student/offline-status.js",
+    "frontend/js/student/pending-activities.js",
+    "frontend/js/student/practicar-pronunciacion.js",
+    "frontend/js/student/practice-results.js",
+    "frontend/js/student/preferences.js",
+    "frontend/js/student/profile.js",
+    "frontend/js/student/progress.js",
+    "frontend/js/student/pronuncia.js",
+    "frontend/js/student/pronunciation-i18n.js",
+    "frontend/js/student/reminder-editor.js",
+    "frontend/js/student/reminders.js",
+    "frontend/js/student/resultado-pronunciacion.js",
+    "frontend/js/student/settings.js",
+    "frontend/js/student/storage-management.js",
+    "frontend/js/student/sync-queue.js",
+    "frontend/js/student/synchronization.js",
+    "frontend/js/student/translator-i18n.js",
+    "frontend/js/student/translator.js",
+    "frontend/js/student/tutor-i18n.js",
+    "frontend/js/student/tutor.js",
+    "frontend/js/student/units.js",
+    "frontend/js/student/vocabulary-review.js",
+    "frontend/js/student/vocabulary.js",
+    "frontend/js/student/word-detail.js",
+    "frontend/js/utils/csv-safety.js",
+    "frontend/js/utils/monitor-evaluation-validation.js",
+    "frontend/js/utils/safe-technical-export.js",
+    "frontend/login.html",
+    "frontend/manifest.webmanifest",
+    "frontend/monitor/accesibilidad.html",
+    "frontend/monitor/agenda.html",
+    "frontend/monitor/analisis-resultados.html",
+    "frontend/monitor/asignar-actividad.html",
+    "frontend/monitor/asignar-evaluacion.html",
+    "frontend/monitor/aulas.html",
+    "frontend/monitor/ayuda.html",
+    "frontend/monitor/calendario.html",
+    "frontend/monitor/configuracion.html",
+    "frontend/monitor/corregir-evaluacion.html",
+    "frontend/monitor/crear-refuerzo.html",
+    "frontend/monitor/cursos.html",
+    "frontend/monitor/detalle-actividad.html",
+    "frontend/monitor/detalle-aula.html",
+    "frontend/monitor/detalle-calificacion.html",
+    "frontend/monitor/detalle-curso.html",
+    "frontend/monitor/detalle-estudiante.html",
+    "frontend/monitor/detalle-evento.html",
+    "frontend/monitor/editar-evaluacion.html",
+    "frontend/monitor/editar-leccion.html",
+    "frontend/monitor/editar-perfil.html",
+    "frontend/monitor/editar-recordatorio.html",
+    "frontend/monitor/editar-tarea.html",
+    "frontend/monitor/editar-unidad.html",
+    "frontend/monitor/entregas-evaluacion.html",
+    "frontend/monitor/estudiantes.html",
+    "frontend/monitor/evaluaciones.html",
+    "frontend/monitor/historial-academico.html",
+    "frontend/monitor/index.html",
+    "frontend/monitor/lecciones.html",
+    "frontend/monitor/notas.html",
+    "frontend/monitor/notificaciones.html",
+    "frontend/monitor/organizar-contenidos.html",
+    "frontend/monitor/perfil.html",
+    "frontend/monitor/planificacion-semanal.html",
+    "frontend/monitor/preferencias-notificaciones.html",
+    "frontend/monitor/preferencias.html",
+    "frontend/monitor/preguntas-evaluacion.html",
+    "frontend/monitor/privacidad.html",
+    "frontend/monitor/recordatorios.html",
+    "frontend/monitor/recursos-educativos.html",
+    "frontend/monitor/refuerzos.html",
+    "frontend/monitor/registro-notas.html",
+    "frontend/monitor/reporte-aula.html",
+    "frontend/monitor/reporte-estudiante.html",
+    "frontend/monitor/reportes.html",
+    "frontend/monitor/resultados-evaluacion.html",
+    "frontend/monitor/seguimiento-actividades.html",
+    "frontend/monitor/seguimiento-aula.html",
+    "frontend/monitor/seguimiento-refuerzo.html",
+    "frontend/monitor/seguridad.html",
+    "frontend/monitor/tareas.html",
+    "frontend/monitor/unidades.html",
+    "frontend/monitor/vista-previa-evaluacion.html",
+    "frontend/monitor/vista-previa-leccion.html",
+    "frontend/notificaciones.html",
+    "frontend/offline.html",
+    "frontend/planificacion-semanal.html",
+    "frontend/preferencias-notificaciones.html",
+    "frontend/recordatorios.html",
+    "frontend/register.html",
+    "frontend/reset-password.html",
+    "frontend/role-selection.html",
+    "frontend/student/accesibilidad.html",
+    "frontend/student/actividades-pendientes.html",
+    "frontend/student/agenda.html",
+    "frontend/student/almacenamiento.html",
+    "frontend/student/aprende.html",
+    "frontend/student/cola-sincronizacion.html",
+    "frontend/student/configuracion.html",
+    "frontend/student/curso.html",
+    "frontend/student/descargas.html",
+    "frontend/student/detalle-evaluacion.html",
+    "frontend/student/detalle-evento.html",
+    "frontend/student/detalle-logro.html",
+    "frontend/student/editar-perfil.html",
+    "frontend/student/editar-recordatorio.html",
+    "frontend/student/ejercicio.html",
+    "frontend/student/estado-offline.html",
+    "frontend/student/evaluacion.html",
+    "frontend/student/evaluaciones.html",
+    "frontend/student/historial-pronunciacion.html",
+    "frontend/student/index.html",
+    "frontend/student/juego.html",
+    "frontend/student/juegos.html",
+    "frontend/student/leccion.html",
+    "frontend/student/logros.html",
+    "frontend/student/mis-descargas.html",
+    "frontend/student/misiones.html",
+    "frontend/student/palabra.html",
+    "frontend/student/perfil.html",
+    "frontend/student/practica.html",
+    "frontend/student/practicar-pronunciacion.html",
+    "frontend/student/preferencias.html",
+    "frontend/student/progreso-curso.html",
+    "frontend/student/progreso.html",
+    "frontend/student/pronuncia.html",
+    "frontend/student/recordatorios.html",
+    "frontend/student/repaso-vocabulario.html",
+    "frontend/student/resultado-evaluacion.html",
+    "frontend/student/resultado-practica.html",
+    "frontend/student/resultado-pronunciacion.html",
+    "frontend/student/revisar-evaluacion.html",
+    "frontend/student/revision-evaluacion.html",
+    "frontend/student/sincronizacion.html",
+    "frontend/student/traductor.html",
+    "frontend/student/tutor.html",
+    "frontend/student/unidad.html",
+    "frontend/student/vocabulario.html",
+    "frontend/sw.js",
+    "frontend/unauthorized.html",
+    "tests/frontend-refresh.browser.cjs",
+    "tests/student-dashboard.browser.cjs",
+    "tests/tutor.browser.cjs"
+  ],
+  "addedFiles": [
+    "frontend/assets/images/branding/legacy-mark.svg",
+    "frontend/assets/images/branding/edunext-192.png",
+    "frontend/assets/images/branding/edunext-512.png",
+    "tools/edunext-brand-migration.cjs",
+    "tools/edunext-icons.cjs",
+    "tools/verify-edunext-backend.py",
+    "tests/edunext-brand.cjs",
+    "tests/fixtures/edunext-brand-checks.cjs",
+    "docs/EDUNEXT_BRAND_MIGRATION.md"
+  ],
+  "checks": [
+    {
+      "name": "No legacy public product phrases across frontend",
+      "pass": true
+    },
+    {
+      "name": "Every HTML entry has the current brand in its title",
+      "pass": true
+    },
+    {
+      "name": "PWA identity and continuity",
+      "pass": true
+    },
+    {
+      "name": "Worker semantics match the reviewed offline baseline",
+      "pass": true
+    },
+    {
+      "name": "Historical evidence, migrations, models and infrastructure unchanged",
+      "pass": true
+    },
+    {
+      "name": "Persistent frontend identifiers retained",
+      "pass": true
+    },
+    {
+      "name": "Current module names available",
+      "pass": true
+    },
+    {
+      "name": "Frontend ES module syntax",
+      "pass": true
+    },
+    {
+      "name": "Static HTML links and resources exist",
+      "pass": true
+    }
+  ],
+  "missing": [],
+  "retained": [
+    {
+      "file": ".github/workflows/build.yml",
+      "line": 16,
+      "identifier": "aithron-api",
+      "category": "external_configuration"
+    },
+    {
+      "file": ".github/workflows/build.yml",
+      "line": 17,
+      "identifier": "aithron-web",
+      "category": "external_configuration"
+    },
+    {
+      "file": ".github/workflows/build.yml",
+      "line": 19,
+      "identifier": "aithron-web",
+      "category": "external_configuration"
+    },
+    {
+      "file": ".github/workflows/build.yml",
+      "line": 23,
+      "identifier": "aithron-api",
+      "category": "external_configuration"
+    },
+    {
+      "file": ".github/workflows/build.yml",
+      "line": 24,
+      "identifier": "aithron-web",
+      "category": "external_configuration"
+    },
+    {
+      "file": ".github/workflows/ci.yml",
+      "line": 13,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "external_configuration"
+    },
+    {
+      "file": ".github/workflows/ci.yml",
+      "line": 14,
+      "identifier": "AITHRON_FINAL_EVIDENCE_DIR",
+      "category": "external_configuration"
+    },
+    {
+      "file": ".github/workflows/ci.yml",
+      "line": 37,
+      "identifier": "aithron_ci_test",
+      "category": "external_configuration"
+    },
+    {
+      "file": ".github/workflows/ci.yml",
+      "line": 42,
+      "identifier": "aithron_ci_test",
+      "category": "external_configuration"
+    },
+    {
+      "file": ".github/workflows/ci.yml",
+      "line": 47,
+      "identifier": "aithron_ci_test",
+      "category": "external_configuration"
+    },
+    {
+      "file": ".github/workflows/ci.yml",
+      "line": 48,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "external_configuration"
+    },
+    {
+      "file": "AGENTS.md",
+      "line": 11,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/alembic/versions/20261023_phase42_academic_planner.py",
+      "line": 72,
+      "identifier": "aithron.edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/alembic/versions/20261023_phase42_planner_integrity.py",
+      "line": 47,
+      "identifier": "aithron.edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/alembic/versions/20261023_phase43_reports.py",
+      "line": 33,
+      "identifier": "aithron.edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/alembic/versions/20261023_phase45_ai_engine.py",
+      "line": 56,
+      "identifier": "aithron.edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/api/v1/endpoints/health.py",
+      "line": 20,
+      "identifier": "athron-edu-backend",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/api/v1/endpoints/reports.py",
+      "line": 59,
+      "identifier": "aithron-",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/api/v1/endpoints/sync.py",
+      "line": 12,
+      "identifier": "AithronException",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/api/v1/endpoints/sync.py",
+      "line": 63,
+      "identifier": "AithronException",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/api/v1/endpoints/system.py",
+      "line": 27,
+      "identifier": "athron_ai",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/core/config.py",
+      "line": 40,
+      "identifier": "aithron-edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/core/config.py",
+      "line": 41,
+      "identifier": "aithron-edu-web",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/core/config.py",
+      "line": 74,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/core/exceptions.py",
+      "line": 6,
+      "identifier": "AithronException",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/core/exceptions.py",
+      "line": 23,
+      "identifier": "AithronException",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/core/exceptions.py",
+      "line": 30,
+      "identifier": "AithronException",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/core/exceptions.py",
+      "line": 37,
+      "identifier": "AithronException",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/core/exceptions.py",
+      "line": 44,
+      "identifier": "AithronException",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/core/exceptions.py",
+      "line": 51,
+      "identifier": "AithronException",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/core/exceptions.py",
+      "line": 58,
+      "identifier": "AithronException",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/core/exceptions.py",
+      "line": 65,
+      "identifier": "AithronException",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/core/exceptions.py",
+      "line": 72,
+      "identifier": "AithronException",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/core/logging.py",
+      "line": 18,
+      "identifier": "aithron-api",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/db/connection_options.py",
+      "line": 7,
+      "identifier": "athron_edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/main.py",
+      "line": 14,
+      "identifier": "AithronException",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/main.py",
+      "line": 77,
+      "identifier": "AithronException",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/main.py",
+      "line": 78,
+      "identifier": "aithron_exception_handler",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/main.py",
+      "line": 78,
+      "identifier": "AithronException",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/providers/provider_registry.py",
+      "line": 12,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/repositories/ai_repository.py",
+      "line": 10,
+      "identifier": "AithronException",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/repositories/ai_repository.py",
+      "line": 44,
+      "identifier": "AithronException",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/repositories/ai_repository.py",
+      "line": 49,
+      "identifier": "AithronException",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/schemas/system.py",
+      "line": 19,
+      "identifier": "athron_ai",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/services/ai_gateway_service.py",
+      "line": 13,
+      "identifier": "AithronException",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/services/ai_gateway_service.py",
+      "line": 48,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/services/ai_gateway_service.py",
+      "line": 79,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/services/ai_gateway_service.py",
+      "line": 118,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/services/ai_gateway_service.py",
+      "line": 192,
+      "identifier": "AithronException",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/storage/base_storage.py",
+      "line": 47,
+      "identifier": "athron-edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/app/storage/local_storage.py",
+      "line": 63,
+      "identifier": "aithron-upload-",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/pyproject.toml",
+      "line": 6,
+      "identifier": "athron-edu-backend",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/scripts/create_initial_admin.py",
+      "line": 35,
+      "identifier": "AITHRON",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/scripts/create_initial_admin.py",
+      "line": 36,
+      "identifier": "AITHRON",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/scripts/create_initial_admin.py",
+      "line": 39,
+      "identifier": "AITHRON_ADMIN_PASSWORD",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "backend/tests/conftest.py",
+      "line": 13,
+      "identifier": "AITHRON_ALLOW_TEST_SCHEMA_RESET",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/tests/conftest.py",
+      "line": 17,
+      "identifier": "AITHRON_ALLOW_TEST_SCHEMA_RESET",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/tests/conftest.py",
+      "line": 25,
+      "identifier": "athron_edu_test",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/tests/conftest.py",
+      "line": 51,
+      "identifier": "athron.edu",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/tests/conftest.py",
+      "line": 52,
+      "identifier": "athron.edu",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/tests/test_health.py",
+      "line": 16,
+      "identifier": "athron-edu-backend",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/tests/test_health.py",
+      "line": 24,
+      "identifier": "athron-edu-backend",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/tests/test_integration.py",
+      "line": 10,
+      "identifier": "ATHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/tests/test_integration.py",
+      "line": 58,
+      "identifier": "ATHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/tests/test_phase36.py",
+      "line": 39,
+      "identifier": "athron.edu",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/tests/test_phase36.py",
+      "line": 250,
+      "identifier": "athron.edu",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/tests/test_phase36.py",
+      "line": 307,
+      "identifier": "athron.edu",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/tests/test_phase37.py",
+      "line": 40,
+      "identifier": "athron.edu",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/tests/test_phase37.py",
+      "line": 60,
+      "identifier": "athron.edu",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/tests/test_system_status.py",
+      "line": 17,
+      "identifier": "athron_ai",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/verification/argos_browser_fixture.py",
+      "line": 16,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/verification/argos_browser_fixture.py",
+      "line": 25,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/verification/argos_browser_fixture.py",
+      "line": 35,
+      "identifier": "AithronException",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/verification/argos_browser_fixture.py",
+      "line": 61,
+      "identifier": "AithronException",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/verification/test_ai_engine.py",
+      "line": 16,
+      "identifier": "AithronException",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/verification/test_ai_engine.py",
+      "line": 68,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/verification/test_ai_engine.py",
+      "line": 134,
+      "identifier": "AithronException",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/verification/test_ai_engine.py",
+      "line": 287,
+      "identifier": "AithronException",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/verification/test_ai_engine.py",
+      "line": 303,
+      "identifier": "AithronException",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/verification/test_argos_provider.py",
+      "line": 97,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/verification/test_argos_provider.py",
+      "line": 100,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/verification/test_argos_provider.py",
+      "line": 121,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/verification/test_assessment_foundations.py",
+      "line": 113,
+      "identifier": "AITHRON_ASSESSMENT_READONLY_DB",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/verification/test_phase48_remediation.py",
+      "line": 173,
+      "identifier": "aithron-upload-",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/verification/test_phase49_security.py",
+      "line": 17,
+      "identifier": "aithron_staging",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "backend/verification/test_phase49_security.py",
+      "line": 37,
+      "identifier": "aithron_test",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "docker-compose.yml",
+      "line": 2,
+      "identifier": "aithron-local",
+      "category": "external_configuration"
+    },
+    {
+      "file": "docker-compose.yml",
+      "line": 7,
+      "identifier": "aithron_local",
+      "category": "external_configuration"
+    },
+    {
+      "file": "docker-compose.yml",
+      "line": 10,
+      "identifier": "AITHRON_APP_PASSWORD",
+      "category": "external_configuration"
+    },
+    {
+      "file": "docker-compose.yml",
+      "line": 11,
+      "identifier": "AITHRON_MIGRATION_PASSWORD",
+      "category": "external_configuration"
+    },
+    {
+      "file": "docker-compose.yml",
+      "line": 14,
+      "identifier": "aithron.sh",
+      "category": "external_configuration"
+    },
+    {
+      "file": "docker-compose.yml",
+      "line": 17,
+      "identifier": "aithron_local",
+      "category": "external_configuration"
+    },
+    {
+      "file": "docker-compose.yml",
+      "line": 26,
+      "identifier": "aithron-api",
+      "category": "external_configuration"
+    },
+    {
+      "file": "docker-compose.yml",
+      "line": 34,
+      "identifier": "aithron_app",
+      "category": "external_configuration"
+    },
+    {
+      "file": "docker-compose.yml",
+      "line": 34,
+      "identifier": "aithron_local",
+      "category": "external_configuration"
+    },
+    {
+      "file": "docker-compose.yml",
+      "line": 42,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "external_configuration"
+    },
+    {
+      "file": "docker-compose.yml",
+      "line": 55,
+      "identifier": "aithron-api",
+      "category": "external_configuration"
+    },
+    {
+      "file": "docker-compose.yml",
+      "line": 60,
+      "identifier": "aithron_migrator",
+      "category": "external_configuration"
+    },
+    {
+      "file": "docker-compose.yml",
+      "line": 60,
+      "identifier": "aithron_local",
+      "category": "external_configuration"
+    },
+    {
+      "file": "docker-compose.yml",
+      "line": 69,
+      "identifier": "aithron-web",
+      "category": "external_configuration"
+    },
+    {
+      "file": "docs/ACADEMIC_PLANNER_ARCHITECTURE.md",
+      "line": 1,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/AITHRON_SYNC_ARCHITECTURE.md",
+      "line": 16,
+      "identifier": "aithron-edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/AI_GATEWAY_API.md",
+      "line": 1,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/AI_PRODUCTION_CONFIGURATION.md",
+      "line": 3,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/AI_PROVIDER_CONFIGURATION.md",
+      "line": 19,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/AI_SECURITY_AUDIT.md",
+      "line": 1,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/AI_TEST_RESULTS.md",
+      "line": 103,
+      "identifier": "AITHRON_AI_ARCHITECTURE.md",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/ARGOS_TRANSLATE_SETUP.md",
+      "line": 90,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/ASSESSMENT_CONTINUATION_2026-10-26.md",
+      "line": 20,
+      "identifier": "AITHRON_ASSESSMENT_READONLY_DB",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/ASSESSMENT_CONTINUATION_2026-10-26.md",
+      "line": 29,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/ASSESSMENT_CONTINUATION_2026-10-26.md",
+      "line": 31,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/AUTHENTICATION_ARCHITECTURE.md",
+      "line": 213,
+      "identifier": "athron.edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/AUTHENTICATION_ARCHITECTURE.md",
+      "line": 214,
+      "identifier": "athron.edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/AUTHENTICATION_ARCHITECTURE.md",
+      "line": 215,
+      "identifier": "athron.edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/BACKEND_API_V1.md",
+      "line": 32,
+      "identifier": "athron-edu-backend",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/BACKEND_API_V1.md",
+      "line": 52,
+      "identifier": "athron-edu-backend",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/BACKEND_API_V1.md",
+      "line": 108,
+      "identifier": "athron_ai",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/BACKEND_ARCHITECTURE.md",
+      "line": 117,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/BACKEND_ARCHITECTURE.md",
+      "line": 143,
+      "identifier": "AithronException",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/BACKEND_ENVIRONMENT.md",
+      "line": 54,
+      "identifier": "athron_edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/BACKEND_ENVIRONMENT.md",
+      "line": 72,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/BACKEND_ENVIRONMENT.md",
+      "line": 91,
+      "identifier": "athron.edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/BACKEND_ENVIRONMENT.md",
+      "line": 91,
+      "identifier": "athron.edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/BACKEND_ENVIRONMENT.md",
+      "line": 93,
+      "identifier": "athron_edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/BACKEND_SECURITY_FOUNDATION.md",
+      "line": 178,
+      "identifier": "athron.edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/BACKEND_SECURITY_FOUNDATION.md",
+      "line": 218,
+      "identifier": "athron.edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/BACKEND_SECURITY_FOUNDATION.md",
+      "line": 219,
+      "identifier": "athron.edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/BACKEND_SECURITY_FOUNDATION.md",
+      "line": 220,
+      "identifier": "athron.edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/BACKUP_AND_RESTORE.md",
+      "line": 12,
+      "identifier": "aithron_staging_backup",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/BACKUP_AND_RESTORE.md",
+      "line": 12,
+      "identifier": "aithron_staging_backup",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/BACKUP_AND_RESTORE.md",
+      "line": 13,
+      "identifier": "aithron_restore_test",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/BACKUP_AND_RESTORE.md",
+      "line": 13,
+      "identifier": "aithron_restore_test",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/BACKUP_AND_RESTORE.md",
+      "line": 13,
+      "identifier": "aithron_restore_test",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/CORPORATE_FRONTEND_2026-10-27.md",
+      "line": 126,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/CORPORATE_FRONTEND_2026-10-27.md",
+      "line": 127,
+      "identifier": "AITHRON_PREMIUM_READABILITY",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/CORPORATE_FRONTEND_2026-10-27.md",
+      "line": 128,
+      "identifier": "AITHRON_PREMIUM_FOCUS",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/CORPORATE_FRONTEND_2026-10-27.md",
+      "line": 129,
+      "identifier": "AITHRON_STUDENT_JOURNEY",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/CORPORATE_FRONTEND_2026-10-27.md",
+      "line": 130,
+      "identifier": "AITHRON_CORPORATE_COMPOSITION",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/CORPORATE_FRONTEND_2026-10-27.md",
+      "line": 131,
+      "identifier": "AITHRON_FINAL_EVIDENCE_DIR",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/CORPORATE_FRONTEND_2026-10-27.md",
+      "line": 135,
+      "identifier": "AITHRON_FRONTEND_HASH_NAMESPACE",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/CORPORATE_FRONTEND_2026-10-27.md",
+      "line": 135,
+      "identifier": "AITHRON_FINAL_EVIDENCE_DIR",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/DOCKER_DEPLOYMENT.md",
+      "line": 17,
+      "identifier": "aithron-local_postgres_data",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/EDUNEXT_BRAND_MIGRATION.md",
+      "line": 3,
+      "identifier": "AITHRON",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "docs/EDUNEXT_BRAND_MIGRATION.md",
+      "line": 20,
+      "identifier": "aithron",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "docs/EDUNEXT_BRAND_MIGRATION.md",
+      "line": 55,
+      "identifier": "aithron-edu",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "docs/EDUNEXT_BRAND_MIGRATION.md",
+      "line": 55,
+      "identifier": "aithron-evaluations-demo",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "docs/EDUNEXT_BRAND_MIGRATION.md",
+      "line": 56,
+      "identifier": "aithron-static-v1",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "docs/EDUNEXT_BRAND_MIGRATION.md",
+      "line": 56,
+      "identifier": "aithron-content-v1",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "docs/EDUNEXT_BRAND_MIGRATION.md",
+      "line": 56,
+      "identifier": "aithron-public-v2",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "docs/EDUNEXT_BRAND_MIGRATION.md",
+      "line": 56,
+      "identifier": "aithron-monitor-shell-v1",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "docs/EDUNEXT_BRAND_MIGRATION.md",
+      "line": 57,
+      "identifier": "aithron.",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "docs/EDUNEXT_BRAND_MIGRATION.md",
+      "line": 57,
+      "identifier": "aithron-preferences-change",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "docs/EDUNEXT_BRAND_MIGRATION.md",
+      "line": 57,
+      "identifier": "aithron-demo-monitor-data",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "docs/EDUNEXT_BRAND_MIGRATION.md",
+      "line": 57,
+      "identifier": "aithron-sync-v1",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "docs/EDUNEXT_BRAND_MIGRATION.md",
+      "line": 58,
+      "identifier": "AITHRON_CONFIG",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "docs/EDUNEXT_BRAND_MIGRATION.md",
+      "line": 58,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "docs/EDUNEXT_BRAND_MIGRATION.md",
+      "line": 58,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "docs/EDUNEXT_BRAND_MIGRATION.md",
+      "line": 59,
+      "identifier": "athron_ai",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "docs/EDUNEXT_BRAND_MIGRATION.md",
+      "line": 59,
+      "identifier": "AithronException",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "docs/EDUNEXT_BRAND_MIGRATION.md",
+      "line": 59,
+      "identifier": "aithron-edu",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "docs/EDUNEXT_BRAND_MIGRATION.md",
+      "line": 59,
+      "identifier": "aithron-edu-web",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "docs/EDUNEXT_BRAND_MIGRATION.md",
+      "line": 66,
+      "identifier": "AITHRON",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "docs/ENVIRONMENT_CONFIGURATION.md",
+      "line": 21,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/final/FINAL_CANDIDATE_MANIFEST.json",
+      "line": 1183,
+      "identifier": "AITHRON_AI_ARCHITECTURE.md",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/final/FINAL_DELIVERY_REPORT.md",
+      "line": 1,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/final/FINAL_INVENTORY.json",
+      "line": 951,
+      "identifier": "AITHRON_AI_ARCHITECTURE.md",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/final/FINAL_OFFLINE_VALIDATION.md",
+      "line": 7,
+      "identifier": "aithron-content-v1",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/final/FINAL_REGRESSION_TEST_RESULTS.md",
+      "line": 3,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/final/PHASE_50_ACCEPTANCE.md",
+      "line": 3,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/FRONTEND_BACKEND_CONTRACTS.md",
+      "line": 25,
+      "identifier": "AITHRON_CONFIG",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/FRONTEND_FINAL_VALIDATION.md",
+      "line": 51,
+      "identifier": "athron-edu-backend",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/FRONTEND_FINAL_VALIDATION.md",
+      "line": 52,
+      "identifier": "athron-edu-backend",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/FRONTEND_FINAL_VALIDATION.md",
+      "line": 53,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/FRONTEND_REFRESH_2026-10-27.md",
+      "line": 92,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/FRONTEND_REFRESH_2026-10-27.md",
+      "line": 93,
+      "identifier": "AITHRON_FINAL_EVIDENCE_DIR",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/FRONTEND_REFRESH_2026-10-27.md",
+      "line": 97,
+      "identifier": "AITHRON_FRONTEND_HASH_NAMESPACE",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/FRONTEND_REFRESH_2026-10-27.md",
+      "line": 97,
+      "identifier": "AITHRON_FINAL_EVIDENCE_DIR",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/HYBRID_AI_MOBILE_INCREMENT.md",
+      "line": 20,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/INSIGHTS_TEST_RESULTS.md",
+      "line": 12,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/INSIGHTS_TEST_RESULTS.md",
+      "line": 19,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/INTEGRATION_ENVIRONMENT.md",
+      "line": 14,
+      "identifier": "aithron-verification-new",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/INTEGRATION_ENVIRONMENT.md",
+      "line": 15,
+      "identifier": "aithron-verification-new",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/INTEGRATION_ENVIRONMENT.md",
+      "line": 16,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/INTEGRATION_ENVIRONMENT.md",
+      "line": 17,
+      "identifier": "aithron-verification-new",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/INTEGRATION_ENVIRONMENT.md",
+      "line": 32,
+      "identifier": "ATHRON",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/INTEGRATION_ENVIRONMENT.md",
+      "line": 45,
+      "identifier": "AITHRON_ALLOW_TEST_SCHEMA_RESET",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/INTEGRATION_ENVIRONMENT.md",
+      "line": 49,
+      "identifier": "AITHRON_CONFIG",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/manuals/OFFLINE_AND_SYNC_GUIDE.md",
+      "line": 19,
+      "identifier": "aithron-content-v1",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase10.md",
+      "line": 1,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase13.md",
+      "line": 4,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase14.md",
+      "line": 1,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase14.md",
+      "line": 4,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase15.md",
+      "line": 4,
+      "identifier": "ATHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase15.md",
+      "line": 15,
+      "identifier": "ATHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase16.md",
+      "line": 4,
+      "identifier": "ATHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase17.md",
+      "line": 5,
+      "identifier": "ATHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase17.md",
+      "line": 29,
+      "identifier": "ATHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase17.md",
+      "line": 74,
+      "identifier": "aithron-edu",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase18.md",
+      "line": 6,
+      "identifier": "ATHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase18.md",
+      "line": 28,
+      "identifier": "ATHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase18.md",
+      "line": 110,
+      "identifier": "AITHRON-datos-de-demostracion.csv",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase18.md",
+      "line": 154,
+      "identifier": "aithron-edu",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase19.md",
+      "line": 1,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase19.md",
+      "line": 6,
+      "identifier": "ATHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase19.md",
+      "line": 28,
+      "identifier": "ATHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase19.md",
+      "line": 80,
+      "identifier": "Aithron",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase19.md",
+      "line": 102,
+      "identifier": "aithron-edu",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase19.md",
+      "line": 196,
+      "identifier": "Aithron",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase22.md",
+      "line": 1,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase22.md",
+      "line": 5,
+      "identifier": "ATHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase22.md",
+      "line": 36,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase22.md",
+      "line": 76,
+      "identifier": "aithron-edu",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase22.md",
+      "line": 108,
+      "identifier": "aithron-monitor-shell-v1",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase22.md",
+      "line": 230,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase23.md",
+      "line": 13,
+      "identifier": "aithron.preferences.v1.demo-monitor",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase23.md",
+      "line": 13,
+      "identifier": "aithron.preferences.v1.demo-student",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase24.md",
+      "line": 5,
+      "identifier": "ATHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase24.md",
+      "line": 100,
+      "identifier": "aithron-edu",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase24.md",
+      "line": 106,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase24.md",
+      "line": 107,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase24.md",
+      "line": 115,
+      "identifier": "aithron.preferences.v1.demo-admin",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase25.md",
+      "line": 5,
+      "identifier": "ATHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase25.md",
+      "line": 52,
+      "identifier": "aithron-edu",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase25.md",
+      "line": 134,
+      "identifier": "aithron.preferences.v1.demo-admin",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase4.md",
+      "line": 15,
+      "identifier": "ATHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase4.md",
+      "line": 106,
+      "identifier": "aithron-ui-tests",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase4.md",
+      "line": 107,
+      "identifier": "aithron-ui-tests",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase4.md",
+      "line": 108,
+      "identifier": "aithron-ui-tests",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase5.md",
+      "line": 1,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase5.md",
+      "line": 24,
+      "identifier": "ATHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase5.md",
+      "line": 69,
+      "identifier": "Aithron",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase5.md",
+      "line": 188,
+      "identifier": "aithron-ui-tests",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase5.md",
+      "line": 189,
+      "identifier": "aithron-ui-tests",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase5.md",
+      "line": 190,
+      "identifier": "aithron-ui-tests",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase6.md",
+      "line": 1,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase6.md",
+      "line": 21,
+      "identifier": "ATHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase6.md",
+      "line": 100,
+      "identifier": "aithron.demo.activities.v1",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase6.md",
+      "line": 221,
+      "identifier": "aithron-ui-tests",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase6.md",
+      "line": 222,
+      "identifier": "aithron-ui-tests",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase6.md",
+      "line": 223,
+      "identifier": "aithron-ui-tests",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase7.md",
+      "line": 1,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase7.md",
+      "line": 17,
+      "identifier": "ATHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase7.md",
+      "line": 23,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase7.md",
+      "line": 47,
+      "identifier": "Aithron",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase7.md",
+      "line": 92,
+      "identifier": "Aithron",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase7.md",
+      "line": 93,
+      "identifier": "Aithron",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase7.md",
+      "line": 94,
+      "identifier": "Aithron",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase7.md",
+      "line": 130,
+      "identifier": "aithron.demo.activities.v1",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase8.md",
+      "line": 1,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase8.md",
+      "line": 6,
+      "identifier": "ATHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase8.md",
+      "line": 15,
+      "identifier": "Aithron",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase8.md",
+      "line": 19,
+      "identifier": "ATHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase8.md",
+      "line": 19,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase8.md",
+      "line": 24,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase8.md",
+      "line": 49,
+      "identifier": "aithron.demo.vocabulary.v1",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase8.md",
+      "line": 64,
+      "identifier": "Aithron",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase8.md",
+      "line": 131,
+      "identifier": "Aithron",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase9.md",
+      "line": 1,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/phase9.md",
+      "line": 4,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/PHASE_47_CONTINUATION_2026-10-27.md",
+      "line": 155,
+      "identifier": "aithron-integration-e4c75e81f5d0498fae58297003317fbe",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/PHASE_47_CONTINUATION_2026-10-27.md",
+      "line": 159,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/PHASE_48_CONTINUATION_2026-10-27.md",
+      "line": 270,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/PHASE_48_CONTINUATION_2026-10-27.md",
+      "line": 278,
+      "identifier": "aithron-integration-e4c75e81f5d0498fae58297003317fbe",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/PHASE_48_CONTINUATION_2026-10-27.md",
+      "line": 279,
+      "identifier": "aithron-audit-de008cd837534f478ad8760d47741f29",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/PHASE_49_REPORT.md",
+      "line": 1,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/pilot/PILOT_AUTHORIZATION_TEMPLATES.md",
+      "line": 9,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/POSTGRESQL_PRODUCTION.md",
+      "line": 5,
+      "identifier": "aithron_app",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/POSTGRESQL_PRODUCTION.md",
+      "line": 5,
+      "identifier": "aithron_migrator",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/PREMIUM_FRONTEND_READABILITY_2026-10-27.md",
+      "line": 113,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/PREMIUM_FRONTEND_READABILITY_2026-10-27.md",
+      "line": 114,
+      "identifier": "AITHRON_PREMIUM_READABILITY",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/PREMIUM_FRONTEND_READABILITY_2026-10-27.md",
+      "line": 115,
+      "identifier": "AITHRON_PREMIUM_FOCUS",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/PREMIUM_FRONTEND_READABILITY_2026-10-27.md",
+      "line": 116,
+      "identifier": "AITHRON_STUDENT_JOURNEY",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/PREMIUM_FRONTEND_READABILITY_2026-10-27.md",
+      "line": 117,
+      "identifier": "AITHRON_FINAL_EVIDENCE_DIR",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/PREMIUM_FRONTEND_READABILITY_2026-10-27.md",
+      "line": 120,
+      "identifier": "AITHRON_FRONTEND_HASH_NAMESPACE",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/PREMIUM_FRONTEND_READABILITY_2026-10-27.md",
+      "line": 120,
+      "identifier": "AITHRON_FINAL_EVIDENCE_DIR",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/PROGRESS_ENGINE_ARCHITECTURE.md",
+      "line": 1,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/PROGRESS_REPOSITORY_AUDIT.md",
+      "line": 5,
+      "identifier": "ATHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/REPORTS_ENGINE_ARCHITECTURE.md",
+      "line": 1,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/REPORT_DATA_SOURCES.md",
+      "line": 3,
+      "identifier": "ATHRON",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/SECURITY_AUDIT_REPORT.md",
+      "line": 1,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/SECURITY_AUDIT_REPORT.md",
+      "line": 15,
+      "identifier": "ATHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/STUDENT_JOURNEY_IMPROVEMENTS_2026-10-27.md",
+      "line": 103,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/STUDENT_JOURNEY_IMPROVEMENTS_2026-10-27.md",
+      "line": 104,
+      "identifier": "AITHRON_STUDENT_JOURNEY",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/STUDENT_JOURNEY_IMPROVEMENTS_2026-10-27.md",
+      "line": 105,
+      "identifier": "AITHRON_FINAL_EVIDENCE_DIR",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/STUDENT_JOURNEY_IMPROVEMENTS_2026-10-27.md",
+      "line": 110,
+      "identifier": "AITHRON_FRONTEND_HASH_NAMESPACE",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/STUDENT_JOURNEY_IMPROVEMENTS_2026-10-27.md",
+      "line": 110,
+      "identifier": "AITHRON_FINAL_EVIDENCE_DIR",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/SYNC_INDEXEDDB_SCHEMA.md",
+      "line": 3,
+      "identifier": "aithron-edu",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/SYNC_INITIAL_AUDIT_2026-10-26.md",
+      "line": 10,
+      "identifier": "aithron-edu",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/SYNC_INTEGRATION_STATUS.md",
+      "line": 10,
+      "identifier": "aithron-edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "docs/SYNC_SECURITY_AUDIT.md",
+      "line": 3,
+      "identifier": "AITHRON",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/SYNC_SECURITY_AUDIT.md",
+      "line": 5,
+      "identifier": "aithron-evaluations-demo",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/SYNC_TEST_RESULTS.md",
+      "line": 25,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "historical_reference"
+    },
+    {
+      "file": "docs/SYNC_TEST_RESULTS.md",
+      "line": 57,
+      "identifier": "AITHRON_SYNC_ARCHITECTURE.md",
+      "category": "historical_reference"
+    },
+    {
+      "file": "frontend/js/admin/admin-shell.js",
+      "line": 29,
+      "identifier": "aithron-preferences-change",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/components/topbar.js",
+      "line": 15,
+      "identifier": "aithron-preferences-change",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/core/config.js",
+      "line": 2,
+      "identifier": "AITHRON_CONFIG.apiBaseUrl.",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/core/config.js",
+      "line": 3,
+      "identifier": "AITHRON_CONFIG",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/data/admin-diagnostic-rules.data.js",
+      "line": 11,
+      "identifier": "aithron-",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/data/admin-service-definitions.data.js",
+      "line": 10,
+      "identifier": "aithronAI",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/data/admin-service-definitions.data.js",
+      "line": 62,
+      "identifier": "aithron-edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/offline/cache-manager.js",
+      "line": 1,
+      "identifier": "aithron-static-v1",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/offline/cache-manager.js",
+      "line": 2,
+      "identifier": "aithron-content-v1",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/offline/confirmed-sync.js",
+      "line": 47,
+      "identifier": "aithron-sync-v1",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/offline/database-schema.js",
+      "line": 1,
+      "identifier": "aithron-edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/offline/evaluation-draft-store.js",
+      "line": 1,
+      "identifier": "aithron-evaluations-demo",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/offline/monitor-preparation.js",
+      "line": 2,
+      "identifier": "aithron-monitor-shell-v1",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/offline/monitor-preparation.js",
+      "line": 26,
+      "identifier": "Aithron-Offline-Fallback",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/offline/monitor-preparation.js",
+      "line": 37,
+      "identifier": "Aithron-Offline-Fallback",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/services/activity-session.service.js",
+      "line": 1,
+      "identifier": "aithron.demo.activities.v1",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/services/admin-pwa-diagnostics.service.js",
+      "line": 6,
+      "identifier": "aithron-",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/services/admin-service-status.service.js",
+      "line": 8,
+      "identifier": "aithron-edu",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/services/admin-service-status.service.js",
+      "line": 9,
+      "identifier": "aithron.preferences.v1.demo-admin",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/services/admin-services-status.service.js",
+      "line": 14,
+      "identifier": "aithronAI",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/services/admin-services-status.service.js",
+      "line": 91,
+      "identifier": "aithron",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/services/auth.service.js",
+      "line": 4,
+      "identifier": "aithron.access_token",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/services/auth.service.js",
+      "line": 5,
+      "identifier": "aithron.csrf_token",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/services/monitor-resources.service.js",
+      "line": 26,
+      "identifier": "Aithron-Offline-Fallback",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/services/monitor-settings.service.js",
+      "line": 11,
+      "identifier": "aithron-preferences-change",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/services/preferences.service.js",
+      "line": 5,
+      "identifier": "aithron.preferences.v1.",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/services/preferences.service.js",
+      "line": 19,
+      "identifier": "aithron.prefs",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/services/preferences.service.js",
+      "line": 19,
+      "identifier": "aithron.locale",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/services/preferences.service.js",
+      "line": 19,
+      "identifier": "aithron.theme",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/services/preferences.service.js",
+      "line": 19,
+      "identifier": "aithron.profile.alias",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/services/preferences.service.js",
+      "line": 19,
+      "identifier": "aithron.profile.avatar",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/services/preferences.service.js",
+      "line": 19,
+      "identifier": "aithron.a11y",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/services/preferences.service.js",
+      "line": 28,
+      "identifier": "aithron-preferences-change",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/services/preferences.service.js",
+      "line": 31,
+      "identifier": "aithron-preferences-change",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/services/progress-api.service.js",
+      "line": 15,
+      "identifier": "aithron.access_token",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/services/pronunciation.service.js",
+      "line": 1,
+      "identifier": "aithron.demo.pronunciation.v1",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/services/vocabulary.service.js",
+      "line": 8,
+      "identifier": "aithron.demo.vocabulary.v1",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/student/pronunciation-i18n.js",
+      "line": 5,
+      "identifier": "aithron.locale",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/js/utils/monitor-data-events.js",
+      "line": 2,
+      "identifier": "aithron-demo-monitor-data",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/sw.js",
+      "line": 4,
+      "identifier": "aithron-static-v2",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/sw.js",
+      "line": 5,
+      "identifier": "aithron-public-v2",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/sw.js",
+      "line": 6,
+      "identifier": "aithron-monitor-shell-v1",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "frontend/sw.js",
+      "line": 41,
+      "identifier": "Aithron-Offline-Fallback",
+      "category": "technical_identifier_or_path"
+    },
+    {
+      "file": "infra/backups/postgres_backup.py",
+      "line": 56,
+      "identifier": "aithron-",
+      "category": "external_configuration"
+    },
+    {
+      "file": "README.md",
+      "line": 3,
+      "identifier": "AITHRON",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "README.md",
+      "line": 118,
+      "identifier": "AITHRON_CONFIG.apiBaseUrl",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "README.md",
+      "line": 122,
+      "identifier": "AITHRON",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "README.md",
+      "line": 130,
+      "identifier": "AITHRON_AI_ARCHITECTURE",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "README.md",
+      "line": 130,
+      "identifier": "AITHRON_AI_ARCHITECTURE.md",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "README.md",
+      "line": 134,
+      "identifier": "AITHRON",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "README.md",
+      "line": 146,
+      "identifier": "AITHRON",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "README.md",
+      "line": 168,
+      "identifier": "AITHRON",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "README.md",
+      "line": 168,
+      "identifier": "AITHRON",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "README.md",
+      "line": 168,
+      "identifier": "AITHRON",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "README.md",
+      "line": 198,
+      "identifier": "AITHRON",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "README.md",
+      "line": 206,
+      "identifier": "AITHRON",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "README.md",
+      "line": 229,
+      "identifier": "ATHRON",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "README.md",
+      "line": 253,
+      "identifier": "Aithron",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "README.md",
+      "line": 259,
+      "identifier": "AITHRON",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "README.md",
+      "line": 267,
+      "identifier": "aithron.demo.activities.v1",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "README.md",
+      "line": 278,
+      "identifier": "AITHRON",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "README.md",
+      "line": 299,
+      "identifier": "AITHRON",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "README.md",
+      "line": 429,
+      "identifier": "AITHRON",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "README.md",
+      "line": 433,
+      "identifier": "ATHRON",
+      "category": "historical_explanation"
+    },
+    {
+      "file": "tests/debug-movements.cjs",
+      "line": 3,
+      "identifier": "ATHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/debug-movements10.cjs",
+      "line": 3,
+      "identifier": "ATHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/debug-movements11.cjs",
+      "line": 3,
+      "identifier": "ATHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/debug-movements12.cjs",
+      "line": 3,
+      "identifier": "ATHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/debug-movements13.cjs",
+      "line": 3,
+      "identifier": "ATHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/debug-movements14.cjs",
+      "line": 3,
+      "identifier": "ATHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/debug-movements15.cjs",
+      "line": 3,
+      "identifier": "ATHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/debug-movements17.cjs",
+      "line": 3,
+      "identifier": "ATHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/debug-movements18.cjs",
+      "line": 3,
+      "identifier": "ATHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/debug-movements2.cjs",
+      "line": 3,
+      "identifier": "ATHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/debug-movements3.cjs",
+      "line": 3,
+      "identifier": "ATHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/debug-movements4.cjs",
+      "line": 3,
+      "identifier": "ATHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/debug-movements5.cjs",
+      "line": 3,
+      "identifier": "ATHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/debug-movements6.cjs",
+      "line": 3,
+      "identifier": "ATHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/debug-movements8.cjs",
+      "line": 3,
+      "identifier": "ATHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/debug-movements9.cjs",
+      "line": 3,
+      "identifier": "ATHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/edunext-brand.cjs",
+      "line": 14,
+      "identifier": "aithron",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/edunext-brand.cjs",
+      "line": 14,
+      "identifier": "athron",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/edunext-brand.cjs",
+      "line": 29,
+      "identifier": "aithron-edu",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/edunext-brand.cjs",
+      "line": 30,
+      "identifier": "aithron-evaluations-demo",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/edunext-brand.cjs",
+      "line": 31,
+      "identifier": "aithron.preferences.v1.",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/edunext-brand.cjs",
+      "line": 31,
+      "identifier": "aithron-preferences-change",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/edunext-brand.cjs",
+      "line": 32,
+      "identifier": "aithron-sync-v1",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/edunext-brand.cjs",
+      "line": 33,
+      "identifier": "aithron-demo-monitor-data",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/edunext-brand.cjs",
+      "line": 34,
+      "identifier": "aithron.access_token",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/edunext-brand.cjs",
+      "line": 34,
+      "identifier": "aithron.csrf_token",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/edunext-brand.cjs",
+      "line": 35,
+      "identifier": "AITHRON_CONFIG",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/edunext-brand.cjs",
+      "line": 36,
+      "identifier": "aithron-edu",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/edunext-brand.cjs",
+      "line": 36,
+      "identifier": "aithron-edu-web",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/edunext-brand.cjs",
+      "line": 36,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/edunext-brand.cjs",
+      "line": 37,
+      "identifier": "athron_ai",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/edunext-brand.cjs",
+      "line": 57,
+      "identifier": "aithron",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/edunext-brand.cjs",
+      "line": 57,
+      "identifier": "athron",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/fixtures/edunext-brand-checks.cjs",
+      "line": 12,
+      "identifier": "aithron",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/fixtures/edunext-brand-checks.cjs",
+      "line": 12,
+      "identifier": "athron",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/fixtures/edunext-brand-checks.cjs",
+      "line": 30,
+      "identifier": "aithron.brand-test-sentinel",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/fixtures/edunext-brand-checks.cjs",
+      "line": 31,
+      "identifier": "aithron-brand-test-sentinel",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/fixtures/edunext-brand-checks.cjs",
+      "line": 58,
+      "identifier": "aithron.brand-test-sentinel",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/fixtures/edunext-brand-checks.cjs",
+      "line": 58,
+      "identifier": "aithron-brand-test-sentinel",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/fixtures/student-journey-checks.cjs",
+      "line": 20,
+      "identifier": "aithron.demo.activities.v1",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/fixtures/student-journey-checks.cjs",
+      "line": 31,
+      "identifier": "aithron.demo.activities.v1",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/frontend-refresh-hashes.cjs",
+      "line": 6,
+      "identifier": "AITHRON_FRONTEND_HASH_NAMESPACE",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/frontend-refresh.browser.cjs",
+      "line": 14,
+      "identifier": "AITHRON_STUDENT_JOURNEY",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/frontend-refresh.browser.cjs",
+      "line": 15,
+      "identifier": "AITHRON_PREMIUM_READABILITY",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/frontend-refresh.browser.cjs",
+      "line": 59,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/frontend-refresh.browser.cjs",
+      "line": 116,
+      "identifier": "AITHRON_CORPORATE_COMPOSITION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/frontend-refresh.browser.cjs",
+      "line": 122,
+      "identifier": "AITHRON_PREMIUM_FOCUS",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/frontend-refresh.browser.cjs",
+      "line": 129,
+      "identifier": "AITHRON_REFERENCE_PALETTES",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/frontend-refresh.browser.cjs",
+      "line": 192,
+      "identifier": "AITHRON_CORPORATE_COMPOSITION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/offline-pwa.cjs",
+      "line": 18,
+      "identifier": "aithron-monitor-shell-v1",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/offline-pwa.cjs",
+      "line": 18,
+      "identifier": "aithron-public-v2",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/offline-pwa.cjs",
+      "line": 18,
+      "identifier": "aithron-static-v2",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/offline-pwa.cjs",
+      "line": 20,
+      "identifier": "aithron-monitor-shell-v1",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/offline-pwa.cjs",
+      "line": 21,
+      "identifier": "aithron-public-v2",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/offline-pwa.cjs",
+      "line": 22,
+      "identifier": "aithron-static-v2",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/offline-pwa.cjs",
+      "line": 65,
+      "identifier": "Aithron-Offline-Fallback",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/offline-pwa.cjs",
+      "line": 65,
+      "identifier": "aithron-monitor-shell-v1",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/offline-pwa.cjs",
+      "line": 69,
+      "identifier": "aithron-monitor-shell-v1",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/offline-pwa.cjs",
+      "line": 81,
+      "identifier": "aithron-monitor-shell-v1",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/phase17.cjs",
+      "line": 8,
+      "identifier": "aithron-edu",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/phase17.cjs",
+      "line": 23,
+      "identifier": "AITHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/phase19.cjs",
+      "line": 8,
+      "identifier": "aithron-edu",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/phase19.cjs",
+      "line": 30,
+      "identifier": "aithron-monitor-shell-v1",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/phase22.cjs",
+      "line": 8,
+      "identifier": "aithron-edu",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/phase25.cjs",
+      "line": 8,
+      "identifier": "aithron-edu",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/phase26.cjs",
+      "line": 15,
+      "identifier": "aithron-edu",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/phase26.cjs",
+      "line": 17,
+      "identifier": "aithron-edu",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/phase26.cjs",
+      "line": 38,
+      "identifier": "Aithron",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/phase31.cjs",
+      "line": 6,
+      "identifier": "aithron-edu",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/phase37.cjs",
+      "line": 61,
+      "identifier": "aithron.access_token",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/phase47-api.cjs",
+      "line": 42,
+      "identifier": "AITHRON_CONFIG",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/phase47-api.cjs",
+      "line": 44,
+      "identifier": "AITHRON_CONFIG",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/phase47-private-views.cjs",
+      "line": 7,
+      "identifier": "aithron.access_token",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/phase47-private-views.cjs",
+      "line": 7,
+      "identifier": "aithron.csrf_token",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/phase47-private-views.cjs",
+      "line": 20,
+      "identifier": "aithron.access_token",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/phase48-browser.cjs",
+      "line": 63,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/phase48-session.cjs",
+      "line": 17,
+      "identifier": "aithron.access_token",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/phase48-session.cjs",
+      "line": 36,
+      "identifier": "aithron.access_token",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tests/practice-games.browser.cjs",
+      "line": 118,
+      "identifier": "aithron.demo.activities.v1",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/audit-dependencies.py",
+      "line": 22,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/audit-dependencies.py",
+      "line": 23,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/audit-dependencies.py",
+      "line": 46,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/audit-phase48.cjs",
+      "line": 6,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/edunext-brand-migration.cjs",
+      "line": 6,
+      "identifier": "aithron",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/edunext-brand-migration.cjs",
+      "line": 6,
+      "identifier": "athron",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/edunext-brand-migration.cjs",
+      "line": 27,
+      "identifier": "AITHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/edunext-brand-migration.cjs",
+      "line": 27,
+      "identifier": "ATHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/edunext-brand-migration.cjs",
+      "line": 32,
+      "identifier": "AITHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/edunext-brand-migration.cjs",
+      "line": 33,
+      "identifier": "AITHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/edunext-brand-migration.cjs",
+      "line": 33,
+      "identifier": "Aithron",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/edunext-brand-migration.cjs",
+      "line": 39,
+      "identifier": "AITHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/edunext-brand-migration.cjs",
+      "line": 45,
+      "identifier": "Aithron",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/edunext-brand-migration.cjs",
+      "line": 45,
+      "identifier": "Aithron",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/edunext-brand-migration.cjs",
+      "line": 46,
+      "identifier": "aithron-tech-summary-",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/edunext-brand-migration.cjs",
+      "line": 46,
+      "identifier": "aithron-guia-demo-",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/edunext-brand-migration.cjs",
+      "line": 46,
+      "identifier": "aithron-",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/edunext-brand-migration.cjs",
+      "line": 46,
+      "identifier": "AITHRON-datos-de-demostracion",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/edunext-brand-migration.cjs",
+      "line": 51,
+      "identifier": "AITHRON",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/final-evidence.cjs",
+      "line": 8,
+      "identifier": "AITHRON_FINAL_EVIDENCE_DIR",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/final-evidence.cjs",
+      "line": 19,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/run-final-validation.cjs",
+      "line": 6,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/run-final-validation.cjs",
+      "line": 6,
+      "identifier": "AITHRON_FINAL_EVIDENCE_DIR",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-argos.py",
+      "line": 22,
+      "identifier": "AITHRON_FINAL_EVIDENCE_DIR",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-argos.py",
+      "line": 23,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-argos.py",
+      "line": 30,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-insights.py",
+      "line": 13,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-insights.py",
+      "line": 14,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-insights.py",
+      "line": 39,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-integration.py",
+      "line": 21,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-integration.py",
+      "line": 22,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-integration.py",
+      "line": 34,
+      "identifier": "aithron_isolated_unreachable",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-integration.py",
+      "line": 35,
+      "identifier": "aithron_isolated_unreachable",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-integration.py",
+      "line": 37,
+      "identifier": "AITHRON_ASSESSMENT_READONLY_DB",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-integration.py",
+      "line": 37,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-integration.py",
+      "line": 38,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-integration.py",
+      "line": 39,
+      "identifier": "AITHRON_FINAL_EVIDENCE_DIR",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-integration.py",
+      "line": 104,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-security.py",
+      "line": 21,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-security.py",
+      "line": 22,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-security.py",
+      "line": 30,
+      "identifier": "aithron_isolated_unreachable",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-security.py",
+      "line": 31,
+      "identifier": "aithron_isolated_unreachable",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-security.py",
+      "line": 33,
+      "identifier": "AITHRON_ASSESSMENT_READONLY_DB",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-security.py",
+      "line": 33,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-security.py",
+      "line": 34,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-security.py",
+      "line": 117,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-sync.cjs",
+      "line": 3,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-sync.cjs",
+      "line": 3,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/validate-sync.cjs",
+      "line": 23,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/verify-edunext-backend.py",
+      "line": 13,
+      "identifier": "AITHRON_FINAL_EVIDENCE_DIR",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/verify-edunext-backend.py",
+      "line": 14,
+      "identifier": "AITHRON_FINAL_VALIDATION",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/verify-edunext-backend.py",
+      "line": 22,
+      "identifier": "AITHRON_AI_ENABLED",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/verify-edunext-backend.py",
+      "line": 37,
+      "identifier": "aithron-edu",
+      "category": "compatibility_test_or_tool"
+    },
+    {
+      "file": "tools/verify-edunext-backend.py",
+      "line": 38,
+      "identifier": "aithron-edu-web",
+      "category": "compatibility_test_or_tool"
+    }
+  ],
+  "hashes": [
+    {
+      "file": "AGENTS.md",
+      "sha256": "86b0de152954058ae9a8acaf3d2e808fe66419b0f70056b25190f7a20aef7a2d"
+    },
+    {
+      "file": "PROJECT_STRUCTURE.md",
+      "sha256": "6917cf46a3189b92e8889f85ac30e61f2675296e3f31081da9d8ab99af626e31"
+    },
+    {
+      "file": "README.md",
+      "sha256": "0fe02796450c463f910dda8cba417bc0c261a8cd5e31cc2bbf566df47e0ee9f1"
+    },
+    {
+      "file": "backend/.env.example",
+      "sha256": "c4276c897371d90795bec705eb141107fc2c098a4b37c9092c6b072531618a53"
+    },
+    {
+      "file": "backend/README.md",
+      "sha256": "c642955f4c34cdacb4069508819c31ae4995a9a1434200b0f69bffc0470afcd3"
+    },
+    {
+      "file": "backend/app/api/v1/endpoints/ai.py",
+      "sha256": "43f6d0cc670682adc961e25726d5744f4d18bc96670ddc37575d82bc42219ac1"
+    },
+    {
+      "file": "backend/app/api/v1/endpoints/meta.py",
+      "sha256": "7a3cf3f0067935fbe7b2866ad501e7ccf03d23531643858aba753d83e93f2fe3"
+    },
+    {
+      "file": "backend/app/core/config.py",
+      "sha256": "ce079d290caa719b8f09e823fd7dc9a1d6b495a56939a8c6f126725981df160f"
+    },
+    {
+      "file": "backend/app/core/exceptions.py",
+      "sha256": "06685fa64c5716b537f66f246eec9844ad4c6b996140050b8844e7705e5991b7"
+    },
+    {
+      "file": "backend/app/db/__init__.py",
+      "sha256": "af0e20a078a0f81abb68150ba50b0cc8c9d4b2ca7d424675cec1864c7f5a2dd6"
+    },
+    {
+      "file": "backend/app/exporters/csv_exporter.py",
+      "sha256": "44638953af481c5f92633ebd6dd5e43ef9be30dad9b08e92b14bda78be645568"
+    },
+    {
+      "file": "backend/app/main.py",
+      "sha256": "c11f9ffb9e65022bb60d72b96065fa95c1aa44c9e233bf8a4e2c6e9f14bd3bf5"
+    },
+    {
+      "file": "backend/app/repositories/dictionary_repository.py",
+      "sha256": "084b3cb3d1d0c8bdc8887a81f5b84efd7855b629372c5000f76573b1f4460f13"
+    },
+    {
+      "file": "backend/pyproject.toml",
+      "sha256": "8afc660a487cd0f3586263cf7e7fd73e7ce170df1605da860e27eebc9c313b37"
+    },
+    {
+      "file": "backend/tests/test_meta.py",
+      "sha256": "6384acde07a0ba6c7579d5890e8e13e6decd4484d62ed85499a758718b101e5a"
+    },
+    {
+      "file": "docs/AITHRON_AI_ARCHITECTURE.md",
+      "sha256": "9b5fd825266fb2df84112a68b9bfe13b55703c0ef95be3abe1272a06ade7becf"
+    },
+    {
+      "file": "docs/AITHRON_SYNC_ARCHITECTURE.md",
+      "sha256": "514bcf3fa2fa72e54d0b75ab325b9c042d2ce934be3cb972e80a67cb8f8d8079"
+    },
+    {
+      "file": "docs/AI_INTEGRATION_STATUS.md",
+      "sha256": "5517c25d68d473f6d5d9fab4707d1c6e09b31123482aba20496f3f6810d2011b"
+    },
+    {
+      "file": "docs/AUTHENTICATION_ARCHITECTURE.md",
+      "sha256": "34e9114c9f4e25dfcbac397fc2c1b1e4baa2d051dae340d115db5f92850d8235"
+    },
+    {
+      "file": "docs/BACKEND_API_V1.md",
+      "sha256": "ecf79a508d0583897ae7b1ca7905adf339ec21a61ce514ec99b797a3d04e210f"
+    },
+    {
+      "file": "docs/BACKEND_ARCHITECTURE.md",
+      "sha256": "264d75821dc1f48ff3710887c7d45ee888fbabfe52b95a1dccac24a2a5c07545"
+    },
+    {
+      "file": "docs/BACKEND_ENVIRONMENT.md",
+      "sha256": "d57cf64526b61dbe4a1358825a3c193c1f283135d615aae2b611b06adc9cf3a7"
+    },
+    {
+      "file": "docs/BACKEND_INTEGRATION_PLAN.md",
+      "sha256": "e949489373020528a8e115863024d566f17c609fb3f984a68a55dd1a8447e5ec"
+    },
+    {
+      "file": "docs/BACKEND_SECURITY_FOUNDATION.md",
+      "sha256": "fcb883d9d17427d580fa8bed37927baa3d0883dce6d397372841d30b885038b3"
+    },
+    {
+      "file": "docs/INSIGHTS_ENGINE_ARCHITECTURE.md",
+      "sha256": "7eb58d0543bb7409a36b0233da35117d944176c02c0d10bb9bac9ee70c62374f"
+    },
+    {
+      "file": "docs/PLANNER_KNOWN_LIMITATIONS.md",
+      "sha256": "55e976cbf70d78b33aa52cc5aedd65286f0fb0be8c7474ffb7f1ff9290908d23"
+    },
+    {
+      "file": "docs/PLANNER_OFFLINE_CONTRACTS.md",
+      "sha256": "e25eb55b4695ed472efa0c428e514e3e4a9baa858e855578f6224d2c0a21a7a2"
+    },
+    {
+      "file": "docs/PROGRESS_KNOWN_LIMITATIONS.md",
+      "sha256": "18886fecafbbc9a34a7853e75f15e5aa531b60673ac954f34b8989f7e94572c6"
+    },
+    {
+      "file": "docs/REINFORCEMENT_API.md",
+      "sha256": "478ae7c8b11153cf0f79a5dbe7a4eeb76c25c01ae17421f2010c5554f9fdb007"
+    },
+    {
+      "file": "docs/REPORT_KNOWN_LIMITATIONS.md",
+      "sha256": "37bbdbd71b2eda7f9a06837315c2b3a4d8d0c48fdee623e81703b5dc14afa4c0"
+    },
+    {
+      "file": "docs/SYNC_INTEGRATION_STATUS.md",
+      "sha256": "2f0f1762334b134d32d4cf8b127e60a1c5f993f7fbe1f57b61b299ae01c55ac4"
+    },
+    {
+      "file": "docs/manuals/STUDENT_USER_MANUAL.md",
+      "sha256": "37b70f1862cc7359ec855fc7d05ff6a72d8cece70547c2851b16ab6d3f474577"
+    },
+    {
+      "file": "frontend/admin/actividad-plataforma.html",
+      "sha256": "790651b7e30615eb814a3046cbef698086601214b150ec7bf4d524c84b3950a4"
+    },
+    {
+      "file": "frontend/admin/actividad-tecnica.html",
+      "sha256": "a7d00c02feb579f7ca5a5352a2b64f788dc261d772b0a235289d1af2d520cbc7"
+    },
+    {
+      "file": "frontend/admin/almacenamiento-local.html",
+      "sha256": "dd5d226126913533253531894ecb917aa8c626a34f346c361aeb872729952a13"
+    },
+    {
+      "file": "frontend/admin/asignaciones-docentes.html",
+      "sha256": "e7b9d888c1cde7d0ea15fa2243768182dc23edab1cf4963838a1beae21288d71"
+    },
+    {
+      "file": "frontend/admin/aula-detalle.html",
+      "sha256": "f54bb724b3c62227d9ba90ba4ed32519f2359004e4f6301d0e52ace7f00f35b3"
+    },
+    {
+      "file": "frontend/admin/aulas.html",
+      "sha256": "33c1ba4c9270b5b6e2afb0f3a81bea9fd60bb823ee5ac83e58e241dab1ad4485"
+    },
+    {
+      "file": "frontend/admin/ayuda.html",
+      "sha256": "c2399d2646faf4b5d66a8312a42c16441e9c2d06fc56cf6ab3d3beded05e182c"
+    },
+    {
+      "file": "frontend/admin/calidad-datos.html",
+      "sha256": "a01148aacc84f70df916c5723ce55d54d5a9ec2e95f1d0e401ba0b22ba2340eb"
+    },
+    {
+      "file": "frontend/admin/configuracion-academica.html",
+      "sha256": "e41fdd6928cf5c3c1f3b6f0e12dab081cab9d0c154cb880583f6a95e5c58a214"
+    },
+    {
+      "file": "frontend/admin/configuracion.html",
+      "sha256": "585de1444fcd042d5ed9eb0439b71ef154970b5bc9c5021be754333f46677422"
+    },
+    {
+      "file": "frontend/admin/contenidos.html",
+      "sha256": "74fe6e4af9853026603679441afd34ff4a167b67428eafa200bebf9fc8f17500"
+    },
+    {
+      "file": "frontend/admin/detalle-contenido.html",
+      "sha256": "42fae9f5087109e7ec04be219256b584973b0d0371a7d754f5c47a1796fc3eeb"
+    },
+    {
+      "file": "frontend/admin/detalle-estudiante.html",
+      "sha256": "c1164942f4ea7887012a62cd150b2d7f85908d9be52d9be151511adf68631841"
+    },
+    {
+      "file": "frontend/admin/detalle-monitor.html",
+      "sha256": "2d1d928d05524269b46cdda31b2bd049a1b5f8150e305fea2deecb6f698e6ee0"
+    },
+    {
+      "file": "frontend/admin/detalle-usuario.html",
+      "sha256": "ff5f2ad94af3fe1a7f84d9afb816ee4da698669761dfa51c74b672308ebc37c7"
+    },
+    {
+      "file": "frontend/admin/diagnostico-pwa.html",
+      "sha256": "50487ab752bb50eddf7d8a67e7eef94152d865826751b36dd6d0537e282c061d"
+    },
+    {
+      "file": "frontend/admin/diagnostico.html",
+      "sha256": "e2b18b8225f307441b15148bd310e777399b31101ac2ef71baed643de43a7b01"
+    },
+    {
+      "file": "frontend/admin/editar-asignacion.html",
+      "sha256": "c0191273110a4905e96be9d13cf3e2f7a7b28d96a7e91bb1a148dcc66e9ef54e"
+    },
+    {
+      "file": "frontend/admin/editar-aula.html",
+      "sha256": "dc89da71bf5e3c231926ec9674c1df9d81af5badecc1706944228e77eb74edb3"
+    },
+    {
+      "file": "frontend/admin/editar-matricula.html",
+      "sha256": "7b68b0737782bee764a3d784b22735096e29b6930de8360afbef42b150a6a0ad"
+    },
+    {
+      "file": "frontend/admin/editar-perfil.html",
+      "sha256": "6e80665f2ae1d5ae5ea9a3f488c243f58257057d6e5777210cc57933ba96116d"
+    },
+    {
+      "file": "frontend/admin/editar-usuario.html",
+      "sha256": "7cf33c52a638f7c94a3bc5744ba9f40c43aeb9c6288ca12a00881b7296c63c47"
+    },
+    {
+      "file": "frontend/admin/estadisticas-institucionales.html",
+      "sha256": "55db83de4ea975e29ec6af4dc9d5bda37dd81569a4d802f6935fcb82a2e8c5a5"
+    },
+    {
+      "file": "frontend/admin/estado-servicios.html",
+      "sha256": "9f503c315733c824e46ebaeaa17bafa1fa30e7720e0c285fe02fae2fa187a667"
+    },
+    {
+      "file": "frontend/admin/estudiantes.html",
+      "sha256": "8480d3c72a4e0619c9445d198ff150f9b5d4005927593e13957f063d4c5b4913"
+    },
+    {
+      "file": "frontend/admin/grados-secciones.html",
+      "sha256": "555c8a4f7a2bd35ace3d89ba17cb82d500cb74da627eaf0f5c757b32216bdc75"
+    },
+    {
+      "file": "frontend/admin/historial-reportes.html",
+      "sha256": "61853ea9933c71147e4d0c70ed30997767616aaabc634242b11ff536855da894"
+    },
+    {
+      "file": "frontend/admin/historial-revisiones.html",
+      "sha256": "cf21212816b1a35cd00f109de1a3c30b8c3830eb6ae13c4f09e40102a5f15968"
+    },
+    {
+      "file": "frontend/admin/incidencias-tecnicas.html",
+      "sha256": "31dbb64ee57ac557b5973b023f3b994678925e0ba6104c33bcc35cb7d27ad934"
+    },
+    {
+      "file": "frontend/admin/index.html",
+      "sha256": "120d84adaf353ccde8274ab26d67c08c08c8b2543bc00aafa8a90a1474c0f318"
+    },
+    {
+      "file": "frontend/admin/institucion.html",
+      "sha256": "958f19e06498013be64a384dfb4b34eed58144368597541bcf6d698f3f5c7cb5"
+    },
+    {
+      "file": "frontend/admin/matriculas.html",
+      "sha256": "4c41c230b4f366917618d4ad1cca1017bf57b78c2039bcc5047698470bbd1f15"
+    },
+    {
+      "file": "frontend/admin/monitores.html",
+      "sha256": "622c603281fe67a590f018fbb0d7a556d8b2cd94d3bcfa774fd12eb7545744c6"
+    },
+    {
+      "file": "frontend/admin/movimientos-academicos.html",
+      "sha256": "5068c87935732125be03633dee56ccec79c259645c996ac317cf6f9846fec106"
+    },
+    {
+      "file": "frontend/admin/paquetes-offline.html",
+      "sha256": "3490e6440f4748b69a00f94b998792bfb8988999c21cc6ee867670186addbf2c"
+    },
+    {
+      "file": "frontend/admin/parametros-plataforma.html",
+      "sha256": "9086f943927e24ebd6bea3fa3da58fd48059e223f83063c3291c32ef922db9de"
+    },
+    {
+      "file": "frontend/admin/perfil.html",
+      "sha256": "8134488d380f983f9c0ce3e57d54e3c6d0799c2f12b6a708ea78add07c8e6622"
+    },
+    {
+      "file": "frontend/admin/periodos-academicos.html",
+      "sha256": "0b140e1348afa450beacf3cc60997918ba9fd36ace0edd319a62dca336a17c9d"
+    },
+    {
+      "file": "frontend/admin/preferencias-notificaciones.html",
+      "sha256": "8c6e9cbba03575bec9a1138f72dd894995f9dfd0d7ea68e946505f15ae72b1d7"
+    },
+    {
+      "file": "frontend/admin/preferencias.html",
+      "sha256": "bcbe80e14c202a702b5193ba971387f8b04c2d059098d33dc6e1fcdd54c21b4f"
+    },
+    {
+      "file": "frontend/admin/preparacion-publicacion.html",
+      "sha256": "81fa969a0294ba987f2936ab5b0e84bdb497de733f297542e910c0ee9204c255"
+    },
+    {
+      "file": "frontend/admin/privacidad.html",
+      "sha256": "7a727cd164f86973ba1cd4ce95252addd3d26cdef617637ef18ebf186712ecb3"
+    },
+    {
+      "file": "frontend/admin/recursos-institucionales.html",
+      "sha256": "46aca1a1a97260914681902059d0135304b8ac4bf5a9483e391a202af2b91801"
+    },
+    {
+      "file": "frontend/admin/reporte-aula.html",
+      "sha256": "7035b3bc052e493c0ecbda2defbf39c416720864818d1ffcd3982ba085203df1"
+    },
+    {
+      "file": "frontend/admin/reporte-curso.html",
+      "sha256": "4ca446bd20c551dd445a826c0c9997421589011a8cf3eca7256219e302825f2d"
+    },
+    {
+      "file": "frontend/admin/reporte-grado.html",
+      "sha256": "3bd675f6d6baabb540a4adcadd45960f04c286e296a76e36b29d9024d5a5e80a"
+    },
+    {
+      "file": "frontend/admin/reporte-institucional.html",
+      "sha256": "1ce6e9a340adbe818912b7050214bd2d7cff46d7af9ce7206ca9771eacf23555"
+    },
+    {
+      "file": "frontend/admin/reportes.html",
+      "sha256": "82226613877780b48c9e10bc894eca5df74a554baf93ff96d28eb7197592f8ee"
+    },
+    {
+      "file": "frontend/admin/revisar-contenido.html",
+      "sha256": "7e04739a721c1326f9c90e12636f68433cc3e73bda0583fceaea606c70af463e"
+    },
+    {
+      "file": "frontend/admin/revision-configuracion.html",
+      "sha256": "057d193b430e2a18f9e7bf9d13f8c59ca3d7715e8196a0905c30476ad122d561"
+    },
+    {
+      "file": "frontend/admin/revision-contenidos.html",
+      "sha256": "74151f13a75991af32acc69163b9037063c17cb69d66c0e0acbd549cd6ede8b5"
+    },
+    {
+      "file": "frontend/admin/roles-permisos.html",
+      "sha256": "a049a887dfba898682e280f50fcfb00377755a517ce1b181d63210a7451f1c14"
+    },
+    {
+      "file": "frontend/admin/seguimiento-academico.html",
+      "sha256": "895e802b67490457d4ac248ecec03b879f87e44bcb5423b600ec4d6b512f98c3"
+    },
+    {
+      "file": "frontend/admin/seguridad.html",
+      "sha256": "cdb074831187987368fd74b36784fa4b066db17607dc4123be7188a47047dc57"
+    },
+    {
+      "file": "frontend/admin/solicitudes-usuarios.html",
+      "sha256": "b65a7de84ebd558900459d3a52440afebae4264f87b162eba315ed0977336522"
+    },
+    {
+      "file": "frontend/admin/sync-operaciones.html",
+      "sha256": "7049e2418c6317d6936362129c261934cb5d18549e304941d03bd6921865c3bc"
+    },
+    {
+      "file": "frontend/admin/sync-paquetes.html",
+      "sha256": "5239dc5ddd648124945561cdd730b50f2c0b914fbc8ecd8b2effa3f6c438549e"
+    },
+    {
+      "file": "frontend/admin/sync.html",
+      "sha256": "e1cfa4f3dce24d093d43d3b84eeb4b4e71231ada12cb85d065f8788cc73ca495"
+    },
+    {
+      "file": "frontend/admin/usuarios.html",
+      "sha256": "8bf86f2fe27ad56505b9f0ffecc01b30014f3c33d765c0d2bf4072eb3870502d"
+    },
+    {
+      "file": "frontend/admin/validacion-contenidos.html",
+      "sha256": "16330503a7354ca6c4bb5a780cabae2279d72d6ec1150a8f5e16e1519dbefe2b"
+    },
+    {
+      "file": "frontend/admin/versiones-contenido.html",
+      "sha256": "8c9cf1124da820cb48fbabfdbe76219b8548b3d984e851d4e1a8b0c056d0b649"
+    },
+    {
+      "file": "frontend/agenda.html",
+      "sha256": "0be4b95cc5919a5d7e027e393356603d773de882f0b66ce3559f4ae4327962c3"
+    },
+    {
+      "file": "frontend/assets/images/branding/mark.svg",
+      "sha256": "4375aef676847f3825ad6a92e70c8b6f7a7350aeab5056de310d9ce374ee127e"
+    },
+    {
+      "file": "frontend/calendario.html",
+      "sha256": "7783be3d1ad43a0bbc6b5731546ae8dda0f8dc9d3084934c4d150ea433c0f6a4"
+    },
+    {
+      "file": "frontend/css/student/pronunciation.css",
+      "sha256": "ffb760645a186073ddfa04003a02d822ff513e9f27fcbdfaa902cf989e3e149e"
+    },
+    {
+      "file": "frontend/css/variables.css",
+      "sha256": "0cb0e1ef9899cae641485264c8fbf3545887bd55b4deac985618993303d3f1ec"
+    },
+    {
+      "file": "frontend/editar-recordatorio.html",
+      "sha256": "c48df611d5042f417657a29b55ce9f7a86a68af9746f1742d5d32e53ab7951e4"
+    },
+    {
+      "file": "frontend/forgot-password.html",
+      "sha256": "2eb26500612a65ba82776ae2a0d20c721a3fe735a4e06fa67f0a0c4052d7cd44"
+    },
+    {
+      "file": "frontend/js/admin/actividad-tecnica.js",
+      "sha256": "7cef98dfba7ca578b4ff9955e6b9aa8e21dfea8d531e9e152dc03fcf6b740de7"
+    },
+    {
+      "file": "frontend/js/admin/admin-settings.js",
+      "sha256": "bbf90ace60f793793542cc6640693b293c8bd96d93aff4fd6fa4dbba047904d6"
+    },
+    {
+      "file": "frontend/js/admin/admin-shell.js",
+      "sha256": "462159e6676987e178d6911b58f516931a4b2162b4d3d04d06780007424d718c"
+    },
+    {
+      "file": "frontend/js/admin/dashboard.js",
+      "sha256": "33e7994cfcd77a972554cc4c08e7e8cb183b7a9aca15effc194813df97dd7ddf"
+    },
+    {
+      "file": "frontend/js/admin/sync.js",
+      "sha256": "a75847f0e2ea1d1589715a949835f53079b63c01ecf2aae12f60bd79d4070fc8"
+    },
+    {
+      "file": "frontend/js/admin/user-proposals.js",
+      "sha256": "fb6f418fdd6b29ac969c95bf103e0853171b551e6d00bea46745d991b501a9c0"
+    },
+    {
+      "file": "frontend/js/components/admin-sync-operation.js",
+      "sha256": "fd3db2cd30143dc35fbf1601d9ef5424e9fcc29d0e6746b8d8e842dd1104c9da"
+    },
+    {
+      "file": "frontend/js/components/admin-sync-summary.js",
+      "sha256": "dc6f15a05466eb16cd9561919b1a4d41d2d488dc8b9582c661a978089361605c"
+    },
+    {
+      "file": "frontend/js/components/admin-technical-report.js",
+      "sha256": "4735d40ff6e9d18cf70163690e163d638b4de32c5da75c2253bc588e0735b037"
+    },
+    {
+      "file": "frontend/js/components/ai-configuration-panel.js",
+      "sha256": "46da4afc70aaa474e1b62ad288f9e718d34f9a5e5c643b52d80a4c0dbff4aec8"
+    },
+    {
+      "file": "frontend/js/components/insights-api-view.js",
+      "sha256": "6e46a11a14a84b41cf4188d065665f9a3b4be904eb14dfd0fdbc80f55108e83d"
+    },
+    {
+      "file": "frontend/js/components/reference-dashboard.js",
+      "sha256": "d23e04a816a38aa055c960c03963402a15d9f27f22d02f52ebb711c84714e1bc"
+    },
+    {
+      "file": "frontend/js/components/reports-api-view.js",
+      "sha256": "9adc0c4b94035cc952752e376da701064f38ae17bca9f99a8d88eddc78999b5f"
+    },
+    {
+      "file": "frontend/js/components/sidebar.js",
+      "sha256": "c4d755a010b1cda0164e64982753553d8fef44d887f65f8e6b64ae25abe7c0ac"
+    },
+    {
+      "file": "frontend/js/components/topbar.js",
+      "sha256": "a4839c78149a88a03dd0d96c82809164c7e2a4e5f653d7cd03ee8e62453343e3"
+    },
+    {
+      "file": "frontend/js/components/tutor-message.js",
+      "sha256": "dc1cf4e74edf6b0ec4249e9370ad19f8e699f0329d1e2a9806f64bb315c3c40f"
+    },
+    {
+      "file": "frontend/js/data/admin-dashboard-config.data.js",
+      "sha256": "d0d59613815bacc9ee7effb09b53eec59bff5fcfdeeb3c198e63e8f7f7a04c45"
+    },
+    {
+      "file": "frontend/js/data/admin-service-definitions.data.js",
+      "sha256": "ea2b9a0b3ca5c559fed1f36959104bbe229daa3ab40da14fe7123b136a6a30ad"
+    },
+    {
+      "file": "frontend/js/data/monitor-demo.data.js",
+      "sha256": "062a6259d6adf55cc577515e20bac705002ab303295d00f2114ad623bc9936ce"
+    },
+    {
+      "file": "frontend/js/data/profile-demo.data.js",
+      "sha256": "1c33a2360a071e79e732ca7fea82642c048a0801ce09496eba76157a56d8edbd"
+    },
+    {
+      "file": "frontend/js/i18n/admin-dashboard.js",
+      "sha256": "6aeabfde72c26d41bd7cef16ab282fca18bfb16f86a19d731f3d673c0d3c0e2d"
+    },
+    {
+      "file": "frontend/js/i18n/i18n.js",
+      "sha256": "c2abc055e8dc4dec5a3e74c3641689ec252dbfccd723903141348e24798bfe21"
+    },
+    {
+      "file": "frontend/js/i18n/monitor-account.js",
+      "sha256": "b92e1fa70f09ee4534ba64062f1b050fb7f2a9c31dd26f1948ecd08f63d7e8a3"
+    },
+    {
+      "file": "frontend/js/monitor/academic-reports.js",
+      "sha256": "f2072319166275a3d33b16d382468318add9b93658ae3d556adeb5fff3dcbbe0"
+    },
+    {
+      "file": "frontend/js/monitor/account.js",
+      "sha256": "d4dbc76aec740053d49fc66f36d0a0c770513e90f74e8fb6488acf4c29c7999b"
+    },
+    {
+      "file": "frontend/js/monitor/dashboard.js",
+      "sha256": "bde96ada5d2b2ff3bf052ff45da6c8f8ac2ee3dfe3f6e7d4882a789b8b944248"
+    },
+    {
+      "file": "frontend/js/monitor/management-shell.js",
+      "sha256": "2092004b4d6395e98e46fe5bb51ee3360ba4cfb680c28e2063dba65beef06b5f"
+    },
+    {
+      "file": "frontend/js/monitor/organizer.js",
+      "sha256": "e762b6e08abdc9a4cedade63c9bb88cfdf87f0d1979c3b40f5615c9a05d0d13f"
+    },
+    {
+      "file": "frontend/js/monitor/support-tracking.js",
+      "sha256": "3da68a92a777666d4387769162aea59d86d2022421549ec7436a0ffc0f544502"
+    },
+    {
+      "file": "frontend/js/offline/database-schema.js",
+      "sha256": "12ba430d2ac2f1f456268bcdc81b5604a1b1e5d07819f63fe057f064f05d0a58"
+    },
+    {
+      "file": "frontend/js/services/admin-activity.service.js",
+      "sha256": "5a2297edc6ed793c53a9c408909c79e796f6bc1aa916d386696b233f7f7b0ab0"
+    },
+    {
+      "file": "frontend/js/services/admin-service-status.service.js",
+      "sha256": "a3fe67156b43331a568b825613f73d04ba462e480fcc321dd99fc1c7d592b15d"
+    },
+    {
+      "file": "frontend/js/services/admin-services-status.service.js",
+      "sha256": "05fa4bd345c41d5b0f20854c3f975910de5d06c090380ba88134cdbba7874fb4"
+    },
+    {
+      "file": "frontend/js/services/admin-technical-report.service.js",
+      "sha256": "0b03e7b98b6c181d759f2b6115124f77938731e70ff7ebcac40216c362687335"
+    },
+    {
+      "file": "frontend/js/services/offline-study.service.js",
+      "sha256": "aca9d619e6fc906b14d62505c5041ff491de1113eec48603a09208da6b93af79"
+    },
+    {
+      "file": "frontend/js/services/reports-api.service.js",
+      "sha256": "a14ec5db96c6d6420acbcc2adb21b5b9b4a575c83fb258d74551539a0cb141d3"
+    },
+    {
+      "file": "frontend/js/student/accessibility.js",
+      "sha256": "984727b04ba39b9e9880f0057925779701dc46cda9a0c0d600deac034aa51854"
+    },
+    {
+      "file": "frontend/js/student/achievement-detail.js",
+      "sha256": "942a7dd7736e8188b0f71e0c150dc3bb75eeb209b95c3d0c805fa9a083f3375c"
+    },
+    {
+      "file": "frontend/js/student/achievements.js",
+      "sha256": "28c109201bb124d5bb0c9a8b7bfcd17b5d717c7737c2c806793fc3cb499a559a"
+    },
+    {
+      "file": "frontend/js/student/activity-catalog.js",
+      "sha256": "6fb214ccf32eabe2290899494ee830a2a0fef117e114ae1e59618316c7bbdbad"
+    },
+    {
+      "file": "frontend/js/student/agenda.js",
+      "sha256": "7db22a8351e0890adb061e7ae3c4ceadf242665181d8861687901f5412f48cbb"
+    },
+    {
+      "file": "frontend/js/student/course-detail.js",
+      "sha256": "a44b24e182ec0ec23a829b57f6237aabb3c5f60bc4f2ab6ca9d693bbcb521211"
+    },
+    {
+      "file": "frontend/js/student/course-progress.js",
+      "sha256": "76af80ce1e7925ec6f3d8e691a85b91ec12ba5edb554edb55cea63b269e6e77d"
+    },
+    {
+      "file": "frontend/js/student/courses.js",
+      "sha256": "0f8363ee9ec53cd8928fb944c424ac0b0a4083bb1eba56922d529e6d0990c1bf"
+    },
+    {
+      "file": "frontend/js/student/dashboard.js",
+      "sha256": "b992b4aa7304bcf266f20b8bf09a76d3ea67a690dfc38d278b9d59e4abc07991"
+    },
+    {
+      "file": "frontend/js/student/downloaded-content.js",
+      "sha256": "b07ee433814541e0160cef214ae06fd51586f10cd2707e4b6d75a6298709162a"
+    },
+    {
+      "file": "frontend/js/student/downloads.js",
+      "sha256": "869fd80238159da00b5d27a70a9b210a0f1bceecaf837ce2bf32e657460457b1"
+    },
+    {
+      "file": "frontend/js/student/edit-profile.js",
+      "sha256": "387c9be1a7190b8f8cc77e327d8eb4e783b10fdeabac4489d2ed0742a97d46dd"
+    },
+    {
+      "file": "frontend/js/student/evaluaciones.js",
+      "sha256": "a910a31d032334c15f39c204cdf882ec9d65ed926116601e162c4105414f889d"
+    },
+    {
+      "file": "frontend/js/student/evaluation-answer-review.js",
+      "sha256": "0a55e9009e3267b5204020ff469ee1b1916a27ac014bc3ede0a232721e1c6867"
+    },
+    {
+      "file": "frontend/js/student/evaluation-detail.js",
+      "sha256": "4f2a1627597581c7da2f0398929e1761642e4f713d7deda0c0c0caca4d010ce5"
+    },
+    {
+      "file": "frontend/js/student/evaluation-player.js",
+      "sha256": "54f26f90361746656aececbb0533a1dfeb7d4b1413090321b4d55971618cf66d"
+    },
+    {
+      "file": "frontend/js/student/evaluation-results.js",
+      "sha256": "41cbad5665d5387962d90e97c1edc13a6d1485f419cb0d1f5512d9a180326112"
+    },
+    {
+      "file": "frontend/js/student/evaluation-review.js",
+      "sha256": "edcb3e4892dd12abd14fa7027ab36b8b59bd69c5b3fbeee8331023f472506d93"
+    },
+    {
+      "file": "frontend/js/student/event-detail.js",
+      "sha256": "84dd66bad7b0bb26507ee79981e59b2ea84daf9ca6fb4e20761251c09511a703"
+    },
+    {
+      "file": "frontend/js/student/exercise.js",
+      "sha256": "78926b1f69692c468c0c9e6108008824b315a46a5c26c21ed22b24d849fdc489"
+    },
+    {
+      "file": "frontend/js/student/game-player.js",
+      "sha256": "b9db0f26e064a06818c3edaa126b4d2660faae0f215a04fa1f3731fd2fb9b458"
+    },
+    {
+      "file": "frontend/js/student/historial-pronunciacion.js",
+      "sha256": "865b1bbba7bea543010e162e0f64a8a3781bafd1c22ef3be06c085ac229d78d6"
+    },
+    {
+      "file": "frontend/js/student/i18n.js",
+      "sha256": "ede68262fce10553011c5aef13f0afff8e3c1fd58595502f0ebf1fe1b7841143"
+    },
+    {
+      "file": "frontend/js/student/learning-i18n.js",
+      "sha256": "3d97782a0493960e976880d8260e2e98d4dbab9327a8f191a2bce2495bc6e1e2"
+    },
+    {
+      "file": "frontend/js/student/lessons.js",
+      "sha256": "fa741d7289f4320bdb91490f2affa87387bd5ef2f037ee41b1c0e2bc079d6fd3"
+    },
+    {
+      "file": "frontend/js/student/missions.js",
+      "sha256": "f617a56fa8780898e70f064467052072f5b78f43d91ca12564e8eba633754c40"
+    },
+    {
+      "file": "frontend/js/student/offline-status.js",
+      "sha256": "1ba2f3597d361d0beb7de997115623fa3455f665202c2ae7467e8d235ad2ee8b"
+    },
+    {
+      "file": "frontend/js/student/pending-activities.js",
+      "sha256": "41e7cc97b30b93c29e26494cbb304218d1c841b2029fc83b9e21454e1820c839"
+    },
+    {
+      "file": "frontend/js/student/practicar-pronunciacion.js",
+      "sha256": "be0f2e01dd7f9ac8695dcf6c1d426b7c35369d83c47d707eb0bb2664de13b819"
+    },
+    {
+      "file": "frontend/js/student/practice-results.js",
+      "sha256": "6fa9bddbde187b8571dac8a67e7e171cdc0e5f5ea9f6081be03a4c93a315366b"
+    },
+    {
+      "file": "frontend/js/student/preferences.js",
+      "sha256": "0d304af1450569036aa491976a7bbfb57952230ee24948aa0c6252382598cdd0"
+    },
+    {
+      "file": "frontend/js/student/profile.js",
+      "sha256": "3eb0c668f4b36e6960a71dea8fb9722ad5118c2b233f1d9ff13368d00211133a"
+    },
+    {
+      "file": "frontend/js/student/progress.js",
+      "sha256": "b660a6e9e5a0e83a8907ed58b44c062ebbfee5608acec0c2de74305d4f47a2f8"
+    },
+    {
+      "file": "frontend/js/student/pronuncia.js",
+      "sha256": "9c4b5fbaa7ea3239990a5bc2840b78b5ea8781f56c9df45293958065e10c1492"
+    },
+    {
+      "file": "frontend/js/student/pronunciation-i18n.js",
+      "sha256": "a0b3e30b49b21dc2f6fdcc04c8f2fccc1551966e063c00a74fe2ce67f572213d"
+    },
+    {
+      "file": "frontend/js/student/reminder-editor.js",
+      "sha256": "eb0d152f5bb1594016ff49489fa14f9ae13ce790eefa6c65d47197a61be09f1f"
+    },
+    {
+      "file": "frontend/js/student/reminders.js",
+      "sha256": "f1d31b8aacb32f4fb8c586c1845dd8fc878e004b3ed139cfa783b2868c901095"
+    },
+    {
+      "file": "frontend/js/student/resultado-pronunciacion.js",
+      "sha256": "19b31a0eaf147225439e1b085ace35845f1c3a3ea04f22daa3d8441ae0b6fe15"
+    },
+    {
+      "file": "frontend/js/student/settings.js",
+      "sha256": "a55871c7e88835a084ad599a53a9cb80fcab9797db9a5e88fef43a79dce43189"
+    },
+    {
+      "file": "frontend/js/student/storage-management.js",
+      "sha256": "fbf2912a2c007e53672527f6419dddafce6734163df50f5cd4683f829bf42aea"
+    },
+    {
+      "file": "frontend/js/student/sync-queue.js",
+      "sha256": "9cce3e34ae7118134bda80ae6688931ef16866a64d0688c6c6a775d474a1630a"
+    },
+    {
+      "file": "frontend/js/student/synchronization.js",
+      "sha256": "f2a7110daeda7b6a22ef5079a2da4d423161fcbb23e08ad9de5ebea96db43b79"
+    },
+    {
+      "file": "frontend/js/student/translator-i18n.js",
+      "sha256": "deb07e3e7e7d27f69fbbcd6f911e4eac296b2121a5249b5251416e2fb9dc96b7"
+    },
+    {
+      "file": "frontend/js/student/translator.js",
+      "sha256": "254951d9a1730a1f6b7166428a924b83d98542e4984a9148e9bb885c1954c783"
+    },
+    {
+      "file": "frontend/js/student/tutor-i18n.js",
+      "sha256": "fe398bc336be96eb0c004f5ae19d83b850d714c4b36aa02a6c0c9a61d40a2bef"
+    },
+    {
+      "file": "frontend/js/student/tutor.js",
+      "sha256": "caff98cbf13d6f3476c481a9d5900c9287857335e670956b478573e8bb77ce2a"
+    },
+    {
+      "file": "frontend/js/student/units.js",
+      "sha256": "6690d7540fcfb4815025cb4037c4bd0a64ab9209adffb43064a544f319f2faae"
+    },
+    {
+      "file": "frontend/js/student/vocabulary-review.js",
+      "sha256": "fdce31273e4e4f5e68521847a32843444b7acb5911f334e38969430a89a3534d"
+    },
+    {
+      "file": "frontend/js/student/vocabulary.js",
+      "sha256": "39db2aa09f59e696dd50c2635fc1aa11745d48e5a3555b5b355ce8e5efc0a441"
+    },
+    {
+      "file": "frontend/js/student/word-detail.js",
+      "sha256": "20b899e86c6dc0aa5fdd55cb056b8afba4f426b350523b6ca770ec445ad3306f"
+    },
+    {
+      "file": "frontend/js/utils/csv-safety.js",
+      "sha256": "33b375d095a391f3e95bec855d10d7f59b9c2df188391aaa5101694cc3596925"
+    },
+    {
+      "file": "frontend/js/utils/monitor-evaluation-validation.js",
+      "sha256": "5b3c4c048411ee21faea195931260ba326936dbd99b5102a2beb541e564f834f"
+    },
+    {
+      "file": "frontend/js/utils/safe-technical-export.js",
+      "sha256": "ab1e61e5f04b95410999af99a9f5859e86d3057722989947fa0a179cbdc52bb4"
+    },
+    {
+      "file": "frontend/login.html",
+      "sha256": "728062e39f9d482aa95f645545807f14c9796e795a1b383d331b38d32339c15b"
+    },
+    {
+      "file": "frontend/manifest.webmanifest",
+      "sha256": "d5adabf712d7c3a10a2a80df3e99d436cab11e86376f9d9ba7d2b3f604405932"
+    },
+    {
+      "file": "frontend/monitor/accesibilidad.html",
+      "sha256": "5742d17460d30d6534bfe9f2b3fa87a33d9c184fc8ff00ea50c3c192839dec43"
+    },
+    {
+      "file": "frontend/monitor/agenda.html",
+      "sha256": "07ac3c2758bfa73f99caaa89093b9412331055d58f4ade7251179b1f45afa037"
+    },
+    {
+      "file": "frontend/monitor/analisis-resultados.html",
+      "sha256": "5d17911af3016c97d1f220441836198951bdcfa62b53d4e060db83ef94b4b22b"
+    },
+    {
+      "file": "frontend/monitor/asignar-actividad.html",
+      "sha256": "faaa9048dfb255f35779cc5a74403516917cead8500421de5770af0b8f4e91e8"
+    },
+    {
+      "file": "frontend/monitor/asignar-evaluacion.html",
+      "sha256": "347641c29cbd67e5891decf1ca41fb353d84cead15f9fd95e20cb2af4fcffb86"
+    },
+    {
+      "file": "frontend/monitor/aulas.html",
+      "sha256": "6047494babf6ba974182176116e12e19ec6dcdb592569f7e5172cc00799ff149"
+    },
+    {
+      "file": "frontend/monitor/ayuda.html",
+      "sha256": "e8fff24755343f60ce9ed7a9b79248c4653af6e632a1014eb0c9a07a978a7cde"
+    },
+    {
+      "file": "frontend/monitor/calendario.html",
+      "sha256": "523f8386e11f9f84abfa9ce266165577466d684490a00bb26bdfce49a7e31b45"
+    },
+    {
+      "file": "frontend/monitor/configuracion.html",
+      "sha256": "aed6acbe3988846ad3174cfba7a4b8ce286099116eb41f14ed748b26bd5e1c88"
+    },
+    {
+      "file": "frontend/monitor/corregir-evaluacion.html",
+      "sha256": "5f3be499763d04cbc6b8f9d3369ba28a10129f92b9ea34477459d1cef709b159"
+    },
+    {
+      "file": "frontend/monitor/crear-refuerzo.html",
+      "sha256": "d045e126651ca2a2771711c003d5e4525c73b544430b41331427e7f187bbb303"
+    },
+    {
+      "file": "frontend/monitor/cursos.html",
+      "sha256": "e3959c1cd3bf84f6353ad203e29219370ef796fe39d60af6e1e3c5035aba6194"
+    },
+    {
+      "file": "frontend/monitor/detalle-actividad.html",
+      "sha256": "b9940890334fa1ce80058e7cf0b340e981e6704fe992e5413fa8cc444603d264"
+    },
+    {
+      "file": "frontend/monitor/detalle-aula.html",
+      "sha256": "23e921c4207d525cee2726720f17a10f61f5a424c3915dc707fd7c21a9f862ef"
+    },
+    {
+      "file": "frontend/monitor/detalle-calificacion.html",
+      "sha256": "ff7615a6d02a0ddc7ce269d9dca2eec334eaf249d38aa9d4a74451958cff1b60"
+    },
+    {
+      "file": "frontend/monitor/detalle-curso.html",
+      "sha256": "d871853fc4ee6441c49fb244faae78e7caf618b2df61dc3d7c2f90270bb0bc61"
+    },
+    {
+      "file": "frontend/monitor/detalle-estudiante.html",
+      "sha256": "67ba93d46e1deb83e2dc9a60b324b578a5e29778987c717f8b58772410d84618"
+    },
+    {
+      "file": "frontend/monitor/detalle-evento.html",
+      "sha256": "e05a272f71acafe6bb4d89deff29db35445d0cf269d2f930ad4e904abf041560"
+    },
+    {
+      "file": "frontend/monitor/editar-evaluacion.html",
+      "sha256": "81bbb02626c4772f7c7e8396348982e3d67a3047c3cb859f5af8aab7e299c61a"
+    },
+    {
+      "file": "frontend/monitor/editar-leccion.html",
+      "sha256": "f2f9da5665f582aa1b6498f9431b885461bf998bcb1b57a7f5bacdb8debb6501"
+    },
+    {
+      "file": "frontend/monitor/editar-perfil.html",
+      "sha256": "5c8bc2b2ad1a74c7108a74e1f73248201087af75fd76e2450bfed9caf9632220"
+    },
+    {
+      "file": "frontend/monitor/editar-recordatorio.html",
+      "sha256": "5a8b5d0f30c0fea908e4f8687137d66bdb72eca8bdaed79e371792cca3915e13"
+    },
+    {
+      "file": "frontend/monitor/editar-tarea.html",
+      "sha256": "ab343203df2cf6c64f0212e09b1bc8ba75059138cdc7fcd865e9af0fad3c9d9a"
+    },
+    {
+      "file": "frontend/monitor/editar-unidad.html",
+      "sha256": "ba9c18d95af738578ede3d907364894ee0968a0f0927532f5e53d4827203693b"
+    },
+    {
+      "file": "frontend/monitor/entregas-evaluacion.html",
+      "sha256": "5f46cd32dda1403c2c67c4afc8b56fd29b3e74e65d77ea38698d47ccf35663cc"
+    },
+    {
+      "file": "frontend/monitor/estudiantes.html",
+      "sha256": "2fc5abd2a69b134aadc5b1207b85e2859e2ab2e888afd25b17a579c959f080ac"
+    },
+    {
+      "file": "frontend/monitor/evaluaciones.html",
+      "sha256": "2c0db320600b813729f5508cbff7f23352e9a8914ae683b72e47b3d34d836f8d"
+    },
+    {
+      "file": "frontend/monitor/historial-academico.html",
+      "sha256": "0171fe90c1b27ab036bf8d3a0849f1064ce932f0e87c218d9573a3137432e11a"
+    },
+    {
+      "file": "frontend/monitor/index.html",
+      "sha256": "65e43bf5a8cdfbc87ee24392a63805ef5d1a77e87f92ae0b14b680141fa79428"
+    },
+    {
+      "file": "frontend/monitor/lecciones.html",
+      "sha256": "a8984ed00bf3014d6fe532117968d1d931ad213a2c380f81be06c53f38863e45"
+    },
+    {
+      "file": "frontend/monitor/notas.html",
+      "sha256": "e039f3ebb62cae9c18b78211fd2e6d9b04e5ac9b1466a876a6bdcbb4c6c23f6e"
+    },
+    {
+      "file": "frontend/monitor/notificaciones.html",
+      "sha256": "7c2901c9bf731efb12792cad4df9365cc4612404ed9eab41102a17b77d44e398"
+    },
+    {
+      "file": "frontend/monitor/organizar-contenidos.html",
+      "sha256": "2f3482765678162025e0d36dc4527e35d58781de5c6ba51151f3b70701465334"
+    },
+    {
+      "file": "frontend/monitor/perfil.html",
+      "sha256": "ec0eb210cb4c05ea5d4a2275838cf9386802189eab31b2b0d94a574fc9ff1765"
+    },
+    {
+      "file": "frontend/monitor/planificacion-semanal.html",
+      "sha256": "fe995347589d11f8885f8e3c0d675a9ef592807628403b00680eb905aa753716"
+    },
+    {
+      "file": "frontend/monitor/preferencias-notificaciones.html",
+      "sha256": "dc668d92cda5c0d0dc970688c5c21071e008c3e359deb90f789f83788aa5302a"
+    },
+    {
+      "file": "frontend/monitor/preferencias.html",
+      "sha256": "91786fd90aa6ca63c5864f6e3f45559de5c027c3eec16c07714bcc70db85c346"
+    },
+    {
+      "file": "frontend/monitor/preguntas-evaluacion.html",
+      "sha256": "88d710f722fe1ac787f1a7717ba2ab1bd9b07efa8be67e8bb7bc40c0a290870b"
+    },
+    {
+      "file": "frontend/monitor/privacidad.html",
+      "sha256": "e210ec390cc767d76f8e8968fde61ab58cb5d57cf7525cd1122681cb5f23d707"
+    },
+    {
+      "file": "frontend/monitor/recordatorios.html",
+      "sha256": "c31fd66b610b6c3da41e6edd841e9fff8cddc27c9b052d1407a17d8c2aa65115"
+    },
+    {
+      "file": "frontend/monitor/recursos-educativos.html",
+      "sha256": "001af6b0b11ee2a140087c6615b66fe96dbc03ba2a53d03d2ab8e5f6959cf25f"
+    },
+    {
+      "file": "frontend/monitor/refuerzos.html",
+      "sha256": "37ba0e63b57c6813991b5e2673e46ac5b27104a030c14ff9f150359b413a9fa7"
+    },
+    {
+      "file": "frontend/monitor/registro-notas.html",
+      "sha256": "761dfd4ed81f7797688d82688a36389ef05fcef5c1229f3f8ab214f15ca00508"
+    },
+    {
+      "file": "frontend/monitor/reporte-aula.html",
+      "sha256": "0f78596a666620ae0c0799b570a587b3717d1d4c1014950ce62f772ecf2f7b30"
+    },
+    {
+      "file": "frontend/monitor/reporte-estudiante.html",
+      "sha256": "f56c55815cd85c922a6c5f76f181da9a25dc96376f67eccae15b72a331a754e7"
+    },
+    {
+      "file": "frontend/monitor/reportes.html",
+      "sha256": "11b94133ebd3dcb7ac9cfaa7df1bc4bfbdb0a653ff01471a3661a456cd728f89"
+    },
+    {
+      "file": "frontend/monitor/resultados-evaluacion.html",
+      "sha256": "db77ced661810d2b86ecfc7c67e7b6ef727a9ee37d5d58eb57d0580f306fe316"
+    },
+    {
+      "file": "frontend/monitor/seguimiento-actividades.html",
+      "sha256": "3b3eedeb38915212a7c8958703ac2ee12eb624e5fb54d7fb331e135a3742f691"
+    },
+    {
+      "file": "frontend/monitor/seguimiento-aula.html",
+      "sha256": "80b70645d5777957f5187cbc1fddae8315a1419e5245624abb60707b885af554"
+    },
+    {
+      "file": "frontend/monitor/seguimiento-refuerzo.html",
+      "sha256": "96d5f934c03d4bd0d2d72f0b38c224b101ea99365289fce4d90e76105d7e87ff"
+    },
+    {
+      "file": "frontend/monitor/seguridad.html",
+      "sha256": "045d4471e8e60fcb0e0de593c997aeb3fb0d48f4b48eb43c52c4612d89053f63"
+    },
+    {
+      "file": "frontend/monitor/tareas.html",
+      "sha256": "499fde4765aacfb6b9c82cbd1ee95ec2676bc53739309e2dd7f05a63f0cc18a4"
+    },
+    {
+      "file": "frontend/monitor/unidades.html",
+      "sha256": "da7fc07a2f7355649d041c74d491b9e0d9a9036477f4415a97398b3ce907bac6"
+    },
+    {
+      "file": "frontend/monitor/vista-previa-evaluacion.html",
+      "sha256": "82a6ff15d2fc1c4476929f123a8705e5440a1e3dd38db4a51b17fa4a21a801be"
+    },
+    {
+      "file": "frontend/monitor/vista-previa-leccion.html",
+      "sha256": "194a653dc5e20d050d19a6dd202c710c2cdc88b299c1f01ddccf8c3999bfa853"
+    },
+    {
+      "file": "frontend/notificaciones.html",
+      "sha256": "58cb25c7f444360564593895a0bab8fa570d8b8299070f675187eb16fd0831c6"
+    },
+    {
+      "file": "frontend/offline.html",
+      "sha256": "7b959a43714c27096460f90a72aa8d9b747adec6f97fef0204e5bd458e58ce93"
+    },
+    {
+      "file": "frontend/planificacion-semanal.html",
+      "sha256": "df3628f32136a8b8b2bd2802e2099d34cfa4899ea670f37579c4cde719d871ab"
+    },
+    {
+      "file": "frontend/preferencias-notificaciones.html",
+      "sha256": "d76351a75ad55e68019867a09c6a4d3036e5ea62336eb48c08db7ec950b255da"
+    },
+    {
+      "file": "frontend/recordatorios.html",
+      "sha256": "7a0bf1819765cfe1a6b809011f991195f5c3993a8a34bb1c602498a1854a954e"
+    },
+    {
+      "file": "frontend/register.html",
+      "sha256": "09f9f8073b9dea037d5519e4a07086028e9cb29009aba38fc595ef46d873dfe4"
+    },
+    {
+      "file": "frontend/reset-password.html",
+      "sha256": "0fd1e2fca567687bbd9742a1a815c2b69e0e158fc0a035d69891b9e132e6c151"
+    },
+    {
+      "file": "frontend/role-selection.html",
+      "sha256": "1e28f3c646be1c171d1f5c86a1936f3e29b6bced822483356dac774d0bd3d7aa"
+    },
+    {
+      "file": "frontend/student/accesibilidad.html",
+      "sha256": "d262d000ec8dde3b3228031426b116c9171c086ed836929511fca3d08a3bdc6e"
+    },
+    {
+      "file": "frontend/student/actividades-pendientes.html",
+      "sha256": "c417dec199e7b455535d6333fb6f30fba3fa0d32a496b6ebc6bdfa3310bb8d36"
+    },
+    {
+      "file": "frontend/student/agenda.html",
+      "sha256": "bab60d9b781bc3093a29e61f23f9631d075683daab77925a3173c9e842773d4e"
+    },
+    {
+      "file": "frontend/student/almacenamiento.html",
+      "sha256": "4b741f139304344e5481cafe4df8993f609b932388049423df34ff29d9e9af20"
+    },
+    {
+      "file": "frontend/student/aprende.html",
+      "sha256": "ee83c21ef859983520384a3743b80f87aec0eb5f9b7f0a0a994fd60540507ad5"
+    },
+    {
+      "file": "frontend/student/cola-sincronizacion.html",
+      "sha256": "e6363f19ee86081f17b0ae9ffb64d32a94eab6442b4586506b91537098bd014f"
+    },
+    {
+      "file": "frontend/student/configuracion.html",
+      "sha256": "e8075c9acabeb7be9bb6438d6ddc3178fc97566f158b45625b7c4cc849887b6b"
+    },
+    {
+      "file": "frontend/student/curso.html",
+      "sha256": "3dc8a65b2aafd75ae83c8ddb98b78fa0b0eff115a18c80bbcf478bb7d231b1dd"
+    },
+    {
+      "file": "frontend/student/descargas.html",
+      "sha256": "c73b9e7d134026f52fb80dabd7b2b247a4821358ff5ae0313aa34740f0c9cec5"
+    },
+    {
+      "file": "frontend/student/detalle-evaluacion.html",
+      "sha256": "15defdebacf8ab34cd207c2f448723b298e0ceef3a732d1a5c815b4fc2d80d82"
+    },
+    {
+      "file": "frontend/student/detalle-evento.html",
+      "sha256": "8aac1e8c704d8bcd15c4589c5b4bc5622515e3d8690280a0926ac4ad6f6147cb"
+    },
+    {
+      "file": "frontend/student/detalle-logro.html",
+      "sha256": "7012c9ca2b1df621bdfc3286cc6ae23fe2095b3c6838f5eb40639c7832f2701d"
+    },
+    {
+      "file": "frontend/student/editar-perfil.html",
+      "sha256": "35dc6afb4c0575008ce641a64145de7242e0f97e1f3e676a344457dd414d55ca"
+    },
+    {
+      "file": "frontend/student/editar-recordatorio.html",
+      "sha256": "fcdbd6714582b2fe2938d4181bcd79f118df96084a74bfacfc4e47323d0a8fb9"
+    },
+    {
+      "file": "frontend/student/ejercicio.html",
+      "sha256": "8edb33a792eed4d4901612c1103e2ea426bc8db83a0c65730d8a11e7476fce6b"
+    },
+    {
+      "file": "frontend/student/estado-offline.html",
+      "sha256": "ca4f041e63e53809b404c42fc9ba2be0f3038ed497df835d7da24384388f80dc"
+    },
+    {
+      "file": "frontend/student/evaluacion.html",
+      "sha256": "eb137520d2d20a9367ed01a8440f8845058071b8e05e263823086f727a3c0836"
+    },
+    {
+      "file": "frontend/student/evaluaciones.html",
+      "sha256": "74770589a6ba3057f06bd289230083ae384fe88ca689b7c775ad9ac09d346295"
+    },
+    {
+      "file": "frontend/student/historial-pronunciacion.html",
+      "sha256": "fc6f598dc25174fb5d0faa743bc7eebe0682cb603bd0c0a54718008f123ba509"
+    },
+    {
+      "file": "frontend/student/index.html",
+      "sha256": "cc4ab5179c84c8f03e8e2b20f4ff8bb94cd13bc3fd377401252f18f4d16ebd5b"
+    },
+    {
+      "file": "frontend/student/juego.html",
+      "sha256": "6c2861d41ecd9af11d6776dcda0227712f9d04aa3c7300bfee4fd60f7e0f5ba2"
+    },
+    {
+      "file": "frontend/student/juegos.html",
+      "sha256": "fe036ddbc4b84b6d1b2f762a5bb077549a745e91a66431cba00830eca13e2d97"
+    },
+    {
+      "file": "frontend/student/leccion.html",
+      "sha256": "42ee7fb4498d7cc19822cd421ba649886059973d9a8a8d06a1bcbaf7d4d520bd"
+    },
+    {
+      "file": "frontend/student/logros.html",
+      "sha256": "e5630591b63f864e80e66aa2417cc30c2de635cce66f52c4587117f511389371"
+    },
+    {
+      "file": "frontend/student/mis-descargas.html",
+      "sha256": "514ecccebdd32be852daa006b47bf3e9e6f472900852269ee23fe2c8ed63dc7d"
+    },
+    {
+      "file": "frontend/student/misiones.html",
+      "sha256": "e64618af2eb70fffcbf9751ac67c24738ffbe23f74aed8e703088044c6c80c54"
+    },
+    {
+      "file": "frontend/student/palabra.html",
+      "sha256": "e49548a2eb26456cdfa4ff71e8742aff0d39b7cd7faa84d1f8407fca4d0053ad"
+    },
+    {
+      "file": "frontend/student/perfil.html",
+      "sha256": "e18f5f8a0c3406efa3def61cd8fb08ac9265a08e2b8c818a105792beea72abc8"
+    },
+    {
+      "file": "frontend/student/practica.html",
+      "sha256": "e0587da1200a53b9e3668528f81c6c5962f4a22e8b3227ccb5da92920c91a29e"
+    },
+    {
+      "file": "frontend/student/practicar-pronunciacion.html",
+      "sha256": "598e0f8ee22a884641776ef67b0122e0bb4276c6870bd4ca7f43ea7ed48d3b75"
+    },
+    {
+      "file": "frontend/student/preferencias.html",
+      "sha256": "b513c795127d06bdc2ea7383b61f7f685e6a80ee561b5e74a51197ffdd965878"
+    },
+    {
+      "file": "frontend/student/progreso-curso.html",
+      "sha256": "ec5fcdcaf62bf23c1f97b247a89f5c3de9f9d03bcdce36a204613a3ea7c7a787"
+    },
+    {
+      "file": "frontend/student/progreso.html",
+      "sha256": "58d3c931fa1336181f9660b370e9f7bf54957b1f03000c4a9fb08f15f437816e"
+    },
+    {
+      "file": "frontend/student/pronuncia.html",
+      "sha256": "57f2ce1145f91bd47890dc83d8170210bc98177ee18533d28e85d40ecae74783"
+    },
+    {
+      "file": "frontend/student/recordatorios.html",
+      "sha256": "5af88a15faf5bac45b3568a430f6bc89597e8ead9e3dc4c5d62b5643eceab0cd"
+    },
+    {
+      "file": "frontend/student/repaso-vocabulario.html",
+      "sha256": "d68201b9e081a188ff29572e2411907f4b6eb25875a537d144cf4520f50cbca1"
+    },
+    {
+      "file": "frontend/student/resultado-evaluacion.html",
+      "sha256": "bbd57fe332b71f4a3d982f263410e9f68422f14a4b079b2598cd287a20cba56b"
+    },
+    {
+      "file": "frontend/student/resultado-practica.html",
+      "sha256": "c019678e1f8c580041aa965db82a66f7473271f652107586e56da40f9e6b745a"
+    },
+    {
+      "file": "frontend/student/resultado-pronunciacion.html",
+      "sha256": "96726e41e74eb889bb432cf3f8f88ed64997c344e89401cd65eb5084aa0b017b"
+    },
+    {
+      "file": "frontend/student/revisar-evaluacion.html",
+      "sha256": "421c3e0037d7c948f74211248e9904e6999df4849ee98b84197ff5706cc9747f"
+    },
+    {
+      "file": "frontend/student/revision-evaluacion.html",
+      "sha256": "57c14fc9e5731df5f8e0f9e3371dcd1c8d390fa2ccf20af9ea5b0918f80826fd"
+    },
+    {
+      "file": "frontend/student/sincronizacion.html",
+      "sha256": "8b2286b25d39d348b9104edbb5910c8058bb70147b5e766a8738e5f62d693078"
+    },
+    {
+      "file": "frontend/student/traductor.html",
+      "sha256": "10949530538a6a17f9b5297f3d9f0a2d0258038d557f68109da32a032db3c875"
+    },
+    {
+      "file": "frontend/student/tutor.html",
+      "sha256": "764ef95d2cb4d8f716879fb05e7c0c9d2d01dec40a80668bed815e0b67747b3e"
+    },
+    {
+      "file": "frontend/student/unidad.html",
+      "sha256": "36427771ee5d2f8bd339d0a77316245004b2e8303be310177d8da4b99a21767e"
+    },
+    {
+      "file": "frontend/student/vocabulario.html",
+      "sha256": "8ee44e10be73b6c43c3a9235df209a49a46ed6ea3c518ef4706a90e3556b5695"
+    },
+    {
+      "file": "frontend/sw.js",
+      "sha256": "9724797316a557acaadc939f344706e40565a9452f199376a2e534d254cb7fe9"
+    },
+    {
+      "file": "frontend/unauthorized.html",
+      "sha256": "6eb69eef5f5caf40804b9f38224ae7f6323a39963e7d3346a85b1c1c9b0440d2"
+    },
+    {
+      "file": "tests/frontend-refresh.browser.cjs",
+      "sha256": "ee60f1cb2989f1b574763091ab78d33d6e934df3a7aa05ad42b53780696a76f4"
+    },
+    {
+      "file": "tests/student-dashboard.browser.cjs",
+      "sha256": "b28bf15be7ea15b769d4a4fa7255886ccbf0e7a9816d8d64dd6111f42d6e95e7"
+    },
+    {
+      "file": "tests/tutor.browser.cjs",
+      "sha256": "10f8f5bddd36864ee37a35a4afcf435b407310b094e30b06a50af10529cefcec"
+    },
+    {
+      "file": "frontend/assets/images/branding/legacy-mark.svg",
+      "sha256": "a2ba36c8948ed3c4ba2b34c58aa4c25c6c56d26c8cab197065a5390d5be848e4"
+    },
+    {
+      "file": "frontend/assets/images/branding/edunext-192.png",
+      "sha256": "2f8b74bf65a8842237b62de025d0428ae2caf79581a7c72453e7324e0268d57e"
+    },
+    {
+      "file": "frontend/assets/images/branding/edunext-512.png",
+      "sha256": "d4c77fd814e969457a0bb92fb9b5535aeeb7d52d4f6ed9dabce91097563d9bee"
+    },
+    {
+      "file": "tools/edunext-brand-migration.cjs",
+      "sha256": "26f12d35beb722da0d2af95e43bb072f822db0f973f66d3654102a208e8e25d2"
+    },
+    {
+      "file": "tools/edunext-icons.cjs",
+      "sha256": "772627fc22c46f730160771c9ac131c6e5e4f8095ed97241b5ce4842a8c95c83"
+    },
+    {
+      "file": "tools/verify-edunext-backend.py",
+      "sha256": "f4ba3b21968e1d1f6d92e4dbced8fa85902c71270c7874347be21f65eadf578d"
+    },
+    {
+      "file": "tests/edunext-brand.cjs",
+      "sha256": "22b574f07b1ac1c1740e72d9df5222b74606e4f893fcbd0d0b972266c111958c"
+    },
+    {
+      "file": "tests/fixtures/edunext-brand-checks.cjs",
+      "sha256": "298c59786b33727d6ae35beb1eebdaf5c26901c78db799b93f9953e11961b8e8"
+    },
+    {
+      "file": "docs/EDUNEXT_BRAND_MIGRATION.md",
+      "sha256": "10641dbd14121f91d96c39c0e98ee47ce369cd8f12d01b8b1d5c217f6c9af3ae"
+    }
+  ],
+  "pass": true,
+  "decision": "NO-GO"
+}

@@ -1,0 +1,57 @@
+@media (max-width:1100px){
+  .review-layout{grid-template-columns:1fr}
+  .review-layout aside{order:3}
+  .review-layout .panel-preview{order:1}
+  .review-layout aside:first-child{order:2}
+}
+
+@media (max-width:900px){
+  .admin-shell{grid-template-columns:1fr}
+  .admin-sidebar{position:fixed;left:0;top:0;bottom:0;z-index:50;transform:translateX(-100%);transition:transform .25s;max-width:320px;width:100%}
+  .admin-sidebar.open{transform:translateX(0)}
+  .admin-main{width:100%}
+  .admin-topbar{padding:1rem}
+  .page-header{flex-direction:column;align-items:stretch}
+  .page-actions{width:100%;justify-content:flex-start}
+  .button-primary,.button-secondary{width:100%;justify-content:center}
+  .summary-grid{grid-template-columns:repeat(2,1fr)}
+  .filter-grid{grid-template-columns:1fr}
+  .field-search{grid-column:auto}
+  .catalog-grid{grid-template-columns:1fr}
+  .detail-grid{grid-template-columns:1fr}
+  .panel-wide{grid-column:auto}
+  .content-hero dl{grid-template-columns:1fr}
+  .validation-toolbar{flex-direction:column;align-items:stretch}
+  .validation-toolbar .field{width:100%}
+  .validation-grid{grid-template-columns:1fr}
+  .compare-grid{grid-template-columns:1fr}
+  .pkg-grid{grid-template-columns:1fr}
+  .prep-grid{grid-template-columns:1fr}
+  .prep-toolbar{flex-direction:column;align-items:stretch}
+  .prep-toolbar .field{width:100%}
+  #prep-form .form-grid{grid-template-columns:1fr}
+  .quality-summary-cards{grid-template-columns:repeat(2,1fr)}
+  .history-grid{grid-template-columns:1fr}
+  .preview-header{flex-direction:column;align-items:stretch}
+  .preview-actions{width:100%;justify-content:flex-start}
+  .preview-actions button{width:100%;justify-content:center}
+  .data-table{font-size:.75rem}
+  .data-table th,.data-table td{padding:.5rem .75rem}
+}
+
+@media (max-width:600px){
+  .admin-content{padding:1rem}
+  .page-header h1{font-size:1.25rem}
+  .summary-grid{grid-template-columns:1fr}
+  .content-hero{padding:1rem}
+  .content-hero h2{font-size:1.125rem}
+  .panel{padding:1rem}
+  .table-wrap{font-size:.75rem}
+  th,td{padding:.5rem .75rem}
+  .timeline-item{padding:.75rem}
+  .diff-block,.diff-meta{font-size:.8125rem}
+  .resource-card{padding:1rem}
+  .quality-summary-cards{grid-template-columns:1fr}
+  .preview-header h1{font-size:1.25rem}
+  .report-title{font-size:1rem}
+}

@@ -1,0 +1,3 @@
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');const root=path.resolve(__dirname,'../frontend/js');
+function walk(d){return fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(d,e.name)):[path.join(d,e.name)]);}
+(async()=>{const issues=[];for(const file of walk(root).filter(f=>f.endsWith('.js'))){const cache=new Map();const load=f=>{if(!cache.has(f))cache.set(f,new vm.SourceTextModule(fs.readFileSync(f,'utf8'),{identifier:f}));return cache.get(f);};try{await load(file).link((spec,ref)=>load(path.resolve(path.dirname(ref.identifier),spec)));}catch(e){issues.push({file:path.relative(root,file),error:e.message});}}console.log(JSON.stringify(issues,null,2));process.exitCode=issues.length?1:0;})();

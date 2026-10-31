@@ -1,0 +1,148 @@
+{
+  "generated_at": "2026-10-27T03:00:56.948032+00:00",
+  "AITHRON_FINAL_VALIDATION": 1,
+  "environment": "Disposable Python environment; isolated CWD without .env; synthetic disabled-service configuration",
+  "scope": "Contracts, ASGI with synthetic auth/storage, OpenAPI, source, JS doubles; no PostgreSQL or real provider E2E",
+  "results": [
+    {
+      "check": "python_non_database_contracts",
+      "exit_code": 0,
+      "output": ".........................s..........................................                                          [100%]\n============================== warnings summary ===============================\n..\\aithron-integration-e4c75e81f5d0498fae58297003317fbe\\Lib\\site-packages\\fastapi\\testclient.py:1\n  C:\\Users\\simon\\AppData\\Local\\Temp\\opencode\\aithron-integration-e4c75e81f5d0498fae58297003317fbe\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n..\\aithron-integration-e4c75e81f5d0498fae58297003317fbe\\Lib\\site-packages\\passlib\\handlers\\argon2.py:716\n  C:\\Users\\simon\\AppData\\Local\\Temp\\opencode\\aithron-integration-e4c75e81f5d0498fae58297003317fbe\\Lib\\site-packages\\passlib\\handlers\\argon2.py:716: DeprecationWarning: Accessing argon2.__version__ is deprecated and will be removed in a future release. Use importlib.metadata directly to query for argon2-cffi's packaging metadata.\n    _argon2_cffi.__version__, max_version)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n67 passed, 1 skipped, 2 warnings, 35 subtests passed in 4.13s\n"
+    },
+    {
+      "check": "resolved_dependencies",
+      "exit_code": 0,
+      "output": "[{\"name\": \"aiofiles\", \"version\": \"25.1.0\"}, {\"name\": \"alembic\", \"version\": \"1.20.1\"}, {\"name\": \"annotated-doc\", \"version\": \"0.0.5\"}, {\"name\": \"annotated-types\", \"version\": \"0.8.0\"}, {\"name\": \"anyio\", \"version\": \"4.15.1\"}, {\"name\": \"argon2-cffi\", \"version\": \"25.1.0\"}, {\"name\": \"argon2-cffi-bindings\", \"version\": \"26.1.0\"}, {\"name\": \"asyncpg\", \"version\": \"0.32.0\"}, {\"name\": \"certifi\", \"version\": \"2026.10.23\"}, {\"name\": \"cffi\", \"version\": \"2.1.1\"}, {\"name\": \"click\", \"version\": \"8.5.0\"}, {\"name\": \"colorama\", \"version\": \"0.4.6\"}, {\"name\": \"cryptography\", \"version\": \"50.0.2\"}, {\"name\": \"dnspython\", \"version\": \"2.9.0\"}, {\"name\": \"ecdsa\", \"version\": \"0.19.2\"}, {\"name\": \"email-validator\", \"version\": \"2.3.0\"}, {\"name\": \"fastapi\", \"version\": \"0.162.0\"}, {\"name\": \"greenlet\", \"version\": \"3.5.6\"}, {\"name\": \"h11\", \"version\": \"0.16.0\"}, {\"name\": \"httpcore\", \"version\": \"1.0.9\"}, {\"name\": \"httptools\", \"version\": \"0.9.0\"}, {\"name\": \"httpx\", \"version\": \"0.28.1\"}, {\"name\": \"idna\", \"version\": \"3.20\"}, {\"name\": \"iniconfig\", \"version\": \"2.3.1\"}, {\"name\": \"Mako\", \"version\": \"1.4.3\"}, {\"name\": \"MarkupSafe\", \"version\": \"3.0.4\"}, {\"name\": \"opentelemetry-api\", \"version\": \"1.45.1\"}, {\"name\": \"packaging\", \"version\": \"26.3\"}, {\"name\": \"passlib\", \"version\": \"1.7.4\"}, {\"name\": \"pip\", \"version\": \"22.3\"}, {\"name\": \"pluggy\", \"version\": \"1.7.0\"}, {\"name\": \"psycopg2-binary\", \"version\": \"2.9.13\"}, {\"name\": \"pyasn1\", \"version\": \"0.6.4\"}, {\"name\": \"pycparser\", \"version\": \"3.12\"}, {\"name\": \"pydantic\", \"version\": \"2.14.1\"}, {\"name\": \"pydantic_core\", \"version\": \"2.50.1\"}, {\"name\": \"pydantic-settings\", \"version\": \"2.16.1\"}, {\"name\": \"Pygments\", \"version\": \"2.21.0\"}, {\"name\": \"pytest\", \"version\": \"9.1.1\"}, {\"name\": \"pytest-asyncio\", \"version\": \"1.4.1\"}, {\"name\": \"python-dotenv\", \"version\": \"1.2.4\"}, {\"name\": \"python-jose\", \"version\": \"3.5.0\"}, {\"name\": \"python-multipart\", \"version\": \"0.0.32\"}, {\"name\": \"PyYAML\", \"version\": \"6.0.3\"}, {\"name\": \"rsa\", \"version\": \"4.9.1\"}, {\"name\": \"setuptools\", \"version\": \"65.5.0\"}, {\"name\": \"six\", \"version\": \"1.17.0\"}, {\"name\": \"SQLAlchemy\", \"version\": \"2.1.6\"}, {\"name\": \"starlette\", \"version\": \"1.10.0\"}, {\"name\": \"typing_extensions\", \"version\": \"4.16.0\"}, {\"name\": \"typing-inspection\", \"version\": \"0.4.4\"}, {\"name\": \"uvicorn\", \"version\": \"0.54.0\"}, {\"name\": \"watchfiles\", \"version\": \"1.3.0\"}, {\"name\": \"websockets\", \"version\": \"17.3\"}]\n"
+    },
+    {
+      "check": "phase47-api.cjs",
+      "exit_code": 0,
+      "output": "PASS phase47: refresh single-flight, HTTP errors, validation, network, timeout, path rejection, login fails closed. Fake transport only.\n"
+    },
+    {
+      "check": "phase48-session.cjs",
+      "exit_code": 0,
+      "output": "PASS phase48 client lifecycle: stale response rejected, pending refresh cannot restore access token after logout, revocation attempted. Simulated server only.\n"
+    },
+    {
+      "check": "phase48-security.cjs",
+      "exit_code": 0,
+      "output": "PASS SW does not cache private HTML\nPASS SW never looks up arbitrary private URLs offline\nPASS SW excludes bearer resources\nPASS SW excludes no-store public-looking response\nPASS SW excludes API\nPASS SW still caches public script\nPASS SW excludes cookie-varying public response\nPASS SW excludes query-bearing resources\nPASS Cache quota failure preserves network success\nPASS phase48 SW policy tests (VM only; no browser, database or tenant proof).\n"
+    },
+    {
+      "check": "sync-protocol.cjs",
+      "exit_code": 0,
+      "output": "PASS finite operation type and privileged payload rejection\nPASS demo and foreign operations excluded\nPASS identity required and protocol version checked\nPASS no receipt from send or mismatched operation\nPASS errors classified without treating auth as offline\nPASS bounded backoff and retry budget\nPASS Retry-After cannot shorten local backoff\nPASS local save and queue share simulated transaction\nPASS storage failure does not report local success\nPASS simulated transaction abort preserves queue when progress write fails\nPASS confirmed receipt saved only for owning operation\nPASS lost or invalid receipt keeps provisional work\nPASS expired session blocks without deleting or confirming\nPASS cross-account preconditions accompany every push\nPASS missing Web Locks prevents dispatch\n{\"passed\":15,\"scope\":\"synthetic protocol and storage doubles only\"}\n(node:3816) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    {
+      "check": "phase47-private-views.cjs",
+      "exit_code": 0,
+      "output": "PASS private-view boundaries: immediate logout cleanup, observer isolation/unsubscribe, escaped Insights, 403 clearing, pagination, filter recovery, late-response suppression. Transport/DOM doubles only.\n(node:13968) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    {
+      "check": "source_inventory",
+      "exit_code": 0,
+      "output": "{\n  \"output\": \"docs\\\\final\\\\evidence\\\\phase47-source-l9uyvi\",\n  \"pages\": 176,\n  \"endpointDecorators\": 262,\n  \"migrations\": 12,\n  \"absent\": [\n    \"database\",\n    \"content\",\n    \"scripts\",\n    \"compose.yaml\"\n  ]\n}\n"
+    },
+    {
+      "check": "runtime_inventory",
+      "exit_code": 0,
+      "output": "{\"openapi_paths\": 198, \"orm_tables\": 63, \"source_migration_heads\": [\"phase46receipts\"]}\n"
+    },
+    {
+      "check": "syntax:frontend/js/services/auth.service.js",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "check": "syntax:frontend/js/services/insights-api.service.js",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "check": "syntax:frontend/js/components/insights-api-view.js",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "check": "syntax:frontend/js/components/reports-api-view.js",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "check": "syntax:frontend/js/student/progress.js",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "check": "syntax:frontend/js/student/synchronization.js",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "check": "syntax:tests/phase47-private-views.cjs",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "check": "syntax:tools/audit-phase47.cjs",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "check": "public_demo_browser_regression",
+      "exit_code": 0,
+      "output": "{\n  \"date\": \"2026-10-27T03:00:56.906Z\",\n  \"results\": [\n    {\n      \"name\": \"Edge\",\n      \"version\": \"Edg/156.0.4314.42\",\n      \"status\": \"pass\",\n      \"checks\": [\n        {\n          \"width\": 320,\n          \"height\": 720,\n          \"overflow\": false,\n          \"lang\": \"es\",\n          \"h1\": 1,\n          \"main\": true,\n          \"unlabelled\": 0,\n          \"navigationMs\": 68.20000000298023\n        },\n        {\n          \"width\": 375,\n          \"height\": 812,\n          \"overflow\": false,\n          \"lang\": \"es\",\n          \"h1\": 1,\n          \"main\": true,\n          \"unlabelled\": 0,\n          \"navigationMs\": 37.69999999925494\n        },\n        {\n          \"width\": 768,\n          \"height\": 1024,\n          \"overflow\": false,\n          \"lang\": \"es\",\n          \"h1\": 1,\n          \"main\": true,\n          \"unlabelled\": 0,\n          \"navigationMs\": 28.5\n        },\n        {\n          \"width\": 1440,\n          \"height\": 900,\n          \"overflow\": false,\n          \"lang\": \"es\",\n          \"h1\": 1,\n          \"main\": true,\n          \"unlabelled\": 0,\n          \"navigationMs\": 30.099999997764826\n        }\n      ],\n      \"validation\": {\n        \"focus\": \"identifier\",\n        \"identifierInvalid\": \"true\",\n        \"passwordInvalid\": \"true\"\n      },\n      \"tabFocus\": \"password\",\n      \"exceptions\": [],\n      \"scope\": \"Static public login only. Desktop viewport emulation, not physical mobile, screen reader, WCAG or authenticated E2E.\"\n    },\n    {\n      \"name\": \"Edge\",\n      \"version\": \"Edg/156.0.4314.42\",\n      \"page\": \"/student/index.html?grade=4\",\n      \"status\": \"pass\",\n      \"viewports\": [\n        {\n          \"title\": \"Inicio del estudiante | AITHRON EDU\",\n          \"width\": 375,\n          \"overflow\": false,\n          \"main\": true,\n          \"demoLabel\": true,\n          \"navigationMs\": 82.19999999925494,\n          \"loaded\": true,\n          \"exceptions\": []\n        },\n        {\n          \"title\": \"Inicio del estudiante | AITHRON EDU\",\n          \"width\": 1440,\n          \"overflow\": false,\n          \"main\": true,\n          \"demoLabel\": true,\n          \"navigationMs\": 72.89999999850988,\n          \"loaded\": true,\n          \"exceptions\": []\n        }\n      ],\n      \"scope\": \"Public demonstration UI only. No authenticated role, database, academic persistence or user study verified.\"\n    },\n    {\n      \"name\": \"Edge\",\n      \"version\": \"Edg/156.0.4314.42\",\n      \"page\": \"/student/aprende.html?grade=4\",\n      \"status\": \"pass\",\n      \"viewports\": [\n        {\n          \"title\": \"Mis cursos | AITHRON EDU\",\n          \"width\": 375,\n          \"overflow\": false,\n          \"main\": true,\n          \"demoLabel\": true,\n          \"navigationMs\": 86.80000000074506,\n          \"loaded\": true,\n          \"exceptions\": []\n        },\n        {\n          \"title\": \"Mis cursos | AITHRON EDU\",\n          \"width\": 1440,\n          \"overflow\": false,\n          \"main\": true,\n          \"demoLabel\": true,\n          \"navigationMs\": 73.89999999850988,\n          \"loaded\": true,\n          \"exceptions\": []\n        }\n      ],\n      \"scope\": \"Public demonstration UI only. No authenticated role, database, academic persistence or user study verified.\"\n    },\n    {\n      \"name\": \"Edge\",\n      \"version\": \"Edg/156.0.4314.42\",\n      \"page\": \"/student/leccion.html?grade=4&course=math&unit=math-g4-u1&lesson=math-g4-u1-l1\",\n      \"status\": \"pass\",\n      \"viewports\": [\n        {\n          \"title\": \"¿Qué es una fracción? | AITHRON EDU\",\n          \"width\": 375,\n          \"overflow\": false,\n          \"main\": true,\n          \"demoLabel\": true,\n          \"navigationMs\": 214.69999999925494,\n          \"loaded\": true,\n          \"exceptions\": []\n        },\n        {\n          \"title\": \"¿Qué es una fracción? | AITHRON EDU\",\n          \"width\": 1440,\n          \"overflow\": false,\n          \"main\": true,\n          \"demoLabel\": true,\n          \"navigationMs\": 95.69999999925494,\n          \"loaded\": true,\n          \"exceptions\": []\n        }\n      ],\n      \"scope\": \"Public demonstration UI only. No authenticated role, database, academic persistence or user study verified.\"\n    },\n    {\n      \"name\": \"Edge\",\n      \"version\": \"Edg/156.0.4314.42\",\n      \"page\": \"/monitor/index.html\",\n      \"status\": \"pass\",\n      \"viewports\": [\n        {\n          \"title\": \"Dashboard Monitor | AITHRON EDU\",\n          \"width\": 375,\n          \"overflow\": false,\n          \"main\": true,\n          \"demoLabel\": true,\n          \"navigationMs\": 89.69999999925494,\n          \"loaded\": true,\n          \"exceptions\": []\n        },\n        {\n          \"title\": \"Dashboard Monitor | AITHRON EDU\",\n          \"width\": 1440,\n          \"overflow\": false,\n          \"main\": true,\n          \"demoLabel\": true,\n          \"navigationMs\": 72.19999999925494,\n          \"loaded\": true,\n          \"exceptions\": []\n        }\n      ],\n      \"scope\": \"Public demonstration UI only. No authenticated role, database, academic persistence or user study verified.\"\n    },\n    {\n      \"name\": \"Edge\",\n      \"version\": \"Edg/156.0.4314.42\",\n      \"page\": \"/admin/index.html\",\n      \"status\": \"pass\",\n      \"viewports\": [\n        {\n          \"title\": \"Panel de Administración | AITHRON EDU\",\n          \"width\": 375,\n          \"overflow\": false,\n          \"main\": true,\n          \"demoLabel\": true,\n          \"navigationMs\": 93.39999999850988,\n          \"loaded\": true,\n          \"exceptions\": []\n        },\n        {\n          \"title\": \"Panel de Administración | AITHRON EDU\",\n          \"width\": 1440,\n          \"overflow\": false,\n          \"main\": true,\n          \"demoLabel\": true,\n          \"navigationMs\": 88.09999999776483,\n          \"loaded\": true,\n          \"exceptions\": []\n        }\n      ],\n      \"scope\": \"Public demonstration UI only. No authenticated role, database, academic persistence or user study verified.\"\n    },\n    {\n      \"name\": \"Chrome\",\n      \"version\": \"Chrome/156.0.8078.48\",\n      \"status\": \"pass\",\n      \"checks\": [\n        {\n          \"width\": 320,\n          \"height\": 720,\n          \"overflow\": false,\n          \"lang\": \"es\",\n          \"h1\": 1,\n          \"main\": true,\n          \"unlabelled\": 0,\n          \"navigationMs\": 65.80000000074506\n        },\n        {\n          \"width\": 375,\n          \"height\": 812,\n          \"overflow\": false,\n          \"lang\": \"es\",\n          \"h1\": 1,\n          \"main\": true,\n          \"unlabelled\": 0,\n          \"navigationMs\": 28.600000001490116\n        },\n        {\n          \"width\": 768,\n          \"height\": 1024,\n          \"overflow\": false,\n          \"lang\": \"es\",\n          \"h1\": 1,\n          \"main\": true,\n          \"unlabelled\": 0,\n          \"navigationMs\": 32.5\n        },\n        {\n          \"width\": 1440,\n          \"height\": 900,\n          \"overflow\": false,\n          \"lang\": \"es\",\n          \"h1\": 1,\n          \"main\": true,\n          \"unlabelled\": 0,\n          \"navigationMs\": 28.399999998509884\n        }\n      ],\n      \"validation\": {\n        \"focus\": \"identifier\",\n        \"identifierInvalid\": \"true\",\n        \"passwordInvalid\": \"true\"\n      },\n      \"tabFocus\": \"password\",\n      \"exceptions\": [],\n      \"scope\": \"Static public login only. Desktop viewport emulation, not physical mobile, screen reader, WCAG or authenticated E2E.\"\n    },\n    {\n      \"name\": \"Chrome\",\n      \"version\": \"Chrome/156.0.8078.48\",\n      \"page\": \"/student/index.html?grade=4\",\n      \"status\": \"pass\",\n      \"viewports\": [\n        {\n          \"title\": \"Inicio del estudiante | AITHRON EDU\",\n          \"width\": 375,\n          \"overflow\": false,\n          \"main\": true,\n          \"demoLabel\": true,\n          \"navigationMs\": 65.39999999850988,\n          \"loaded\": true,\n          \"exceptions\": []\n        },\n        {\n          \"title\": \"Inicio del estudiante | AITHRON EDU\",\n          \"width\": 1440,\n          \"overflow\": false,\n          \"main\": true,\n          \"demoLabel\": true,\n          \"navigationMs\": 65.89999999850988,\n          \"loaded\": true,\n          \"exceptions\": []\n        }\n      ],\n      \"scope\": \"Public demonstration UI only. No authenticated role, database, academic persistence or user study verified.\"\n    },\n    {\n      \"name\": \"Chrome\",\n      \"version\": \"Chrome/156.0.8078.48\",\n      \"page\": \"/student/aprende.html?grade=4\",\n      \"status\": \"pass\",\n      \"viewports\": [\n        {\n          \"title\": \"Mis cursos | AITHRON EDU\",\n          \"width\": 375,\n          \"overflow\": false,\n          \"main\": true,\n          \"demoLabel\": true,\n          \"navigationMs\": 72.5,\n          \"loaded\": true,\n          \"exceptions\": []\n        },\n        {\n          \"title\": \"Mis cursos | AITHRON EDU\",\n          \"width\": 1440,\n          \"overflow\": false,\n          \"main\": true,\n          \"demoLabel\": true,\n          \"navigationMs\": 69.59999999776483,\n          \"loaded\": true,\n          \"exceptions\": []\n        }\n      ],\n      \"scope\": \"Public demonstration UI only. No authenticated role, database, academic persistence or user study verified.\"\n    },\n    {\n      \"name\": \"Chrome\",\n      \"version\": \"Chrome/156.0.8078.48\",\n      \"page\": \"/student/leccion.html?grade=4&course=math&unit=math-g4-u1&lesson=math-g4-u1-l1\",\n      \"status\": \"pass\",\n      \"viewports\": [\n        {\n          \"title\": \"¿Qué es una fracción? | AITHRON EDU\",\n          \"width\": 375,\n          \"overflow\": false,\n          \"main\": true,\n          \"demoLabel\": true,\n          \"navigationMs\": 140,\n          \"loaded\": true,\n          \"exceptions\": []\n        },\n        {\n          \"title\": \"¿Qué es una fracción? | AITHRON EDU\",\n          \"width\": 1440,\n          \"overflow\": false,\n          \"main\": true,\n          \"demoLabel\": true,\n          \"navigationMs\": 101.70000000298023,\n          \"loaded\": true,\n          \"exceptions\": []\n        }\n      ],\n      \"scope\": \"Public demonstration UI only. No authenticated role, database, academic persistence or user study verified.\"\n    },\n    {\n      \"name\": \"Chrome\",\n      \"version\": \"Chrome/156.0.8078.48\",\n      \"page\": \"/monitor/index.html\",\n      \"status\": \"pass\",\n      \"viewports\": [\n        {\n          \"title\": \"Dashboard Monitor | AITHRON EDU\",\n          \"width\": 375,\n          \"overflow\": false,\n          \"main\": true,\n          \"demoLabel\": true,\n          \"navigationMs\": 172.60000000149012,\n          \"loaded\": true,\n          \"exceptions\": []\n        },\n        {\n          \"title\": \"Dashboard Monitor | AITHRON EDU\",\n          \"width\": 1440,\n          \"overflow\": false,\n          \"main\": true,\n          \"demoLabel\": true,\n          \"navigationMs\": 69.10000000149012,\n          \"loaded\": true,\n          \"exceptions\": []\n        }\n      ],\n      \"scope\": \"Public demonstration UI only. No authenticated role, database, academic persistence or user study verified.\"\n    },\n    {\n      \"name\": \"Chrome\",\n      \"version\": \"Chrome/156.0.8078.48\",\n      \"page\": \"/admin/index.html\",\n      \"status\": \"pass\",\n      \"viewports\": [\n        {\n          \"title\": \"Panel de Administración | AITHRON EDU\",\n          \"width\": 375,\n          \"overflow\": false,\n          \"main\": true,\n          \"demoLabel\": true,\n          \"navigationMs\": 73.39999999850988,\n          \"loaded\": true,\n          \"exceptions\": []\n        },\n        {\n          \"title\": \"Panel de Administración | AITHRON EDU\",\n          \"width\": 1440,\n          \"overflow\": false,\n          \"main\": true,\n          \"demoLabel\": true,\n          \"navigationMs\": 72.09999999776483,\n          \"loaded\": true,\n          \"exceptions\": []\n        }\n      ],\n      \"scope\": \"Public demonstration UI only. No authenticated role, database, academic persistence or user study verified.\"\n    }\n  ],\n  \"notes\": [\n    \"No real credentials or minors data\",\n    \"Disposable browser profiles retained in approved temp; no user profile touched\",\n    \"Navigation duration is local static fixture measurement, not production performance or Web Vitals\"\n  ]\n}\n"
+    }
+  ],
+  "hashes": [
+    {
+      "path": "backend/pyproject.toml",
+      "sha256": "0204ae74454fa85f07365046c9626d19c78e75d307973fbdf6f9f3a6753a4205"
+    },
+    {
+      "path": "backend/app/api/v1/endpoints/educational_resources.py",
+      "sha256": "ee9eadd686820e72b5df52a1c8dd42330033c05490c6a1e434c677f5a35ecbfb"
+    },
+    {
+      "path": "backend/verification/test_phase47_boundaries.py",
+      "sha256": "a676a0fa10c907842fc72f1d78b05e4840e0b9fa9594cd7e97bc42918ea20326"
+    },
+    {
+      "path": "frontend/js/services/auth.service.js",
+      "sha256": "6101ee24729148da6637d591d28f6ee12a3a491960476ff34f0be702f2a1e9e1"
+    },
+    {
+      "path": "frontend/js/services/insights-api.service.js",
+      "sha256": "cba21649730e8ec4c8739442bf883c7ec3ffe0e79ff01d2946de1e532f4c49fa"
+    },
+    {
+      "path": "frontend/js/components/insights-api-view.js",
+      "sha256": "6bd2119b83aea6b6d1405f3d12ca61217e346a04e339f59fb6662c39cd230f7a"
+    },
+    {
+      "path": "frontend/js/components/reports-api-view.js",
+      "sha256": "a283af291b591134f7edfcd4cec4764c4caa2f7d215bb098fce29d3e82ea465c"
+    },
+    {
+      "path": "frontend/js/student/progress.js",
+      "sha256": "327e80a4534dadf29fe7f409c089fb3d1f5e719cd05dda51cd9118b8f0494f83"
+    },
+    {
+      "path": "frontend/js/student/synchronization.js",
+      "sha256": "f9dd672f65eb82c0a791ca153a9481a960bf44747402576171788dcf8d956331"
+    },
+    {
+      "path": "tests/phase47-private-views.cjs",
+      "sha256": "3e0673dede3f93f9a977945bb5483f9ca9a608dbc8ae4ce2348eb74d9227a9ab"
+    },
+    {
+      "path": "tools/audit-phase47.cjs",
+      "sha256": "a73ebc51daddf2cbcd653809bca2029a3744611e51d8a805abba6926bfbe790a"
+    },
+    {
+      "path": "tools/validate-integration.py",
+      "sha256": "dc46c600ce804204ddce30a9a161d9095ff04d154a313c7b4c61845647cced78"
+    }
+  ]
+}

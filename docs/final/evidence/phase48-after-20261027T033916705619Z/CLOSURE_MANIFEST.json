@@ -1,0 +1,116 @@
+{
+  "generated_at": "2026-10-27T03:48:31.281436+00:00",
+  "AITHRON_FINAL_VALIDATION": "1",
+  "verified_source_files": 996,
+  "scope": "Closure integrity only; no new functional, PostgreSQL or production approval",
+  "hashes": [
+    {
+      "path": "backend/app/dependencies/auth.py",
+      "sha256": "fcc5b6c89c38780c7a118a4f7d5d102f45dd09f1cba12103ff5d2213ada465ae"
+    },
+    {
+      "path": "backend/app/core/security.py",
+      "sha256": "de45ee36db4e5569810beb1863b3bf7508013c5d43f064c9b92819149076d6f0"
+    },
+    {
+      "path": "backend/app/storage/local_storage.py",
+      "sha256": "d48cff6e61c38ae3868de2931669052706d3f19f4a2de932ba944b988589a071"
+    },
+    {
+      "path": "backend/pyproject.toml",
+      "sha256": "8f4ed17852e3beca10abad6f9e64da76528e771142e0cf835f6ab593f53f73a8"
+    },
+    {
+      "path": "backend/verification/test_phase48_remediation.py",
+      "sha256": "da1bb5b0ab139ef13f38792212b7894cfe2b433b3be566883ebe603a60d91ad0"
+    },
+    {
+      "path": "backend/verification/test_reports_engine.py",
+      "sha256": "9df586afb4ca54708e380932008dd9b189e39e556382dd2f8e0e17d0adc581cd"
+    },
+    {
+      "path": "tools/audit-phase48.cjs",
+      "sha256": "5014e4b60fb62333907833bdcdb4742eeb03e5eab720c3d6b5c7af549ebb305d"
+    },
+    {
+      "path": "tools/validate-security.py",
+      "sha256": "9a359cd1d14523105f981dbab16af872c29537207ae4068549cf0ba1e2da0712"
+    },
+    {
+      "path": "tools/audit-dependencies.py",
+      "sha256": "657ba23d76db492a85a2c5576642395204438ad8c66dc2f4de3fe0b1258001f6"
+    },
+    {
+      "path": "README.md",
+      "sha256": "3d5f7916369bd92ebf23cc458dcb00d489c53eb3f763a1340bc864fe6f7f55d9"
+    },
+    {
+      "path": "docs/VULNERABILITY_REGISTER.md",
+      "sha256": "811a622aedf1438e9b91908808fe94863faf9afc2517b9c4fa64291efb3b8af1"
+    },
+    {
+      "path": "docs/REMEDIATION_LOG.md",
+      "sha256": "3cce0081ac768de47ab03d3a4392cbb926a928044f64e8ea465cab913f3cfca0"
+    },
+    {
+      "path": "docs/DEPENDENCY_SECURITY_AUDIT.md",
+      "sha256": "7d1a47674c195fe9d1dd9ebd6ac73745cba68d7c7f1f7ac8bd145c47d8e36b1f"
+    },
+    {
+      "path": "docs/AUTHENTICATION_SECURITY_AUDIT.md",
+      "sha256": "74748ccdf5f4e901d5bd55796edec81a614d2f0fb7a39cc3a60dfea0bbef89f5"
+    },
+    {
+      "path": "docs/SECURITY_THREAT_MODEL.md",
+      "sha256": "ec5d91dd569b083efb3e6d6e679e05009a5fb7af2e0734df47240be17f30872d"
+    },
+    {
+      "path": "docs/PERFORMANCE_BASELINE.md",
+      "sha256": "66b351865df86c6027e864f182b84146103b143294d3dd0f691fea07a570cc1c"
+    },
+    {
+      "path": "docs/PERFORMANCE_TEST_RESULTS.md",
+      "sha256": "e07610d832f80bc632a6070b471bdcafe11a853b028d17645133ebf8f77c69ab"
+    },
+    {
+      "path": "docs/RESILIENCE_TEST_RESULTS.md",
+      "sha256": "b5f4be130c4a56e56e2d8ec1f2996a683ad4b219375466ad35e5827daf02fa59"
+    },
+    {
+      "path": "docs/CHILD_DATA_PRIVACY_AUDIT.md",
+      "sha256": "8ea63c730fcd760f6c1c824587c9e3cbac111bd5b9c4a914b8cfde854d8b3b38"
+    },
+    {
+      "path": "docs/RESIDUAL_RISKS.md",
+      "sha256": "7e857afb56020f49e73f14e176e882182b97b16002b494162939759f24c50eef"
+    },
+    {
+      "path": "docs/PRODUCTION_SECURITY_GATE.md",
+      "sha256": "1f8e4687fafabd2fdce4852622fd39953b2a4555e9b3567ae3b56f8861c6a233"
+    },
+    {
+      "path": "docs/SECURITY_AUDIT_REPORT.md",
+      "sha256": "4985e704ec6b05d5a7b48aa096df765dd6a03671b4d6b27801bf4a47bdd97df2"
+    },
+    {
+      "path": "docs/PHASE_48_AUDIT_PLAN.md",
+      "sha256": "eb5edb8fc458f7a4626e0fda28f3a7e673029083a58e51662d2bae077dcb949a"
+    },
+    {
+      "path": "docs/PHASE_48_SYSTEM_BASELINE.md",
+      "sha256": "62d274170def6984e698b077aea8e7efc2cdae8e60d91e794ed9143fea42794d"
+    },
+    {
+      "path": "docs/PHASE_48_CONTINUATION_2026-10-27.md",
+      "sha256": "a619281af3abcc2fabf23a34f10649104a03a7fac8c1c9dae85e0e61297926ee"
+    },
+    {
+      "path": "docs/final/evidence/phase48-dependencies-20261027T033307506104Z/ADVISORIES.json",
+      "sha256": "98aeab3433a6424ef3904d2f0cb7e320700a81feb5df50357336f85d663756c4"
+    },
+    {
+      "path": "docs/final/evidence/phase48-dependencies-20261027T033307506104Z/SBOM.cdx.json",
+      "sha256": "47ada0b95a7fa6453347969e556e7770c2666017697bf0486dd4875cc65c7385"
+    }
+  ]
+}

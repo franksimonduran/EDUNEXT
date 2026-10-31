@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-31T05:22:48.200Z",
+  "pass": true,
+  "checks": [
+    "Static tutor page",
+    "API method/path/body and auth/CSRF forwarded",
+    "Cookie and error status preserved",
+    "Untrusted Host rejected",
+    "Missing backend returns 503 instead of static 404"
+  ],
+  "scope": "Synthetic HTTP fixture; not FastAPI, PostgreSQL, real authentication or Gemini."
+}

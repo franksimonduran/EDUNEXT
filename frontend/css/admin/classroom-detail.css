@@ -1,0 +1,7 @@
+/* FASE 26 · Detalle de aula */
+.admin-page .classroom-detail-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px;margin:18px 0}
+.admin-page .classroom-detail-grid h2{margin-top:0}
+.admin-page .classroom-detail-grid ul{padding-left:18px}
+.admin-page .classroom-detail-grid li{margin:4px 0}
+.admin-page .classroom-occupancy{font-weight:600}
+@media(max-width:700px){.admin-page .classroom-detail-grid{grid-template-columns:1fr}}

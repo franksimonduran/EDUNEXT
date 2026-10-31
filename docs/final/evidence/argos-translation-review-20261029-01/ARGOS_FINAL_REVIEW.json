@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-29T05:49:45.966Z",
+  "sourceHashes": [
+    {
+      "file": "backend/app/providers/argos_provider.py",
+      "sha256": "16a00165f43f31da3a67194f4dd21091a8510d69223c82ff60d3c70470630ac2"
+    },
+    {
+      "file": "backend/app/providers/argos_worker.py",
+      "sha256": "e98d4bcb7bb732f3370a0250ebbda1302842ce5e99ec9716e96836c7bc5413ad"
+    },
+    {
+      "file": "backend/app/providers/provider_registry.py",
+      "sha256": "871777c42ab1db87579133647a240fa2c826efa2703d52116633724d94a2a6bc"
+    },
+    {
+      "file": "backend/app/core/config.py",
+      "sha256": "ce079d290caa719b8f09e823fd7dc9a1d6b495a56939a8c6f126725981df160f"
+    },
+    {
+      "file": "backend/app/services/ai_gateway_service.py",
+      "sha256": "a6776b314d2326d3fd9cff7cd124766ad1867f0e3460288d74564f647e97ba4c"
+    },
+    {
+      "file": "backend/app/api/v1/endpoints/assessments.py",
+      "sha256": "e971c504a910523cac8ef7598a5c77e4687b26068b9ea144bae0122c949c69cc"
+    },
+    {
+      "file": "backend/app/services/assessment_service.py",
+      "sha256": "722522995291fb5c18f7873e042bae4de03c8c15f8c014d9c8e87ea2855725cd"
+    },
+    {
+      "file": "backend/scripts/install_argos_models.py",
+      "sha256": "991c556de5cccbdc6f956b2bf132deb4c078bd39563d067d74c1ac331e849a39"
+    },
+    {
+      "file": "backend/scripts/translate_local.py",
+      "sha256": "33f1d7de4dac2c6118bd99b1acfcf753ea49883945a8e70d9bb8562d8df9d1f9"
+    },
+    {
+      "file": "frontend/js/student/translator.js",
+      "sha256": "254951d9a1730a1f6b7166428a924b83d98542e4984a9148e9bb885c1954c783"
+    },
+    {
+      "file": "backend/verification/test_argos_provider.py",
+      "sha256": "0289bca1a28524fd63f665d5a0ac398a018ce70c97ac70c963ba50421d4359f2"
+    },
+    {
+      "file": "backend/verification/test_ai_engine.py",
+      "sha256": "43f4e3ef407035ee7d2b1685d293294a194596fa0e2eb6444b15e33191c8b536"
+    },
+    {
+      "file": "backend/verification/argos_browser_fixture.py",
+      "sha256": "b3c19e276263c52f00cecf0572d2f4080483883c1cc2ac5cd9b8649fc68bdad4"
+    },
+    {
+      "file": "tests/fixtures/argos-translation-browser.cjs",
+      "sha256": "992b233487cac5496abd99cff77b113a2667d24d62fa9494189447c067d4c621"
+    },
+    {
+      "file": "tests/frontend-refresh.browser.cjs",
+      "sha256": "9a2cda16ca783723c6f000f937de3ec2d30689769aea0c9232c9363b8c8b07d9"
+    },
+    {
+      "file": "tools/translate-local.ps1",
+      "sha256": "a3460492723eb8db2062cdd993226c4ca6799cba8094fe5a10d03e23bf0ab1b5"
+    },
+    {
+      "file": "docs/ARGOS_TRANSLATE_SETUP.md",
+      "sha256": "cf583315aa5d56493946d77fcb9b374c84613854db0bb0fdcfde55b489ccd7e0"
+    },
+    {
+      "file": "README.md",
+      "sha256": "dc8209641b8737ae85fb04b1e8d79d035f0829b4c683d48dbd1925cf909867ce"
+    },
+    {
+      "file": "backend/pyproject.toml",
+      "sha256": "8afc660a487cd0f3586263cf7e7fd73e7ce170df1605da860e27eebc9c313b37"
+    },
+    {
+      "file": "backend/.env.example",
+      "sha256": "c4276c897371d90795bec705eb141107fc2c098a4b37c9092c6b072531618a53"
+    },
+    {
+      "file": ".gitignore",
+      "sha256": "4c5efc7c49ada2a8ca4c8f3891c808c6f509dfdcba7b58293d2a1406e0a8b395"
+    },
+    {
+      "file": "tools/final-inventory.cjs",
+      "sha256": "1662fdae9f4487108c7c0a09371846ba66a72da035a9486948eb603fa53e4fe5"
+    },
+    {
+      "file": "tools/validate-argos.py",
+      "sha256": "51d09c8827a3d444dfc237446ea1d9b43891826e0a336dc0e40363d2dd764022"
+    }
+  ],
+  "frontendFilesVerified": 769,
+  "protectedFiles": [
+    {
+      "file": "backend/app/schemas/assessment.py",
+      "sha256": "f58e01eb33320aad0eb024e6c076724da6ea98d263c8c9eb181da1df00877963"
+    },
+    {
+      "file": "frontend/sw.js",
+      "sha256": "4d66f467353998b48e629eb97acb5ba87e6d420c89fa92661963bca0bd010a9d"
+    },
+    {
+      "file": "frontend/js/offline/database-schema.js",
+      "sha256": "12ba430d2ac2f1f456268bcdc81b5604a1b1e5d07819f63fe057f064f05d0a58"
+    },
+    {
+      "file": "docs/PHASE_47_ACCEPTANCE.md",
+      "sha256": "e0f0b83f590b1b90217980e82d82daf3d3bbdc3a33e68c97f9c239170fd14a6e"
+    },
+    {
+      "file": "docs/PHASE_48_ACCEPTANCE.md",
+      "sha256": "9d5af0fd226bdf3327156cfd0f1ae66aaf27492faf307c1eb69f8022ef02054b"
+    },
+    {
+      "file": "docs/PHASE_49_ACCEPTANCE.md",
+      "sha256": "4139a3da994706e13f6faee934aaea887f1122203eab5713abb6620560e31551"
+    },
+    {
+      "file": "docs/final/PHASE_50_ACCEPTANCE.md",
+      "sha256": "d193af352668046d87f7f5e93e481cde7bd5539909f34e2ece49e36b264ca3af"
+    },
+    {
+      "file": "docs/VULNERABILITY_REGISTER.md",
+      "sha256": "811a622aedf1438e9b91908808fe94863faf9afc2517b9c4fa64291efb3b8af1"
+    },
+    {
+      "file": "docs/PRODUCTION_SECURITY_GATE.md",
+      "sha256": "1f8e4687fafabd2fdce4852622fd39953b2a4555e9b3567ae3b56f8861c6a233"
+    }
+  ],
+  "results": {
+    "translation": "PASS_REAL_MODELS_SYNTHETIC_TEXT",
+    "browser": "PASS_REAL_MODELS_SYNTHETIC_AUTH_POLICY_DATABASE",
+    "asgi": "PASS_WITHOUT_LIFESPAN_OR_DATABASE",
+    "release": "NO-GO"
+  },
+  "scope": "No real accounts, database, private .env, model redistribution, cloud provider, pilot or deployment."
+}

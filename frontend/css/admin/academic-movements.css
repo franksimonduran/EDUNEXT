@@ -1,0 +1,10 @@
+/* FASE 26 · Movimientos académicos */
+.admin-page #movement-results .user-table-wrap{margin-top:8px}
+.admin-page .movement-type-label{font-weight:600}
+.admin-page .movement-flow{font-variant-numeric:tabular-nums}
+.admin-page .movement-form .form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:14px}
+.admin-page .movement-form label{display:flex;flex-direction:column;gap:6px;font-size:.92rem}
+.admin-page .movement-form input,.admin-page .movement-form select,.admin-page .movement-form textarea{width:100%;min-height:44px;padding:10px;border:1px solid var(--color-border);border-radius:9px;font:inherit;color:var(--color-text);background:var(--color-surface)}
+.admin-page .movement-form textarea{min-height:96px;resize:vertical}
+.admin-page .movement-form button{margin-top:14px;min-height:44px}
+@media(max-width:700px){.admin-page .movement-form button{width:100%}}

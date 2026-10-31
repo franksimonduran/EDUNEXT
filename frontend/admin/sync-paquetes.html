@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paquetes Educativos Offline | EDUNEXT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/admin/layout.css">
+  <link rel="stylesheet" href="../css/admin/sync.css">
+  <link rel="stylesheet" href="../css/admin/system-control-responsive.css">
+</head>
+<body class="admin-body">
+  <div class="admin-shell">
+    <aside class="admin-sidebar" id="admin-sidebar"></aside>
+    <div class="admin-main">
+      <header class="admin-topbar" id="admin-topbar"></header>
+      <main class="admin-content" id="admin-content" aria-live="polite">
+        <header class="page-header">
+          <div>
+            <nav class="breadcrumb" aria-label="Migas de pan"><a href="index.html">Administración</a><span>/</span><a href="sync.html">EDUNEXT Sync</a><span>/</span><span>Paquetes Offline</span></nav>
+            <h1>Paquetes Educativos Offline</h1>
+            <p class="page-subtitle">Consulta los materiales educativos disponibles en este dispositivo</p>
+          </div>
+          <div class="page-actions">
+            <a class="button-secondary" href="sync.html">Centro de Control</a>
+          </div>
+        </header>
+        <section class="summary-grid" id="pkg-stats"></section>
+        <form class="filter-card" id="pkg-filters" aria-label="Filtros de paquetes">
+          <div class="filter-grid">
+            <label class="field"><span>Curso</span><select name="course"><option value="">Todos</option></select></label>
+            <label class="field"><span>Grado</span><select name="grade"><option value="">Todos</option></select></label>
+            <label class="field"><span>Estado</span><select name="status"><option value="">Todos</option></select></label>
+            <label class="field field-search"><span>Buscar</span><input type="search" name="q" placeholder="Nombre o ID"></label>
+          </div>
+          <div class="filter-actions"><button class="button-secondary" type="reset">Limpiar filtros</button></div>
+        </form>
+        <section class="packages-section">
+          <header class="section-header"><h2>Catálogo de paquetes</h2><p id="pkg-count" role="status"></p></header>
+          <div class="package-grid" id="packages-grid"></div>
+        </section>
+      </main>
+    </div>
+  </div>
+  <dialog class="admin-dialog" id="admin-dialog">
+    <div class="dialog-header"><h2 id="dialog-title"></h2><button class="icon-button" id="close-dialog" aria-label="Cerrar">×</button></div>
+    <div class="dialog-content" id="dialog-content"></div>
+  </dialog>
+  <script type="module" src="../js/admin/sync-paquetes.js"></script>
+</body>
+</html>

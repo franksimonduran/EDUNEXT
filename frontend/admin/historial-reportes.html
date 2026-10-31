@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Historial de Reportes | EDUNEXT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/admin/layout.css">
+  <link rel="stylesheet" href="../css/admin/reports.css">
+  <link rel="stylesheet" href="../css/admin/reports-responsive.css">
+  <style>@media print{.admin-sidebar,.admin-topbar,.filter-card,.page-actions,.preview-actions,.demo-banner,.preview-badges,.preview-footer .demo-notice{display:none!important}.admin-shell{grid-template-columns:1fr!important}.admin-main{width:100%!important}.admin-content{padding:0!important}body{background:#fff!important}.preview-section{break-inside:avoid;page-break-inside:avoid}}</style>
+</head>
+<body class="admin-body">
+  <div class="admin-shell"><aside class="admin-sidebar" id="admin-sidebar"></aside>
+  <div class="admin-main"><header class="admin-topbar" id="admin-topbar"></header>
+  <main class="admin-content" id="admin-content" aria-live="polite">
+    <section class="demo-banner"><strong>Historial local — No constituye archivo institucional certificado.</strong></section>
+    <header class="page-header"><div><nav class="breadcrumb" aria-label="Migas de pan"><a href="index.html">Administración</a><span>/</span><a href="reportes.html">Reportes</a><span>/</span><span>Historial de Reportes</span></nav><h1>Historial de Reportes</h1><p class="page-subtitle">Consulta las configuraciones e informes demostrativos preparados en este dispositivo</p></div><div class="page-actions"><a class="button-secondary" href="reportes.html">Centro de Reportes</a><button class="button-secondary" id="export-csv" type="button">Exportar CSV</button></div></header>
+    <form class="filter-card" id="report-filters"><div class="filter-grid">
+      <label class="field"><span>Tipo</span><select name="type"><option value="">Todos</option><option value="institutional">Reporte Institucional</option><option value="grade">Reporte por Grado</option><option value="classroom">Reporte por Aula</option><option value="course">Reporte por Asignatura</option><option value="statistics">Estadísticas</option><option value="monitoring">Seguimiento Académico</option><option value="quality">Calidad de Datos</option><option value="activity">Actividad</option></select></label>
+      <label class="field"><span>Origen</span><select name="source"><option value="">Todos</option><option value="config">Configuración guardada</option><option value="history">Reporte generado</option></select></label>
+      <label class="field"><span>Desde</span><input type="date" name="dateFrom"></label>
+      <label class="field"><span>Hasta</span><input type="date" name="dateTo"></label>
+      <label class="field field-search"><span>Buscar</span><input type="search" name="q" placeholder="Nombre del reporte" autocomplete="off"></label>
+    </div><div class="filter-actions"><button class="button-secondary" type="reset">Limpiar</button><button class="button-primary" type="submit" id="generate-report">Filtrar</button></div></form>
+    <section class="report-preview" id="report-preview">
+      <header class="preview-header"><div class="preview-meta"><h1>EDUNEXT</h1><p class="report-title">Historial de Reportes</p><div class="preview-badges"><span class="badge demo">Demostración</span><span class="badge" id="preview-date"></span></div></div><div class="preview-actions"><button class="button-secondary" id="export-csv" type="button">Exportar CSV</button></div></header>
+      <section class="preview-content" id="preview-content"><p class="muted">Configura los filtros y pulsa "Filtrar" para ver el historial.</p></section>
+      <footer class="preview-footer"><p><strong>Metodología:</strong> Configuraciones e historial guardados localmente en este dispositivo. No constituyen archivo institucional.</p><p class="limitations"><strong>Limitaciones:</strong> Solo almacenamiento local; sin sincronización entre dispositivos; sin respaldo en servidor.</p><p class="demo-notice"><strong>Historial local — No oficial.</strong></p></footer>
+    </section>
+  </main></div></div>
+  <dialog class="admin-dialog" id="admin-dialog"><div class="dialog-header"><h2 id="dialog-title"></h2><button class="icon-button" id="close-dialog" aria-label="Cerrar">×</button></div><div class="dialog-content" id="dialog-content"></div></dialog>
+  <script type="module" src="../js/admin/reports-history.js"></script>
+</body></html>

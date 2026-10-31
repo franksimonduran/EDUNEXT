@@ -1,0 +1,10 @@
+/* Content Detail — CSS específico para detalle de contenido */
+
+.content-hero h2{font-size:1.25rem;font-weight:700;margin:0 0 .75rem}
+.content-hero dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.5rem 1.5rem;font-size:.875rem;margin:0}
+.content-hero dt{color:var(--admin-muted);font-weight:500}
+.content-hero dd{margin:0;font-weight:500}
+.block-item{padding:.75rem;background:#f8fafc;border-radius:8px;margin-bottom:.5rem;border-left:3px solid var(--admin-primary)}
+.block-type{display:inline-block;font-size:.6875rem;font-weight:600;text-transform:uppercase;background:var(--admin-primary);color:#fff;padding:.125rem .375rem;border-radius:4px;margin-bottom:.375rem}
+.resource-item{padding:.75rem;background:#f8fafc;border-radius:8px;margin-bottom:.5rem}
+.resource-item .badge{margin-left:.5rem}

@@ -1,0 +1,1731 @@
+{
+  "date": "2026-10-29T04:50:50.435Z",
+  "scope": "Public demo, real Edge, synthetic disposable profile. No authenticated E2E, PostgreSQL, physical mobile, screen reader or WCAG certification.",
+  "results": [
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "login.html",
+      "width": 320,
+      "brand": {
+        "title": "Iniciar sesión | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "login.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Iniciar sesión | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "login.html",
+      "width": 768,
+      "brand": {
+        "title": "Iniciar sesión | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "login.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Iniciar sesión | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "login.html",
+      "width": 1440,
+      "brand": {
+        "title": "Iniciar sesión | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "login.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Iniciar sesión | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "register.html",
+      "width": 320,
+      "brand": {
+        "title": "Crea tu cuenta | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "register.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Crea tu cuenta | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "register.html",
+      "width": 768,
+      "brand": {
+        "title": "Crea tu cuenta | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "register.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Crea tu cuenta | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "register.html",
+      "width": 1440,
+      "brand": {
+        "title": "Crea tu cuenta | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "register.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Crea tu cuenta | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "forgot-password.html",
+      "width": 320,
+      "brand": {
+        "title": "Recuperar acceso | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "forgot-password.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Recuperar acceso | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "forgot-password.html",
+      "width": 768,
+      "brand": {
+        "title": "Recuperar acceso | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "forgot-password.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Recuperar acceso | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "forgot-password.html",
+      "width": 1440,
+      "brand": {
+        "title": "Recuperar acceso | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "forgot-password.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Recuperar acceso | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "reset-password.html",
+      "width": 320,
+      "brand": {
+        "title": "Nueva contraseña | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "reset-password.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Nueva contraseña | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "reset-password.html",
+      "width": 768,
+      "brand": {
+        "title": "Nueva contraseña | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "reset-password.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Nueva contraseña | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "reset-password.html",
+      "width": 1440,
+      "brand": {
+        "title": "Nueva contraseña | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "reset-password.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Nueva contraseña | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/index.html",
+      "width": 320,
+      "brand": {
+        "title": "Inicio del estudiante | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/index.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Inicio del estudiante | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/index.html",
+      "width": 768,
+      "brand": {
+        "title": "Inicio del estudiante | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/index.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Inicio del estudiante | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/index.html",
+      "width": 1440,
+      "brand": {
+        "title": "Inicio del estudiante | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/index.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Inicio del estudiante | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/aprende.html",
+      "width": 320,
+      "brand": {
+        "title": "Mis cursos | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/aprende.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis cursos | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/aprende.html",
+      "width": 768,
+      "brand": {
+        "title": "Mis cursos | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/aprende.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis cursos | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/aprende.html",
+      "width": 1440,
+      "brand": {
+        "title": "Mis cursos | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/aprende.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis cursos | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/practica.html",
+      "width": 320,
+      "brand": {
+        "title": "¡Vamos a practicar! | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/practica.html",
+      "width": 320,
+      "overflow": false,
+      "title": "¡Vamos a practicar! | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/practica.html",
+      "width": 768,
+      "brand": {
+        "title": "¡Vamos a practicar! | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/practica.html",
+      "width": 768,
+      "overflow": false,
+      "title": "¡Vamos a practicar! | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/practica.html",
+      "width": 1440,
+      "brand": {
+        "title": "¡Vamos a practicar! | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/practica.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "¡Vamos a practicar! | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/juegos.html",
+      "width": 320,
+      "brand": {
+        "title": "Aprende jugando | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/juegos.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Aprende jugando | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/juegos.html",
+      "width": 768,
+      "brand": {
+        "title": "Aprende jugando | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/juegos.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Aprende jugando | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/juegos.html",
+      "width": 1440,
+      "brand": {
+        "title": "Aprende jugando | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/juegos.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Aprende jugando | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/evaluaciones.html",
+      "width": 320,
+      "brand": {
+        "title": "Mis evaluaciones | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/evaluaciones.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis evaluaciones | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/evaluaciones.html",
+      "width": 768,
+      "brand": {
+        "title": "Mis evaluaciones | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/evaluaciones.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis evaluaciones | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/evaluaciones.html",
+      "width": 1440,
+      "brand": {
+        "title": "Mis evaluaciones | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/evaluaciones.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis evaluaciones | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/agenda.html",
+      "width": 320,
+      "brand": {
+        "title": "Mi Agenda | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/agenda.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mi Agenda | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/agenda.html",
+      "width": 768,
+      "brand": {
+        "title": "Mi Agenda | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/agenda.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mi Agenda | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/agenda.html",
+      "width": 1440,
+      "brand": {
+        "title": "Mi Agenda | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/agenda.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mi Agenda | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/progreso.html",
+      "width": 320,
+      "brand": {
+        "title": "Mi progreso | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/progreso.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mi progreso | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/progreso.html",
+      "width": 768,
+      "brand": {
+        "title": "Mi progreso | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/progreso.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mi progreso | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/progreso.html",
+      "width": 1440,
+      "brand": {
+        "title": "Mi progreso | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/progreso.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mi progreso | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/misiones.html",
+      "width": 320,
+      "brand": {
+        "title": "Mis misiones | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/misiones.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis misiones | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/misiones.html",
+      "width": 768,
+      "brand": {
+        "title": "Mis misiones | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/misiones.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis misiones | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/misiones.html",
+      "width": 1440,
+      "brand": {
+        "title": "Mis misiones | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/misiones.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis misiones | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/logros.html",
+      "width": 320,
+      "brand": {
+        "title": "Mis logros | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/logros.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis logros | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/logros.html",
+      "width": 768,
+      "brand": {
+        "title": "Mis logros | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/logros.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis logros | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/logros.html",
+      "width": 1440,
+      "brand": {
+        "title": "Mis logros | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/logros.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis logros | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/descargas.html",
+      "width": 320,
+      "brand": {
+        "title": "Centro de Descargas | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/descargas.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Centro de Descargas | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/descargas.html",
+      "width": 768,
+      "brand": {
+        "title": "Centro de Descargas | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/descargas.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Centro de Descargas | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/descargas.html",
+      "width": 1440,
+      "brand": {
+        "title": "Centro de Descargas | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/descargas.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Centro de Descargas | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/tutor.html",
+      "width": 320,
+      "brand": {
+        "title": "EDUNEXT AI | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/tutor.html",
+      "width": 320,
+      "overflow": false,
+      "title": "EDUNEXT AI | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/tutor.html",
+      "width": 768,
+      "brand": {
+        "title": "EDUNEXT AI | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/tutor.html",
+      "width": 768,
+      "overflow": false,
+      "title": "EDUNEXT AI | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/tutor.html",
+      "width": 1440,
+      "brand": {
+        "title": "EDUNEXT AI | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/tutor.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "EDUNEXT AI | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/traductor.html",
+      "width": 320,
+      "brand": {
+        "title": "EDUNEXT Translate | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/traductor.html",
+      "width": 320,
+      "overflow": false,
+      "title": "EDUNEXT Translate | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/traductor.html",
+      "width": 768,
+      "brand": {
+        "title": "EDUNEXT Translate | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/traductor.html",
+      "width": 768,
+      "overflow": false,
+      "title": "EDUNEXT Translate | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/traductor.html",
+      "width": 1440,
+      "brand": {
+        "title": "EDUNEXT Translate | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/traductor.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "EDUNEXT Translate | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/pronuncia.html",
+      "width": 320,
+      "brand": {
+        "title": "EDUNEXT Pronuncia | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/pronuncia.html",
+      "width": 320,
+      "overflow": false,
+      "title": "EDUNEXT Pronuncia | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/pronuncia.html",
+      "width": 768,
+      "brand": {
+        "title": "EDUNEXT Pronuncia | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/pronuncia.html",
+      "width": 768,
+      "overflow": false,
+      "title": "EDUNEXT Pronuncia | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/pronuncia.html",
+      "width": 1440,
+      "brand": {
+        "title": "EDUNEXT Pronuncia | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/pronuncia.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "EDUNEXT Pronuncia | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/perfil.html",
+      "width": 320,
+      "brand": {
+        "title": "Mi Perfil | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/perfil.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mi Perfil | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/perfil.html",
+      "width": 768,
+      "brand": {
+        "title": "Mi Perfil | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/perfil.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mi Perfil | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/perfil.html",
+      "width": 1440,
+      "brand": {
+        "title": "Mi Perfil | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/perfil.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mi Perfil | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/configuracion.html",
+      "width": 320,
+      "brand": {
+        "title": "Configuración | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/configuracion.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Configuración | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/configuracion.html",
+      "width": 768,
+      "brand": {
+        "title": "Configuración | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/configuracion.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Configuración | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "student/configuracion.html",
+      "width": 1440,
+      "brand": {
+        "title": "Configuración | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "student/configuracion.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Configuración | EDUNEXT",
+      "busy": false,
+      "navigation": 14,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "monitor/index.html",
+      "width": 320,
+      "brand": {
+        "title": "Resumen docente | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "monitor/index.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Resumen docente | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "monitor/index.html",
+      "width": 768,
+      "brand": {
+        "title": "Resumen docente | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "monitor/index.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Resumen docente | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "monitor/index.html",
+      "width": 1440,
+      "brand": {
+        "title": "Resumen docente | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "monitor/index.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Resumen docente | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "monitor/cursos.html",
+      "width": 320,
+      "brand": {
+        "title": "Mis Cursos | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "monitor/cursos.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis Cursos | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "monitor/cursos.html",
+      "width": 768,
+      "brand": {
+        "title": "Mis Cursos | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "monitor/cursos.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis Cursos | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "monitor/cursos.html",
+      "width": 1440,
+      "brand": {
+        "title": "Mis Cursos | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "monitor/cursos.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis Cursos | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "monitor/estudiantes.html",
+      "width": 320,
+      "brand": {
+        "title": "Mis estudiantes | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "monitor/estudiantes.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis estudiantes | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "monitor/estudiantes.html",
+      "width": 768,
+      "brand": {
+        "title": "Mis estudiantes | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "monitor/estudiantes.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis estudiantes | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "monitor/estudiantes.html",
+      "width": 1440,
+      "brand": {
+        "title": "Mis estudiantes | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "monitor/estudiantes.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis estudiantes | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "monitor/tareas.html",
+      "width": 320,
+      "brand": {
+        "title": "Mis Tareas | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "monitor/tareas.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Mis Tareas | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "monitor/tareas.html",
+      "width": 768,
+      "brand": {
+        "title": "Mis Tareas | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "monitor/tareas.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Mis Tareas | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "monitor/tareas.html",
+      "width": 1440,
+      "brand": {
+        "title": "Mis Tareas | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "monitor/tareas.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Mis Tareas | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "admin/index.html",
+      "width": 320,
+      "brand": {
+        "title": "Panel de Administración | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "admin/index.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Panel de Administración | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "admin/index.html",
+      "width": 768,
+      "brand": {
+        "title": "Panel de Administración | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "admin/index.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Panel de Administración | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "admin/index.html",
+      "width": 1440,
+      "brand": {
+        "title": "Panel de Administración | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "admin/index.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Panel de Administración | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "admin/usuarios.html",
+      "width": 320,
+      "brand": {
+        "title": "Gestión de Usuarios | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "admin/usuarios.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Gestión de Usuarios | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "admin/usuarios.html",
+      "width": 768,
+      "brand": {
+        "title": "Gestión de Usuarios | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "admin/usuarios.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Gestión de Usuarios | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "admin/usuarios.html",
+      "width": 1440,
+      "brand": {
+        "title": "Gestión de Usuarios | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "admin/usuarios.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Gestión de Usuarios | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "admin/matriculas.html",
+      "width": 320,
+      "brand": {
+        "title": "Matrículas | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "admin/matriculas.html",
+      "width": 320,
+      "overflow": false,
+      "title": "Matrículas | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "admin/matriculas.html",
+      "width": 768,
+      "brand": {
+        "title": "Matrículas | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "admin/matriculas.html",
+      "width": 768,
+      "overflow": false,
+      "title": "Matrículas | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "check": "edunext-visible-brand-and-images",
+      "page": "admin/matriculas.html",
+      "width": 1440,
+      "brand": {
+        "title": "Matrículas | EDUNEXT",
+        "legacy": false,
+        "images": []
+      },
+      "pass": true
+    },
+    {
+      "page": "admin/matriculas.html",
+      "width": 1440,
+      "overflow": false,
+      "title": "Matrículas | EDUNEXT",
+      "busy": false,
+      "navigation": 0,
+      "overflowing": [],
+      "exceptions": [],
+      "pass": true
+    },
+    {
+      "pass": false,
+      "error": "Page not ready: http://127.0.0.1:62829/role-selection.html",
+      "exceptions": []
+    }
+  ],
+  "missing": [
+    "/favicon.ico"
+  ],
+  "pass": false
+}

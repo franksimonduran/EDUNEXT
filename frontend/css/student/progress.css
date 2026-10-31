@@ -1,0 +1,30 @@
+/* Progreso Fase 11 */
+.prog-header{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:flex-start;margin-bottom:1rem}
+.prog-title-row{display:flex;gap:1rem;align-items:flex-start}
+.prog-avatar{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--color-primary),var(--color-accent));color:#fff}
+.prog-heading h1{margin:0}
+.prog-heading p{margin:.25rem 0 0;color:var(--color-muted)}
+.prog-summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem;margin:1rem 0}
+.prog-sum-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:.75rem;display:flex;gap:.75rem;align-items:center;box-shadow:var(--shadow-soft)}
+.prog-general{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1rem;box-shadow:var(--shadow-soft);display:flex;flex-direction:column;gap:.75rem}
+.prog-bar{height:10px;background:var(--color-surface-alt);border-radius:999px;overflow:hidden}
+.prog-bar-fill{height:100%;background:linear-gradient(90deg,var(--color-primary),var(--color-accent))}
+.prog-bar-text{color:var(--color-muted)}
+.courses-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.course-prog-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1rem;box-shadow:var(--shadow-soft);display:flex;flex-direction:column;gap:.75rem}
+.rec-list{display:flex;flex-direction:column;gap:.75rem}
+.rec-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:.75rem;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-soft)}
+
+.mission-tabs{display:flex;gap:.5rem;flex-wrap:wrap}
+.mission-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.mission-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1rem;box-shadow:var(--shadow-soft);display:flex;flex-direction:column;gap:.75rem}
+.mission-head{display:flex;justify-content:space-between}
+.mission-reward{padding:.25rem .5rem;border-radius:999px;background:rgba(245,158,11,.12);color:#b45309}
+
+.ach-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.ach-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1rem;text-align:center;box-shadow:var(--shadow-soft);display:flex;flex-direction:column;gap:.5rem;align-items:center}
+.ach-card--got{border-color:rgba(245,158,11,.6)}
+.ach-card--pend{opacity:.8}
+.ach-icon{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f59e0b,#fbbf24);color:#fff}
+
+@media(max-width:640px){.rec-card{flex-direction:column;align-items:flex-start}}

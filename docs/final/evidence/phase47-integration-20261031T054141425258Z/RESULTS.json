@@ -1,0 +1,187 @@
+{
+  "generated_at": "2026-10-31T05:41:56.557406+00:00",
+  "AITHRON_FINAL_VALIDATION": 1,
+  "environment": "Disposable Python environment; isolated CWD without .env; synthetic disabled-service configuration",
+  "scope": "Contracts, ASGI with synthetic auth/storage, OpenAPI, source, JS doubles; no PostgreSQL or real provider E2E",
+  "results": [
+    {
+      "check": "python_non_database_contracts",
+      "exit_code": 0,
+      "output": ".........................s..........................................                                          [100%]\n============================== warnings summary ===============================\n..\\aithron-integration-e4c75e81f5d0498fae58297003317fbe\\Lib\\site-packages\\fastapi\\testclient.py:1\n  C:\\Users\\simon\\AppData\\Local\\Temp\\opencode\\aithron-integration-e4c75e81f5d0498fae58297003317fbe\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n..\\aithron-integration-e4c75e81f5d0498fae58297003317fbe\\Lib\\site-packages\\passlib\\handlers\\argon2.py:716\n  C:\\Users\\simon\\AppData\\Local\\Temp\\opencode\\aithron-integration-e4c75e81f5d0498fae58297003317fbe\\Lib\\site-packages\\passlib\\handlers\\argon2.py:716: DeprecationWarning: Accessing argon2.__version__ is deprecated and will be removed in a future release. Use importlib.metadata directly to query for argon2-cffi's packaging metadata.\n    _argon2_cffi.__version__, max_version)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n67 passed, 1 skipped, 2 warnings, 35 subtests passed in 7.16s\n"
+    },
+    {
+      "check": "resolved_dependencies",
+      "exit_code": 0,
+      "output": "[{\"name\": \"aiofiles\", \"version\": \"25.1.0\"}, {\"name\": \"alembic\", \"version\": \"1.20.1\"}, {\"name\": \"annotated-doc\", \"version\": \"0.0.5\"}, {\"name\": \"annotated-types\", \"version\": \"0.8.0\"}, {\"name\": \"anyio\", \"version\": \"4.15.1\"}, {\"name\": \"argon2-cffi\", \"version\": \"25.1.0\"}, {\"name\": \"argon2-cffi-bindings\", \"version\": \"26.1.0\"}, {\"name\": \"asyncpg\", \"version\": \"0.32.0\"}, {\"name\": \"certifi\", \"version\": \"2026.10.23\"}, {\"name\": \"cffi\", \"version\": \"2.1.1\"}, {\"name\": \"click\", \"version\": \"8.5.0\"}, {\"name\": \"colorama\", \"version\": \"0.4.6\"}, {\"name\": \"cryptography\", \"version\": \"50.0.2\"}, {\"name\": \"dnspython\", \"version\": \"2.9.0\"}, {\"name\": \"ecdsa\", \"version\": \"0.19.2\"}, {\"name\": \"email-validator\", \"version\": \"2.3.0\"}, {\"name\": \"fastapi\", \"version\": \"0.162.0\"}, {\"name\": \"greenlet\", \"version\": \"3.5.6\"}, {\"name\": \"h11\", \"version\": \"0.16.0\"}, {\"name\": \"httpcore\", \"version\": \"1.0.9\"}, {\"name\": \"httptools\", \"version\": \"0.9.0\"}, {\"name\": \"httpx\", \"version\": \"0.28.1\"}, {\"name\": \"idna\", \"version\": \"3.20\"}, {\"name\": \"iniconfig\", \"version\": \"2.3.1\"}, {\"name\": \"Mako\", \"version\": \"1.4.3\"}, {\"name\": \"MarkupSafe\", \"version\": \"3.0.4\"}, {\"name\": \"opentelemetry-api\", \"version\": \"1.45.1\"}, {\"name\": \"packaging\", \"version\": \"26.3\"}, {\"name\": \"passlib\", \"version\": \"1.7.4\"}, {\"name\": \"pip\", \"version\": \"26.2.2\"}, {\"name\": \"pluggy\", \"version\": \"1.7.0\"}, {\"name\": \"psycopg2-binary\", \"version\": \"2.9.13\"}, {\"name\": \"pyasn1\", \"version\": \"0.6.4\"}, {\"name\": \"pycparser\", \"version\": \"3.12\"}, {\"name\": \"pydantic\", \"version\": \"2.14.1\"}, {\"name\": \"pydantic_core\", \"version\": \"2.50.1\"}, {\"name\": \"pydantic-settings\", \"version\": \"2.16.1\"}, {\"name\": \"Pygments\", \"version\": \"2.21.0\"}, {\"name\": \"pytest\", \"version\": \"9.1.1\"}, {\"name\": \"pytest-asyncio\", \"version\": \"1.4.1\"}, {\"name\": \"python-dotenv\", \"version\": \"1.2.4\"}, {\"name\": \"python-jose\", \"version\": \"3.5.0\"}, {\"name\": \"python-multipart\", \"version\": \"0.0.32\"}, {\"name\": \"PyYAML\", \"version\": \"6.0.3\"}, {\"name\": \"rsa\", \"version\": \"4.9.1\"}, {\"name\": \"setuptools\", \"version\": \"84.2.1\"}, {\"name\": \"six\", \"version\": \"1.17.0\"}, {\"name\": \"SQLAlchemy\", \"version\": \"2.1.6\"}, {\"name\": \"starlette\", \"version\": \"1.10.0\"}, {\"name\": \"typing_extensions\", \"version\": \"4.16.0\"}, {\"name\": \"typing-inspection\", \"version\": \"0.4.4\"}, {\"name\": \"uvicorn\", \"version\": \"0.54.0\"}, {\"name\": \"watchfiles\", \"version\": \"1.3.0\"}, {\"name\": \"websockets\", \"version\": \"17.3\"}]\n"
+    },
+    {
+      "check": "phase47-api.cjs",
+      "exit_code": 0,
+      "output": "PASS phase47: refresh single-flight, HTTP errors, validation, network, timeout, path rejection, login fails closed. Fake transport only.\n"
+    },
+    {
+      "check": "phase48-session.cjs",
+      "exit_code": 0,
+      "output": "PASS phase48 client lifecycle: stale response rejected, pending refresh cannot restore access token after logout, revocation attempted. Simulated server only.\n"
+    },
+    {
+      "check": "phase48-security.cjs",
+      "exit_code": 0,
+      "output": "PASS SW does not cache private HTML\nPASS SW never looks up arbitrary private URLs offline\nPASS SW excludes bearer resources\nPASS SW excludes no-store public-looking response\nPASS SW excludes API\nPASS SW still caches public script\nPASS SW excludes cookie-varying public response\nPASS SW excludes query-bearing resources\nPASS Cache quota failure preserves network success\nPASS phase48 SW policy tests (VM only; no browser, database or tenant proof).\n"
+    },
+    {
+      "check": "sync-protocol.cjs",
+      "exit_code": 0,
+      "output": "PASS finite operation type and privileged payload rejection\nPASS demo and foreign operations excluded\nPASS identity required and protocol version checked\nPASS no receipt from send or mismatched operation\nPASS errors classified without treating auth as offline\nPASS bounded backoff and retry budget\nPASS Retry-After cannot shorten local backoff\nPASS local save and queue share simulated transaction\nPASS storage failure does not report local success\nPASS simulated transaction abort preserves queue when progress write fails\nPASS confirmed receipt saved only for owning operation\nPASS lost or invalid receipt keeps provisional work\nPASS expired session blocks without deleting or confirming\nPASS cross-account preconditions accompany every push\nPASS missing Web Locks prevents dispatch\n{\"passed\":15,\"scope\":\"synthetic protocol and storage doubles only\"}\n(node:20548) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    {
+      "check": "phase47-private-views.cjs",
+      "exit_code": 0,
+      "output": "PASS private-view boundaries: immediate logout cleanup, observer isolation/unsubscribe, escaped Insights, 403 clearing, pagination, filter recovery, late-response suppression. Transport/DOM doubles only.\n(node:19636) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    {
+      "check": "source_inventory",
+      "exit_code": 0,
+      "output": "{\n  \"output\": \"docs\\\\final\\\\evidence\\\\phase47-source-hGjeZx\",\n  \"pages\": 177,\n  \"endpointDecorators\": 269,\n  \"migrations\": 12,\n  \"absent\": [\n    \"database\",\n    \"content\",\n    \"scripts\",\n    \"compose.yaml\"\n  ]\n}\n"
+    },
+    {
+      "check": "runtime_inventory",
+      "exit_code": 0,
+      "output": "{\"openapi_paths\": 203, \"orm_tables\": 63, \"source_migration_heads\": [\"phase46receipts\"]}\n"
+    },
+    {
+      "check": "syntax:frontend/js/services/auth.service.js",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "check": "syntax:frontend/js/services/insights-api.service.js",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "check": "syntax:frontend/js/components/insights-api-view.js",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "check": "syntax:frontend/js/components/reports-api-view.js",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "check": "syntax:frontend/js/student/progress.js",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "check": "syntax:frontend/js/student/synchronization.js",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "check": "syntax:tests/phase47-private-views.cjs",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "check": "syntax:tools/audit-phase47.cjs",
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "hashes": [
+    {
+      "path": "backend/pyproject.toml",
+      "sha256": "8afc660a487cd0f3586263cf7e7fd73e7ce170df1605da860e27eebc9c313b37"
+    },
+    {
+      "path": "backend/app/api/v1/endpoints/educational_resources.py",
+      "sha256": "ee9eadd686820e72b5df52a1c8dd42330033c05490c6a1e434c677f5a35ecbfb"
+    },
+    {
+      "path": "backend/verification/test_phase47_boundaries.py",
+      "sha256": "a676a0fa10c907842fc72f1d78b05e4840e0b9fa9594cd7e97bc42918ea20326"
+    },
+    {
+      "path": "frontend/js/services/auth.service.js",
+      "sha256": "6101ee24729148da6637d591d28f6ee12a3a491960476ff34f0be702f2a1e9e1"
+    },
+    {
+      "path": "frontend/js/services/insights-api.service.js",
+      "sha256": "cba21649730e8ec4c8739442bf883c7ec3ffe0e79ff01d2946de1e532f4c49fa"
+    },
+    {
+      "path": "frontend/js/components/insights-api-view.js",
+      "sha256": "6e46a11a14a84b41cf4188d065665f9a3b4be904eb14dfd0fdbc80f55108e83d"
+    },
+    {
+      "path": "frontend/js/components/reports-api-view.js",
+      "sha256": "9adc0c4b94035cc952752e376da701064f38ae17bca9f99a8d88eddc78999b5f"
+    },
+    {
+      "path": "frontend/js/student/progress.js",
+      "sha256": "b660a6e9e5a0e83a8907ed58b44c062ebbfee5608acec0c2de74305d4f47a2f8"
+    },
+    {
+      "path": "frontend/js/student/synchronization.js",
+      "sha256": "f2a7110daeda7b6a22ef5079a2da4d423161fcbb23e08ad9de5ebea96db43b79"
+    },
+    {
+      "path": "tests/phase47-private-views.cjs",
+      "sha256": "3e0673dede3f93f9a977945bb5483f9ca9a608dbc8ae4ce2348eb74d9227a9ab"
+    },
+    {
+      "path": "tools/audit-phase47.cjs",
+      "sha256": "a73ebc51daddf2cbcd653809bca2029a3744611e51d8a805abba6926bfbe790a"
+    },
+    {
+      "path": "tools/validate-integration.py",
+      "sha256": "07f58750baedca2dd0615e85a284ce41cbf84c91b4ddb0d449c62eb76b935c05"
+    },
+    {
+      "path": "README.md",
+      "sha256": "76665402280298c8a6d980aa8a84f6388dce6cd640f40da89e9fca2f03922129"
+    },
+    {
+      "path": "docs/INTEGRATION_MODULE_INVENTORY.md",
+      "sha256": "5e44a6ec608b3a4274a76f0a33c3dac7d41435e4aec33b776772399c64bc20a3"
+    },
+    {
+      "path": "docs/FULL_INTEGRATION_ARCHITECTURE.md",
+      "sha256": "c11366e2cbe420c71fa22bfb7f6d3b9a4341b1ffe21b318e9c1c981739d60561"
+    },
+    {
+      "path": "docs/FRONTEND_BACKEND_CONTRACTS.md",
+      "sha256": "3cb28a33fa9c9885973c8e426b1f1e40b5266b8e36a7127d6eaefa20239cb917"
+    },
+    {
+      "path": "docs/INTEGRATION_ENVIRONMENT.md",
+      "sha256": "91f223a14249d3152529535e6a870f0f696f0822b317d41e021cc719b8a75b6a"
+    },
+    {
+      "path": "docs/INTEGRATION_KNOWN_LIMITATIONS.md",
+      "sha256": "584d590cdaed0c6ef40ee77ed1a1b16b8a7f59f363f3d2cce70ce39551c14df1"
+    },
+    {
+      "path": "docs/INTEGRATION_SECURITY_FINDINGS.md",
+      "sha256": "bea84086641300d8c85430b9d8516eefcd9480fb28e9fa4c0d1f509291006292"
+    },
+    {
+      "path": "docs/AI_INTEGRATION_STATUS.md",
+      "sha256": "5517c25d68d473f6d5d9fab4707d1c6e09b31123482aba20496f3f6810d2011b"
+    },
+    {
+      "path": "docs/SYNC_INTEGRATION_STATUS.md",
+      "sha256": "2f0f1762334b134d32d4cf8b127e60a1c5f993f7fbe1f57b61b299ae01c55ac4"
+    },
+    {
+      "path": "docs/INTEGRATION_TEST_RESULTS.md",
+      "sha256": "945785dc0b795d293c73ee5a660f23c63cd78de8cc38f3b847a425955a108e22"
+    },
+    {
+      "path": "docs/PHASE_47_CONTINUATION_2026-10-27.md",
+      "sha256": "25ad1106535df18b0b88830793771364166da7aea7e3045fd6220a05758ae1b8"
+    }
+  ]
+}

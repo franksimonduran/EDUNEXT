@@ -1,0 +1,30 @@
+{
+  "pass": true,
+  "scope": "Synthetic isolated provider/registry tests; no credentials, dotenv, database, real API calls or E2E.",
+  "checks": [
+    {
+      "name": "Disabled by default; remote approval and non-local declaration required",
+      "pass": true
+    },
+    {
+      "name": "Fixed HTTPS endpoint, key header, bounded structured output and usage",
+      "pass": true
+    },
+    {
+      "name": "Errors sanitized; redirects, oversized, blocked, truncated and tool responses rejected without retries",
+      "pass": true
+    },
+    {
+      "name": "Model cannot change endpoint or inject URL parameters",
+      "pass": true
+    }
+  ],
+  "hashes": {
+    "backend/app/providers/gemini_provider.py": "242d8d3d52070afd6d84517e23782b102b8232e42f8506c11db469abef8253d8",
+    "backend/app/providers/provider_registry.py": "dde7d309724b3a31ac079fee8341a3c97634aea9be33a286fadd7bc87a11f9ac",
+    "backend/app/core/config.py": "049dd4080ff3acb556ac722867a8b7ae5d600ffa9bb0c6a509d74adf84882732",
+    "backend/app/services/ai_gateway_service.py": "b048fefce978f344fdbdf45df961b6a6a8efb29986ff2413b2db3e8d33ab9bc4",
+    "backend/app/repositories/ai_repository.py": "32c92108c7a6c81f851459ee87a85b793f983d1f3dea8faf9cfd86d60a7400d4",
+    "backend/app/schemas/ai.py": "dd19b5b73b24b2970970a2a947168d8d3e09de6b3fdde88039299b2e4e5e14d8"
+  }
+}

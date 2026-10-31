@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#18469e">
+  <title>Crea tu cuenta | EDUNEXT</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/branding/mark.svg">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/auth-layout.css">
+  <link rel="stylesheet" href="css/pages/register.css">
+  <script type="module" src="js/pages/register.js"></script>
+</head>
+<body class="registration-page corporate-ui">
+  <a class="skip-link" href="#account-student">Ir al formulario</a>
+  <main class="login-layout">
+    <section class="brand-panel" aria-label="EDUNEXT, tu espacio de aprendizaje">
+      <div class="brand"><img src="assets/images/branding/mark.svg" alt="" width="42" height="42"><span>EDUNEXT</span></div>
+      <div class="brand-story">
+        <h2>Comienza tu camino de aprendizaje</h2>
+        <p>Un espacio para aprender, descubrir y crecer.</p>
+      </div>
+      <div class="indicators" aria-hidden="true"><span></span><span></span><span></span></div>
+    </section>
+    <section class="form-panel" aria-labelledby="register-title">
+      <div class="auth-card">
+        <header class="card-heading"><h1 id="register-title">Crea tu cuenta en <span>EDUNEXT</span></h1><p>Comienza tu experiencia de aprendizaje</p></header>
+        <form id="register-form" class="auth-form" novalidate aria-busy="false">
+          <fieldset class="auth-fieldset">
+            <legend>Selecciona tu perfil</legend>
+            <div class="account-options">
+              <label class="account-option"><input id="account-student" type="radio" name="account-type" value="student" checked> Estudiante</label>
+              <label class="account-option"><input type="radio" name="account-type" value="teacher"> Monitor/Docente</label>
+            </div>
+          </fieldset>
+          <fieldset class="auth-fieldset" data-account-flow="student">
+            <legend class="sr-only">Acceso escolar</legend>
+            <div class="form-field">
+              <label for="classroom-code">Código de invitación</label>
+              <input class="form-input" id="classroom-code" name="classroom-code" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" required aria-describedby="classroom-code-help classroom-code-error" placeholder="Código de tu institución">
+              <p class="field-help" id="classroom-code-help">¿No tienes código? Pídelo a tu docente.</p>
+              <p class="field-error" id="classroom-code-error" aria-live="polite" hidden></p>
+            </div>
+            <div class="form-field">
+              <label for="school-alias">Identificador escolar</label>
+              <input class="form-input" id="school-alias" name="school-alias" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" required aria-describedby="school-alias-error" placeholder="Ingresa tu identificador">
+              <p class="field-error" id="school-alias-error" aria-live="polite" hidden></p>
+            </div>
+          </fieldset>
+          <fieldset class="auth-fieldset" data-account-flow="teacher" disabled hidden>
+            <legend>Invitación institucional</legend>
+            <div class="form-field">
+              <label for="teacher-name">Nombre</label>
+              <input class="form-input" id="teacher-name" name="teacher-name" type="text" autocomplete="name" required aria-describedby="teacher-name-error" placeholder="Tu nombre">
+              <p class="field-error" id="teacher-name-error" aria-live="polite" hidden></p>
+            </div>
+            <div class="form-field">
+              <label for="teacher-email">Correo institucional</label>
+              <input class="form-input" id="teacher-email" name="email" type="email" autocomplete="email" autocapitalize="none" spellcheck="false" required aria-describedby="teacher-email-error" placeholder="nombre@institucion.edu">
+              <p class="field-error" id="teacher-email-error" aria-live="polite" hidden></p>
+            </div>
+            <div class="form-field">
+              <label for="teacher-password">Contraseña</label>
+              <div class="input-wrap no-icon">
+                <input class="form-input password-input" id="teacher-password" name="password" type="password" autocomplete="new-password" required data-password-policy data-requirements="teacher-requirements" aria-describedby="teacher-requirements teacher-password-error">
+                <button class="password-toggle" type="button" data-toggle-password="contraseña" aria-label="Mostrar contraseña" aria-pressed="false" aria-controls="teacher-password"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/><path class="eye-slash" d="m3 3 18 18"/></svg></button>
+              </div>
+              <ul class="requirements" id="teacher-requirements" aria-label="Requisitos de contraseña"></ul>
+              <p class="field-error" id="teacher-password-error" aria-live="polite" hidden></p>
+            </div>
+            <div class="form-field">
+              <label for="teacher-confirm">Confirmar contraseña</label>
+              <div class="input-wrap no-icon">
+                <input class="form-input password-input" id="teacher-confirm" name="confirm-password" type="password" autocomplete="new-password" required data-confirm="teacher-password" aria-describedby="teacher-confirm-error">
+                <button class="password-toggle" type="button" data-toggle-password="confirmación de contraseña" aria-label="Mostrar confirmación de contraseña" aria-pressed="false" aria-controls="teacher-confirm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/><path class="eye-slash" d="m3 3 18 18"/></svg></button>
+              </div>
+              <p class="field-error" id="teacher-confirm-error" aria-live="polite" hidden></p>
+            </div>
+            <div class="form-field">
+              <label for="invitation">Código de invitación</label>
+              <input class="form-input" id="invitation" name="invitation" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" required aria-describedby="invitation-error" placeholder="Tu invitación institucional">
+              <p class="field-error" id="invitation-error" aria-live="polite" hidden></p>
+            </div>
+          </fieldset>
+          <button class="button-primary" type="submit" disabled><span class="spinner" aria-hidden="true" hidden></span><span data-submit-label>Solicitar acceso</span></button>
+        </form>
+        <p class="notice" id="form-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <details class="registration-help"><summary>¿Necesitas ayuda?</summary><p>Usa la invitación y el identificador que te entregó tu institución. Para estudiantes no se requiere correo personal. Evita incluir datos personales innecesarios.</p><p>La institución autoriza el acceso y los permisos de cada cuenta. Si necesitas acceso administrativo, contacta con tu institución.</p></details>
+        <p class="register">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+        <noscript><p class="no-script">Activa JavaScript para usar este formulario. No hay un servicio de registro conectado.</p></noscript>
+      </div>
+      <footer class="identity-footer"><span>EDUNEXT</span> · APRENDER SIN LÍMITES</footer>
+    </section>
+  </main>
+</body>
+</html>

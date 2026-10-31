@@ -1,0 +1,39 @@
+{
+  "scope": "Isolated app construction, OpenAPI and ASGI without lifespan/DB. Not full startup, authenticated PostgreSQL E2E or production readiness.",
+  "checks": [
+    {
+      "name": "Python AST syntax",
+      "pass": true
+    },
+    {
+      "name": "Backend verification",
+      "pass": false,
+      "errorClass": "AttributeError",
+      "module": "CONTENT_PUBLISH",
+      "frames": [
+        {
+          "file": "verify-edunext-backend.py",
+          "line": 34,
+          "function": "<module>"
+        },
+        {
+          "file": "main.py",
+          "line": 12,
+          "function": "<module>"
+        },
+        {
+          "file": "router.py",
+          "line": 11,
+          "function": "<module>"
+        },
+        {
+          "file": "assessments.py",
+          "line": 128,
+          "function": "<module>"
+        }
+      ]
+    }
+  ],
+  "decision": "NO-GO",
+  "pass": false
+}

@@ -1,0 +1,8 @@
+/* FASE 26 · Gestión de aulas */
+.admin-page .classroom-card dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:10px 0}
+.admin-page .classroom-card dt{font-weight:600;color:var(--color-text-muted)}
+.admin-page .classroom-card dd{margin:0}
+.admin-page .classroom-card .inline-actions{gap:8px;margin-top:10px}
+.admin-page #classroom-results .user-table-wrap{margin-top:8px}
+.admin-page .classroom-capacity{font-variant-numeric:tabular-nums}
+@media(max-width:700px){.admin-page .classroom-card dl{grid-template-columns:1fr}.admin-page .classroom-card dt{margin-top:6px}}

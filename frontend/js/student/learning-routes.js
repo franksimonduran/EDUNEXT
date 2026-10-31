@@ -1,0 +1,19 @@
+import { getLocale } from './i18n.js';
+import { validateGrade, ContentNotFoundError } from '../services/course.service.js';
+const pages={catalog:'aprende.html',course:'curso.html',unit:'unidad.html',lesson:'leccion.html',dashboard:'index.html',practice:'practica.html',exercise:'ejercicio.html',games:'juegos.html',game:'juego.html',results:'resultado-practica.html',tutor:'tutor.html',translator:'traductor.html',vocabulary:'vocabulario.html',word:'palabra.html',review:'repaso-vocabulario.html',pronunciation:'pronuncia.html','pronunciation-practice':'practicar-pronunciacion.html','pronunciation-result':'resultado-pronunciacion.html','pronunciation-history':'historial-pronunciacion.html',evaluations:'evaluaciones.html','evaluation-detail':'detalle-evaluacion.html','evaluation':'evaluacion.html','evaluation-review':'revisar-evaluacion.html','evaluation-result':'resultado-evaluacion.html','evaluation-answer-review':'revision-evaluacion.html',progress:'progreso.html','progress-course':'progreso-curso.html',missions:'misiones.html',achievements:'logros.html','achievement-detail':'detalle-logro.html',agenda:'agenda.html','pending-activities':'actividades-pendientes.html','event-detail':'detalle-evento.html',reminders:'recordatorios.html','reminder-editor':'editar-recordatorio.html',profile:'perfil.html','edit-profile':'editar-perfil.html',settings:'configuracion.html','preferences':'preferencias.html',accessibility:'accesibilidad.html',downloads:'descargas.html',myDownloads:'mis-descargas.html',offlineStatus:'estado-offline.html',sync:'sincronizacion.html',syncQueue:'cola-sincronizacion.html',storage:'almacenamiento.html'};
+
+export function learningURL(page, {grade=5,course,unit,lesson,activity,run,word,from,to,mode,lang=getLocale()}={}) {
+ if(!Object.hasOwn(pages,page)) throw new TypeError('Ruta de aprendizaje no válida.');
+ const params=new URLSearchParams({grade:String(grade),lang});
+  const fields={catalog:[],dashboard:[],course:['course'],unit:['course','unit'],lesson:['course','unit','lesson'],practice:['course','unit','lesson'],games:[],exercise:['activity','run','lesson'],game:['activity','run','lesson'],results:['activity','run'],tutor:['course','unit','lesson'],translator:['word','from','to','course','unit','lesson'],vocabulary:[],word:['word','from','to'],review:['mode'],pronunciation:[], 'pronunciation-practice':['id','wordId'], 'pronunciation-result':['id'], 'pronunciation-history':[], evaluations:[], 'evaluation-detail':['id'], 'evaluation':['id'], 'evaluation-review':['id'], 'evaluation-result':['id'], 'evaluation-answer-review':['id'], progress:[], 'progress-course':['course'], missions:[], achievements:[], 'achievement-detail':['id'], agenda:[], 'pending-activities':[], 'event-detail':['id'], reminders:[], 'reminder-editor':['id']}[page];
+  for(const [key,value] of Object.entries({course,unit,lesson,activity,run,word,from,to,mode,id: arguments[1]?.id, wordId: arguments[1]?.wordId})) if(value&&fields?.includes(key)) params.set(key,value);
+ return `${pages[page]}?${params}`;
+}
+export function readLearningRoute(search=location.search) {
+  const params=new URLSearchParams(search);
+  for(const key of ['grade','course','unit','lesson','lang','activity','run','word','from','to','mode','id','wordId']) if(params.getAll(key).length>1) throw new ContentNotFoundError();
+  const grade=validateGrade(params.has('grade')?params.get('grade'):5);
+  const lang=params.get('lang')??'es';
+  if(!['es','en'].includes(lang)) throw new ContentNotFoundError();
+  return {grade,course:params.get('course'),unit:params.get('unit'),lesson:params.get('lesson'),activity:params.get('activity'),run:params.get('run'),word:params.get('word'),from:params.get('from'),to:params.get('to'),mode:params.get('mode'),lang,id:params.get('id'),wordId:params.get('wordId')};
+}

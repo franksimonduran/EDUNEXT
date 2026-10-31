@@ -1,0 +1,395 @@
+{
+  "date": "2026-10-27T22:46:28.583Z",
+  "scope": "Public demo, real Edge, synthetic disposable profile. No authenticated E2E, PostgreSQL, physical mobile, screen reader or WCAG certification.",
+  "results": [
+    {
+      "section": "home",
+      "active": "home",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "courses",
+      "active": "courses",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "practice",
+      "active": "practice",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "games",
+      "active": "games",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "evaluations",
+      "active": "evaluations",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "agenda",
+      "active": "agenda",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "progress",
+      "active": "progress",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "missions",
+      "active": "missions",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "achievements",
+      "active": "achievements",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "downloads",
+      "active": "downloads",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "tutor",
+      "active": "tutor",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "translator",
+      "active": "translator",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "pronunciation",
+      "active": "pronunciation",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "section": "profile",
+      "active": "profile",
+      "pass": true,
+      "scope": "Student section navigation"
+    },
+    {
+      "check": "download-filter-focus-and-keyboard-section-navigation",
+      "filter": {
+        "pressed": "true",
+        "empty": true,
+        "focus": "descargados"
+      },
+      "keyboardNavigation": true,
+      "pass": true
+    },
+    {
+      "check": "calendar-focus-menu-disclosure-dark-and-text-200-percent",
+      "dark": "rgb(26, 38, 56)",
+      "zoomOverflow": false,
+      "pass": true
+    },
+    {
+      "check": "premium-theme-layout",
+      "profile": "student",
+      "theme": "light",
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-theme-layout",
+      "profile": "student",
+      "theme": "dark",
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-theme-layout",
+      "profile": "monitor",
+      "theme": "light",
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-theme-layout",
+      "profile": "monitor",
+      "theme": "dark",
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-theme-layout",
+      "profile": "admin",
+      "theme": "light",
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-theme-layout",
+      "profile": "admin",
+      "theme": "dark",
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "login.html",
+      "width": 375,
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "login.html",
+      "width": 1440,
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "student/index.html",
+      "width": 375,
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "student/index.html",
+      "width": 1440,
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "monitor/index.html",
+      "width": 375,
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [
+        {
+          "text": "Ver estudiantes Módulo en construcción",
+          "className": ""
+        },
+        {
+          "text": "Ver aulas Módulo en construcción",
+          "className": ""
+        },
+        {
+          "text": "Consultar Insights Módulo en construcción",
+          "className": ""
+        },
+        {
+          "text": "Abrir calendario Módulo en construcción",
+          "className": ""
+        },
+        {
+          "text": "Revisar sincronización Módulo en construcción",
+          "className": ""
+        }
+      ],
+      "pass": false
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "monitor/index.html",
+      "width": 1440,
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "admin/index.html",
+      "width": 375,
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "admin/index.html",
+      "width": 1440,
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "student/leccion.html?grade=4&course=math&unit=math-g4-u1&lesson=math-g4-u1-l1&modo=demo",
+      "width": 375,
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "student/leccion.html?grade=4&course=math&unit=math-g4-u1&lesson=math-g4-u1-l1&modo=demo",
+      "width": 1440,
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "student/agenda.html?grade=4&modo=demo",
+      "width": 375,
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "premium-200-percent-text",
+      "page": "student/agenda.html?grade=4&modo=demo",
+      "width": 1440,
+      "overflow": false,
+      "overflowing": [],
+      "clipped": [],
+      "pass": true
+    },
+    {
+      "check": "corporate-composition",
+      "profile": "student",
+      "width": 375,
+      "h1": 1,
+      "heading": "Mi aprendizaje",
+      "overflow": false,
+      "corporate": true,
+      "continueAction": {
+        "top": 602.34375,
+        "bottom": 650.34375,
+        "guideAfter": true
+      },
+      "pass": true
+    },
+    {
+      "check": "corporate-composition",
+      "profile": "student",
+      "width": 1440,
+      "h1": 1,
+      "heading": "Mi aprendizaje",
+      "overflow": false,
+      "corporate": true,
+      "continueAction": {
+        "top": 560.484375,
+        "bottom": 608.484375,
+        "guideAfter": true
+      },
+      "pass": true
+    },
+    {
+      "check": "corporate-composition",
+      "profile": "monitor",
+      "width": 375,
+      "h1": 1,
+      "heading": "Resumen docente",
+      "overflow": false,
+      "corporate": true,
+      "pass": true
+    },
+    {
+      "check": "corporate-composition",
+      "profile": "monitor",
+      "width": 1440,
+      "h1": 1,
+      "heading": "Resumen docente",
+      "overflow": false,
+      "corporate": true,
+      "pass": true
+    },
+    {
+      "check": "corporate-composition",
+      "profile": "admin",
+      "width": 375,
+      "h1": 1,
+      "heading": "Resumen institucional",
+      "overflow": false,
+      "corporate": true,
+      "pass": true
+    },
+    {
+      "check": "corporate-composition",
+      "profile": "admin",
+      "width": 1440,
+      "h1": 1,
+      "heading": "Resumen institucional",
+      "overflow": false,
+      "corporate": true,
+      "pass": true
+    },
+    {
+      "check": "corporate-admin-filter-definition-disclosure-jump-and-reset",
+      "all": 76,
+      "selected": 24,
+      "pass": true,
+      "scope": "Synthetic local services only"
+    },
+    {
+      "check": "corporate-monitor-classroom-and-review-navigation",
+      "pass": true,
+      "scope": "Demonstration UI, not official grades"
+    },
+    {
+      "check": "first-use-resume-quota-navigation-protection-and-honest-retries",
+      "firstCheck": [
+        false,
+        true
+      ],
+      "pass": true
+    },
+    {
+      "check": "planner-recovery-unsaved-close-escape-lock-receipt-before-retry-and-no-private-browser-storage",
+      "submitCalls": 1,
+      "extraDraftWritesOnRetry": 0,
+      "pass": true,
+      "scope": "HTTP fixtures only, not PostgreSQL or authenticated E2E"
+    },
+    {
+      "check": "private-planner-logout-late-response-and-403-clear",
+      "pass": true,
+      "scope": "Synthetic HTTP and session lifecycle only"
+    }
+  ],
+  "missing": [
+    "/favicon.ico"
+  ],
+  "pass": false
+}

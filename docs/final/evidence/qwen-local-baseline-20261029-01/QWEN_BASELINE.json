@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-29T05:58:03.099Z",
+  "files": [
+    {
+      "file": "frontend/js/student/tutor.js",
+      "sha256": "72d4d9f4ecb9e41d22d8b0ec02a94a3a54920bc8830198319bb69fccd060fcdf"
+    },
+    {
+      "file": "frontend/sw.js",
+      "sha256": "4d66f467353998b48e629eb97acb5ba87e6d420c89fa92661963bca0bd010a9d"
+    },
+    {
+      "file": "frontend/js/offline/database-schema.js",
+      "sha256": "12ba430d2ac2f1f456268bcdc81b5604a1b1e5d07819f63fe057f064f05d0a58"
+    },
+    {
+      "file": "frontend/manifest.webmanifest",
+      "sha256": "d5adabf712d7c3a10a2a80df3e99d436cab11e86376f9d9ba7d2b3f604405932"
+    },
+    {
+      "file": "backend/app/providers/provider_registry.py",
+      "sha256": "871777c42ab1db87579133647a240fa2c826efa2703d52116633724d94a2a6bc"
+    },
+    {
+      "file": "backend/app/services/ai_gateway_service.py",
+      "sha256": "a6776b314d2326d3fd9cff7cd124766ad1867f0e3460288d74564f647e97ba4c"
+    },
+    {
+      "file": "docs/PHASE_47_ACCEPTANCE.md",
+      "sha256": "e0f0b83f590b1b90217980e82d82daf3d3bbdc3a33e68c97f9c239170fd14a6e"
+    },
+    {
+      "file": "docs/PHASE_48_ACCEPTANCE.md",
+      "sha256": "9d5af0fd226bdf3327156cfd0f1ae66aaf27492faf307c1eb69f8022ef02054b"
+    },
+    {
+      "file": "docs/PHASE_49_ACCEPTANCE.md",
+      "sha256": "4139a3da994706e13f6faee934aaea887f1122203eab5713abb6620560e31551"
+    },
+    {
+      "file": "docs/final/PHASE_50_ACCEPTANCE.md",
+      "sha256": "d193af352668046d87f7f5e93e481cde7bd5539909f34e2ece49e36b264ca3af"
+    },
+    {
+      "file": "docs/PRODUCTION_SECURITY_GATE.md",
+      "sha256": "1f8e4687fafabd2fdce4852622fd39953b2a4555e9b3567ae3b56f8861c6a233"
+    },
+    {
+      "file": "docs/VULNERABILITY_REGISTER.md",
+      "sha256": "811a622aedf1438e9b91908808fe94863faf9afc2517b9c4fa64291efb3b8af1"
+    }
+  ]
+}

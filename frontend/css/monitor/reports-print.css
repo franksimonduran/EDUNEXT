@@ -1,0 +1,26 @@
+@page{size:A4;margin:16mm}
+@media print{
+ html,body{background:#fff!important;color:#000!important;font-size:10pt!important}
+ .student-sidebar,.student-topbar,.skip-link,.no-print,main>nav,main>#page-title,main>.demo-label,#network-notice,dialog{display:none!important}
+ .monitor-shell,.monitor-workspace{display:block!important;min-height:0!important}
+ .monitor-shell main{padding:0!important;max-width:none!important;margin:0!important}
+ .report-document{border:0!important;border-radius:0!important;padding:0!important;margin:0!important;max-width:none!important;box-shadow:none!important}
+ .report-document button,.report-document .eval-link,.report-document a{display:none!important}
+ .report-document .report-header{display:flex!important;break-after:avoid}
+ .report-demo{display:block!important;color:#000!important;font-weight:bold!important;border:1px solid #000;padding:6px}
+ .report-identification,.report-footer{break-inside:avoid}
+ .report-section h2,.report-section h3{break-after:avoid}
+ .report-document .academic-table-wrap{overflow:visible!important;max-width:none!important}
+ .report-document table{display:table!important;width:100%!important;min-width:0!important;table-layout:fixed}
+ .report-document thead{display:table-header-group!important}
+ .report-document tbody{display:table-row-group!important}
+ .report-document tr{display:table-row!important;break-inside:avoid;border:0!important}
+ .report-document td,.report-document th{display:table-cell!important;padding:5px!important;font-size:8pt!important;border:1px solid #999!important;word-break:normal;overflow-wrap:anywhere}
+ .report-document td:before{display:none!important}
+ .report-document caption{display:table-caption!important}
+ .report-document .monitor-summary{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:6px!important}
+ .report-document .monitor-card{border:1px solid #777!important;border-radius:0!important;box-shadow:none!important;break-inside:avoid}
+ .report-document .academic-bar{break-inside:avoid}
+ .report-document .academic-status{background:transparent!important;color:#000!important;padding:0!important}
+ .report-document .record{break-inside:avoid}
+}

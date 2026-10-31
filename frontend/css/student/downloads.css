@@ -1,0 +1,11 @@
+.downloads-hero{background:linear-gradient(135deg,var(--color-primary),var(--color-accent));color:#fff;padding:1rem;border-radius:var(--radius-lg);margin-bottom:1rem}
+.downloads-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.download-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1rem;box-shadow:var(--shadow-soft);display:flex;flex-direction:column;gap:.5rem}
+.dl-progress{background:#e5e7eb;height:8px;border-radius:999px;overflow:hidden}
+.dl-progress-bar{background:var(--color-primary);height:100%;transition:width .3s ease}
+.status-pending{color:var(--color-warning)}
+.status-descargado{color:var(--color-success)}
+.status-error{color:var(--color-danger)}
+.toolbar{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin:.5rem 0 1rem}
+.empty{color:var(--color-text-muted);padding:1rem;text-align:center;border:1px dashed var(--color-border);border-radius:var(--radius-lg)}
+@media(max-width:640px){.downloads-grid{grid-template-columns:1fr}}

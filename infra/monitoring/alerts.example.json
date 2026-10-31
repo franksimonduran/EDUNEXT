@@ -1,0 +1,13 @@
+{
+  "status": "proposed_not_connected",
+  "owner": "to_be_assigned",
+  "channel": "not_configured",
+  "rules": [
+    {"signal": "readiness_probe_failure", "proposal": "3 consecutive failures at 30-second intervals", "severity": "high"},
+    {"signal": "backup_job_failure_or_unverified_restore", "proposal": "notify assigned operator; do not claim restore capability", "severity": "high"},
+    {"signal": "http_5xx_ratio", "proposal": "set threshold after representative staging baseline", "severity": "to_be_validated"},
+    {"signal": "database_connections_and_disk", "proposal": "set limits against contracted capacity; do not expose query values", "severity": "to_be_validated"},
+    {"signal": "ai_quota_and_provider_unavailable", "proposal": "only aggregate technical counters; AI remains disabled", "severity": "medium"}
+  ],
+  "privacy": "No user names, answers, prompts, audio, tokens or unbounded resource IDs in metric labels. Sync counters unavailable until a real engine exists."
+}
