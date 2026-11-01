@@ -19,6 +19,7 @@ jobs:
           node-version: '24'
       - run: node tools/run-phase48-regression.cjs
       - run: node tests/local-ai-preview.cjs
+      - run: node tests/local-tutor-general.cjs
       - run: node tests/phase49-infra.cjs
       - run: node tests/acceptance/phase50-acceptance.cjs
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
