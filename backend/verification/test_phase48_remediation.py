@@ -114,8 +114,8 @@ def test_passwords_use_argon2id_and_verify_without_plain_storage():
 
 @pytest.fixture
 def storage():
-    approved = Path.home() / "AppData/Local/Temp/opencode"
-    with tempfile.TemporaryDirectory(prefix="phase48-files-", dir=approved) as directory:
+    # Use the host OS temporary directory (Windows, Linux and CI runners).
+    with tempfile.TemporaryDirectory(prefix="phase48-files-") as directory:
         yield LocalStorage(StorageConfig(base_path=str(Path(directory) / "resources"), max_file_size=4))
 
 

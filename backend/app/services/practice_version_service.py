@@ -52,7 +52,10 @@ class PracticeVersionService:
     ) -> PracticeVersion:
         if not has_permission(context, Permissions.CONTENT_READ) and not has_permission(context, Permissions.COURSES_READ):
             raise ForbiddenError("Insufficient permissions to read practice versions")
-        return await self.version_repo.get_version_with_relations(version_id)
+        version = await self.version_repo.get_version_with_relations(version_id)
+        # Version identifiers are untrusted: verify their parent institution.
+        await self.practice_repo.get_practice(context.institution_id, UUID(str(version.practice_id)))
+        return version
 
     async def get_latest_version(
         self,
