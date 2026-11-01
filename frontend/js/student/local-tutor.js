@@ -57,16 +57,20 @@ export function mountLocalTutor(root,model){
   try{text=validateLocalQuestion(question.value);}catch(error){status.textContent=messages[error.code]??'Revisa tu pregunta.';return;}
   const topic=selectLocalTopic(text,model.examples);
   let index=topic.index;
-  if(topic.kind==='missing'){choice=null;status.textContent='No encontré material relacionado en este grado. Prueba con un tema más concreto; no usaré otro tema como respuesta.';return;}
+  // If no lesson matches, ask the model as general knowledge, never with an unrelated lesson.
+  const general=topic.kind==='missing';
   if(topic.kind==='ambiguous'){
    if(choice?.text===text&&choice.selected!==null&&topic.candidates.includes(choice.selected))index=choice.selected;
    else{choice={text,candidates:topic.candidates,selected:null};status.textContent='Encontré varios temas: '+topic.candidates.slice(0,5).map(i=>model.examples[i].title).join(' · ')+'. Elige uno en Tema de apoyo y vuelve a enviar, o concreta tu pregunta.';root.querySelector('.local-support').open=true;select.focus();return;}
   }
-  select.value=String(index);showContext();choice=null;
-  const current=++version;status.textContent='Tema: '+context().title+' · Pensando en este equipo…';
+  if(!general){select.value=String(index);showContext();}
+  choice=null;
+  const selectedLesson=general?null:context();
+  const current=++version;
+  status.textContent=general?'Consulta general · Sin material curricular verificado · Pensando en este equipo…':'Tema: '+selectedLesson.title+' · Pensando en este equipo…';
   // Append only after validation/generation succeeds: rejected private input must not enter the log.
-  const pending=service.ask(text,context(),model.grade);update();
-  try{const result=await pending;if(active&&version===current){append('user',text);append('assistant',result);question.value='';status.textContent='Respuesta experimental · Verifica la información.';}}
+  const pending=service.ask(text,selectedLesson,model.grade);update();
+  try{const result=await pending;if(active&&version===current){append('user',text);append('assistant',general?'Orientación general (no verificada con las lecciones): '+result:result);question.value='';status.textContent=general?'Respuesta general experimental · No verificada con el currículo.':'Respuesta experimental · Verifica la información.';}}
   catch(error){if(active&&version===current)status.textContent=messages[error.code]??'No se obtuvo respuesta. Prueba de nuevo.';}
   finally{if(active&&version===current)update();}
  },{signal:events.signal});
