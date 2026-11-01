@@ -53,6 +53,8 @@ def policy(**updates):
 
 
 class FakeProvider:
+    # Matches the provider identity required by AIGatewayService.
+    code = "synthetic_local_test"
     capabilities = frozenset({"generate_text", "translate_text"})
     calls=0
     payload=None
