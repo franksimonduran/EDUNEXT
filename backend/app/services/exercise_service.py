@@ -49,7 +49,10 @@ class ExerciseService:
     async def get_exercise(self, context: AuthorizationContext, exercise_id: UUID) -> Exercise:
         if not has_permission(context, Permissions.CONTENT_READ) and not has_permission(context, Permissions.COURSES_READ):
             raise ForbiddenError("Insufficient permissions to read exercises")
-        return await self.exercise_repo.get_exercise_with_options(exercise_id)
+        exercise = await self.exercise_repo.get_exercise_with_options(exercise_id)
+        # Resolve the parent within the caller's institution before returning it.
+        await self.practice_repo.get_practice(context.institution_id, UUID(str(exercise.practice_id)))
+        return exercise
 
     async def create_exercise(
         self,
