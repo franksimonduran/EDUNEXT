@@ -19,7 +19,9 @@ import {useProgressApi} from '../services/progress-api.service.js';
 import {getAICapabilities,translateWithAI,findDictionaryEntries,aiOperationKey} from '../services/ai-api.service.js';
 import {onAuthenticationCleared} from '../services/auth.service.js';
 
-const live=useProgressApi();
+const localPreview=new URLSearchParams(location.search).get('modo')==='local';
+const live=!localPreview&&useProgressApi();
+const localEndpoint='/__edunext_local/';
 
 const availability = getTranslationAvailability();
 if (availability.connected) throw new Error('La demostración no admite un servicio conectado sin integración.');
@@ -27,12 +29,21 @@ if (availability.connected) throw new Error('La demostración no admite un servi
 let speechTarget = null, speechRate = null;
 
 bootLearningPage(async route => {
+ if(localPreview){
+  try{
+   const response=await fetch(localEndpoint+'status',{credentials:'omit',cache:'no-store'});
+   if(!response.ok)return {route,localPreviewStatus:null};
+   const preview=await response.json();
+   return {route,localPreviewStatus:preview?.mode==='local_preview'?preview:null};
+  }catch{return {route,localPreviewStatus:null};}
+ }
  if(!live)return {route,grade:route.grade};
  try{return {route,capabilities:await getAICapabilities()};}catch(error){return {route,error};}
-}, ({ route,capabilities,error }, _route, shell) => {
+}, ({ route,capabilities,error,localPreviewStatus }, _route, shell) => {
  document.title = `${ts('title')} | EDUNEXT`;
  const root = document.querySelector('#learning-content');
   if(error){root.innerHTML=`<section role="alert"><h1>Servicios de idioma no disponibles</h1><p>${esc(error.message)}</p><p>Necesitas una sesión y un backend configurado. No se sustituyen por resultados demo.</p><a href="../login.html">Iniciar sesión</a></section>`;return ()=>{};}
+ const previewReady=Boolean(localPreview&&localPreviewStatus?.available&&typeof localPreviewStatus.token==='string'&&/^[a-f0-9]{64}$/.test(localPreviewStatus.token));
  const saved = listWords();
  const from = ['es','en','pt','fr','de','it','zh','ja','ko','ar'].includes(route.from) ? route.from : 'es';
  const to = ['es','en','pt','fr','de','it','zh','ja','ko','ar'].includes(route.to) ? route.to : 'en';
@@ -59,6 +70,21 @@ bootLearningPage(async route => {
    apiLink.href=`traductor.html?modo=api&grade=${route.grade}&lang=${getLocale()}`;
    apiLink.textContent='Usar traductor del servidor · Requiere sesión';
    root.querySelector('.translator-header-actions').append(apiLink);
+   if(!localPreview){
+    const localLink=document.createElement('a');localLink.className='button-secondary';
+    localLink.href=`traductor.html?modo=local&grade=${route.grade}&lang=${getLocale()}`;
+    localLink.textContent='Traducir con Argos en este equipo';
+    root.querySelector('.translator-header-actions').append(localLink);
+   }
+  }
+  if(localPreview){
+   root.querySelector('.translator-mode').textContent='Argos · Traducción en este equipo';
+   root.querySelector('.tutor-disclaimer').textContent='Prueba local experimental. No uses datos personales. Sin conexión a Internet después de instalar los modelos; no es un traductor offline dentro de Android.';
+   root.querySelector('.translator-suggestions').hidden=true;
+   root.querySelectorAll('#source-language option,#target-language option').forEach(option=>{if(!['es','en'].includes(option.value))option.remove();});
+   root.querySelector('#detect-language').disabled=true;
+   root.querySelector('#do-translate').disabled=!previewReady;
+   if(!previewReady)output.textContent='Traducción Argos no disponible. Inicia el servidor local con node tools/local-ai-preview.cjs e instala los modelos según docs/LOCAL_AI_TRANSLATE_PREVIEW.md.';
   }
   if(live){
    root.querySelector('.translator-mode').textContent='Traducción automática · Modelo local del servidor';
@@ -104,7 +130,7 @@ bootLearningPage(async route => {
  textarea.addEventListener('keydown', e => { if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) { e.preventDefault(); doTranslate(); } });
 
    async function doTranslate() {
-   if(live&&(!viewActive||translationBusy))return;
+   if((live||localPreview)&&(!viewActive||translationBusy))return;
   stop(); updateSpeechState();
   const fromSel = root.querySelector('#source-language').value, toSel = root.querySelector('#target-language').value;
   const validation = validateTranslationInput(textarea.value, fromSel, toSel);
@@ -112,6 +138,26 @@ bootLearningPage(async route => {
    output.innerHTML = renderResultNotice(validation.error === 'tooLong' ? 'tooLong' : validation.error, { max: config.translator.maxInputLength });
    counter.textContent = ts(validation.error === 'tooLong' ? 'tooLong' : validation.error === 'empty' ? 'empty' : validation.error === 'sameLanguage' ? 'sameLanguage' : 'empty');
     return;
+   }
+   if(localPreview){
+     if(!previewReady){output.textContent='No se ha iniciado Argos en este equipo.';return;}
+     translationBusy=true;const version=++requestVersion;
+     const button=root.querySelector('#do-translate');button.disabled=true;
+     output.textContent='Traduciendo con Argos en esta computadora…';
+     try{
+       const response=await fetch(localEndpoint+'translate',{
+        method:'POST',credentials:'omit',cache:'no-store',
+        headers:{'Content-Type':'application/json','X-EDUNEXT-Preview-Token':localPreviewStatus.token},
+        body:JSON.stringify({text:validation.text,source_language:fromSel,target_language:toSel})
+       });
+       if(!response.ok)throw new Error('Modelo no disponible, solicitud inválida o inferencia interrumpida.');
+       const result=await response.json();
+       if(!viewActive||version!==requestVersion)return;
+       if(result.mode!=='local_preview'||typeof result.text!=='string')throw new Error('Respuesta local inválida.');
+       output.innerHTML=`<article class="result-word-card"><h2>Traducción con Argos · Local</h2><p>${esc(result.text)}</p><p>${esc(result.warning??'Comprueba la traducción.')}</p></article>`;
+     }catch(error){if(viewActive&&version===requestVersion)output.textContent=`Traducción local no disponible: ${error.message}`;}
+     finally{translationBusy=false;button.disabled=!previewReady;}
+     return;
    }
    if(live){
      if(capabilities.capabilities.find(c=>c.service==='translation')?.state!=='available'){output.textContent='Traducción automática no disponible. No se envió una solicitud al modelo.';return;}
@@ -205,7 +251,7 @@ bootLearningPage(async route => {
   if (route.word) {
   textarea.value = route.word;
   updateCounter();
-   if(!live)doTranslate();
+   if(!live&&!localPreview)doTranslate();
  }
 
  shell.updateConnection?.(navigator.onLine);
@@ -213,5 +259,5 @@ bootLearningPage(async route => {
  window.addEventListener('offline', () => shell.updateConnection?.(false));
 
   if(live)window.addEventListener('pageshow',event=>{if(event.persisted)location.reload();});
-   return () => { unsubscribe();stop();if(live){viewActive=false;invalidate();textarea.value='';output.replaceChildren();translationOperation=null;} };
-},{active:'translator',demoMessage:()=>live?'Modelo local del servidor: requiere conexión con ese equipo. Diccionario y traducción automática son capacidades diferentes.':ts('demoNote')});
+   return () => { unsubscribe();stop();viewActive=false;invalidate();if(live||localPreview){textarea.value='';output.replaceChildren();translationOperation=null;} };
+},{active:'translator',demoMessage:()=>localPreview?'Traducción Argos local experimental · Solo equipo propio · Sin datos personales.':live?'Modelo local del servidor: requiere conexión con ese equipo. Diccionario y traducción automática son capacidades diferentes.':ts('demoNote')});

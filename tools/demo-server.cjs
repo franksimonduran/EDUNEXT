@@ -5,10 +5,12 @@ const root = fs.realpathSync(path.join(__dirname, '../frontend'));
 // Local compatibility routes reuse the user's original PNGs without duplicating them.
 const aliases={'/assets/images/branding/mark.svg':'/assets/images/Icono.png','/assets/images/branding/open-book.svg':'/assets/images/Logo.png','/favicon.ico':'/assets/images/Icono.png'};
 const mime = {'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json','.webmanifest':'application/manifest+json','.svg':'image/svg+xml','.png':'image/png','.ico':'image/x-icon','.webp':'image/webp','.wav':'audio/wav','.mp3':'audio/mpeg','.woff2':'font/woff2','.wasm':'application/wasm'};
-function createDemoServer() {
+function createDemoServer({handler} = {}) {
  return http.createServer(async (req, res) => {
   res.setHeader('Cache-Control','no-store');
   res.setHeader('X-Content-Type-Options','nosniff');
+  // Optional loopback-only preview API. Default demo remains read-only static hosting.
+  if (handler && handler(req, res)) return;
   if(!['GET','HEAD'].includes(req.method)){res.writeHead(405,{Allow:'GET, HEAD'});return res.end();}
   try {
    let pathname = decodeURIComponent(new URL(req.url,'http://localhost').pathname);
