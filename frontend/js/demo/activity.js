@@ -38,7 +38,11 @@ root?.addEventListener('change',event=>{
   if(finished||event.target.name!=='answer')return;
   const choice=Number(event.target.value);
   if(!Number.isInteger(choice)||choice<0||choice>=DEMO_QUESTIONS[step].choices.length)return;
-  answers[step]=choice;renderStep();
+  answers[step]=choice;
+  // Preserve keyboard focus after selecting an option.
+  root.querySelectorAll('.quiz-option').forEach((label,index)=>label.classList.toggle('is-selected',index===choice));
+  const next=root.querySelector('[data-action="next"]');
+  if(next)next.disabled=false;
 });
 root?.addEventListener('click',event=>{
   const button=event.target.closest('button[data-action]');if(!button)return;
