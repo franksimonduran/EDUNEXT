@@ -69,13 +69,13 @@ async function run(){
   await evaluate('document.querySelector("#offline-prepare-all").click();true');
   const outcome=await eventually('(()=>{const el=document.querySelector("#offline-action-status");return el?.dataset.kind==="success"?"success":el?.dataset.kind==="error"?el.textContent:false})()',400);
   assert.equal(outcome,'success','Preparación fallida: '+outcome);
-  assert.equal(await evaluate('document.querySelector("#offline-summary").textContent.trim()'),'5 / 5 paquetes');
+  assert.ok(await eventually('document.querySelector("#offline-summary").textContent.trim()==="5 / 5 paquetes"',120),'Los cinco paquetes deben reportar estado preparado');
   assert.ok(await eventually('Boolean(navigator.serviceWorker.controller)',100),'SW sin control');
   // No permitir que HTTP cache del navegador simule una prueba offline.
   await send('Network.setCacheDisabled',{cacheDisabled:true});
   await send('Network.emulateNetworkConditions',{offline:true,latency:0,downloadThroughput:0,uploadThroughput:0});
   await visit('offline-demo.html','.package-card');
-  assert.equal(await evaluate('document.querySelector("#offline-summary").textContent.trim()'),'5 / 5 paquetes');
+  assert.ok(await eventually('document.querySelector("#offline-summary").textContent.trim()==="5 / 5 paquetes"',120),'Los cinco paquetes deben reportar estado preparado');
   const fromSW=await evaluate('(async()=>{const r=await fetch("demo.html",{headers:{Accept:"text/html"}});return r.headers.get("X-EDUNEXT-Demo-Offline")})()');
   assert.equal(fromSW,'prepared-public-only','La navegación offline debe provenir del SW preparado');
   for(const width of [360,1280]){
