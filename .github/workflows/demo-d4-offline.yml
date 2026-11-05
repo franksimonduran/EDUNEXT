@@ -49,4 +49,15 @@ jobs:
       - name: Preparar paquetes, desactivar red, recargar y recorrer perfiles
         env:
           CI: 'true'
-        run: node tools/demo-d4-offline.cjs
+        shell: bash
+        run: |
+          set -euo pipefail
+          for attempt in 1 2 3; do
+            echo "Prueba offline de Chrome, intento $attempt/3"
+            if node tools/demo-d4-offline.cjs; then
+              exit 0
+            fi
+            sleep 3
+          done
+          echo "La prueba offline no pudo completarse tras tres intentos." >&2
+          exit 1
