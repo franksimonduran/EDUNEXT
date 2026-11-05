@@ -1,35 +1,92 @@
 <!doctype html>
 <html lang="es">
 <head>
- <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
- <title>Explorar demo | EDUNEXT</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="theme-color" content="#2563eb">
+ <meta name="description" content="Explora EDUNEXT: aprendizaje interactivo, seguimiento docente y administración en una demostración con datos ficticios.">
+ <title>EDUNEXT DEMO | Plataforma educativa inteligente</title>
  <link rel="icon" type="image/png" href="assets/images/Icono.png">
+ <link rel="manifest" href="manifest.webmanifest">
  <link rel="stylesheet" href="css/pages/demo.css">
+ <script type="module" src="js/demo/landing.js"></script>
 </head>
 <body>
- <a class="skip" href="#recorridos">Ir a los recorridos</a>
- <header><img src="assets/images/Logo%20Horizontal.png" alt="EDUNEXT" width="260"><a href="login.html">Inicio de sesión</a></header>
+ <a class="skip" href="#recorridos">Ir a los perfiles</a>
+ <header class="site-header">
+  <a href="demo.html" aria-label="EDUNEXT, inicio de la demostración"><img src="assets/images/Logo%20Horizontal.png" alt="EDUNEXT" width="220"></a>
+  <nav aria-label="Navegación principal">
+   <a href="#funcionalidades">Características</a>
+   <a href="#recorridos">Perfiles</a>
+   <a class="nav-cta" href="student/recorrido-demo.html?modo=demo">Probar demo</a>
+  </nav>
+ </header>
  <main>
-  <p class="badge">Demostración local · Datos ficticios</p>
-  <h1>Explora tu espacio de aprendizaje</h1>
-  <p>Recorre las pantallas existentes sin instalar un backend ni una base de datos.</p>
-  <aside aria-label="Límites de la demostración"><strong>Sin autenticación real ni permisos efectivos.</strong> Las pantallas usan ejemplos y pueden guardar cambios demo en este navegador. No introduzcas datos personales. IA, micrófono y sincronización real no están habilitados por esta demo. Producción y piloto real siguen NO-GO.</aside>
-  <section class="profiles" id="recorridos" aria-label="Recorridos por perfil">
-   <article><h2>Estudiante</h2><p>Descubre contenidos y actividades de muestra de 5.º grado.</p><a class="button" href="student/index.html?grade=5&modo=demo">Explorar como estudiante</a><ul>
-    <li><a href="student/aprende.html?grade=5&modo=demo">Cursos y lecciones</a></li>
-    <li><a href="student/practica.html?grade=5&modo=demo">Prácticas</a></li>
-    <li><a href="student/juegos.html?grade=5&modo=demo">Juegos</a></li>
-    <li><a href="student/evaluaciones.html?grade=5&modo=demo">Evaluaciones de muestra</a></li>
-    <li><a href="student/progreso.html?grade=5&modo=demo">Progreso</a></li>
-    <li><a href="student/agenda.html?grade=5&modo=demo">Agenda</a></li>
-   </ul></article>
-   <article><h2>Monitor / Docente</h2><p>Conoce las vistas de acompañamiento y organización del aula.</p><a class="button" href="monitor/index.html?modo=demo">Explorar como monitor</a><ul>
-    <li><a href="monitor/aulas.html?modo=demo">Aulas</a></li><li><a href="monitor/estudiantes.html?modo=demo">Estudiantes ficticios</a></li><li><a href="monitor/tareas.html?modo=demo">Tareas</a></li><li><a href="monitor/evaluaciones.html?modo=demo">Evaluaciones</a></li><li><a href="monitor/reportes.html?modo=demo">Reportes de muestra</a></li>
-   </ul></article>
-   <article><h2>Administrador</h2><p>Revisa la organización institucional con registros sintéticos.</p><a class="button" href="admin/index.html?modo=demo">Explorar como administrador</a><ul>
-    <li><a href="admin/matriculas.html?modo=demo">Matrículas ficticias</a></li><li><a href="admin/aulas.html?modo=demo">Aulas</a></li><li><a href="admin/estudiantes.html?modo=demo">Estudiantes ficticios</a></li><li><a href="admin/contenidos.html?modo=demo">Contenidos</a></li><li><a href="admin/reportes.html?modo=demo">Reportes de muestra</a></li>
-   </ul></article>
+  <section class="hero" aria-labelledby="hero-title">
+   <div class="hero-copy">
+    <p class="badge"><span aria-hidden="true">●</span> DEMOSTRACIÓN INTERACTIVA · DATOS FICTICIOS</p>
+    <h1 id="hero-title">Aprender, practicar <em>y avanzar.</em></h1>
+    <p class="hero-lead">Descubre cómo EDUNEXT conecta el aprendizaje del estudiante, el acompañamiento docente y la organización de una institución educativa, desde una experiencia web.</p>
+    <div class="hero-actions"><a class="button" href="student/recorrido-demo.html?modo=demo">Comenzar recorrido interactivo</a><a class="button-outline" href="#recorridos">Explorar los 3 perfiles</a></div>
+    <p class="hero-proof">Para esta demo no necesitas iniciar sesión ni configurar un servidor o base de datos.</p>
+   </div>
+   <aside class="hero-preview" aria-label="Vista previa de la práctica de comprensión lectora">
+    <div class="preview-head"><span class="preview-dot" aria-hidden="true"></span> Espacio de aprendizaje · 5.º grado</div>
+    <div class="preview-card">
+     <span class="preview-label">COMUNICACIÓN · COMPRENSIÓN LECTORA</span>
+     <h2>El huerto de nuestra escuela</h2>
+     <p>Lee un texto, responde cinco preguntas y observa tu resultado en los tres portales.</p>
+     <div class="preview-progress"><span>Recorrido de presentación</span><strong>5 preguntas</strong></div>
+     <div class="preview-bar"><span></span></div>
+    </div>
+    <div class="preview-score"><span aria-hidden="true" class="preview-icon">✓</span><div><strong id="demo-score">Práctica preparada</strong><span id="demo-score-detail">Resultado visible en Estudiante, Monitor y Administrador</span></div></div>
+   </aside>
   </section>
-  <p>Para cambiar de perfil, vuelve a esta página. No se borran sesiones, borradores, respuestas ni cachés.</p>
- </main><footer>EDUNEXT · Candidato interno no publicado. Consulta docs/DEMO_NAVEGABLE.md para conocer el alcance.</footer>
-</body></html>
+  <section class="feature-section" id="funcionalidades" aria-labelledby="features-title">
+   <div class="section-heading"><p class="eyebrow">UNA EXPERIENCIA EDUCATIVA CONECTADA</p><h2 id="features-title">Una plataforma, tres perspectivas</h2><p>Cada perfil tiene sus propias herramientas y una visión diferente del mismo aprendizaje de ejemplo.</p></div>
+   <div class="features">
+    <article><span class="feature-icon" aria-hidden="true">📖</span><h3>Aprendizaje activo</h3><p>Lecciones, ejercicios, juegos y retroalimentación pedagógica.</p></article>
+    <article><span class="feature-icon" aria-hidden="true">📈</span><h3>Seguimiento docente</h3><p>Datos de aula, resultados de muestra y oportunidades de apoyo.</p></article>
+    <article><span class="feature-icon" aria-hidden="true">🏫</span><h3>Gestión académica</h3><p>Organización institucional y reportes visuales de ejemplo.</p></article>
+   </div>
+  </section>
+  <section class="profiles-section" id="recorridos" aria-labelledby="profiles-title">
+   <div class="section-heading"><p class="eyebrow">ELIGE CÓMO QUIERES EXPLORAR</p><h2 id="profiles-title">Conoce cada espacio de EDUNEXT</h2><p>Recorridos navegables sin cuentas reales ni permisos efectivos.</p></div>
+   <div class="profiles">
+    <article class="profile-card student-card"><span class="profile-icon" aria-hidden="true">🎒</span><p class="profile-tag">APRENDER</p><h3>Estudiante</h3><p>Descubre contenidos de 5.º grado, practica, juega y consulta tus avances de muestra.</p><a class="button" href="student/index.html?grade=5&modo=demo">Explorar como estudiante</a><ul>
+     <li><a href="student/aprende.html?grade=5&modo=demo">Cursos y lecciones</a></li>
+     <li><a href="student/recorrido-demo.html?modo=demo">Práctica interactiva guiada</a></li>
+     <li><a href="student/practica.html?grade=5&modo=demo">Prácticas</a></li>
+     <li><a href="student/juegos.html?grade=5&modo=demo">Juegos</a></li>
+     <li><a href="student/evaluaciones.html?grade=5&modo=demo">Evaluaciones de muestra</a></li>
+     <li><a href="student/progreso.html?grade=5&modo=demo">Progreso</a></li>
+     <li><a href="student/agenda.html?grade=5&modo=demo">Agenda</a></li>
+    </ul></article>
+    <article class="profile-card monitor-card"><span class="profile-icon" aria-hidden="true">👩‍🏫</span><p class="profile-tag">ACOMPAÑAR</p><h3>Monitor / Docente</h3><p>Revisa aulas, actividades, prácticas y el resultado compartido del recorrido guiado.</p><a class="button" href="monitor/index.html?modo=demo">Explorar como monitor</a><ul>
+     <li><a href="monitor/aulas.html?modo=demo">Aulas</a></li>
+     <li><a href="monitor/estudiantes.html?modo=demo">Estudiantes ficticios</a></li>
+     <li><a href="monitor/tareas.html?modo=demo">Tareas</a></li>
+     <li><a href="monitor/evaluaciones.html?modo=demo">Evaluaciones</a></li>
+     <li><a href="monitor/reportes.html?modo=demo">Reportes de muestra</a></li>
+    </ul></article>
+    <article class="profile-card admin-card"><span class="profile-icon" aria-hidden="true">🏛️</span><p class="profile-tag">GESTIONAR</p><h3>Administrador</h3><p>Explora la institución ficticia, sus usuarios, contenidos e indicadores académicos.</p><a class="button" href="admin/index.html?modo=demo">Explorar como administrador</a><ul>
+     <li><a href="admin/matriculas.html?modo=demo">Matrículas ficticias</a></li>
+     <li><a href="admin/aulas.html?modo=demo">Aulas</a></li>
+     <li><a href="admin/estudiantes.html?modo=demo">Estudiantes ficticios</a></li>
+     <li><a href="admin/contenidos.html?modo=demo">Contenidos</a></li>
+     <li><a href="admin/reportes.html?modo=demo">Reportes de muestra</a></li>
+    </ul></article>
+   </div>
+  </section>
+  <section class="journey-note" aria-labelledby="journey-title">
+   <div><p class="eyebrow">HISTORIA DE DEMOSTRACIÓN</p><h2 id="journey-title">Del ejercicio al seguimiento</h2><p>Resuelve la práctica desde el estudiante, visita el monitor y observa el mismo resultado desde la administración. Los demás indicadores pertenecen a conjuntos ficticios independientes.</p></div>
+   <div class="journey-actions"><a href="student/recorrido-demo.html?modo=demo" class="button">Iniciar experiencia</a><button type="button" id="demo-reset" class="reset-button" hidden>Reiniciar solo esta práctica</button><p id="demo-reset-status" role="status" aria-live="polite"></p></div>
+  </section>
+  <details class="demo-disclosure"><summary>Alcance y límites de esta demostración</summary>
+   <p>La demo es una experiencia de interfaz con datos de ejemplo, sin autenticación real, permisos efectivos ni calificaciones oficiales. Algunas páginas originales guardan sus propios cambios locales. No introduzcas datos personales.</p>
+   <p>IA generativa, micrófono, sincronización remota y funcionamiento offline completo no están habilitados ni certificados por la publicación estática. La plataforma institucional permanece en estado NO-GO para producción y pilotos reales.</p>
+  </details>
+ </main>
+ <footer><span>EDUNEXT · Aprende donde estés</span><span>Proyecto demostrativo · Sin datos personales · <a href="login.html">Pantalla de acceso del sistema</a></span></footer>
+</body>
+</html>
