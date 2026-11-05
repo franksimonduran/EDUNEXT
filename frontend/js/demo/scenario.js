@@ -42,7 +42,7 @@ export function saveDemoResult(answers){
   const record={version:1,studentId:DEMO_STUDENT.id,answers:[...answers],completedAt:new Date().toISOString()};
   fallback=record;
   let persisted=false;
-  try{globalThis.localStorage?.setItem(STORAGE_KEY,JSON.stringify(record));persisted=true;}catch{/* No report of cross-tab persistence when storage is blocked. */}
+  try{if(!globalThis.localStorage)throw new Error('Sin almacenamiento local');globalThis.localStorage.setItem(STORAGE_KEY,JSON.stringify(record));persisted=true;}catch{/* No report of cross-tab persistence when storage is blocked. */}
   try{globalThis.dispatchEvent?.(new Event('edunext-demo-result'));}catch{}
   return {...score,answers:[...answers],completedAt:record.completedAt,localOnly:true,persisted};
 }
