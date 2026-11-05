@@ -117,9 +117,12 @@ self.addEventListener('fetch', e=>{
   catch{
    try{
     // Primero archivos públicos descargados y verificados para esta demo.
-    const demoCache=await caches.open(DEMO_CACHE);
-    const demoAsset=await demoCache.match(req);
-    if(demoAsset?.ok)return demoAsset;
+    // La caché D4 puede no existir en instalaciones antiguas.
+    try{
+     const demoCache=await caches.open(DEMO_CACHE);
+     const demoAsset=await demoCache.match(req);
+     if(demoAsset?.ok)return demoAsset;
+    }catch{}
     const cache=await caches.open(CONTENT_CACHE);
     const cached=await cache.match(req);
     if(cached?.ok)return cached;
