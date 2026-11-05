@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="theme-color" content="#2563eb"><meta name="robots" content="noindex">
+ <meta name="description" content="Prepara EDUNEXT DEMO para navegar, aprender y consultar resultados ficticios sin internet.">
+ <title>EDUNEXT Offline · Centro de preparación</title>
+ <link rel="icon" type="image/png" href="assets/images/Icono.png">
+ <link rel="manifest" href="demo.webmanifest">
+ <link rel="stylesheet" href="css/pages/demo-offline.css">
+ <script type="module" src="js/demo/offline-status.js"></script>
+</head>
+<body>
+ <a class="skip-link" href="#offline-content">Saltar al centro offline</a>
+ <header class="offline-header"><div class="header-wrap">
+   <a href="demo.html" aria-label="EDUNEXT: volver al inicio"><img src="assets/images/Logo%20Horizontal.png" width="180" alt="EDUNEXT"></a>
+   <nav aria-label="Navegación de la demo"><a href="demo.html">Inicio</a><a href="student/recorrido-demo.html?modo=demo">Práctica</a><a href="student/tutor-demo.html?modo=demo">Tutor</a><a href="monitor/seguimiento-demo.html?modo=demo">Monitor</a><a href="admin/informe-demo.html?modo=demo">Administrador</a></nav>
+ </div></header>
+ <main class="offline-main" id="offline-content">
+ <div class="page-heading"><p class="eyebrow">EDUNEXT · ETAPA D4 · DEMO PÚBLICA</p><h1>Aprende donde estés, incluso sin conexión.</h1>
+ <p>Prepara recursos educativos públicos con internet y verifica que están disponibles antes de desconectarte. Los paquetes de esta pantalla contienen exclusivamente datos de demostración.</p></div>
+ <section class="overview" aria-label="Estado general">
+  <div class="state-card"><span class="state-label">Conectividad del navegador</span><strong id="offline-connectivity">Comprobando…</strong><p>Este indicador no garantiza disponibilidad de internet.</p></div>
+  <div class="state-card"><span class="state-label">Service Worker</span><strong id="offline-sw">Comprobando…</strong><p>Debe controlar la navegación para recuperar páginas sin red.</p></div>
+  <div class="state-card"><span class="state-label">Preparación de paquetes</span><strong id="offline-summary">Comprobando…</strong><p>Verificado según los archivos públicos realmente almacenados.</p></div>
+  <div class="state-card"><span class="state-label">Almacenamiento</span><strong id="offline-space">No disponible</strong><p>Estimación del navegador, sin garantía de persistencia.</p></div>
+ </section>
+ <section class="prep-card" aria-labelledby="packages-title">
+  <div class="prep-intro"><div><p class="eyebrow">RECURSOS EDUCATIVOS</p><h2 id="packages-title">Paquetes para la presentación</h2><p>Descarga los recursos desde la conexión actual. Cada paquete se declara preparado únicamente después de verificar todos sus archivos.</p></div>
+  <button type="button" class="primary-button" id="offline-prepare-all">Preparar toda la demo</button></div>
+  <div id="offline-packages"><p>Cargando inventario de paquetes públicos…</p></div>
+  <div class="progress-area" id="offline-progress-wrap" hidden>
+   <div class="progress-heading"><strong id="offline-progress-text">Preparando…</strong><span id="offline-progress-number"></span></div>
+   <progress id="offline-progress" value="0" max="100" aria-label="Archivos preparados"></progress>
+  </div>
+  <p id="offline-action-status" class="action-status" role="status" aria-live="polite"></p>
+ </section>
+ <section class="helper-grid" aria-label="Materiales y diagnósticos">
+  <div class="helper-card"><span class="helper-icon" aria-hidden="true">📘</span><h2>Guía HTML de estudio</h2>
+   <p>Descarga una guía independiente del navegador con explicaciones preparadas de 5.º grado. No incluye conversaciones ni registros personales.</p>
+   <button type="button" class="outline-button" id="offline-download-guide" disabled>Descargar guía educativa</button><p id="offline-guide-status" class="helper-note" role="status"></p>
+  </div>
+  <div class="helper-card"><span class="helper-icon" aria-hidden="true">🧰</span><h2>Diagnóstico de preparación</h2>
+   <p>Comprueba el registro del Service Worker, los recursos descargados y el almacenamiento estimado.</p>
+   <button type="button" class="outline-button" id="offline-verify">Verificar de nuevo</button>
+   <button type="button" class="outline-button" id="offline-persist">Solicitar almacenamiento persistente</button>
+   <p id="offline-storage-note" class="helper-note" role="status"></p>
+  </div>
+ </section>
+ <section class="steps" aria-labelledby="steps-title">
+  <h2 id="steps-title">Cómo comprobar el modo sin conexión</h2>
+  <ol>
+   <li>Mientras estés conectado, pulsa <strong>Preparar toda la demo</strong>.</li>
+   <li>Comprueba que todos los paquetes indiquen <strong>Preparado</strong>.</li>
+   <li>Desactiva Wi-Fi o activa Offline en DevTools y <strong>recarga la página</strong>.</li>
+   <li>Abre la lectura, completa la práctica y consulta el progreso desde este mismo navegador.</li>
+   <li>Abre el Tutor guiado, el diccionario y las vistas del monitor y administrador.</li>
+  </ol>
+  <p class="warning"><strong>Alcance:</strong> no se guardan datos académicos reales, no hay sincronización entre dispositivos, no se descargan modelos generativos ni se garantiza audio offline. Si el navegador borra los recursos, será necesario prepararlos de nuevo.</p>
+ </section>
+ </main>
+ <footer class="offline-footer">EDUNEXT DEMO · Recursos públicos · <a href="demo.html">Regresar al inicio</a></footer>
+</body>
+</html>
