@@ -28,7 +28,7 @@ function draw(){
  const summary=e.completed?
    `${e.correct} de ${e.total} respuestas correctas · ${percentLabel(e.percent)} · ${e.points} puntos demostrativos.`:
    'Sin resultado todavía. Puedes iniciar el recorrido guiado y volver aquí.';
- const feedback=role==='student'?deriveDemoFeedback(e):'La evidencia pertenece a ${DEMO_CONTEXT.student}; no representa notas oficiales ni datos de otros estudiantes.';
+ const feedback=role==='student'?deriveDemoFeedback(e):`La evidencia pertenece a ${DEMO_CONTEXT.student}; no representa notas oficiales ni datos de otros estudiantes.`;
  el.innerHTML=`<h2>${config.title}</h2><p>${summary}</p><p>${feedback}</p><a href="${config.link}">${config.label}</a>`;
 }
 draw();
