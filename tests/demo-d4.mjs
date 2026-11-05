@@ -89,7 +89,7 @@ assert.equal(await lesson.text(),'Lectura preparada');
 assert.equal((await offlineRequest('student/index.html?modo=demo')).status,503,'no servir dashboard no preparado');
 assert.equal(await offlineRequest('api/v1/student/progress'),null,'excluir API');
 assert.equal(await offlineRequest('demo.html',{Accept:'text/html',Authorization:'Bearer SECRET'}),null,'excluir credenciales');
-assert.equal(await offlineRequest('student/private.html'),null===null?503:0,'fallback para rutas no preparadas');
+assert.equal((await offlineRequest('student/private.html')).status,503,'fallback para rutas no preparadas');
 const source=fs.readFileSync(path.join(frontend,'sw.js'),'utf8');
 assert.ok(!/caches\.delete\s*\(/.test(source),'no borrar cachés previas');
 assert.ok(fs.readFileSync(path.join(frontend,'demo.html'),'utf8').includes('offline-demo.html'));
