@@ -73,11 +73,12 @@ export async function getDemoPackageStatus(id){
   return {id,status:present===resources.length?'prepared':present?'partial':'missing',total:resources.length,present,ready:present===resources.length};
  }catch{return {id,status:'unavailable',total:resources.length,present:0,ready:false};}
 }
-export async function prepareDemoPackage(id,onProgress=()=>{}){
+export async function prepareDemoPackages(ids,onProgress=()=>{}){
+ if(!Array.isArray(ids)||!ids.length||!ids.every(id=>Boolean(getDemoPackage(id))))throw new Error('Selecciona paquetes válidos.');
  if(preparing)throw new Error('Hay una preparación en curso.');
  if(!('serviceWorker' in navigator)||!('caches' in globalThis))throw new Error('Necesitas HTTPS o localhost y un navegador compatible.');
  if(navigator.onLine===false)throw new Error('Conéctate a internet para preparar los recursos que faltan.');
- const resources=getDemoRequired(id);
+ const resources=[...new Set(ids.flatMap(id=>getDemoRequired(id)))];
  preparing=true;
  try{
   const base=APP_BASE;
@@ -99,8 +100,12 @@ export async function prepareDemoPackage(id,onProgress=()=>{}){
    if(!isValidDemoResponse(checked,relative)||(await checked.arrayBuffer()).byteLength!==buffer.byteLength)throw new Error('No pudo verificarse el recurso: '+relative);
    done++;onProgress({done,total:resources.length,resource:relative});
   }
-  const final=await getDemoPackageStatus(id);
-  if(!final.ready)throw new Error('El paquete no pasó la verificación final.');
-  return final;
+  const states=await Promise.all(ids.map(getDemoPackageStatus));
+  if(states.some(item=>!item.ready))throw new Error('Uno o más paquetes no pasaron la verificación final.');
+  return states;
  }finally{preparing=false;}
+}
+export async function prepareDemoPackage(id,onProgress=()=>{}){
+ const [result]=await prepareDemoPackages([id],onProgress);
+ return result;
 }
