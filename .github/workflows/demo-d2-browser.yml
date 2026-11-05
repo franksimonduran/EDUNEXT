@@ -4,11 +4,13 @@ on:
   push:
     branches:
       - feature/edunext-demo-d2
+      - feature/edunext-demo-d3
       - main
     paths:
       - 'frontend/**'
       - 'tools/demo-smoke.cjs'
       - 'tests/demo-d2.mjs'
+      - 'tests/demo-d3.mjs'
       - '.github/workflows/demo-d2-browser.yml'
   workflow_dispatch:
 
@@ -42,6 +44,9 @@ jobs:
         run: |
           node tests/demo-presentation.mjs
           node tests/demo-d2.mjs
+          node tests/demo-d3.mjs
+          node --check frontend/js/demo/ai-tools.js
+          node --check frontend/js/demo/ai-guided.js
           node --check frontend/js/demo/role-pages.js
           node --check frontend/js/demo/context-panel.js
       - name: Probar navegación real a 360 y 1280 px

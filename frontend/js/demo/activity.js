@@ -30,7 +30,7 @@ function renderResult(){
     <ol>${DEMO_QUESTIONS.map((question,index)=>`<li><strong>${escapeHTML(question.prompt)}</strong><p class="${answers[index]===question.correct?'answer-right':'answer-wrong'}">${answers[index]===question.correct?'Correcto':'Para mejorar'}: ${escapeHTML(question.choices[question.correct])}</p><p>${escapeHTML(question.explanation)}</p></li>`).join('')}</ol>
     </details>
     <p class="quiz-help">${result.persisted?'Resultado guardado únicamente en este navegador para la demostración.':'El navegador bloqueó el almacenamiento; este resultado solo estará disponible mientras permanezca abierta esta página.'} No es una calificación oficial.</p>
-    <div class="result-links"><a class="button-primary" href="../student/index.html?grade=5&modo=demo">Ver mi progreso</a><a class="button-outline" href="../monitor/index.html?modo=demo">Ver como monitor</a><a class="button-outline" href="../admin/index.html?modo=demo">Ver como administrador</a></div>
+    <div class="result-links"><a class="button-primary" href="../student/index.html?grade=5&modo=demo">Ver mi progreso</a><a class="button-outline" href="../monitor/index.html?modo=demo">Ver como monitor</a><a class="button-outline" href="../admin/index.html?modo=demo">Ver como administrador</a><a class="button-outline" href="../student/tutor-demo.html?modo=demo&topic=reading&prompt=feedback">Recibir explicación guiada</a></div>
     <button type="button" class="text-action" data-action="repeat">Volver a practicar</button>
   </section>`;
 }

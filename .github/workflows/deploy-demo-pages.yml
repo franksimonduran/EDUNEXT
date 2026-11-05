@@ -44,6 +44,13 @@ jobs:
           test -s frontend/student/progreso-demo.html
           test -s frontend/monitor/seguimiento-demo.html
           test -s frontend/admin/informe-demo.html
+          test -s frontend/student/tutor-demo.html
+          test -s frontend/student/traductor-demo.html
+          test -s frontend/student/pronuncia-demo.html
+          test -s frontend/monitor/herramientas-ia-demo.html
+          test -s frontend/admin/herramientas-ia-demo.html
+          test -s frontend/js/demo/ai-tools.js
+          test -s frontend/css/pages/demo-ai-d3.css
           test -s frontend/js/demo/role-pages.js
           test -s frontend/css/pages/demo-journeys-d2.css
           test -s frontend/sw.js
@@ -61,6 +68,7 @@ jobs:
         run: |
           node tests/demo-presentation.mjs
           node tests/demo-d2.mjs
+          node tests/demo-d3.mjs
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5

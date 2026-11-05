@@ -7,6 +7,8 @@ const host=role?document.querySelector(role==='admin'?'#admin-content':'#dashboa
 const titles={student:'Tu recorrido de aprendizaje',monitor:'Seguimiento del estudiante de muestra',admin:'Vista institucional de la demostración'};
 const roleDestinations={student:'../student/progreso-demo.html?modo=demo',monitor:'../monitor/seguimiento-demo.html?modo=demo',admin:'../admin/informe-demo.html?modo=demo'};
 const roleLabels={student:'Mi progreso de la práctica',monitor:'Seguimiento guiado',admin:'Informe institucional de muestra'};
+const aiDestination={student:'../student/tutor-demo.html?modo=demo',monitor:'../monitor/herramientas-ia-demo.html?modo=demo',admin:'../admin/herramientas-ia-demo.html?modo=demo'};
+const aiLabel={student:'Tutor, Translate y Pronuncia',monitor:'Herramientas educativas disponibles',admin:'Estado de herramientas inteligentes'};
 const subtitles={
  student:'Realiza la lectura de Comunicación y revisa tu resultado.',
  monitor:'Consulta el mismo resultado de práctica de Estudiante Demo 01 en este navegador.',
@@ -24,7 +26,7 @@ function refresh(){
  panel.innerHTML=`<div class="edunext-demo-journey__copy"><span class="edunext-demo-journey__eyebrow">RECORRIDO PRESENTACIÓN · DATOS FICTICIOS</span>
   <h2>${titles[role]}</h2><p>${subtitles[role]}</p>
   <p class="edunext-demo-journey__context">${DEMO_READING.course} · ${DEMO_READING.topic} · ${DEMO_STUDENT.group}</p>
-  <div class="edunext-demo-journey__links"><a href="../student/recorrido-demo.html?modo=demo">${action}</a><a href="${roleDestinations[role]}">${roleLabels[role]}</a><a href="../demo.html">Cambiar de perfil</a></div></div>
+  <div class="edunext-demo-journey__links"><a href="../student/recorrido-demo.html?modo=demo">${action}</a><a href="${roleDestinations[role]}">${roleLabels[role]}</a><a href="${aiDestination[role]}">${aiLabel[role]}</a><a href="../demo.html">Cambiar de perfil</a></div></div>
   ${score}`;
 }
 if(host){
