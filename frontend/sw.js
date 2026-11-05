@@ -4,6 +4,20 @@
 const STATIC_CACHE='aithron-static-v2';
 const CONTENT_CACHE='aithron-public-v2';
 const PREPARED_CACHE='aithron-monitor-shell-v1';
+// Espacio público aislado D4: nunca usarlo para APIs, cuentas ni documentos privados.
+const DEMO_CACHE='edunext-demo-offline-v1';
+const DEMO_PAGES=new Set([
+ 'index.html','demo.html','offline-demo.html',
+ 'student/recorrido-demo.html','student/progreso-demo.html',
+ 'student/tutor-demo.html','student/traductor-demo.html','student/pronuncia-demo.html',
+ 'monitor/seguimiento-demo.html','monitor/herramientas-ia-demo.html',
+ 'admin/informe-demo.html','admin/herramientas-ia-demo.html'
+]);
+function demoResponseHeaders(response){
+ const headers=headersOf(response);
+ headers['X-EDUNEXT-Demo-Offline']='prepared-public-only';
+ return headers;
+}
 
 const STATIC_ASSETS=[
  'offline.html','css/variables.css','css/base.css','css/experience.css','css/monitor/account-shared.css'
@@ -66,6 +80,14 @@ self.addEventListener('fetch', e=>{
    try{
     return await fetch(req);
    }catch{
+    // Solo navegación pública D4 preparada explícitamente (sin consultas privadas).
+    if(DEMO_PAGES.has(relative)){
+     try{
+      const demoCache=await caches.open(DEMO_CACHE);
+      const cached=await demoCache.match(req,{ignoreSearch:true});
+      if(cached?.ok)return new Response(cached.body,{status:200,headers:demoResponseHeaders(cached)});
+     }catch{}
+    }
     if(PREPARED_PAGE.test(relative)){
      try{
       const prepared=await preparedResponse(req,{ignoreSearch:true});
@@ -79,7 +101,7 @@ self.addEventListener('fetch', e=>{
  }
  // Only repository-owned public directories. Never use extension alone as authorization.
  const publicAsset=/^(?:js\/.*\.js|css\/.*\.css|assets\/.*\.(?:png|jpg|jpeg|svg|webp|woff2|wav|mp3))$/.test(relative);
- if(!publicAsset || url.search) return;
+ if((!publicAsset && relative!=='demo.webmanifest') || url.search) return;
  const cacheable=response=>response.ok && !response.redirected && response.type!=='opaque'
    && !/(?:private|no-store|no-cache)/i.test(response.headers.get('Cache-Control')||'')
    && !/(?:\*|cookie|authorization)/i.test(response.headers.get('Vary')||'');
@@ -94,6 +116,10 @@ self.addEventListener('fetch', e=>{
   }
   catch{
    try{
+    // Primero archivos públicos descargados y verificados para esta demo.
+    const demoCache=await caches.open(DEMO_CACHE);
+    const demoAsset=await demoCache.match(req);
+    if(demoAsset?.ok)return demoAsset;
     const cache=await caches.open(CONTENT_CACHE);
     const cached=await cache.match(req);
     if(cached?.ok)return cached;
