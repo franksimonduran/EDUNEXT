@@ -70,7 +70,7 @@ const cacheFor=name=>({match:async(req,{ignoreSearch}={})=>{
 const context={
  self:{location:{href:origin+'/EDUNEXT/sw.js'},addEventListener:(name,handler)=>handlers[name]=handler,clients:{claim:async()=>{}}},
  location:{origin},URL,Response,Request,Promise,
- caches:{open:async cacheFor},
+ caches:{open:async name=>cacheFor(name)},
  fetch:async()=>{throw new TypeError('Network disabled');}
 };
 vm.runInNewContext(fs.readFileSync(path.join(frontend,'sw.js'),'utf8'),context);
