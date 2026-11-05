@@ -55,7 +55,27 @@ async function run(){
    await delay(500);
    actions.push({...current,clicked,destination,passed:clicked&&destination.startsWith(base+expected)&&!current.errors.length&&!current.http.length});
   }
-  const result={scope:'Render demo y seis acciones de navegación; no prueba escrituras, auth ni PostgreSQL',results,actions,passed:results.every(r=>!r.errors.length&&!r.http.length&&!r.overflow&&r.text>100)&&actions.every(a=>a.passed),hashes:require('./demo-audit.cjs').audit().hashes};
+  // D3: verificar interacción real del tutor, diccionario y ejercicio escrito.
+  const d3Actions=[];
+  for(const [route,readySelector,expression] of [
+   ['student/tutor-demo.html?modo=demo','#d3-answer',"(()=>{document.querySelector('#d3-answer').click();return Boolean(document.querySelector('#d3-response .d3-answer'))})()"],
+   ['student/traductor-demo.html?modo=demo','#d3-translate',"(()=>{document.querySelector('#d3-search').value='Escuela';document.querySelector('#d3-translate').click();return document.querySelector('#d3-translation-result').innerText.includes('School')})()"],
+   ['student/pronuncia-demo.html?modo=demo','#d3-check-meaning',"(()=>{document.querySelector('#d3-meaning').value='Familia';document.querySelector('#d3-check-meaning').click();return Boolean(document.querySelector('#d3-pron-result [data-kind=good]'))})()"],
+   ['monitor/herramientas-ia-demo.html?modo=demo','.d3-grid',"(()=>document.querySelectorAll('.d3-grid .d3-card').length===6)()"],
+   ['admin/herramientas-ia-demo.html?modo=demo','.d3-grid',"(()=>document.querySelectorAll('.d3-grid .d3-card').length===6)()"]
+  ]){
+   current={route,width:1280,errors:[],http:[]};
+   await send('Page.navigate',{url:base+route});
+   let ready=false;
+   for(let n=0;n<100;n++){
+    await delay(100);
+    const check=await send('Runtime.evaluate',{expression:`document.readyState==='complete'&&Boolean(document.querySelector(${JSON.stringify(readySelector)}))`,returnByValue:true});
+    if(check.result.value){ready=true;break;}
+   }
+   const checked=ready?await send('Runtime.evaluate',{expression,returnByValue:true}):null;
+   d3Actions.push({...current,ready,passed:ready&&checked?.result?.value===true&&!current.errors.length&&!current.http.length});
+  }
+  const result={scope:'Render demo, seis acciones de navegación y cinco controles D3; no prueba generación IA ni audio real',results,actions,d3Actions,passed:results.every(r=>!r.errors.length&&!r.http.length&&!r.overflow&&r.text>100)&&actions.every(a=>a.passed)&&d3Actions.every(a=>a.passed),hashes:require('./demo-audit.cjs').audit().hashes};
   console.log(JSON.stringify({...result,hashes:'Ver evidencia'},null,2));
   if(process.env.AITHRON_FINAL_VALIDATION==='1')console.log(require('./final-evidence.cjs').saveFinalEvidence('DEMO_SMOKE.json',result));
   if(!result.passed)process.exitCode=1;
