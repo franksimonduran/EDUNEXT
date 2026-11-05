@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="theme-color" content="#2563eb">
+ <meta name="description" content="Recorrido interactivo de comprensión lectora de EDUNEXT, con preguntas y resultados de demostración.">
+ <title>Comprensión lectora · EDUNEXT DEMO</title>
+ <link rel="icon" href="../assets/images/branding/mark.svg" type="image/svg+xml">
+ <link rel="stylesheet" href="../css/pages/demo-story.css">
+ <script type="module" src="../js/demo/activity.js"></script>
+</head>
+<body>
+ <a class="skip-link" href="#demo-activity">Ir a las preguntas</a>
+ <header class="topbar">
+  <a class="brand" href="../demo.html" aria-label="EDUNEXT: volver a la entrada"><img src="../assets/images/Logo%20Horizontal.png" width="172" alt="EDUNEXT"></a>
+  <nav aria-label="Navegación de demostración">
+   <a href="index.html?grade=5&modo=demo">Estudiante</a>
+   <a href="../monitor/index.html?modo=demo">Monitor</a>
+   <a href="../admin/index.html?modo=demo">Administrador</a>
+  </nav>
+ </header>
+ <main class="layout">
+  <div class="heading">
+   <p class="eyebrow">EDUNEXT DEMO · RECORRIDO INTERACTIVO</p>
+   <h1>Aprende, practica y avanza</h1>
+   <p>Lee una historia breve, responde cinco preguntas y observa cómo se comparte el resultado de ejemplo entre los tres espacios del mismo navegador.</p>
+  </div>
+  <div class="columns">
+   <aside class="reading-card" aria-labelledby="demo-reading-title">
+    <span class="label-chip">5.º de primaria · Comunicación</span>
+    <h2 id="demo-reading-title">El huerto de nuestra escuela</h2>
+    <p id="demo-reading-text">Cargando lectura de demostración…</p>
+    <div class="reading-note"><strong>Antes de responder</strong><p>Busca las ideas principales y los detalles importantes de la historia.</p></div>
+    <p id="previous-result" class="previous-result" aria-live="polite"></p>
+   </aside>
+   <div id="demo-activity" class="quiz-area" aria-live="polite">
+    <p>Cargando preguntas de demostración…</p>
+   </div>
+  </div>
+  <p class="disclaimer"><strong>Demostración educativa:</strong> no se requiere autenticación, no hay alumnos reales ni calificaciones oficiales. La información se conserva únicamente en el navegador si este permite almacenamiento local.</p>
+ </main>
+ <footer>EDUNEXT · Aprende donde estés · <a href="../demo.html">Volver a los perfiles</a></footer>
+</body>
+</html>
