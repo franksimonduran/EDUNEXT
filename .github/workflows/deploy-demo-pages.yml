@@ -1,0 +1,60 @@
+name: EDUNEXT — demo GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'frontend/**'
+      - '.github/workflows/deploy-demo-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: edunext-demo-pages
+  cancel-in-progress: false
+
+jobs:
+  publish-demo:
+    name: Publicar frontend demostrativo
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+      - name: Comprobar archivos estáticos requeridos
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s frontend/index.html
+          test -s frontend/demo.html
+          test -s frontend/css/pages/demo.css
+          test -s frontend/student/index.html
+          test -s frontend/monitor/index.html
+          test -s frontend/admin/index.html
+          test -s frontend/sw.js
+          if find frontend -type f \( -name '.env' -o -name '.env.*' -o -name '*.key' -o -name '*.pem' \) ! -name '.env.example' | grep -q .; then
+            echo 'Error: se detectaron archivos de entorno o claves en frontend.'
+            exit 1
+          fi
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Publicar únicamente frontend/
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: frontend
+
+      - name: Desplegar demo
+        id: deployment
+        uses: actions/deploy-pages@v4
