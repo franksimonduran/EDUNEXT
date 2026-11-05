@@ -20,6 +20,10 @@ jobs:
       - run: node tools/run-phase48-regression.cjs
       - run: node tests/demo-presentation.mjs
       - run: node tests/demo-d2.mjs
+      - run: node tests/demo-d3.mjs
+      - run: node --check frontend/js/demo/ai-tools.js
+      - run: node --check frontend/js/demo/translation.js
+      - run: node --check frontend/js/demo/pronunciation.js
       - run: node --check frontend/js/demo/role-pages.js
       - run: node --check frontend/js/demo/context-panel.js
       - run: node --check frontend/js/demo/metrics.js
