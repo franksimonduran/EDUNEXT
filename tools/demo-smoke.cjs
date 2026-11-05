@@ -10,13 +10,13 @@ async function run(){
  const profile=fs.mkdtempSync(path.join(process.env.LOCALAPPDATA?path.join(process.env.LOCALAPPDATA,'Temp/opencode'):os.tmpdir(),'edunext-demo-'));
  const chromeArgs=['--headless=new','--disable-gpu','--no-first-run','--disable-background-networking','--remote-debugging-port=0',`--user-data-dir=${profile}`,'about:blank'];
  // CI runs in a disposable Linux container without a usable Chrome sandbox.
- if(process.platform==='linux'&&process.env.CI==='true')chromeArgs.push('--no-sandbox','--disable-dev-shm-usage');
+ if(process.platform==='linux'&&(process.env.GITHUB_ACTIONS==='true'||process.env.CI==='true'))chromeArgs.push('--no-sandbox','--disable-dev-shm-usage');
  const browser=spawn(executable,chromeArgs,{stdio:['ignore','ignore','pipe']});
  let browserStderr='';
  browser.stderr?.on('data',part=>{browserStderr=(browserStderr+String(part)).slice(-4000);});
  let socket;const results=[];
  try{
-  let port;for(let n=0;n<100;n++){try{port=fs.readFileSync(path.join(profile,'DevToolsActivePort'),'utf8').split('\n')[0];break;}catch{await delay(100);}}
+  let port;for(let n=0;n<300;n++){try{port=fs.readFileSync(path.join(profile,'DevToolsActivePort'),'utf8').split('\n')[0];break;}catch{await delay(100);}}
   if(!port)throw new Error('CDP no inició'+(browserStderr?': '+browserStderr:''));
   const tabs=await (await fetch(`http://127.0.0.1:${port}/json/list`)).json();
   socket=new WebSocket(tabs.find(t=>t.type==='page').webSocketDebuggerUrl);
