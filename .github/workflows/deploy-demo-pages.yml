@@ -54,6 +54,10 @@ jobs:
           test -s frontend/js/demo/role-pages.js
           test -s frontend/css/pages/demo-journeys-d2.css
           test -s frontend/sw.js
+          test -s frontend/offline-demo.html
+          test -s frontend/css/pages/demo-offline.css
+          test -s frontend/js/demo/offline-packages.js
+          test -s frontend/js/demo/offline-status.js
           if find frontend -type f \( -name '.env' -o -name '.env.*' -o -name '*.key' -o -name '*.pem' \) ! -name '.env.example' | grep -q .; then
             echo 'Error: se detectaron archivos de entorno o claves en frontend.'
             exit 1
@@ -69,6 +73,7 @@ jobs:
           node tests/demo-presentation.mjs
           node tests/demo-d2.mjs
           node tests/demo-d3.mjs
+          node tests/demo-d4.mjs
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
