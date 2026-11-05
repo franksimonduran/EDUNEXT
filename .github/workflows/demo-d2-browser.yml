@@ -4,11 +4,13 @@ on:
   push:
     branches:
       - feature/edunext-demo-d2
+      - feature/edunext-demo-d3
       - main
     paths:
       - 'frontend/**'
       - 'tools/demo-smoke.cjs'
       - 'tests/demo-d2.mjs'
+      - 'tests/demo-d3.mjs'
       - '.github/workflows/demo-d2-browser.yml'
   workflow_dispatch:
 
