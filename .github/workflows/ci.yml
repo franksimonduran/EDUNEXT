@@ -18,6 +18,7 @@ jobs:
         with:
           node-version: '24'
       - run: node tools/run-phase48-regression.cjs
+      - run: node tests/demo-presentation.mjs
       - run: node tests/local-ai-preview.cjs
       - run: node tests/local-tutor-general.cjs
       - run: node tests/phase49-infra.cjs
