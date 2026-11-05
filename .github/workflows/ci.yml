@@ -21,6 +21,11 @@ jobs:
       - run: node tests/demo-presentation.mjs
       - run: node tests/demo-d2.mjs
       - run: node tests/demo-d3.mjs
+      - run: node tests/demo-d4.mjs
+      - run: node tests/offline-pwa.cjs
+      - run: node --check frontend/js/demo/offline-packages.js
+      - run: node --check frontend/js/demo/offline-status.js
+      - run: node --check frontend/sw.js
       - run: node --check frontend/js/demo/ai-tools.js
       - run: node --check frontend/js/demo/translation.js
       - run: node --check frontend/js/demo/pronunciation.js

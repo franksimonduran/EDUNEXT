@@ -14,12 +14,19 @@ function createDemoServer({handler} = {}) {
   if(!['GET','HEAD'].includes(req.method)){res.writeHead(405,{Allow:'GET, HEAD'});return res.end();}
   try {
    let pathname = decodeURIComponent(new URL(req.url,'http://localhost').pathname);
-   pathname=aliases[pathname]||pathname;
+   // Reuse an alias only when the original asset is missing. Real SVGs
+   // must retain their correct content type for the offline package verifier.
+   if(aliases[pathname]&&!fs.existsSync(path.join(root,pathname)))pathname=aliases[pathname];
    if(pathname.includes('\\') || pathname.includes('\0'))throw new Error('Invalid path');
    const file = await fs.promises.realpath(path.join(root, pathname === '/' ? 'demo.html' : pathname));
    const stat = await fs.promises.stat(file);
    if(!file.startsWith(root + path.sep) || !stat.isFile())throw new Error('Not a file');
    res.setHeader('Content-Type',mime[path.extname(file)] || 'application/octet-stream');
+   // The local demo serves these PUBLIC resources without private data.
+   // All other routes (including optional API handlers) remain no-store.
+   const demoStatic=/^\/(?:index\.html|demo\.html|offline-demo\.html|offline\.html|demo\.webmanifest|student\/(?:recorrido-demo|progreso-demo|tutor-demo|traductor-demo|pronuncia-demo)\.html|monitor\/(?:seguimiento-demo|herramientas-ia-demo)\.html|admin\/(?:informe-demo|herramientas-ia-demo)\.html|css\/pages\/demo(?:-story|-journeys-d2|-ai-d3|-offline)?\.css|js\/demo\/[a-z0-9-]+\.js|js\/offline\/pwa\.js|js\/services\/(?:translation\.service|offline-study\.service)\.js|js\/data\/(?:dictionary-demo|languages|pronunciation-demo)\.data\.js|assets\/images\/(?:Icono\.png|Logo%20Horizontal\.png|Logo Horizontal\.png|branding\/(?:mark\.svg|edunext-(?:192|512)\.png)))$/i;
+   const urlPath=new URL(req.url,'http://localhost').pathname;
+   if(demoStatic.test(urlPath))res.setHeader('Cache-Control','no-cache');
    res.setHeader('Accept-Ranges','bytes');
    let start=0,end=stat.size-1,status=200;
    const range=req.headers.range;
