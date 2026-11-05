@@ -26,7 +26,7 @@ export const DEMO_PACKAGES=Object.freeze([
   'js/data/dictionary-demo.data.js','js/data/languages.data.js',
   'js/demo/pronunciation.js','js/data/pronunciation-demo.data.js']},
  {id:'guia',title:'Guía educativa descargable',description:'Guía HTML independiente del Tutor guiado, sin datos personales.',required:[
-  'js/services/offline-study.service.js']}
+  'js/services/offline-study.service.js','js/demo/ai-guided.js','js/demo/metrics.js','js/demo/scenario.js']}
 ]);
 const PUBLIC_RESOURCE=/^(?:index\.html|demo\.html|offline-demo\.html|offline\.html|demo\.webmanifest|student\/(?:recorrido-demo|progreso-demo|tutor-demo|traductor-demo|pronuncia-demo)\.html|monitor\/(?:seguimiento-demo|herramientas-ia-demo)\.html|admin\/(?:informe-demo|herramientas-ia-demo)\.html|css\/pages\/demo(?:-story|-journeys-d2|-ai-d3|-offline)?\.css|js\/demo\/[a-z0-9-]+\.js|js\/offline\/pwa\.js|js\/services\/(?:translation\.service|offline-study\.service)\.js|js\/data\/(?:dictionary-demo|languages|pronunciation-demo)\.data\.js|assets\/images\/(?:Icono\.png|Logo%20Horizontal\.png|branding\/(?:mark\.svg|edunext-(?:192|512)\.png)))$/i;
 const APP_BASE=new URL('../../',import.meta.url);
