@@ -8,11 +8,16 @@ async function run(){
  const executable=process.env.DEMO_BROWSER||['C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe','C:/Program Files/Google/Chrome/Application/chrome.exe'].find(p=>fs.existsSync(p));
  if(!executable){server.close();throw new Error('No se encontró Edge/Chrome. Configura DEMO_BROWSER.');}
  const profile=fs.mkdtempSync(path.join(process.env.LOCALAPPDATA?path.join(process.env.LOCALAPPDATA,'Temp/opencode'):os.tmpdir(),'edunext-demo-'));
- const browser=spawn(executable,['--headless=new','--disable-gpu','--no-first-run','--remote-debugging-port=0',`--user-data-dir=${profile}`,'about:blank'],{stdio:'ignore'});
+ const chromeArgs=['--headless=new','--disable-gpu','--no-first-run','--disable-background-networking','--remote-debugging-port=0',`--user-data-dir=${profile}`,'about:blank'];
+ // CI runs in a disposable Linux container without a usable Chrome sandbox.
+ if(process.platform==='linux'&&(process.env.GITHUB_ACTIONS==='true'||process.env.CI==='true'))chromeArgs.push('--no-sandbox','--disable-dev-shm-usage');
+ const browser=spawn(executable,chromeArgs,{stdio:['ignore','ignore','pipe']});
+ let browserStderr='';
+ browser.stderr?.on('data',part=>{browserStderr=(browserStderr+String(part)).slice(-4000);});
  let socket;const results=[];
  try{
-  let port;for(let n=0;n<100;n++){try{port=fs.readFileSync(path.join(profile,'DevToolsActivePort'),'utf8').split('\n')[0];break;}catch{await delay(100);}}
-  if(!port)throw new Error('CDP no inició');
+  let port;for(let n=0;n<300;n++){try{port=fs.readFileSync(path.join(profile,'DevToolsActivePort'),'utf8').split('\n')[0];break;}catch{await delay(100);}}
+  if(!port)throw new Error('CDP no inició'+(browserStderr?': '+browserStderr:''));
   const tabs=await (await fetch(`http://127.0.0.1:${port}/json/list`)).json();
   socket=new WebSocket(tabs.find(t=>t.type==='page').webSocketDebuggerUrl);
   await new Promise((resolve,reject)=>{socket.onopen=resolve;socket.onerror=reject;});

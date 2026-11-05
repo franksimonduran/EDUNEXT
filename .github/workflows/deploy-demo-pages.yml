@@ -41,11 +41,26 @@ jobs:
           test -s frontend/student/index.html
           test -s frontend/monitor/index.html
           test -s frontend/admin/index.html
+          test -s frontend/student/progreso-demo.html
+          test -s frontend/monitor/seguimiento-demo.html
+          test -s frontend/admin/informe-demo.html
+          test -s frontend/js/demo/role-pages.js
+          test -s frontend/css/pages/demo-journeys-d2.css
           test -s frontend/sw.js
           if find frontend -type f \( -name '.env' -o -name '.env.*' -o -name '*.key' -o -name '*.pem' \) ! -name '.env.example' | grep -q .; then
             echo 'Error: se detectaron archivos de entorno o claves en frontend.'
             exit 1
           fi
+
+      - name: Preparar Node para validación
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+
+      - name: Verificar escenario y rutas de los tres perfiles
+        run: |
+          node tests/demo-presentation.mjs
+          node tests/demo-d2.mjs
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5

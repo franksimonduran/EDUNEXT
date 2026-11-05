@@ -1,0 +1,48 @@
+name: EDUNEXT DEMO D2 — browser smoke
+
+on:
+  push:
+    branches:
+      - feature/edunext-demo-d2
+      - main
+    paths:
+      - 'frontend/**'
+      - 'tools/demo-smoke.cjs'
+      - 'tests/demo-d2.mjs'
+      - '.github/workflows/demo-d2-browser.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: demo-d2-browser-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+      - name: Detectar Chrome o Chromium
+        shell: bash
+        run: |
+          set -euo pipefail
+          browser="$(command -v google-chrome-stable || command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          if [ -z "$browser" ]; then
+            echo "No hay un navegador compatible con las pruebas CDP" >&2
+            exit 1
+          fi
+          echo "DEMO_BROWSER=$browser" >> "$GITHUB_ENV"
+      - name: Validar lógica y enlaces de la demo
+        run: |
+          node tests/demo-presentation.mjs
+          node tests/demo-d2.mjs
+          node --check frontend/js/demo/role-pages.js
+          node --check frontend/js/demo/context-panel.js
+      - name: Probar navegación real a 360 y 1280 px
+        run: node tools/demo-smoke.cjs
