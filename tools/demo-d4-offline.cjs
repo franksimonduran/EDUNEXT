@@ -72,6 +72,9 @@ async function run(){
   assert.ok(await eventually('document.querySelector("#offline-summary").textContent.trim()==="5 / 5 paquetes"',120),'Los cinco paquetes deben reportar estado preparado');
   assert.ok(await eventually('Boolean(navigator.serviceWorker.controller)',100),'SW sin control');
   // No permitir que HTTP cache del navegador simule una prueba offline.
+  // CDP emulates offline in the page target, but the Service Worker may
+  // keep its own network context. Shut down the ORIGIN too: no HTTP fallback.
+  await new Promise(resolve=>{server.close(resolve);server.closeAllConnections();});
   await send('Network.setCacheDisabled',{cacheDisabled:true});
   await send('Network.emulateNetworkConditions',{offline:true,latency:0,downloadThroughput:0,uploadThroughput:0});
   await visit('offline-demo.html','.package-card');
