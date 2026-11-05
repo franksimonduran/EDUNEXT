@@ -1,32 +1,17 @@
 {
-  "id": "./",
+  "id": "/",
   "name": "EDUNEXT — Plataforma Educativa",
   "short_name": "EDUNEXT",
-  "description": "EDUNEXT — Plataforma Educativa Inteligente. Demostración con datos ficticios; IA y uso offline sujetos a disponibilidad.",
+  "description": "EDUNEXT — Plataforma Educativa Inteligente. Aprendizaje para estudiantes, monitores y administradores; capacidades offline e IA sujetas a disponibilidad.",
   "lang": "es-PE",
-  "start_url": "./demo.html",
-  "scope": "./",
+  "start_url": "/login.html",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#F8FAFC",
   "theme_color": "#2563EB",
   "icons": [
-    {
-      "src": "./assets/images/branding/edunext-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "./assets/images/branding/edunext-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "./assets/images/branding/mark.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any"
-    }
+    {"src": "/assets/images/branding/edunext-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "/assets/images/branding/edunext-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "/assets/images/branding/mark.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}
   ]
 }
