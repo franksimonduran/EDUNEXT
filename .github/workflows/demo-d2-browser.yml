@@ -5,6 +5,7 @@ on:
     branches:
       - feature/edunext-demo-d2
       - feature/edunext-demo-d3
+      - feature/edunext-demo-d5
       - main
     paths:
       - 'frontend/**'
