@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - 'frontend/**'
+      - 'tests/demo-d6.mjs'
+      - 'docs/final-demo/**'
       - '.github/workflows/deploy-demo-pages.yml'
   workflow_dispatch:
 
@@ -77,6 +79,7 @@ jobs:
           node tests/demo-d3.mjs
           node tests/demo-d4.mjs
           node tests/demo-d5.mjs
+          node tests/demo-d6.mjs
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
@@ -89,3 +92,13 @@ jobs:
       - name: Desplegar demo
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Comprobar acceso público después del despliegue
+        shell: bash
+        run: |
+          set -euo pipefail
+          base="https://franksimonduran.github.io/EDUNEXT"
+          for route in demo.html offline-demo.html student/recorrido-demo.html student/progreso-demo.html monitor/seguimiento-demo.html admin/informe-demo.html student/tutor-demo.html student/traductor-demo.html student/pronuncia-demo.html; do
+            echo "Comprobando $route"
+            curl --fail --location --silent --show-error --retry 5 --retry-delay 3 --max-time 25 --output /dev/null "$base/$route"
+          done
