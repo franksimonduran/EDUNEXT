@@ -1,12 +1,12 @@
 // EDUNEXT D4 — SOLO recursos públicos del recorrido guiado.
 // No reutilizar para rutas académicas autenticadas, peticiones API o registros reales.
 // Incrementar versión de caché si cambia el inventario o estructura de módulos.
-export const DEMO_OFFLINE_CACHE='edunext-demo-offline-v1';
-export const DEMO_OFFLINE_VERSION='D4.1';
+export const DEMO_OFFLINE_CACHE='edunext-demo-offline-v2';
+export const DEMO_OFFLINE_VERSION='D5.0';
 export const DEMO_PACKAGES=Object.freeze([
  {id:'base',title:'Inicio y centro offline',description:'Portada, navegación, recursos gráficos y estado de paquetes.',required:[
   'index.html','demo.html','offline-demo.html','offline.html','demo.webmanifest',
-  'css/pages/demo.css','css/pages/demo-offline.css','js/demo/landing.js',
+  'css/pages/demo.css','css/pages/demo-offline.css','css/pages/demo-polish-d5.css','js/demo/landing.js',
   'js/demo/offline-entry.js','js/demo/offline-packages.js','js/demo/offline-status.js',
   'js/offline/pwa.js','js/demo/scenario.js',
   'assets/images/Icono.png','assets/images/Logo%20Horizontal.png',
@@ -28,7 +28,7 @@ export const DEMO_PACKAGES=Object.freeze([
  {id:'guia',title:'Guía educativa descargable',description:'Guía HTML independiente del Tutor guiado, sin datos personales.',required:[
   'js/services/offline-study.service.js','js/demo/ai-guided.js','js/demo/metrics.js','js/demo/scenario.js']}
 ]);
-const PUBLIC_RESOURCE=/^(?:index\.html|demo\.html|offline-demo\.html|offline\.html|demo\.webmanifest|student\/(?:recorrido-demo|progreso-demo|tutor-demo|traductor-demo|pronuncia-demo)\.html|monitor\/(?:seguimiento-demo|herramientas-ia-demo)\.html|admin\/(?:informe-demo|herramientas-ia-demo)\.html|css\/pages\/demo(?:-story|-journeys-d2|-ai-d3|-offline)?\.css|js\/demo\/[a-z0-9-]+\.js|js\/offline\/pwa\.js|js\/services\/(?:translation\.service|offline-study\.service)\.js|js\/data\/(?:dictionary-demo|languages|pronunciation-demo)\.data\.js|assets\/images\/(?:Icono\.png|Logo%20Horizontal\.png|branding\/(?:mark\.svg|edunext-(?:192|512)\.png)))$/i;
+const PUBLIC_RESOURCE=/^(?:index\.html|demo\.html|offline-demo\.html|offline\.html|demo\.webmanifest|student\/(?:recorrido-demo|progreso-demo|tutor-demo|traductor-demo|pronuncia-demo)\.html|monitor\/(?:seguimiento-demo|herramientas-ia-demo)\.html|admin\/(?:informe-demo|herramientas-ia-demo)\.html|css\/pages\/demo(?:-story|-journeys-d2|-ai-d3|-offline|-polish-d5)?\.css|js\/demo\/[a-z0-9-]+\.js|js\/offline\/pwa\.js|js\/services\/(?:translation\.service|offline-study\.service)\.js|js\/data\/(?:dictionary-demo|languages|pronunciation-demo)\.data\.js|assets\/images\/(?:Icono\.png|Logo%20Horizontal\.png|branding\/(?:mark\.svg|edunext-(?:192|512)\.png)))$/i;
 const APP_BASE=new URL('../../',import.meta.url);
 let preparing=false;
 export function getDemoBase(){return APP_BASE;}
