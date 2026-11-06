@@ -109,7 +109,8 @@ async function main(){
    })())`);
    Object.assign(current,JSON.parse(measure));
    observations.push(current);
-   if(current.overflow||current.errors.length||current.http.length||current.text<120||!current.skipTarget||!current.css||current.headings!==1||current.lang!=='es'||current.brokenImages.length){
+   const publicJourney=!/^(?:student|monitor|admin)\/index\.html$/.test(baseRoute(route));
+   if(current.overflow||current.errors.length||current.http.length||current.text<120||!current.skipTarget||!current.css||current.headings!==1||current.lang!=='es'||current.brokenImages.length||(publicJourney&&current.unnamedControls.length)){
     issues.push({...current});
    }
   };
