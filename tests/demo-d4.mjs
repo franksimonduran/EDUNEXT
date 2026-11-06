@@ -8,7 +8,7 @@ import {DEMO_PACKAGES,DEMO_OFFLINE_CACHE,getDemoPackage,getDemoRequired,getDemoR
 const project=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const frontend=path.join(project,'frontend');
 assert.equal(DEMO_PACKAGES.length,5);
-assert.equal(DEMO_OFFLINE_CACHE,'edunext-demo-offline-v1');
+assert.equal(DEMO_OFFLINE_CACHE,'edunext-demo-offline-v2');
 assert.equal(new Set(DEMO_PACKAGES.map(p=>p.id)).size,DEMO_PACKAGES.length);
 const all=new Set();
 for(const pkg of DEMO_PACKAGES){
