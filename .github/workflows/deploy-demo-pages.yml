@@ -56,6 +56,8 @@ jobs:
           test -s frontend/sw.js
           test -s frontend/offline-demo.html
           test -s frontend/css/pages/demo-offline.css
+          test -s frontend/css/pages/demo-polish-d5.css
+          test -s tests/demo-d5.mjs
           test -s frontend/js/demo/offline-packages.js
           test -s frontend/js/demo/offline-status.js
           if find frontend -type f \( -name '.env' -o -name '.env.*' -o -name '*.key' -o -name '*.pem' \) ! -name '.env.example' | grep -q .; then
@@ -74,6 +76,7 @@ jobs:
           node tests/demo-d2.mjs
           node tests/demo-d3.mjs
           node tests/demo-d4.mjs
+          node tests/demo-d5.mjs
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5

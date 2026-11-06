@@ -22,6 +22,8 @@ jobs:
       - run: node tests/demo-d2.mjs
       - run: node tests/demo-d3.mjs
       - run: node tests/demo-d4.mjs
+      - run: node tests/demo-d5.mjs
+      - run: node --check tools/demo-d5-visual.cjs
       - run: node tests/offline-pwa.cjs
       - run: node --check frontend/js/demo/offline-packages.js
       - run: node --check frontend/js/demo/offline-status.js

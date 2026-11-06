@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - feature/edunext-demo-d4
+      - feature/edunext-demo-d5
       - main
     paths:
       - 'frontend/**'

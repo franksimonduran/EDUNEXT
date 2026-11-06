@@ -10,7 +10,7 @@ function renderStep(){
   root.innerHTML=`<section class="quiz-card" aria-labelledby="quiz-title">
     <div class="quiz-meta"><span class="label-chip">Comunicación · ${DEMO_STUDENT.group}</span><span>Pregunta ${step+1} de ${DEMO_QUESTIONS.length}</span></div>
     <div class="quiz-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${progress}" aria-label="Avance de preguntas"><span style="width:${progress}%"></span></div>
-    <h2 id="quiz-title">${escapeHTML(question.prompt)}</h2>
+    <h2 id="quiz-title" tabindex="-1">${escapeHTML(question.prompt)}</h2>
     <fieldset class="quiz-options"><legend>Selecciona una respuesta</legend>
     ${question.choices.map((choice,index)=>`<label class="quiz-option ${answers[step]===index?'is-selected':''}"><input type="radio" name="answer" value="${index}" ${answers[step]===index?'checked':''}><span class="option-letter">${String.fromCharCode(65+index)}</span><span>${escapeHTML(choice)}</span></label>`).join('')}
     </fieldset>
@@ -30,7 +30,7 @@ function renderResult(){
     <ol>${DEMO_QUESTIONS.map((question,index)=>`<li><strong>${escapeHTML(question.prompt)}</strong><p class="${answers[index]===question.correct?'answer-right':'answer-wrong'}">${answers[index]===question.correct?'Correcto':'Para mejorar'}: ${escapeHTML(question.choices[question.correct])}</p><p>${escapeHTML(question.explanation)}</p></li>`).join('')}</ol>
     </details>
     <p class="quiz-help">${result.persisted?'Resultado guardado únicamente en este navegador para la demostración.':'El navegador bloqueó el almacenamiento; este resultado solo estará disponible mientras permanezca abierta esta página.'} No es una calificación oficial.</p>
-    <div class="result-links"><a class="button-primary" href="../student/index.html?grade=5&modo=demo">Ver mi progreso</a><a class="button-outline" href="../monitor/index.html?modo=demo">Ver como monitor</a><a class="button-outline" href="../admin/index.html?modo=demo">Ver como administrador</a><a class="button-outline" href="../student/tutor-demo.html?modo=demo&topic=reading&prompt=feedback">Recibir explicación guiada</a></div>
+    <div class="result-links"><a class="button-primary" href="../student/progreso-demo.html?modo=demo">Ver mi progreso</a><a class="button-outline" href="../monitor/seguimiento-demo.html?modo=demo">Ver como monitor</a><a class="button-outline" href="../admin/informe-demo.html?modo=demo">Ver como administrador</a><a class="button-outline" href="../student/tutor-demo.html?modo=demo&topic=reading&prompt=feedback">Recibir explicación guiada</a></div>
     <button type="button" class="text-action" data-action="repeat">Volver a practicar</button>
   </section>`;
 }
@@ -47,12 +47,13 @@ root?.addEventListener('change',event=>{
 root?.addEventListener('click',event=>{
   const button=event.target.closest('button[data-action]');if(!button)return;
   const action=button.dataset.action;
-  if(action==='repeat'){answers.fill(null);step=0;finished=false;renderStep();return;}
+  if(action==='repeat'){answers.fill(null);step=0;finished=false;renderStep();root.querySelector('#quiz-title')?.focus();return;}
   if(finished)return;
-  if(action==='back'&&step>0){step--;renderStep();}
+  if(action==='back'&&step>0){step--;renderStep();root.querySelector('#quiz-title')?.focus();}
   if(action==='next'&&answers[step]!==null){
     if(step===DEMO_QUESTIONS.length-1)renderResult();
     else{step++;renderStep();}
+    root.querySelector('#quiz-title')?.focus();
   }
 });
 if(root){

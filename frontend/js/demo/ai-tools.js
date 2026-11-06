@@ -73,6 +73,7 @@ function translatePage(){
  vocab.addEventListener('change',()=>{search.value=vocab.value;current=null;speakButton.disabled=true;});
  pair.addEventListener('change',updateVocab);
  root.querySelector('#d3-swap').addEventListener('click',()=>{pair.value=pair.value==='es-en'?'en-es':'es-en';updateVocab();});
+ search.addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.isComposing){event.preventDefault();root.querySelector('#d3-translate')?.click();}});
  root.querySelector('#d3-translate').addEventListener('click',()=>{
   const [from,to]=pair.value.split('-');const result=lookupDemoTranslation(search.value,from,to);
   current=result.status==='found'?{...result,to}:null;speakButton.disabled=!current;
