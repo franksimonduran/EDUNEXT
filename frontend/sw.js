@@ -5,7 +5,7 @@ const STATIC_CACHE='aithron-static-v2';
 const CONTENT_CACHE='aithron-public-v2';
 const PREPARED_CACHE='aithron-monitor-shell-v1';
 // Espacio público aislado D4: nunca usarlo para APIs, cuentas ni documentos privados.
-const DEMO_CACHE='edunext-demo-offline-v1';
+const DEMO_CACHE='edunext-demo-offline-v2';
 const DEMO_PAGES=new Set([
  'index.html','demo.html','offline-demo.html',
  'student/recorrido-demo.html','student/progreso-demo.html',
