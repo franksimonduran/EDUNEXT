@@ -1,0 +1,68 @@
+name: EDUNEXT DEMO D5 — calidad visual y teclado
+
+on:
+  push:
+    branches:
+      - feature/edunext-demo-d5
+      - main
+    paths:
+      - 'frontend/**'
+      - 'tools/demo-d5-visual.cjs'
+      - 'tests/demo-d5.mjs'
+      - '.github/workflows/demo-d5-visual.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: edunext-d5-visual-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  visual:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+      - name: Localizar navegador para auditoría real
+        shell: bash
+        run: |
+          set -euo pipefail
+          browser="$(command -v google-chrome-stable || command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          if [ -z "$browser" ]; then
+            echo "No se encontró Chrome/Chromium. La auditoría requiere navegador real." >&2
+            exit 1
+          fi
+          echo "DEMO_BROWSER=$browser" >> "$GITHUB_ENV"
+      - name: Contratos de accesibilidad, recursos y caché D5
+        run: |
+          node tests/demo-d5.mjs
+          node tests/demo-d4.mjs
+          node --check tools/demo-d5-visual.cjs
+      - name: Siete anchuras, navegación y acciones con teclado
+        shell: bash
+        env:
+          CI: 'true'
+        run: |
+          set -euo pipefail
+          for attempt in 1 2 3; do
+            echo "Chrome D5 intento $attempt/3"
+            if node tools/demo-d5-visual.cjs; then
+              exit 0
+            fi
+            sleep 3
+          done
+          echo "Auditoría visual D5 no superada tras tres intentos." >&2
+          exit 1
+      - name: Adjuntar evidencias y capturas públicas de demostración
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: edunext-d5-visual-evidence
+          path: artifacts/d5-visual/
+          if-no-files-found: warn
+          retention-days: 14
