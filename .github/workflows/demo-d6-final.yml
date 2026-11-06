@@ -1,0 +1,71 @@
+name: EDUNEXT DEMO D6 — aceptación final
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tests/demo-d6.mjs'
+      - 'tools/demo-d6-acceptance.cjs'
+      - 'docs/final-demo/**'
+      - '.github/workflows/demo-d6-final.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: edunext-demo-d6-final-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  contracts:
+    name: Contratos de presentación y privacidad
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+      - name: Contratos D1-D6 y políticas offline
+        run: |
+          node tests/demo-presentation.mjs
+          node tests/demo-d2.mjs
+          node tests/demo-d3.mjs
+          node tests/demo-d4.mjs
+          node tests/demo-d5.mjs
+          node tests/demo-d6.mjs
+          node tests/offline-pwa.cjs
+          node --check tools/demo-d6-acceptance.cjs
+
+  browser:
+    name: Navegación, visual y desconexión real
+    runs-on: ubuntu-latest
+    needs: contracts
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+      - name: Encontrar Chrome
+        shell: bash
+        run: |
+          set -euo pipefail
+          browser="$(command -v google-chrome-stable || command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          test -n "$browser"
+          echo "DEMO_BROWSER=$browser" >> "$GITHUB_ENV"
+      - name: Aceptación D6 con navegador real
+        env:
+          CI: 'true'
+        run: node tools/demo-d6-acceptance.cjs
+      - name: Adjuntar pruebas y capturas D6
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: edunext-d6-final-evidence
+          path: |
+            artifacts/d6-acceptance/
+            artifacts/d5-visual/
+          retention-days: 14
+          if-no-files-found: warn
